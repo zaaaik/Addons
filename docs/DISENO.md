@@ -1,164 +1,199 @@
-# Diseño: MisionesES (addon de traducción EN→ES para WoW Forever)
+# Diseño v3: MisionesES (traducción EN→ES para WoW Forever)
 
 ## 1. Contexto y objetivo
-- **Jugador:** tiene el juego en **inglés**. Ve la ventana de misión normal y, al lado (o en una ventana bilingüe), el texto en **español**.
-- **Experiencia:** instalar y jugar. Sin cuentas, sin claves, sin pasos extra salvo el asistente inicial de 3 clics.
-- **Traducción:** por **IA, gratis y automática**. La IA no puede correr dentro del juego, porque un addon no tiene internet. Por eso corre en **GitHub Actions** y llega al jugador como una actualización normal del addon.
-- **Descartado:** la API de Blizzard. Probada: Classic da 404, Forever da 403 y retail tiene textos distintos.
+- **Jugador:** tiene el juego en **inglés** y ve al lado de la ventana de misión su texto en **español**, o una ventana bilingüe. Solo instala el addon y pasa por el asistente inicial.
+- **Gratis y automático:** la traducción no se hace en el juego, porque un addon no tiene internet. Se genera antes de publicar y llega como una actualización normal desde CurseForge.
+- **Cambio respecto a v2:** antes había que capturar cada misión jugando. Ahora la base se **importa de golpe** desde la base de datos abierta de **AzerothCore** (GPL-2), que ya trae el texto inglés y el **español oficial** de las misiones originales. Jugar e IA quedan solo para lo que falte.
 
-### Decisiones tomadas
-- **Español:** latino/neutro (estilo esMX, "ustedes").
-- **Nombres propios** (lugares, NPCs, facciones, objetos): **siempre en inglés**, para que coincidan con el mapa y el chat.
-- **Motor de IA en CI:** Argos Translate.
-- **Publicación:** CurseForge, que actualiza el addon solo con su app.
+### Investigación (AzerothCore `master`, 2026-10)
+| Dato | Valor |
+|---|---|
+| Misiones originales (ID < 9000) | 4.335 |
+| …con descripción en español oficial | 3.516 (81 %) |
+| …con texto de recompensa ES / de progreso ES | 3.909 / 2.971 |
+| Españoles sospechosos (longitud incoherente o texto de Cataclysm) | ~112 (p. ej. 783) |
+| `esMX` vs `esES` | 9.272 de 9.458 idénticos: en la práctica un solo español |
+| Tokens | `$N $C $R $B $G…;` iguales que en el juego |
 
-## 2. Arquitectura (3 piezas)
+Fuera del alcance del análisis:
+- **Pendiente de verificar en el juego:** que Forever conserva los IDs de Classic (`/dump GetQuestID()` en 3 o 4 misiones conocidas).
+- **Descartados:** la API de Blizzard (Classic 404, Forever 403) y Wowhead (sus términos prohíben extraer datos).
+
+### Decisiones
+- **Español:** latino/neutro. La fuente oficial usa `esMX` y recurre a `esES` si falta.
+- **Nombres propios:**
+  - En el texto oficial importado se quedan **como los tradujo Blizzard** (p. ej. "Villanorte"), porque no se pueden revertir de forma fiable.
+  - En el texto traducido por IA se quedan **en inglés**.
+- **Motor IA:** Argos Translate en GitHub Actions.
+- **Licencia del addon:** GPL-2, compatible con los datos de AzerothCore. Se cita la fuente en el README.
+- **Publicación:** CurseForge.
+
+## 2. Arquitectura
 ```
-┌─────────────── A. ADDON (PC del jugador, juego en inglés) ───────────────┐
-│ Eventos WoW ─► Detector ─► Buscador (questID / npcID+hash) ─► Vista      │
-│                         └► Recolector (solo mantenedor) ─► SavedVariables│
-└──────────────────────────────────────────────────────────────────────────┘
-          ▲ actualización (CurseForge)              │ captura EN (mantenedor)
-          │                                         ▼
-┌──── C. PUBLICACIÓN ────┐   ┌──────────── B. FÁBRICA DE TRADUCCIONES (GitHub) ────────┐
-│ tag vX → zip → Release │◄──│ capturas/*.lua → fusionar → traducir solo lo nuevo (IA) │
-│ → CurseForge           │   │ → data/*.json (fuente de verdad) → MisionesES/Data/*.lua│
-└────────────────────────┘   └─────────────────────────────────────────────────────────┘
+ ┌──────────── B. FÁBRICA DE DATOS (GitHub Actions) ─────────────────────────────┐
+ │ 1. AzerothCore (commit fijado) ─► importar EN + ES oficial ─┐                 │
+ │ 2. capturas/*.lua (Forever)     ─► EN nuevo / cambiado      ├─► data/*.json ─►│
+ │ 3. Argos (solo huecos y sospechosos) ◄──────────────────────┘   Data/*.lua    │
+ └───────────────────────────────────────────────────────────────────────┬───────┘
+                                                                         ▼
+ ┌──── C. PUBLICACIÓN: tag vX ─► zip ─► CurseForge ─► app del jugador ────┐
+                                                                         ▼
+ ┌──────────── A. ADDON (jugador, cliente en inglés) ────────────────────────────┐
+ │ Eventos ─► Detector ─► Lookup (questID / hash texto) ─► Vista (lateral|bilingüe)
+ │                    └─► Collector (mantenedor): EN que falta o que cambió        │
+ └────────────────────────────────────────────────────────────────────────────────┘
 ```
+
+**Prioridad de fuentes por campo:**
+1. `revisado`: corrección manual. Nada lo pisa.
+2. `oficial`: importado de AzerothCore.
+3. `ia`.
+
+Un campo oficial marcado como sospechoso se sustituye por IA, pero se conserva en el JSON por si se revisa a mano.
 
 ## 3. Estructura de carpetas
 ```
 Addons/
-├─ MisionesES/                  ← lo que se distribuye
+├─ MisionesES/                     ← se distribuye
 │  ├─ MisionesES.toc
-│  ├─ Core.lua                  namespace, config, utilidades (Hash, Normalize, Personalize)
-│  ├─ Locale.lua                textos de la interfaz del addon
-│  ├─ Data/
-│  │  ├─ Quests.lua             GENERADO: Q[id] = {...}
-│  │  └─ Gossip.lua             GENERADO: G[npcID][hash] = "..."
-│  ├─ Logic/
-│  │  ├─ Detector.lua           eventos WoW → "qué se está mostrando" (misión+fase, diálogo, registro)
-│  │  ├─ Lookup.lua             busca la traducción y la personaliza
-│  │  └─ Collector.lua          captura EN de lo que falta + /mes escanear
-│  ├─ UI/
-│  │  ├─ Parchment.lua          componente pergamino con scroll
-│  │  ├─ SidePanel.lua          vista "lateral"
-│  │  ├─ Bilingual.lua          vista "bilingüe"
-│  │  ├─ QuestLog.lua           registro (al pasar el ratón)
-│  │  ├─ Gossip.lua             diálogos
-│  │  ├─ Setup.lua              asistente inicial
-│  │  └─ Options.lua            panel de opciones
-│  └─ Main.lua                  arranque, comandos /mes
-├─ data/                        ← fuente de verdad (JSON, revisable en PRs)
-│  ├─ quests.json
-│  └─ gossip.json
-├─ capturas/                    ← SavedVariables subidos por el mantenedor
+│  ├─ Core.lua                     namespace, config, utilidades (Hash, Normalize, Personalize)
+│  ├─ Locale.lua                   textos de la interfaz del addon
+│  ├─ Data/  Quests.lua · Gossip.lua · Meta.lua   (GENERADOS)
+│  ├─ Logic/ Detector.lua · Lookup.lua · Collector.lua
+│  ├─ UI/    Parchment · SidePanel · Bilingual · QuestLog · Gossip · Setup · Options
+│  └─ Main.lua                     arranque y comandos /mes
+├─ data/                           ← fuente de verdad, revisable en PRs
+│  ├─ quests.json · gossip.json
+│  ├─ forever_ids.json             IDs que existen en Forever (del escaneo)
+│  └─ revisiones.json              correcciones manuales
+├─ capturas/                       SavedVariables del mantenedor
 ├─ tools/
-│  ├─ luatable.py               leer y escribir tablas Lua
-│  ├─ build_db.py               fusionar + traducir + generar Data/*.lua
-│  ├─ engines/                  argos.py, ollama.py (misma interfaz translate(list[str]) → list[str])
-│  ├─ names.json                nombres propios a conservar en inglés (auto + manual)
+│  ├─ importers/azerothcore.py     descarga (commit fijado) y lee el SQL
+│  ├─ sqlparse.py · luatable.py    lectores de SQL y de tablas Lua
+│  ├─ engines/ argos.py · ollama.py
+│  ├─ normalize.py                 hash y normalización idénticos a Core.lua
+│  ├─ build_db.py                  importar → fusionar → traducir → generar
 │  └─ tests/
-├─ .github/workflows/
-│  ├─ traducir.yml              push en capturas/ → traduce y commitea Data
-│  └─ publicar.yml              tag v* → zip + Release + CurseForge
-├─ .pkgmeta
-└─ README.md
+├─ .github/workflows/  build-data.yml · publicar.yml
+├─ .pkgmeta · LICENSE (GPL-2) · README.md · docs/DISENO.md
 ```
+El SQL descargado (~65 MB) **no se commitea**: se descarga en CI y se guarda en caché.
 
 ## 4. Modelo de datos
 
-**`data/quests.json`**, fuente de verdad:
+**`data/quests.json`**
 ```json
-"176": {
-  "en": { "title": "...", "text": "...", "objectives": "...", "progress": "...", "completion": "..." },
-  "es": { "title": "...", "text": "...", ... },
-  "hash_en": { "text": "a1b2c3d4", ... },   // detecta si el inglés cambió → retraducir solo ese campo
-  "src": "ia" | "revisado"                   // "revisado" = corregido a mano, la IA no lo pisa
+"62": {
+  "en":  { "title": "The Fargodeep Mine", "text": "...", "objectives": "...", "progress": "...", "completion": "..." },
+  "es":  { "title": "La Mina Abisal", "text": "...", ... },
+  "src": { "title": "oficial", "text": "oficial", "progress": "ia", ... },
+  "es_oficial_descartado": { "text": "..." },        // si era sospechoso
+  "h":   "9f2c11ab"                                    // hash del EN normalizado (title+text)
 }
 ```
 
-**`MisionesES/Data/Quests.lua`**, generado y solo con ES:
+**`MisionesES/Data/Quests.lua`**, generado. Solo trae ES y el hash:
 ```lua
-Q[176] = {title="...", text="...", objectives="...", progress="...", completion="...", src="ia"}
+Q[62] = {t="La Mina Abisal", d="…", o="…", p="…", c="…", h="9f2c11ab", ia=1}
 ```
+- Usa claves cortas para reducir el tamaño. Unas 4.300 misiones suponen ~6–8 MB, aceptable.
+- `ia=1` indica que algún campo es de IA.
 
-**`data/gossip.json`**: `npcID → hashEN → { en, es, src }`. El gossip no tiene ID propio, así que la clave es el npcID más el hash del texto EN normalizado.
+**`data/gossip.json` / `Data/Gossip.lua`:** `G[hashEN] = "texto ES"`.
+- Viene de `npc_text` y `npc_text_locale` de AzerothCore y de las capturas.
+- **La clave es el hash del texto EN normalizado**, sin npcID, porque AzerothCore no liga cada texto a un NPC concreto.
+- Los textos con `$G` generan dos claves, una masculina y otra femenina.
 
-**Tokens:**
-- `$N` (nombre), `$C` (clase), `$R` (raza) y `$Gél:ella;` (género).
-- El recolector sustituye el nombre del jugador por `$N`.
-- La IA recibe los tokens protegidos con marcadores y el addon los resuelve al mostrar.
+**Normalización para el hash** (idéntica en Lua y Python):
+1. Nombre del jugador → `$n`; clase → `$c`; raza → `$r`, todo en el idioma del cliente.
+2. `$B` → salto de línea.
+3. Espacios colapsados y todo en minúsculas.
+4. djb2 de 32 bits en hexadecimal.
 
-**`MisionesES_Config`** (SavedVariables):
-- `setupDone`, `mode` ("lateral"/"bilingue"), `fontSize`.
-- `showQuest`, `showQuestLog`, `showGossip`, `collector`.
+**SavedVariables:**
+- `MisionesES_Config` guarda `setupDone`, `mode`, `fontSize`, `showQuest`, `showQuestLog`, `showGossip` y `collector`.
+- `MisionesES_Captura` (solo mantenedor) guarda:
+  - `quests[id].en`: misiones **sin entrada** o cuyo hash EN **no coincide** con `h`. Así se detecta que Forever cambió el texto.
+  - `gossip[hash].en`: diálogos sin traducción.
+  - `ids[id] = true`: IDs vistos en el escaneo.
 
-**`MisionesES_Captura`** (SavedVariables, solo mantenedor):
-- `quests[id].en = {...}`
-- `gossip[npcID].en[hash] = texto`
-
-## 5. Responsabilidades de los módulos del addon
+## 5. Módulos del addon
 | Módulo | Entrada | Salida |
 |---|---|---|
-| Detector | `QUEST_DETAIL/PROGRESS/COMPLETE/FINISHED`, `GOSSIP_SHOW/CLOSED`, hover del registro | `Contexto {tipo, questID, fase, npcID, textoEN}` |
-| Lookup | Contexto | `Entrada ES personalizada` o `nil` |
-| Vistas | Contexto + Entrada | pergamino lateral o ventana bilingüe; nada si es `nil` |
-| Collector | Contexto, cuando `Lookup = nil` y `collector=on` | `MisionesES_Captura` |
+| Detector | `QUEST_DETAIL/PROGRESS/COMPLETE/FINISHED`, `GOSSIP_SHOW/CLOSED`, hover del registro | `Contexto {tipo, questID, fase, textoEN}` |
+| Lookup | Contexto | Entrada ES personalizada o `nil`, más `desactualizada` si el hash EN no coincide |
+| Vistas | Contexto + Entrada | panel lateral o ventana bilingüe; nada si es `nil` |
+| Collector | Contexto, cuando falta la entrada o está desactualizada y `collector=on` | `MisionesES_Captura` |
 
-Regla: las vistas no leen la API de WoW directamente para decidir. Todo pasa por Detector y Lookup, lo que permite probarlos con un stub.
+Las vistas no consultan la API de WoW para decidir; todo pasa por Detector y Lookup. Así se pueden probar con un stub.
 
-## 6. Pantallas
-1. **Asistente inicial**:
-   - Dos tarjetas con vista previa ("Panel lateral" / "Ventana bilingüe").
-   - Tamaño de letra y qué traducir.
-   - Botones [Vista previa] y [Guardar].
-2. **Panel lateral**: pergamino a la derecha de QuestFrame/GossipFrame con el título, el texto y "Objetivos".
-3. **Ventana bilingüe**:
-   - Cubre QuestFrame, con ES en tinta oscura y EN en tinta clara debajo de cada párrafo.
-   - Recompensas y botones Aceptar/Rechazar/Continuar/Completar.
-   - Si hay recompensa a elegir, recurre al lateral.
-4. **Registro**: al pasar el ratón por el detalle, el pergamino aparece al lado.
-5. **Opciones** (Opciones → AddOns → MisionesES): lo mismo que el asistente más "Repetir asistente".
-6. Pie "Traducción automática (IA)" cuando `src="ia"`.
+## 6. Pantallas y comandos
+1. **Asistente inicial:** dos tarjetas con vista previa (panel lateral o ventana bilingüe), tamaño de letra, qué traducir, y los botones [Vista previa] y [Guardar].
+2. **Panel lateral:** pergamino a la derecha de QuestFrame o GossipFrame.
+3. **Ventana bilingüe:** cubre QuestFrame y alterna párrafos ES y EN, con botones de acción. Si hay una recompensa a elegir, se usa el panel lateral.
+4. **Registro de misiones:** el pergamino aparece al pasar el ratón por el detalle.
+5. **Opciones** (Opciones → AddOns): lo mismo que el asistente, más "Repetir asistente".
+6. **Pie del texto:** "Traducción automática (IA)" si `ia=1`; "Puede no coincidir con esta versión" si está desactualizada.
 
 **Comandos:**
-- `/mes`, `/mes config`, `/mes test`, `/mes modo`.
-- Solo mantenedor: `/mes recolector`, `/mes escanear [desde hasta]`, `/mes estado`.
+- Jugador: `/mes`, `/mes config`, `/mes test`, `/mes modo`.
+- Mantenedor: `/mes recolector`, `/mes escanear [desde hasta]` (registra IDs y títulos EN), `/mes estado`.
 
-## 7. Fábrica de traducciones (`build_db.py`)
-1. Lee `capturas/*.lua` y fusiona el EN en `data/*.json`.
-2. Marca como pendiente cada campo nuevo, o cuyo `hash_en` haya cambiado, siempre que `src` no sea `"revisado"`.
-3. Protege tokens y **nombres propios** con marcadores para que se queden en inglés.
-   - **Nombres automáticos:** el recolector guarda el NPC (`UnitName("npc")`), la zona (`GetZoneText`) y los nombres de los objetivos.
-   - **Nombres manuales:** se añaden a mano en `names.json`.
-   - **Heurística:** palabras en mayúscula a mitad de frase.
-4. Traduce por lotes con el motor configurado (Argos en CI; Ollama opcional en local).
-5. Posedita para el español neutro (p. ej. "vosotros" → "ustedes"). Restaura los tokens y valida que conserva los mismos tokens y que el texto no está vacío. Si falla, deja el campo pendiente.
-6. Escribe `data/*.json` y regenera `MisionesES/Data/*.lua`, ordenado, para que los diffs queden limpios.
+## 7. Fábrica de datos (`build_db.py`)
+1. **Importar AzerothCore** en un commit fijado en `tools/importers/azerothcore.py`:
+   - Tablas: `quest_template`, `quest_template_locale`, `quest_offer_reward(_locale)`, `quest_request_items(_locale)`, `npc_text(_locale)`.
+   - Toma el ES de `esMX` y recurre a `esES` si falta.
+2. **Filtrar:** solo IDs presentes en `forever_ids.json`. Si ese archivo aún no existe, se usan los IDs < 9000.
+3. **Detectar sospechosos:**
+   - Longitud ES/EN fuera de [0,6, 1,8].
+   - Términos posteriores a Classic en ES que no aparecen en EN: Alamuerte, Cataclismo, Crepúsculo…
+4. **Fusionar capturas:**
+   - Un EN nuevo crea la entrada.
+   - Un EN distinto (hash diferente) sustituye al de AzerothCore y marca el campo para retraducir.
+5. **Traducir con Argos** los campos sin ES, sospechosos o marcados:
+   - Protege tokens y nombres propios (de `names.json` y heurística de mayúsculas).
+   - Posedita al español neutro ("vosotros" → "ustedes").
+   - Valida que se conservan los tokens; si falla, el campo queda pendiente.
+6. **Aplicar `revisiones.json`**.
+7. **Generar** `data/*.json` y `MisionesES/Data/*.lua`, ordenados para que los diffs sean limpios. Imprimir un informe de cobertura.
 
-## 8. Publicación
-- `traducir.yml`: se dispara con un push a `capturas/**`. Ejecuta `build_db.py` y commitea con el bot.
-- `publicar.yml`: se dispara con un tag `v*`. Usa BigWigsMods/packager para publicar en CurseForge (secreto `CF_API_KEY`, ID del proyecto en el `.toc` con `## X-Curse-Project-ID`).
-- El jugador recibe la actualización con la app de CurseForge.
+## 8. Automatización
+- `build-data.yml`:
+  - **Disparadores:** push a `capturas/**`, `data/revisiones.json` o `tools/**`, y ejecución manual.
+  - **Pasos:** caché del SQL de AzerothCore y del modelo de Argos, ejecución de `build_db.py` y commit del bot.
+- `publicar.yml`:
+  - **Disparador:** tag `v*`.
+  - **Pasos:** empaqueta con BigWigsMods/packager y publica en CurseForge (secreto `CF_API_KEY`, `## X-Curse-Project-ID` en el `.toc`).
 
-## 9. Estado actual vs diseño
-- **Hecho (commit `ffc207a`):**
-  - las vistas (Parchment, SidePanel, Bilingual, QuestLog, Gossip, Setup, Options);
-  - `Core.lua` y `Main.lua`;
-  - un recolector orientado al cliente ES.
-- **A rehacer:**
-  - separar Detector y Lookup;
-  - Collector solo EN;
-  - `Locale.lua`.
-- **Nuevo:**
-  - el recolector captura además nombres de NPC, zona y objetivos;
-  - `tools/`, `data/`, `capturas/`, los workflows y `.pkgmeta`;
-  - borrar `probar_api_blizzard.py`.
+## 9. Estado actual frente al diseño
+**Ya hecho (commit `ffc207a`):**
+- Las vistas.
+- `Core.lua` y `Main.lua`.
+- Un recolector básico.
 
-## 10. Verificación (cuando se implemente)
-- `luac5.1 -p`.
-- Smoke test con un stub de la API de WoW (Detector → Lookup → Vista).
-- `unittest` de `luatable`, `build_db` (motor falso, tokens, solo-nuevos, "revisado" intocable) y hash Lua = Python.
-- Ejecución real de Argos sobre una captura de ejemplo.
-- Prueba en el juego.
+**A rehacer:**
+- Separar Detector y Lookup.
+- Normalización y hash nuevos.
+- Claves cortas en `Data/`.
+- Gossip por hash sin npcID.
+- Collector solo para EN que falta o cambió.
+
+**Nuevo:**
+- `tools/` completo y `data/`.
+- Workflows, `.pkgmeta` y `LICENSE`.
+- README.
+
+**Eliminar:** `tools/probar_api_blizzard.py`.
+
+## 10. Verificación
+- `luac5.1 -p` y un smoke test con un stub de la API de WoW (Detector → Lookup → Vista, colector).
+- `unittest`:
+  - `sqlparse` con muestras reales.
+  - Importador: misión 62 → "La Mina Abisal"; la 783 se detecta como sospechosa.
+  - Normalización y hash **Lua = Python** (con `lua5.1`).
+  - `build_db` con motor falso: prioridades, `revisado` intocable, retraducción si cambia el hash.
+- Ejecución real: importar AzerothCore más Argos sobre unas 20 misiones, revisar `Data/Quests.lua` y el informe de cobertura.
+- En el juego:
+  - Comprobar los IDs de Forever.
+  - Abrir "The Fargodeep Mine" y ver la traducción.
+  - Probar el panel lateral y la ventana bilingüe.
