@@ -188,7 +188,7 @@ function MES.Fonts()
 	MES.fonts.title:SetFont(MORPHEUS, size + 8, "")
 	MES.fonts.header:SetFont(MORPHEUS, size + 3, "")
 	MES.fonts.text:SetFont(base, size, "")
-	MES.fonts.small:SetFont(base, size - 2, "")
+	MES.fonts.small:SetFont(base, size - 1, "")
 	MES.fonts.button:SetFont(MORPHEUS, 15, "")
 	for _, f in pairs(MES.fonts) do f:SetSpacing(2) end
 	return MES.fonts

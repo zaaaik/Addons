@@ -8,9 +8,9 @@ MES.TEX = TEX
 local PADDING = 28          -- margen interior, dentro de los bordes rasgados
 local EDGE = 40             -- tamaño en pantalla de las esquinas del 9-slice
 local EDGE_TC = 0.25        -- las esquinas ocupan 64 de 256 px del archivo
-local INK = { 0.17, 0.10, 0.05 }
-local INK_SOFT = { 0.42, 0.31, 0.18 }
-local INK_RED = { 0.35, 0.10, 0.05 }
+local INK = { 0.10, 0.06, 0.02 }        -- tinta casi negra sepia: el texto principal debe leerse sin esfuerzo
+local INK_SOFT = { 0.30, 0.21, 0.11 }   -- inglés: más claro que el español pero con contraste suficiente
+local INK_RED = { 0.40, 0.08, 0.03 }
 
 local Parchment = {}
 
@@ -121,6 +121,9 @@ function Parchment:SetBlocks(blocks)
 			y = y + (st.before or 0)
 			fs:SetFontObject(fonts[st.font])
 			fs:SetTextColor(st.color[1], st.color[2], st.color[3])
+			-- Sombra clara muy sutil: despega las letras de las manchas del pergamino.
+			fs:SetShadowColor(1, 0.96, 0.86, 0.45)
+			fs:SetShadowOffset(1, -1)
 			fs:SetJustifyH(st.justify)
 			fs:SetWidth(width - (st.indent or 0))
 			fs:SetText(b.text)
