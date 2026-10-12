@@ -8,9 +8,11 @@ MES.TEX = TEX
 local PADDING = 28          -- margen interior, dentro de los bordes rasgados
 local EDGE = 40             -- tamaño en pantalla de las esquinas del 9-slice
 local EDGE_TC = 0.25        -- las esquinas ocupan 64 de 256 px del archivo
-local INK = { 0.10, 0.06, 0.02 }        -- tinta casi negra sepia: el texto principal debe leerse sin esfuerzo
-local INK_SOFT = { 0.30, 0.21, 0.11 }   -- inglés: más claro que el español pero con contraste suficiente
-local INK_RED = { 0.40, 0.08, 0.03 }
+-- Colores como en la ventana de misión original: título y encabezados en negro, texto en sepia oscuro.
+local INK = { 0.18, 0.12, 0.06 }
+local INK_TITLE = { 0, 0, 0 }
+local INK_SOFT = { 0.36, 0.26, 0.15 }   -- inglés original: algo más claro que el texto principal
+local inkLoaded = false
 
 local Parchment = {}
 
@@ -58,9 +60,9 @@ local function acquire(self, kind)
 end
 
 local STYLE = {
-	title = { font = "title", color = INK, justify = "CENTER", after = 2 },
-	subtitle = { font = "small", color = INK_SOFT, justify = "CENTER", after = 6 },
-	header = { font = "header", color = INK_RED, justify = "LEFT", before = 4, after = 6 },
+	title = { font = "title", color = INK_TITLE, justify = "LEFT", after = 2 },
+	subtitle = { font = "small", color = INK_SOFT, justify = "LEFT", after = 6 },
+	header = { font = "header", color = INK_TITLE, justify = "LEFT", before = 6, after = 4 },
 	text = { font = "text", color = INK, justify = "LEFT", after = 4 },
 	original = { font = "small", color = INK_SOFT, justify = "LEFT", indent = 10, after = 10 },
 	note = { font = "small", color = INK_SOFT, justify = "LEFT", after = 4 },
@@ -119,11 +121,16 @@ function Parchment:SetBlocks(blocks)
 			local st = STYLE[b.kind] or STYLE.text
 			local fs = acquire(self, "fs")
 			y = y + (st.before or 0)
+			local color = st.color
+			if not inkLoaded then
+				local text, title = MES.InkColors()
+				INK[1], INK[2], INK[3] = text[1], text[2], text[3]
+				INK_TITLE[1], INK_TITLE[2], INK_TITLE[3] = title[1], title[2], title[3]
+				inkLoaded = true
+			end
 			fs:SetFontObject(fonts[st.font])
-			fs:SetTextColor(st.color[1], st.color[2], st.color[3])
-			-- Sombra clara muy sutil: despega las letras de las manchas del pergamino.
-			fs:SetShadowColor(1, 0.96, 0.86, 0.45)
-			fs:SetShadowOffset(1, -1)
+			fs:SetTextColor(color[1], color[2], color[3])
+			fs:SetShadowOffset(0, 0)  -- como el original: sin sombra
 			fs:SetJustifyH(st.justify)
 			fs:SetWidth(width - (st.indent or 0))
 			fs:SetText(b.text)

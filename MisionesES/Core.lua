@@ -171,8 +171,16 @@ function MES.GossipText()
 	if GetGossipText then return GetGossipText() end
 end
 
--- Fuentes con tamaño configurable. Títulos y encabezados en letra medieval (Morpheus), como los libros del juego.
-local MORPHEUS = "Fonts\\MORPHEUS.TTF"
+-- Fuentes iguales a las de la ventana de misión de Blizzard (QuestTitleFont / QuestFont);
+-- el tamaño configurable se aplica como diferencia respecto al tamaño original.
+local function fontOf(obj, fallbackFile, fallbackSize)
+	if obj and obj.GetFont then
+		local file, size = obj:GetFont()
+		if file then return file, size or fallbackSize end
+	end
+	return fallbackFile, fallbackSize
+end
+
 function MES.Fonts()
 	if not MES.fonts then
 		MES.fonts = {
@@ -183,13 +191,24 @@ function MES.Fonts()
 			button = CreateFont("MisionesES_ButtonFont"),
 		}
 	end
-	local size = MES.cfg and MES.cfg.fontSize or 13
-	local base = (QuestFont and QuestFont:GetFont()) or STANDARD_TEXT_FONT
-	MES.fonts.title:SetFont(MORPHEUS, size + 8, "")
-	MES.fonts.header:SetFont(MORPHEUS, size + 3, "")
-	MES.fonts.text:SetFont(base, size, "")
-	MES.fonts.small:SetFont(base, size - 1, "")
-	MES.fonts.button:SetFont(MORPHEUS, 15, "")
-	for _, f in pairs(MES.fonts) do f:SetSpacing(2) end
+	local delta = (MES.cfg and MES.cfg.fontSize or 13) - 13
+	local textFile, textSize = fontOf(QuestFont, STANDARD_TEXT_FONT, 13)
+	local titleFile, titleSize = fontOf(QuestTitleFont, "Fonts\\MORPHEUS.TTF", 18)
+	MES.fonts.title:SetFont(titleFile, titleSize + delta, "")
+	MES.fonts.header:SetFont(titleFile, titleSize + delta, "")
+	MES.fonts.text:SetFont(textFile, textSize + delta, "")
+	MES.fonts.small:SetFont(textFile, textSize + delta - 1, "")
+	MES.fonts.button:SetFont(titleFile, 15, "")
 	return MES.fonts
+end
+
+-- Colores de tinta del pergamino de Blizzard (título y texto), si el cliente los expone.
+function MES.InkColors()
+	local text, title = { 0.18, 0.12, 0.06 }, { 0, 0, 0 }
+	if GetMaterialTextColors then
+		local t, ti = GetMaterialTextColors("Parchment")
+		if type(t) == "table" and t[1] then text = t end
+		if type(ti) == "table" and ti[1] then title = ti end
+	end
+	return text, title
 end
