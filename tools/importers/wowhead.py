@@ -152,22 +152,31 @@ def parse_quest(page):
     return {k: v for k, v in out.items() if v}
 
 
-def load_quests(cache_dir, known_ids=(), refresh_list=False, max_downloads=300, log=print):
+def load_quests(cache_dir, known_ids=(), refresh_list=False, max_downloads=300, log=print, store_path=None):
     """Lista Forever y lee las misiones nuevas, cambiadas o desconocidas.
 
-    Las páginas en caché se leen siempre; como mucho se descargan `max_downloads` páginas nuevas por
-    ejecución, para avanzar poco a poco. Devuelve (ids_de_forever, {questID: {campos EN}}, pendientes).
+    El texto ya extraído se guarda en `store_path` (data/wowhead.json, versionado en el repo), así
+    cualquier ejecución (local o en GitHub) parte de lo ya descargado. Como mucho se descargan
+    `max_downloads` páginas nuevas por ejecución, para avanzar poco a poco.
+    Devuelve (ids_de_forever, {questID: {campos EN}}, pendientes).
     """
+    store = {}
+    if store_path and os.path.exists(store_path):
+        with open(store_path, encoding="utf-8") as f:
+            store = {int(k): v for k, v in json.load(f).items()}
     listing = list_quests(cache_dir, refresh_list, log)
     known = set(known_ids)
+
     # Primero las misiones nuevas de Forever, luego las que AzerothCore no tiene y al final las cambiadas.
     def priority(q):
         status = listing[q]["status"]
         return (0 if status == "new" else 1 if q not in known else 2, q)
     wanted = sorted((q for q, info in listing.items()
                      if info["status"] in ("new", "updated") or q not in known), key=priority)
-    quests, downloads, pending = {}, 0, 0
+    downloads, pending = 0, 0
     for qid in wanted:
+        if qid in store:
+            continue
         path = os.path.join(cache_dir, "quests", "%d.html" % qid)
         if not os.path.exists(path):
             if downloads >= max_downloads:
@@ -177,9 +186,12 @@ def load_quests(cache_dir, known_ids=(), refresh_list=False, max_downloads=300, 
             if downloads % 50 == 0:
                 log("  descargadas %d/%d" % (downloads, max_downloads))
         page = _get("%s/quest=%d" % (BASE, qid), path, log=log)
-        parsed = parse_quest(page)
-        if parsed.get("title"):
-            quests[qid] = parsed
-    log("Wowhead: %d misiones en Forever; %d leídas (%d descargadas ahora), %d pendientes para la próxima vez"
+        store[qid] = parse_quest(page)
+    if store_path:
+        with open(store_path, "w", encoding="utf-8") as f:
+            json.dump({str(k): store[k] for k in sorted(store)}, f, ensure_ascii=False, indent=1, sort_keys=True)
+            f.write("\n")
+    quests = {q: v for q, v in store.items() if v.get("title") and q in listing}
+    log("Wowhead: %d misiones en Forever; %d con texto (%d descargadas ahora), %d pendientes para la próxima vez"
         % (len(listing), len(quests), downloads, pending))
     return set(listing), quests, pending

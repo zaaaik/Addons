@@ -268,7 +268,8 @@ def main(argv=None):
         # El texto inglés de Wowhead es el de Forever: sustituye al de AzerothCore si cambió.
         # Las capturas del juego tienen prioridad sobre Wowhead.
         wh_ids, wh_quests, _ = wowhead.load_quests(os.path.join(args.data, ".cache", "wowhead"), set(ac_quests),
-                                                   args.wowhead_refresh_list, args.wowhead_max, log)
+                                                   args.wowhead_refresh_list, args.wowhead_max, log,
+                                                   store_path=os.path.join(args.data, "wowhead.json"))
         scanned |= wh_ids
         for qid, en in wh_quests.items():
             merged = dict(en)
