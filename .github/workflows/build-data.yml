@@ -68,5 +68,10 @@ jobs:
             echo "Sin cambios en la base de datos."
           else
             git commit -m "Actualizar base de datos de traducciones"
-            git push
+            # Si alguien subió cambios mientras corría, se integran (los datos generados aquí ganan).
+            for i in 1 2 3; do
+              git pull --rebase -X theirs origin "$GITHUB_REF_NAME" && git push && exit 0
+              sleep 10
+            done
+            exit 1
           fi
