@@ -7,6 +7,8 @@ on:
       - "data/revisiones.json"
       - "tools/**"
   workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * 1"   # cada lunes: recoge poco a poco las misiones nuevas de Wowhead
 
 permissions:
   contents: write
@@ -31,9 +33,11 @@ jobs:
         with:
           path: |
             data/.cache
+            !data/.cache/wowhead/lists
             ~/.local/share/argos-translate
             ~/.cache/pip
-          key: build-data-${{ hashFiles('tools/importers/azerothcore.py') }}-v1
+          key: build-data-${{ hashFiles('tools/importers/azerothcore.py') }}-${{ github.run_id }}
+          restore-keys: build-data-${{ hashFiles('tools/importers/azerothcore.py') }}-
 
       - name: Instalar dependencias
         run: |
@@ -45,7 +49,7 @@ jobs:
         run: python -m unittest discover -s tools/tests -v
 
       - name: Importar y traducir
-        run: python tools/build_db.py --engine argos
+        run: python tools/build_db.py --engine argos --wowhead --wowhead-max 300 --wowhead-refresh-list
 
       - name: Smoke test del addon con los datos nuevos
         run: python tools/tests/run_smoke.py

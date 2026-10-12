@@ -26,13 +26,15 @@ Addon para **World of Warcraft: Forever** que muestra en **español** las mision
 `tools/build_db.py` hace estos pasos:
 1. Importa el texto inglés y el español oficial de las misiones y diálogos de [AzerothCore](https://github.com/azerothcore/azerothcore-wotlk) (GPL-2.0, commit fijado en `tools/importers/azerothcore.py`).
 2. Descarta las misiones de relleno y los españoles "sospechosos", es decir, los que no corresponden al texto inglés.
-3. Fusiona las capturas hechas en el juego (`capturas/*.lua`).
-4. Traduce con **Argos Translate** (gratis y sin conexión) solo lo que falta. Los nombres propios se quedan en inglés.
-5. Aplica las correcciones manuales de `data/revisiones.json`.
-6. Escribe `data/*.json` (la fuente de verdad) y `MisionesES/Data/*.lua` (lo que carga el addon).
+3. Con `--wowhead`, lee de [Wowhead](https://www.wowhead.com/forever) la lista de misiones de Forever y el texto inglés de las nuevas o cambiadas (con permiso de Wowhead). Va **poco a poco**: una página cada 3 segundos, como mucho `--wowhead-max` páginas nuevas por ejecución (300 por defecto), y con caché. Lo que falte se descarga en la siguiente ejecución.
+4. Fusiona las capturas hechas en el juego (`capturas/*.lua`).
+5. Traduce con **Argos Translate** (gratis y sin conexión) solo lo que falta. Los nombres propios se quedan en inglés.
+6. Aplica las correcciones manuales de `data/revisiones.json`.
+7. Escribe `data/*.json` (la fuente de verdad) y `MisionesES/Data/*.lua` (lo que carga el addon).
 
 ```bash
 python3 tools/build_db.py                 # importar + traducir con Argos
+python3 tools/build_db.py --wowhead       # + misiones nuevas de Forever desde Wowhead
 python3 tools/build_db.py --engine none   # solo el español oficial, sin IA
 python3 tools/build_db.py --engine ollama --model qwen2.5:7b   # IA local de más calidad
 python3 -m unittest discover -s tools/tests                    # tests
@@ -47,7 +49,7 @@ Sirve para las misiones nuevas o las que cambiaron respecto a Classic:
 1. Con el juego en inglés, escribe `/mes recolector`. Desde ese momento se guarda el texto inglés de las misiones y diálogos que **no** tienen traducción o cuyo texto cambió.
 2. Opcional: `/mes escanear 1 30000` registra qué IDs de misión existen en Forever, sin visitar a ningún NPC.
 3. Escribe `/reload` y copia `WTF\Account\<cuenta>\SavedVariables\MisionesES.lua` a `capturas/` (por ejemplo, `capturas/2026-10-12.lua`).
-4. Haz push. El workflow **Generar base de datos** traduce lo nuevo y commitea `data/` y `MisionesES/Data/`.
+4. Haz push. El workflow **Generar base de datos** traduce lo nuevo y commitea `data/` y `MisionesES/Data/`. Además se ejecuta solo cada lunes para recoger de Wowhead las misiones nuevas.
 
 `/mes estado` muestra cuánto hay capturado.
 
@@ -77,4 +79,4 @@ docs/         DISENO.md
 
 ## Licencia
 
-GPL-2.0. Los textos de las misiones son propiedad de Blizzard Entertainment. Los datos proceden de AzerothCore (GPL-2.0).
+GPL-2.0. Los textos de las misiones son propiedad de Blizzard Entertainment. Los datos proceden de AzerothCore (GPL-2.0) y, para las misiones de Forever, de [Wowhead](https://www.wowhead.com/forever), con su permiso.

@@ -28,6 +28,7 @@ import normalize as nz  # noqa: E402
 import protect  # noqa: E402
 from engines import get_engine  # noqa: E402
 from importers import azerothcore  # noqa: E402
+from importers import wowhead  # noqa: E402
 
 FIELDS = ("title", "text", "objectives", "progress", "completion")
 SHORT = {"title": "t", "text": "d", "objectives": "o", "progress": "p", "completion": "c"}
@@ -248,6 +249,9 @@ def main(argv=None):
     ap.add_argument("--capturas", default=os.path.join(ROOT, "capturas"))
     ap.add_argument("--cache", default=os.path.join(ROOT, "data", ".cache", "azerothcore"))
     ap.add_argument("--ac-folder", default=None, help="carpeta con el SQL ya descargado (tests)")
+    ap.add_argument("--wowhead", action="store_true", help="importar misiones de Forever desde Wowhead")
+    ap.add_argument("--wowhead-max", type=int, default=300, help="máximo de páginas nuevas a descargar por ejecución")
+    ap.add_argument("--wowhead-refresh-list", action="store_true", help="volver a descargar el listado de misiones")
     args = ap.parse_args(argv)
     log = print
 
@@ -257,6 +261,16 @@ def main(argv=None):
     ac_gossip = azerothcore.load_gossip(folder)
 
     captured_q, captured_g, scanned = load_captures(sorted(glob.glob(os.path.join(args.capturas, "*.lua"))))
+    if args.wowhead:
+        # El texto inglés de Wowhead es el de Forever: sustituye al de AzerothCore si cambió.
+        # Las capturas del juego tienen prioridad sobre Wowhead.
+        wh_ids, wh_quests, _ = wowhead.load_quests(os.path.join(args.data, ".cache", "wowhead"), set(ac_quests),
+                                                   args.wowhead_refresh_list, args.wowhead_max, log)
+        scanned |= wh_ids
+        for qid, en in wh_quests.items():
+            merged = dict(en)
+            merged.update(captured_q.get(qid, {}))
+            captured_q[qid] = merged
     ids_file = os.path.join(args.data, "forever_ids.json")
     forever_ids = set(read_json(ids_file, [])) | scanned
     if scanned:
@@ -277,7 +291,7 @@ def main(argv=None):
 
     write_json(q_path, quests)
     write_json(g_path, gossip)
-    meta = {"fuente": "AzerothCore " + azerothcore.COMMIT[:10],
+    meta = {"fuente": "AzerothCore " + azerothcore.COMMIT[:10] + (" + Wowhead" if args.wowhead else ""),
             "generado": datetime.date.today().isoformat()}
     nq, ng = generate_lua(quests, gossip, meta, args.addon)
     log(report(quests, gossip))

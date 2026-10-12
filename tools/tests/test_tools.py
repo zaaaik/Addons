@@ -159,5 +159,35 @@ class AddonSmokeTest(unittest.TestCase):
             self.assertEqual(r.returncode, 0, r.stdout + r.stderr)
 
 
+class WowheadTest(unittest.TestCase):
+    PAGE = (
+        '<h1 class="heading-size-1">Heart of Disruption</h1>Collect the <a href="/x">Arcane Mote</a> '
+        'in Dalaran.<table class="icon-list"></table>'
+        '<h2 class="heading-size-3">Description</h2>Hello &lt;name&gt;, my &lt;lad/lass&gt;.<br /><br />'
+        'Go now,&nbsp;&lt;class&gt;.<h2 class="heading-size-3"><a>Progress</a></h2>'
+        '<div id="lknlksndgg-progress" style="display: none">Done yet?</div>'
+        '<h2 class="heading-size-3"><a>Completion</a></h2>'
+        '<div id="lknlksndgg-completion" style="display: none">Thanks, &lt;race&gt;.</div><h2>Rewards</h2>'
+    )
+
+    def test_parse_quest(self):
+        from importers import wowhead
+        q = wowhead.parse_quest(self.PAGE)
+        self.assertEqual(q, {
+            "title": "Heart of Disruption",
+            "objectives": "Collect the Arcane Mote in Dalaran.",
+            "text": "Hello $N, my $glad:lass;.$B$BGo now, $C.",
+            "progress": "Done yet?",
+            "completion": "Thanks, $R.",
+        })
+
+    def test_listview(self):
+        from importers import wowhead
+        page = 'x new Listview({template: \'quest\', _truncated: 1, data:[{"id":1,"name":"a]b"},{"id":2}]});'
+        data, truncated = wowhead._listview(page)
+        self.assertEqual([d["id"] for d in data], [1, 2])
+        self.assertTrue(truncated)
+
+
 if __name__ == "__main__":
     unittest.main()
