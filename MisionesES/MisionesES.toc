@@ -1,0 +1,19 @@
+## Interface: 16001
+## Title: MisionesES
+## Notes: Traducciones al español de misiones y diálogos junto al texto original.
+## Author: zaaaik
+## Version: 0.1.0
+## SavedVariables: MisionesES_Config, MisionesES_Captura
+
+Core.lua
+Data\Quests.lua
+Data\Gossip.lua
+UI\Parchment.lua
+UI\SidePanel.lua
+UI\Bilingual.lua
+UI\QuestLog.lua
+UI\Gossip.lua
+UI\Setup.lua
+UI\Options.lua
+Collector.lua
+Main.lua

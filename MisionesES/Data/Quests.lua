@@ -1,0 +1,3 @@
+-- Generado por tools/build_db.py a partir de data/quests.json. No editar a mano.
+local _, MES = ...
+local Q = MES.DB.quests
