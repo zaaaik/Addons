@@ -8,7 +8,7 @@ local function rewardsText()
 	local money = GetRewardMoney and GetRewardMoney() or 0
 	if money > 0 and GetCoinTextureString then parts[#parts + 1] = GetCoinTextureString(money) end
 	local xp = GetRewardXP and GetRewardXP() or 0
-	if xp > 0 then parts[#parts + 1] = ("%d PX"):format(xp) end
+	if xp > 0 then parts[#parts + 1] = MES.L.XP:format(xp) end
 	for _, kind in ipairs({ "reward", "choice" }) do
 		local n = (kind == "reward" and GetNumQuestRewards or GetNumQuestChoices)() or 0
 		for i = 1, n do
@@ -42,54 +42,52 @@ local function create()
 end
 
 -- Devuelve true si la ventana bilingüe se encargó de la fase; false para usar el modo lateral.
-function MES.ShowBilingual(q, phase)
+function MES.ShowBilingual(q, ctx)
+	local phase = ctx.phase
 	if not QuestFrame then return false end
 	if phase == "complete" and (GetNumQuestChoices() or 0) > 1 then return false end
 	win = win or create()
 
 	local P = MES.Personalize
-	local blocks = { { kind = "title", text = P(q.title) }, { kind = "original", text = GetTitleText() } }
+	local blocks = { { kind = "title", text = P(q.title) }, { kind = "original", text = ctx.title } }
 	local function pair(es, en)
 		if es and es ~= "" then blocks[#blocks + 1] = { kind = "text", text = P(es) } end
 		if en and en ~= "" then blocks[#blocks + 1] = { kind = "original", text = en } end
 	end
 
 	if phase == "detail" then
-		pair(q.text, GetQuestText())
-		blocks[#blocks + 1] = { kind = "header", text = "Objetivos" }
-		pair(q.objectives, GetObjectiveText())
-		win.left:SetText("Aceptar")
+		pair(q.text, ctx.text)
+		blocks[#blocks + 1] = { kind = "header", text = MES.L.OBJECTIVES }
+		pair(q.objectives, ctx.objectives)
+		win.left:SetText(MES.L.ACCEPT)
 		win.left:SetScript("OnClick", function() AcceptQuest() end)
-		win.right:SetText("Rechazar")
+		win.right:SetText(MES.L.DECLINE)
 		win.right:SetScript("OnClick", function() DeclineQuest() end)
 		win.left:Enable()
 	elseif phase == "progress" then
-		pair(q.progress, GetProgressText())
-		win.left:SetText("Continuar")
+		pair(q.progress, ctx.progress)
+		win.left:SetText(MES.L.CONTINUE)
 		win.left:SetScript("OnClick", function() CompleteQuest() end)
 		if IsQuestCompletable() then win.left:Enable() else win.left:Disable() end
-		win.right:SetText("Cancelar")
+		win.right:SetText(MES.L.CANCEL)
 		win.right:SetScript("OnClick", function() CloseQuest() end)
 	else
-		pair(q.completion, GetRewardText())
-		win.left:SetText("Completar misión")
+		pair(q.completion, ctx.completion)
+		win.left:SetText(MES.L.COMPLETE)
 		win.left:SetScript("OnClick", function()
 			GetQuestReward((GetNumQuestChoices() or 0) == 1 and 1 or 0)
 		end)
 		win.left:Enable()
-		win.right:SetText("Cancelar")
+		win.right:SetText(MES.L.CANCEL)
 		win.right:SetScript("OnClick", function() CloseQuest() end)
 	end
 
 	local rewards = rewardsText()
 	if rewards ~= "" then
-		blocks[#blocks + 1] = { kind = "header", text = "Recompensas" }
+		blocks[#blocks + 1] = { kind = "header", text = MES.L.REWARDS }
 		blocks[#blocks + 1] = { kind = "text", text = rewards }
 	end
-	if q.src == "ia" then
-		blocks[#blocks + 1] = { kind = "sep" }
-		blocks[#blocks + 1] = { kind = "original", text = "Traducción automática (IA)." }
-	end
+	MES.NoteBlocks(blocks, q.ia, ctx.outdated)
 
 	win:ClearAllPoints()
 	win:SetAllPoints(QuestFrame)

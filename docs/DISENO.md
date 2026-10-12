@@ -99,8 +99,8 @@ Q[62] = {t="La Mina Abisal", d="…", o="…", p="…", c="…", h="9f2c11ab", i
 - Usa claves cortas para reducir el tamaño. Unas 4.300 misiones suponen ~6–8 MB, aceptable.
 - `ia=1` indica que algún campo es de IA.
 
-**`data/gossip.json` / `Data/Gossip.lua`:** `G[hashEN] = "texto ES"`.
-- Viene de `npc_text` y `npc_text_locale` de AzerothCore y de las capturas.
+**`data/gossip.json` / `Data/Gossip.lua`:** `G[hashEN] = "texto ES"`, o `{x="texto", ia=1}` si lo tradujo la IA.
+- Viene de `npc_text` (EN), de `broadcast_text_locale` y `npc_text_locale` (ES) de AzerothCore y de las capturas.
 - **La clave es el hash del texto EN normalizado**, sin npcID, porque AzerothCore no liga cada texto a un NPC concreto.
 - Los textos con `$G` generan dos claves, una masculina y otra femenina.
 
@@ -165,25 +165,16 @@ Las vistas no consultan la API de WoW para decidir; todo pasa por Detector y Loo
   - **Disparador:** tag `v*`.
   - **Pasos:** empaqueta con BigWigsMods/packager y publica en CurseForge (secreto `CF_API_KEY`, `## X-Curse-Project-ID` en el `.toc`).
 
-## 9. Estado actual frente al diseño
-**Ya hecho (commit `ffc207a`):**
-- Las vistas.
-- `Core.lua` y `Main.lua`.
-- Un recolector básico.
-
-**A rehacer:**
-- Separar Detector y Lookup.
-- Normalización y hash nuevos.
-- Claves cortas en `Data/`.
-- Gossip por hash sin npcID.
-- Collector solo para EN que falta o cambió.
-
-**Nuevo:**
-- `tools/` completo y `data/`.
-- Workflows, `.pkgmeta` y `LICENSE`.
-- README.
-
-**Eliminar:** `tools/probar_api_blizzard.py`.
+## 9. Estado actual (v0.2.0)
+- **Implementado:** todo lo descrito arriba.
+  - Addon: `Logic/` (Detector, Lookup, Collector), vistas y `Locale.lua`.
+  - Herramientas: `tools/`, `data/`, workflows, `.pkgmeta`, `LICENSE` y README.
+- **Resultado del primer import:**
+  - 4.125 misiones con título oficial en español.
+  - Unos 9.400 diálogos con su español oficial, sacado de `broadcast_text_locale` (72.947 textos ES), enlazados a 12.109 textos de NPC.
+- **Pendiente:**
+  - Probar en el cliente de Forever: IDs, `## Interface` y que existan los frames (`QuestFrame`, `QuestLogFrame`, `GossipFrame`).
+  - Crear el proyecto en CurseForge.
 
 ## 10. Verificación
 - `luac5.1 -p` y un smoke test con un stub de la API de WoW (Detector → Lookup → Vista, colector).

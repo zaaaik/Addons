@@ -1,26 +1,5 @@
--- Eventos, comandos y vista previa.
+-- Arranque, comandos /mes y vista previa.
 local _, MES = ...
-
-local phaseByEvent = { QUEST_DETAIL = "detail", QUEST_PROGRESS = "progress", QUEST_COMPLETE = "complete" }
-
-local function showQuest(phase)
-	MES.CaptureQuestFrame(phase)
-	MES.HideBilingual()
-	local side = MES.SidePanel()
-	if not MES.cfg.showQuest or MES.ClientLang() == "es" then side:Hide() return end
-	local q = MES.GetQuest(GetQuestID and GetQuestID())
-	if not q then side:Hide() return end
-	if MES.cfg.mode == "bilingue" and MES.ShowBilingual(q, phase) then
-		side:Hide()
-		return
-	end
-	if MES.ShowBeside(side, QuestFrame, MES.QuestBlocks(q, phase)) then MES.sideOwner = "quest" end
-end
-
-local function hideQuest()
-	MES.HideBilingual()
-	if MES.sideOwner == "quest" then MES.SidePanel():Hide() end
-end
 
 -- Vista previa con la misión ficticia: simula la ventana original y el modo elegido.
 local preview
@@ -35,7 +14,7 @@ function MES.ShowTest()
 		preview:SetBlocks({
 			{ kind = "title", text = P(es.title) }, { kind = "original", text = en.title },
 			{ kind = "text", text = P(es.text) }, { kind = "original", text = P(en.text) },
-			{ kind = "header", text = "Objetivos" },
+			{ kind = "header", text = MES.L.OBJECTIVES },
 			{ kind = "text", text = P(es.objectives) }, { kind = "original", text = en.objectives },
 		})
 		MES.SidePanel():Hide()
@@ -44,7 +23,7 @@ function MES.ShowTest()
 			{ kind = "title", text = en.title }, { kind = "text", text = P(en.text) },
 			{ kind = "header", text = "Quest Objectives" }, { kind = "text", text = en.objectives },
 		})
-		MES.ShowBeside(MES.SidePanel(), preview, MES.QuestBlocks(es, "detail"))
+		MES.ShowBeside(MES.SidePanel(), preview, MES.QuestBlocks(es, { phase = "detail" }))
 		MES.sideOwner = "test"
 	end
 end
@@ -77,8 +56,7 @@ local function slash(msg)
 		MES.Print("Comandos:")
 		MES.Print("  /mes config - opciones    /mes asistente - repetir asistente")
 		MES.Print("  /mes test - vista previa  /mes modo - cambiar modo")
-		MES.Print("  /mes recolector - activar/desactivar captura (mantenedor)")
-		MES.Print("  /mes escanear [desde] [hasta] | parar    /mes estado")
+		MES.Print("  Mantenedor: /mes recolector | /mes escanear [desde] [hasta] | parar | /mes estado")
 	end
 end
 
@@ -94,34 +72,11 @@ f:SetScript("OnEvent", function(self, event, ...)
 	elseif event == "PLAYER_LOGIN" then
 		MES.InitOptions()
 		MES.InitQuestLog()
+		MES.InitDetector()
 		SLASH_MISIONESES1 = "/mes"
 		SLASH_MISIONESES2 = "/misioneses"
 		SlashCmdList.MISIONESES = slash
-		for _, e in ipairs({ "QUEST_DETAIL", "QUEST_PROGRESS", "QUEST_COMPLETE", "QUEST_FINISHED",
-			"GOSSIP_SHOW", "GOSSIP_CLOSED", "QUEST_LOG_UPDATE", "QUEST_DATA_LOAD_RESULT" }) do
-			pcall(self.RegisterEvent, self, e)
-		end
+		if not MES.IsEnglishClient() then MES.Print(MES.L.NOT_ENGLISH) end
 		if not MES.cfg.setupDone then MES.ShowSetup() end
-		if MES.ClientLang() == "es" and not MES.cfg.collector then
-			MES.Print("Cliente en español: no hace falta traducir. Para capturar textos usa /mes recolector.")
-		end
-	elseif phaseByEvent[event] then
-		showQuest(phaseByEvent[event])
-	elseif event == "QUEST_FINISHED" then
-		hideQuest()
-	elseif event == "GOSSIP_SHOW" then
-		MES.CaptureGossip()
-		MES.ShowGossip()
-	elseif event == "GOSSIP_CLOSED" then
-		MES.HideGossip()
-	elseif event == "QUEST_LOG_UPDATE" then
-		MES.CaptureQuestLog()
-	elseif event == "QUEST_DATA_LOAD_RESULT" then
-		MES.OnQuestDataLoad(...)
 	end
 end)
-
--- Capturar también al cambiar la selección del registro (cliente clásico).
-if hooksecurefunc and SelectQuestLogEntry then
-	hooksecurefunc("SelectQuestLogEntry", function() if MES.cfg then MES.CaptureQuestLog() end end)
-end

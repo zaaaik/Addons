@@ -1,0 +1,33 @@
+-- Textos de la interfaz del addon.
+local _, MES = ...
+
+MES.L = {
+	OBJECTIVES = "Objetivos",
+	REWARDS = "Recompensas",
+	QUESTS = "Misiones",
+	ACCEPT = "Aceptar",
+	DECLINE = "Rechazar",
+	CONTINUE = "Continuar",
+	CANCEL = "Cancelar",
+	COMPLETE = "Completar misión",
+	XP = "%d PX",
+	NOTE_AI = "Traducción automática (IA).",
+	NOTE_OUTDATED = "El texto en inglés de esta versión cambió: la traducción puede no coincidir.",
+	SETUP_TITLE = "MisionesES - Configuración inicial",
+	SETUP_INTRO = "Elige cómo quieres ver las traducciones. Podrás cambiarlo cuando quieras en Opciones > AddOns > MisionesES o con /mes config.",
+	SETUP_SAVED = "Configuración guardada. Usa /mes config para cambiarla.",
+	SETUP_DEFAULTS = "Se usarán las opciones por defecto. Usa /mes config para cambiarlas.",
+	PREVIEW = "Vista previa",
+	SAVE = "Guardar",
+	REPEAT_SETUP = "Repetir asistente inicial",
+	MODE = "Modo de visualización",
+	MODE_SIDE = "Panel lateral",
+	MODE_SIDE_DESC = "Ventana original + traducción al lado.",
+	MODE_BILINGUAL = "Ventana bilingüe",
+	MODE_BILINGUAL_DESC = "Una sola ventana con inglés y español.",
+	FONT_SIZE = "Tamaño de letra: %d",
+	OPT_QUEST = "Traducir ventanas de misión",
+	OPT_LOG = "Traducir registro de misiones (al pasar el ratón)",
+	OPT_GOSSIP = "Traducir diálogos de NPC",
+	NOT_ENGLISH = "El cliente no está en inglés: MisionesES traduce del inglés y no mostrará nada.",
+}

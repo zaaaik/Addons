@@ -1,10 +1,10 @@
--- MisionesES: núcleo compartido (configuración, utilidades y acceso a datos)
+-- MisionesES: núcleo compartido (configuración, normalización, hash y utilidades de texto)
 local ADDON, MES = ...
 _G.MisionesES = MES
 
 MES.name = ADDON
-MES.version = "0.1.0"
-MES.DB = { quests = {}, gossip = {} }
+MES.version = "0.2.0"
+MES.DB = { quests = {}, gossip = {}, meta = {} }
 
 MES.defaults = {
 	setupDone = false,
@@ -13,7 +13,7 @@ MES.defaults = {
 	showQuest = true,
 	showQuestLog = true,
 	showGossip = true,
-	collector = false,     -- solo para el mantenedor: captura textos en SavedVariables
+	collector = false,     -- solo para el mantenedor: captura textos EN que faltan
 }
 
 function MES.Print(msg, ...)
@@ -29,15 +29,17 @@ function MES.InitConfig()
 	MES.cfg = MisionesES_Config
 end
 
--- Idioma del cliente: "es" (esES/esMX), "en" u otro código.
-function MES.ClientLang()
+-- El addon traduce del inglés: con el cliente en otro idioma no muestra nada.
+function MES.IsEnglishClient()
 	local loc = GetLocale()
-	if loc == "esES" or loc == "esMX" then return "es" end
-	if loc == "enUS" or loc == "enGB" then return "en" end
-	return loc
+	return loc == "enUS" or loc == "enGB"
 end
 
--- Hash djb2 de 32 bits en hexadecimal. tools/luatable.py implementa el mismo algoritmo.
+------------------------------------------------------------------------------------------------
+-- Normalización y hash. Deben comportarse EXACTAMENTE igual que tools/normalize.py.
+------------------------------------------------------------------------------------------------
+
+-- djb2 de 32 bits en hexadecimal.
 function MES.Hash(s)
 	local h = 5381
 	for i = 1, #s do
@@ -50,7 +52,36 @@ local function escapePattern(s)
 	return (s:gsub("[%^%$%(%)%%%.%[%]%*%+%-%?]", "%%%0"))
 end
 
--- Sustituye el nombre del jugador por $N para que el texto sirva a cualquier personaje.
+local function finish(s)
+	s = s:gsub("[ \t\n\v\f\r]+", " ")
+	s = s:gsub("^ ", ""):gsub(" $", "")
+	return (s:lower())
+end
+MES.Finish = finish
+
+local function replaceWord(s, word, token)
+	if not word or word == "" then return s end
+	return (s:gsub("%f[%a]" .. escapePattern(word:lower()) .. "%f[%A]", token))
+end
+
+-- Formas normalizadas del texto que muestra el juego:
+--   1) solo el nombre del jugador sustituido por $n
+--   2) además la clase y la raza por $c / $r
+-- La base de datos se generó desde plantillas ($N, $C, $R), así que una de las dos coincide.
+function MES.Keys(text)
+	if not text or text == "" then return {} end
+	local name = UnitName("player")
+	if name and name ~= "" then
+		text = text:gsub(escapePattern(name), "$n")
+	end
+	local nameOnly = finish(text)
+	local full = replaceWord(nameOnly, UnitClass("player"), "$c")
+	full = replaceWord(full, UnitRace("player"), "$r")
+	if full == nameOnly then return { MES.Hash(nameOnly) } end
+	return { MES.Hash(nameOnly), MES.Hash(full) }
+end
+
+-- Lo que guarda el recolector: el nombre del jugador pasa a ser $N para servir a cualquiera.
 function MES.Normalize(text)
 	if not text then return nil end
 	text = text:gsub("^%s+", ""):gsub("%s+$", "")
@@ -61,53 +92,45 @@ function MES.Normalize(text)
 	return text
 end
 
+------------------------------------------------------------------------------------------------
+-- Personalización del texto en español para el jugador actual.
+------------------------------------------------------------------------------------------------
+
 MES.classES = {
-	WARRIOR = "Guerrero", MAGE = "Mago", PRIEST = "Sacerdote", ROGUE = "Pícaro",
-	DRUID = "Druida", HUNTER = "Cazador", SHAMAN = "Chamán", PALADIN = "Paladín",
-	WARLOCK = "Brujo",
+	WARRIOR = { "Guerrero", "Guerrera" }, MAGE = { "Mago", "Maga" }, PRIEST = { "Sacerdote", "Sacerdotisa" },
+	ROGUE = { "Pícaro", "Pícara" }, DRUID = { "Druida", "Druida" }, HUNTER = { "Cazador", "Cazadora" },
+	SHAMAN = { "Chamán", "Chamán" }, PALADIN = { "Paladín", "Paladín" }, WARLOCK = { "Brujo", "Bruja" },
 }
 MES.raceES = {
-	Human = "Humano", Dwarf = "Enano", NightElf = "Elfo de la noche", Gnome = "Gnomo",
-	Orc = "Orco", Scourge = "No-muerto", Tauren = "Tauren", Troll = "Trol",
+	Human = { "Humano", "Humana" }, Dwarf = { "Enano", "Enana" }, NightElf = { "Elfo de la noche", "Elfa de la noche" },
+	Gnome = { "Gnomo", "Gnoma" }, Orc = { "Orco", "Orco" }, Scourge = { "No-muerto", "No-muerta" },
+	Tauren = { "Tauren", "Tauren" }, Troll = { "Trol", "Trol" },
 }
 
--- Prepara un texto de la base de datos para mostrarlo al jugador actual.
+local function lowerFirst(s)
+	return (s:gsub("^%u", string.lower))
+end
+
 function MES.Personalize(text)
 	if not text then return nil end
-	local name = UnitName("player") or ""
-	local _, classFile = UnitClass("player")
-	local className = MES.classES[classFile] or UnitClass("player") or ""
-	local raceName, raceFile = UnitRace("player")
-	raceName = MES.raceES[raceFile] or raceName or ""
 	local female = UnitSex("player") == 3
+	local g = female and 2 or 1
+	local name = UnitName("player") or ""
+	local className, classFile = UnitClass("player")
+	local raceName, raceFile = UnitRace("player")
+	className = MES.classES[classFile] and MES.classES[classFile][g] or className or ""
+	raceName = MES.raceES[raceFile] and MES.raceES[raceFile][g] or raceName or ""
 	text = text:gsub("%$[Gg]%s*([^:;]-)%s*:%s*([^;]-)%s*;", function(m, f) return female and f or m end)
-	text = text:gsub("%$[Nn]", function() return name end)
-	text = text:gsub("%$[Cc]", function() return className end)
-	text = text:gsub("%$[Rr]", function() return raceName end)
+	text = text:gsub("%$N", name):gsub("%$n", name)
+	text = text:gsub("%$C", className):gsub("%$c", lowerFirst(className))
+	text = text:gsub("%$R", raceName):gsub("%$r", lowerFirst(raceName))
 	text = text:gsub("%$[Bb]", "\n")
 	return text
 end
 
-function MES.GetQuest(questID)
-	if not questID or questID == 0 then return nil end
-	if questID == MES.TEST_QUEST_ID then return MES.testQuest end
-	return MES.DB.quests[questID]
-end
-
-function MES.GetGossip(npcID, text)
-	local byNpc = npcID and MES.DB.gossip[npcID]
-	text = MES.Normalize(text)
-	if not byNpc or not text or text == "" then return nil end
-	return byNpc[MES.Hash(text)]
-end
-
--- ID numérico del NPC u objeto con el que se interactúa.
-function MES.CurrentNpcID()
-	local guid = UnitGUID("npc")
-	if not guid then return nil end
-	local _, _, _, _, _, id = strsplit("-", guid)
-	return tonumber(id)
-end
+------------------------------------------------------------------------------------------------
+-- Utilidades del juego
+------------------------------------------------------------------------------------------------
 
 -- questID de la misión seleccionada en el registro (soporta API clásica y moderna).
 function MES.SelectedLogQuestID()
@@ -131,21 +154,10 @@ function MES.SelectedLogQuestID()
 	return nil
 end
 
--- Misión ficticia para /mes test y las vistas previas.
-MES.TEST_QUEST_ID = -1
-MES.testQuest = {
-	title = "Misión de prueba",
-	text = "Saludos, $N. Esta es una misión de ejemplo para comprobar cómo se ve la traducción junto al texto original.\n\nSi puedes leer esto, el addon funciona correctamente.",
-	objectives = "Habla con el NPC de prueba.",
-	progress = "¿Ya terminaste lo que te pedí?",
-	completion = "¡Bien hecho, $C! Aquí tienes tu recompensa.",
-	src = "ejemplo",
-}
-MES.testQuestEN = {
-	title = "Test Quest",
-	text = "Greetings, $N. This is a sample quest to check how the translation looks next to the original text.\n\nIf you can read this, the addon works correctly.",
-	objectives = "Speak with the test NPC.",
-}
+function MES.GossipText()
+	if C_GossipInfo and C_GossipInfo.GetText then return C_GossipInfo.GetText() end
+	if GetGossipText then return GetGossipText() end
+end
 
 -- Fuentes con tamaño configurable.
 function MES.Fonts()

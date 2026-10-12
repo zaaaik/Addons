@@ -69,13 +69,11 @@ end
 -- Construye todos los controles en parent a partir de la coordenada y. Devuelve la y final.
 function MES.BuildControls(parent, y)
 	local controls = {}
-	local h = label(parent, "Modo de visualización", "GameFontNormalLarge")
+	local h = label(parent, MES.L.MODE, "GameFontNormalLarge")
 	h:SetPoint("TOPLEFT", 16, y)
 	y = y - 26
-	controls[#controls + 1] = modeCard(parent, "lateral", "Panel lateral",
-		"Ventana original + traducción al lado.", 16, y)
-	controls[#controls + 1] = modeCard(parent, "bilingue", "Ventana bilingüe",
-		"Una sola ventana con inglés y español.", 228, y)
+	controls[#controls + 1] = modeCard(parent, "lateral", MES.L.MODE_SIDE, MES.L.MODE_SIDE_DESC, 16, y)
+	controls[#controls + 1] = modeCard(parent, "bilingue", MES.L.MODE_BILINGUAL, MES.L.MODE_BILINGUAL_DESC, 228, y)
 	y = y - 162
 
 	local fs = label(parent, "")
@@ -95,13 +93,13 @@ function MES.BuildControls(parent, y)
 	end
 	minus:SetScript("OnClick", function() setSize(-1) end)
 	plus:SetScript("OnClick", function() setSize(1) end)
-	fs.Refresh = function() fs:SetText(("Tamaño de letra: %d"):format(MES.cfg.fontSize)) end
+	fs.Refresh = function() fs:SetText(MES.L.FONT_SIZE:format(MES.cfg.fontSize)) end
 	controls[#controls + 1] = fs
 	y = y - 34
 
-	controls[#controls + 1] = check(parent, "Traducir ventanas de misión", "showQuest", y); y = y - 28
-	controls[#controls + 1] = check(parent, "Traducir registro de misiones (al pasar el ratón)", "showQuestLog", y); y = y - 28
-	controls[#controls + 1] = check(parent, "Traducir diálogos de NPC", "showGossip", y); y = y - 28
+	controls[#controls + 1] = check(parent, MES.L.OPT_QUEST, "showQuest", y); y = y - 28
+	controls[#controls + 1] = check(parent, MES.L.OPT_LOG, "showQuestLog", y); y = y - 28
+	controls[#controls + 1] = check(parent, MES.L.OPT_GOSSIP, "showGossip", y); y = y - 28
 
 	parent.RefreshControls = function()
 		for _, c in ipairs(controls) do c.Refresh() end
@@ -121,7 +119,7 @@ function MES.InitOptions()
 	local again = CreateFrame("Button", nil, panel, "UIPanelButtonTemplate")
 	again:SetSize(200, 24)
 	again:SetPoint("TOPLEFT", 16, y - 10)
-	again:SetText("Repetir asistente inicial")
+	again:SetText(MES.L.REPEAT_SETUP)
 	again:SetScript("OnClick", function()
 		if SettingsPanel and SettingsPanel:IsShown() then HideUIPanel(SettingsPanel) end
 		if InterfaceOptionsFrame and InterfaceOptionsFrame:IsShown() then InterfaceOptionsFrame:Hide() end

@@ -17,9 +17,18 @@ function MES.LogPanel()
 	return log
 end
 
--- Bloques para una misión según la fase: "detail", "progress", "complete" o "log".
-function MES.QuestBlocks(q, phase)
+-- Notas al pie: traducción por IA o inglés distinto al de la base de datos.
+function MES.NoteBlocks(blocks, isAI, outdated)
+	if isAI or outdated then blocks[#blocks + 1] = { kind = "sep" } end
+	if isAI then blocks[#blocks + 1] = { kind = "original", text = MES.L.NOTE_AI } end
+	if outdated then blocks[#blocks + 1] = { kind = "original", text = MES.L.NOTE_OUTDATED } end
+	return blocks
+end
+
+-- Bloques para una misión según ctx.phase: "detail", "progress", "complete" o "log".
+function MES.QuestBlocks(q, ctx)
 	local P = MES.Personalize
+	local phase = ctx and ctx.phase
 	local blocks = { { kind = "title", text = P(q.title) } }
 	if phase == "progress" then
 		blocks[#blocks + 1] = { kind = "text", text = P(q.progress) }
@@ -28,15 +37,11 @@ function MES.QuestBlocks(q, phase)
 	else
 		blocks[#blocks + 1] = { kind = "text", text = P(q.text) }
 		if q.objectives and q.objectives ~= "" then
-			blocks[#blocks + 1] = { kind = "header", text = "Objetivos" }
+			blocks[#blocks + 1] = { kind = "header", text = MES.L.OBJECTIVES }
 			blocks[#blocks + 1] = { kind = "text", text = P(q.objectives) }
 		end
 	end
-	if q.src == "ia" then
-		blocks[#blocks + 1] = { kind = "sep" }
-		blocks[#blocks + 1] = { kind = "original", text = "Traducción automática (IA)." }
-	end
-	return blocks
+	return MES.NoteBlocks(blocks, q.ia, ctx and ctx.outdated)
 end
 
 -- Muestra un pergamino a la derecha de anchorFrame. Devuelve false si no hay nada que mostrar.

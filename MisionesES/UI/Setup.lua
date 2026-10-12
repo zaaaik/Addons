@@ -17,36 +17,36 @@ local function create()
 
 	local title = wizard.TitleText or wizard:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 	if not wizard.TitleText then title:SetPoint("TOP", 0, -5) end
-	title:SetText("MisionesES - Configuración inicial")
+	title:SetText(MES.L.SETUP_TITLE)
 
 	local intro = wizard:CreateFontString(nil, "ARTWORK", "GameFontHighlight")
 	intro:SetPoint("TOPLEFT", 16, -34)
 	intro:SetWidth(428)
 	intro:SetJustifyH("LEFT")
-	intro:SetText("Elige cómo quieres ver las traducciones. Podrás cambiarlo cuando quieras en Opciones > AddOns > MisionesES o con /mes config.")
+	intro:SetText(MES.L.SETUP_INTRO)
 
 	local y = MES.BuildControls(wizard, -72)
 
 	local preview = CreateFrame("Button", nil, wizard, "UIPanelButtonTemplate")
 	preview:SetSize(130, 24)
 	preview:SetPoint("BOTTOMLEFT", 16, 14)
-	preview:SetText("Vista previa")
+	preview:SetText(MES.L.PREVIEW)
 	preview:SetScript("OnClick", function() MES.ShowTest() end)
 
 	local save = CreateFrame("Button", nil, wizard, "UIPanelButtonTemplate")
 	save:SetSize(130, 24)
 	save:SetPoint("BOTTOMRIGHT", -16, 14)
-	save:SetText("Guardar")
+	save:SetText(MES.L.SAVE)
 	save:SetScript("OnClick", function()
 		MES.cfg.setupDone = true
 		wizard:Hide()
 		MES.HideTest()
-		MES.Print("Configuración guardada. Usa /mes config para cambiarla.")
+		MES.Print(MES.L.SETUP_SAVED)
 	end)
 	wizard:SetScript("OnHide", function()
 		if not MES.cfg.setupDone then
 			MES.cfg.setupDone = true
-			MES.Print("Se usarán las opciones por defecto. Usa /mes config para cambiarlas.")
+			MES.Print(MES.L.SETUP_DEFAULTS)
 		end
 	end)
 	wizard:SetHeight(-y + 60)

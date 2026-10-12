@@ -23,7 +23,7 @@ local shownID, elapsed = nil, 0
 
 local function update()
 	local panel = MES.LogPanel()
-	if not MES.cfg.showQuestLog or MES.ClientLang() == "es" then
+	if not MES.cfg.showQuestLog or not MES.IsEnglishClient() then
 		panel:Hide()
 		shownID = nil
 		return
@@ -35,7 +35,9 @@ local function update()
 			local q = MES.GetQuest(id)
 			if q then
 				if shownID ~= id or not panel:IsShown() then
-					MES.ShowBeside(panel, anchor, MES.QuestBlocks(q, "log"))
+					local ctx = MES.QuestLogContext() or { phase = "log" }
+					ctx.outdated = MES.IsOutdated(q, ctx.title, ctx.text)
+					MES.ShowBeside(panel, anchor, MES.QuestBlocks(q, ctx))
 					shownID = id
 				end
 				return
