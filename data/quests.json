@@ -120156,12 +120156,14 @@
    "completion": "Creo que ahora entiendes lo importante que es la misión del Windshapers. Cada alma que manda la visión del cielo es de vital importancia si esperamos establecer un diálogo con los espíritus de los vientos una vez más.$B$BEntre las amenazas desde dentro como el Al'Aketh, y la incertidumbre de nuestra seguridad aquí en Skywall, es nuestra responsabilidad como Windshapers utilizar nuestros regalos para salvar nuestro hogar y asegurar que el Shen'dorei pueda sobrevivir estos tiempos difíciles.",
    "objectives": "Escucha lo que Illaya Amberwind tiene que decir.",
    "progress": "El mundo está cambiando y el camino a seguir será difícil. Tenemos una oportunidad para salvarnos.",
+   "text": "IdentificaIllaya sonríe cálidamente a usted.\n\nMe alegra que volvieras a hablar conmigo, hijo de los vientos. Lo supe el primer momento en que entraste en mi presencia, que eras fuerte en la vista del cielo. ¿Te parece sorprendente? Incluso aquellos que no han entrenado como Shaman pueden poseer el regalo.\n\nVamos, hablemos del mandato del Windshapers, la naturaleza de nuestras luchas en Zephras, y la difícil situación de nuestro pueblo.",
    "title": "Los Windshapers"
   },
   "src": {
    "completion": "ia",
    "objectives": "ia",
    "progress": "ia",
+   "text": "ia",
    "title": "revisado"
   }
  },
