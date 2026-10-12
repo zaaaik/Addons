@@ -88,14 +88,11 @@ function MES.CreateParchment(name, parent, width, height)
 	f:SetClampedToScreen(true)
 	f:EnableMouse(true)
 
-	-- Color de pergamino como base (por si falta la textura) y textura de misión encima.
+	-- Fondo color pergamino uniforme (las texturas de misión no cubren bien un marco de tamaño variable).
 	local base = f:CreateTexture(nil, "BACKGROUND", nil, -8)
 	base:SetPoint("TOPLEFT", 4, -4)
 	base:SetPoint("BOTTOMRIGHT", -4, 4)
-	base:SetColorTexture(0.87, 0.78, 0.60, 1)
-	local bg = f:CreateTexture(nil, "BACKGROUND", nil, -7)
-	bg:SetAllPoints(base)
-	bg:SetTexture("Interface\\QuestFrame\\QuestBG")
+	base:SetColorTexture(0.89, 0.81, 0.64, 1)
 	if f.SetBackdrop then
 		f:SetBackdrop({
 			edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border",

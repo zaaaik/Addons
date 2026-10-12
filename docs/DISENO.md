@@ -131,7 +131,7 @@ Las vistas no consultan la API de WoW para decidir; todo pasa por Detector y Loo
 1. **Asistente inicial:** dos tarjetas con vista previa (panel lateral o ventana bilingüe), tamaño de letra, qué traducir, y los botones [Vista previa] y [Guardar].
 2. **Panel lateral:** pergamino a la derecha de QuestFrame o GossipFrame.
 3. **Ventana bilingüe:** cubre QuestFrame y alterna párrafos ES y EN, con botones de acción. Si hay una recompensa a elegir, se usa el panel lateral.
-4. **Registro de misiones:** el pergamino aparece al pasar el ratón por el detalle.
+4. **Registro de misiones:** el pergamino aparece automáticamente al abrir el detalle de una misión.
 5. **Opciones** (Opciones → AddOns): lo mismo que el asistente, más "Repetir asistente".
 6. **Pie del texto:** "Traducción automática (IA)" si `ia=1`; "Puede no coincidir con esta versión" si está desactualizada.
 

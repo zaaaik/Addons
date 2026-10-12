@@ -27,7 +27,7 @@ MES.L = {
 	MODE_BILINGUAL_DESC = "Una sola ventana con inglés y español.",
 	FONT_SIZE = "Tamaño de letra: %d",
 	OPT_QUEST = "Traducir ventanas de misión",
-	OPT_LOG = "Traducir registro de misiones (al pasar el ratón)",
+	OPT_LOG = "Traducir registro de misiones",
 	OPT_GOSSIP = "Traducir diálogos de NPC",
 	NOT_ENGLISH = "El cliente no está en inglés: MisionesES traduce del inglés y no mostrará nada.",
 }

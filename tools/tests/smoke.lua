@@ -176,19 +176,17 @@ check(shownText():find(MES.Personalize(q.title), 1, true) ~= nil, "panel de diá
 fire("GOSSIP_CLOSED")
 check(not MisionesES_SidePanel:IsShown(), "GOSSIP_CLOSED oculta el panel")
 
--- Registro de misiones del mapa: pasar el ratón por el detalle muestra la traducción
+-- Registro de misiones del mapa: abrir el detalle muestra la traducción sin pasar el ratón
 local watcher
 for _, f in ipairs(frames) do if f._scripts.OnUpdate then watcher = f end end
 QuestMapFrame.DetailsFrame.questID = questID
 QuestMapFrame.DetailsFrame:Show()
-QuestMapFrame.DetailsFrame._mouse = true
 watcher._scripts.OnUpdate(watcher, 1)
-check(MisionesES_LogPanel:IsShown(), "registro del mapa: panel visible al pasar el ratón")
+check(MisionesES_LogPanel:IsShown(), "registro del mapa: panel visible al abrir la misión")
 check(lastBlocks and lastBlocks[1].text == MES.Personalize(q.title), "registro del mapa: muestra el título ES")
-QuestMapFrame.DetailsFrame._mouse = false
-watcher._scripts.OnUpdate(watcher, 1)
-check(not MisionesES_LogPanel:IsShown(), "registro del mapa: se oculta al quitar el ratón")
 QuestMapFrame.DetailsFrame:Hide()
+watcher._scripts.OnUpdate(watcher, 1)
+check(not MisionesES_LogPanel:IsShown(), "registro del mapa: se oculta al cerrar el detalle")
 
 -- Recolector
 MisionesES_Config.collector = true
