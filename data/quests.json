@@ -126879,12 +126879,14 @@
    "title": "ec7b0d2a"
   },
   "es": {
+   "completion": "¿Son mis botas nuevas?$B$B■Kixxle se ve muy emocionado, pero se desvanece inmediatamente al poner sus ojos sobre ellos.$B$BAh. Pensé que había cancelado la orden de zapatillas una vez que me di cuenta de lo tonto que sería retorcer alrededor de un pantano con mis dedos colgando. También pedí un nuevo par de botas adecuadas, pero aún no han llegado.$B$BEs un placer hacer negocios contigo. ¡Las guardaré para más tarde!",
    "objectives": "Adquirir los elementos solicitados por el cliente y entregarlos a la ubicación marcada en su mapa. Este escrito debe estar en su posesión para completar la transacción.",
    "progress": "¡Oye!",
    "text": "■Penned en tinta decolorada, la nota está solicitando 1 Spider Silk Slippers, junto con información sobre la ubicación de entrega y el pago. En la parte inferior aparece texto denotando este escrito es transferible.",
    "title": "Encargo de artesano: Spider Silk Slippers"
   },
   "src": {
+   "completion": "ia",
    "objectives": "ia",
    "progress": "ia",
    "text": "ia",
