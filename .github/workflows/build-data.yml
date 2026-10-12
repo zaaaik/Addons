@@ -49,7 +49,12 @@ jobs:
         run: python -m unittest discover -s tools/tests -v
 
       - name: Importar y traducir
-        run: python tools/build_db.py --engine argos --wowhead --wowhead-max 300 --wowhead-refresh-list
+        # Al subir cambios no se descargan páginas nuevas de Wowhead (solo se reutiliza la caché);
+        # la descarga, poco a poco, la hacen la ejecución semanal o la manual.
+        env:
+          WOWHEAD_MAX: ${{ github.event_name == 'push' && '0' || '300' }}
+          WOWHEAD_REFRESH: ${{ github.event_name == 'push' && '' || '--wowhead-refresh-list' }}
+        run: python tools/build_db.py --engine argos --wowhead --wowhead-max "$WOWHEAD_MAX" $WOWHEAD_REFRESH
 
       - name: Smoke test del addon con los datos nuevos
         run: python tools/tests/run_smoke.py
