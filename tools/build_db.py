@@ -275,7 +275,8 @@ def main(argv=None):
     forever_ids = set(read_json(ids_file, [])) | scanned
     if scanned:
         write_json(ids_file, sorted(forever_ids))
-    allowed = forever_ids or {i for i in ac_quests if i < DEFAULT_MAX_ID}
+    # Nunca se descartan misiones de Classic por faltar en un listado: los IDs de Forever solo añaden.
+    allowed = forever_ids | {i for i in ac_quests if i < DEFAULT_MAX_ID}
 
     q_path, g_path = os.path.join(args.data, "quests.json"), os.path.join(args.data, "gossip.json")
     revisions = read_json(os.path.join(args.data, "revisiones.json"), {})

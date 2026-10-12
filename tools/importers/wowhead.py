@@ -79,21 +79,34 @@ def _listview(page):
 
 
 def list_quests(cache_dir, refresh=False, log=print):
-    """Devuelve {questID: {"name", "level", "status"}} de todas las misiones de Forever en Wowhead."""
+    """Devuelve {questID: {"name", "level", "status"}} de todas las misiones de Forever en Wowhead.
+
+    Wowhead muestra como mucho 1.000 resultados: se divide por nivel y, si un solo nivel tiene más,
+    por nivel requerido.
+    """
     out = {}
-    pending = [(lo, min(lo + LEVEL_STEP - 1, MAX_LEVEL)) for lo in range(1, MAX_LEVEL + 1, LEVEL_STEP)]
-    pending.insert(0, (0, 0))
+    pending = [(0, 0, None, None)]
+    pending += [(lo, min(lo + LEVEL_STEP - 1, MAX_LEVEL), None, None) for lo in range(1, MAX_LEVEL + 1, LEVEL_STEP)]
     while pending:
-        lo, hi = pending.pop(0)
-        url = "%s/quests/min-level:%d/max-level:%d" % (BASE, lo, hi)
-        page = _get(url, os.path.join(cache_dir, "lists", "%d-%d.html" % (lo, hi)), refresh, log)
+        lo, hi, rlo, rhi = pending.pop(0)
+        path = "quests/min-level:%d/max-level:%d" % (lo, hi)
+        name = "%d-%d" % (lo, hi)
+        if rlo is not None:
+            path += "/min-req-level:%d/max-req-level:%d" % (rlo, rhi)
+            name += "_req%d-%d" % (rlo, rhi)
+        page = _get("%s/%s" % (BASE, path), os.path.join(cache_dir, "lists", name + ".html"), refresh, log)
         data, truncated = _listview(page)
-        if truncated and hi > lo:
-            mid = (lo + hi) // 2
-            pending[:0] = [(lo, mid), (mid + 1, hi)]
-            continue
         if truncated:
-            log("  aviso: nivel %d tiene más de 1.000 misiones; se usan las 1.000 primeras" % lo)
+            if hi > lo:
+                mid = (lo + hi) // 2
+                pending[:0] = [(lo, mid, rlo, rhi), (mid + 1, hi, rlo, rhi)]
+                continue
+            r0, r1 = (rlo, rhi) if rlo is not None else (0, MAX_LEVEL)
+            if r1 > r0:
+                mid = (r0 + r1) // 2
+                pending[:0] = [(lo, hi, r0, mid), (lo, hi, mid + 1, r1)]
+                continue
+            log("  aviso: %s tiene más de 1.000 misiones; se usan las 1.000 primeras" % name)
         for d in data:
             out[int(d["id"])] = {"name": d.get("name"), "level": d.get("level"),
                                  "status": (d.get("envChange") or {}).get("status")}
@@ -147,8 +160,12 @@ def load_quests(cache_dir, known_ids=(), refresh_list=False, max_downloads=300, 
     """
     listing = list_quests(cache_dir, refresh_list, log)
     known = set(known_ids)
-    wanted = sorted(q for q, info in listing.items()
-                    if info["status"] in ("new", "updated") or q not in known)
+    # Primero las misiones nuevas de Forever, luego las que AzerothCore no tiene y al final las cambiadas.
+    def priority(q):
+        status = listing[q]["status"]
+        return (0 if status == "new" else 1 if q not in known else 2, q)
+    wanted = sorted((q for q, info in listing.items()
+                     if info["status"] in ("new", "updated") or q not in known), key=priority)
     quests, downloads, pending = {}, 0, 0
     for qid in wanted:
         path = os.path.join(cache_dir, "quests", "%d.html" % qid)
