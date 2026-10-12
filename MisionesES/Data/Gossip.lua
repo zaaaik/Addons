@@ -17,6 +17,7 @@ G["007b2a8d"]="Cuidado, $r.$b$bEste lugar no está hecho para los enclenques."
 G["007cd296"]="¿Traes noticias de la batalla, $r?"
 G["007e476e"]="A Boduro el Buscador se le suele ver en el bazar de los mercaderes, dentro del Bajo Arrabal. Yo lo buscaría por ahí."
 G["0089814a"]="¿Crees que eres lo bastante inteligente? ¿Crees que tienes lo que se necesita? ¡Vamos a verlo!"
+G["008b5909"]={ia=1,x="La corrupción entra en el bosque de la naturaleza. El bosque debe ser protegido a toda costa."}
 G["008bc559"]="Ha sido una demostración impresionante. Pero, ¿estás $gpreparado:preparada; para el siguiente reto?"
 G["008e915b"]="¿Te puedes creer el descaro de esa Elisara Golpesol? ¡Se cree que puede atraer la atención de Lord Saltheril! Y, ¿has visto lo que lleva puesto? Es de la temporada pasada. Es tan triste..."
 G["00994116"]="He visto cómo a los fúrbolgs les sucedían cosas terribles en los últimos años... fueron víctimas en muchos frentes. Pero no está claro qué pasó con esta tribu. ¿Están corruptos por la misma peste que afectó a Frondavil? O tal vez tan solo están furiosos por lo que le ocurrió a su gente y buscan defenderse. En cualquier caso, la mayoría de ellos son hostiles con quien se adentra en la zona."
@@ -180,6 +181,7 @@ G["04d7c404"]="¡Te doy la bienvenida, $gamigo:amiga; de los Martillo Salvaje!$B
 G["04d8b78a"]="¿Quieres ver lo que vendo?"
 G["04dc6716"]="El herrero de aquí trabaja en el Barrio de la Guerra, cerca del lugar donde se pondrán en uso sus armas. Está en el anillo interior."
 G["04e89eb0"]="Echa un vistazo a mis mercancías mientras todavía puedas. Estaremos aquí toda la semana y, después, nos iremos a algún sitio remoto."
+G["04f2e1e7"]={ia=1,x="La creación de Teldrassil fue un gran logro, pero ahora el mundo debe cambiar para recuperar su equilibrio."}
 G["04fee10b"]="¿Quieres aprender a ser sastre? Ummm... Creo que hay un sastre en el Aserradero de la Vega del Este, allí podrás empezar."
 G["04ff91b6"]="¡Los Lanza Negra vuelven a tener un hogar! Y no lo habríamos conseguido sin tu ayuda, $n. Ahora, ¡a celebrarlo!"
 G["0504777c"]="$gBienvenido:Bienvenida; a Ventormenta, $c."
@@ -304,6 +306,7 @@ G["0837960f"]="Buen trabajo desplegando la Ciudad de Bolsillo, $n."
 G["08387125"]="Busca la puerta con forma de poción de La Botica Agronómica en el Mercado de Magos, en la zona noroeste de Dalaran. ¡Es imposible no verla!"
 G["083aa0d7"]="<El lacayo olvidado agita la cabeza.>$B$BNo podemos continuar así, colega. Si el príncipe Arthas no regresa pronto, moriremos todos."
 G["08403845"]="Puedes encontrar al ancestro Tejestrellas en la playa cerca de Lor'danel en Costa Oscura."
+G["08438f49"]={ia=1,x="He hecho mi tiempo en las trincheras, y he pasado muchos años entrenando a los cachorros. Es bueno estar en casa. No importa lo que sea de ella, este es mi hogar."}
 G["0854248d"]="¿Cómo puedo mantener la posada limpia con todo lo que está ocurriendo? ¿Vas a encargarte del problema de los pigmeos?"
 G["085b675e"]="Introducir monedas."
 G["0868e019"]="Saludos, $c. Espero que me traigas buenas noticias sobre la Worldwide Invitational. Si es así, significa que tienes un código secreto para entregarme. A cambio del código, te daré un regalo, la empuñadura de Tyrael.$B$BSimplemente susúrramelo al oído cuando estés $glisto:lista;."
@@ -399,11 +402,11 @@ G["0aeb873e"]="El Puesto Devastación es un gran lugar para un enano Martillo Sa
 G["0af7d82b"]="Mi hijo, Taelan, era solo un niño cuando se me declaró culpable de traición y fui desterrado de la Alianza para vivir en el exilio. Decidí quedarme aquí para poder vigilarle, para asegurarme, de algún modo, de que crecía como un hombre honorable.$B$BComo había esperado, tomó mi lugar como señor de Mardenholde; pero en un cruel juego del destino, se unió a las filas de la Cruzada Escarlata. Ahora es su Alto Señor, $r."
 G["0b0a5f5a"]="Hola. Soy Vixton Silbapellizco, vendedor oficial de la Arena para el circuito de lucha de Bonvapor. Si tienes al representante, tengo los artículos que te harán la boca agua."
 G["0b0bedb0"]="Ah, Petrocejas no se aleja mucho de Forjaz estos días, así que si quieres aprender la sastrería, lo mejor será que vayas allí a buscarlo."
+end load(G) end
+do local function load(G)
 G["0b13000f"]="Puedo enseñarte los mejores trucos para montar un tigre, ¡siempre que tengas suficiente oro para pagar la lección!"
 G["0b1c2c3b"]="No has traído otro pelotón contigo, ¿verdad? Estamos muy ocupados ahí fuera."
 G["0b1da261"]="¡Esta Ciudad de Bolsillo es toda una hazaña de ingeniería!"
-end load(G) end
-do local function load(G)
 G["0b1eadcb"]="¡Pronto nuestro espectáculo será la comidilla de Azeroth!"
 G["0b29ffb7"]="¿Johnson? Creo que anda por aquí..."
 G["0b457a84"]="Acércate, $c. No tengo mucho tiempo..."
@@ -558,6 +561,7 @@ G["0f2aa792"]="¿Cuál e'tás bu'cando?"
 G["0f31075e"]="Has demostrado ser $gun cazador:una cazadora; muy capaz, $n. Pero todavía hay una bestia que se aparece en tus sueños... ¡Eburnia!"
 G["0f3a7167"]="Está por aquí... en algún lugar... lo sé. En algún lugar de esta biblioteca está el conocimiento que estoy buscando..."
 G["0f42581c"]="Si has estado en la marisma de Zangar, puede que te hayas encontrado con un tipo llamado Daniels. Ya sabes – lleva un casco extraño, solo responde al nombre de \"el Especialista.\"$B$BPor supuesto, le enseñé todo lo que sabe.$B$BNo te dejes engañar por la ropa elegante. En el fondo sigo siendo un pícaro. Daniels y yo pasamos mucho tiempo juntos en las trincheras, pero eso fue antes de que yo me retirara. Por lo que sé, sigue ahí fuera, desatando el infierno."
+G["0f4c685a"]={ia=1,x="El mariscal Windsor te ha estado esperando, $N. Lamentablemente, actualmente está indispuesto. Debería regresar pronto."}
 G["0f5e255d"]="$C, en Azeroth, los centinelas Ala de Plata obstaculizan nuestro avance por el bosque. ¡Te necesitamos en el frente de batalla para hacerlos retroceder! Conseguirás un gran honor y reputación entre los escoltas Grito de Guerra por ayudarnos - ¡únete a nosotros ahora!"
 G["0f6306e9"]="Banco en torre central, Barrio del Comercio. No falléis."
 G["0f683851"]="¡Oh, hola! Mi nombre es Sarah. ¿Qué puedo hacer por ti?"
@@ -578,6 +582,7 @@ G["0fbfb9f6"]="Esta brecha en el tejido del espacio y el tiempo no presagia nada
 G["0fc2dd65"]="Solo la Horda puede salvarnos ahora."
 G["0fd7ebb0"]="¡Eso es, $c! ¡La revolución ha llegado!"
 G["0fe575b7"]="¡Hay que averiguar lo que ese siniestro grupo está haciendo en el Poblado Grangol'var!"
+G["0fe63d7b"]={ia=1,x="¿Quieres ser un Inscriber? Bueno, no puedes encontrar al entrenador aquí, mejor vete a la ciudad más cercana."}
 G["0ff466b7"]="¡Fengus hacerte fiero! ¡Loco! ¡AAARR!"
 G["0ffc17bd"]="Sin duda eres $gotro inepto enviado:otra inepta enviada; por la Dama Oscura para que se instruya con su Campeón.$B$B<Nathanos suspira.>$B$BOs he devuelto a todos hechos pedazos, no creo que esta vez vaya a ser diferente.$B$BPero yo no debo plantearme el porqué, tan solo hacer lo que disponga la Dama Oscura."
 G["100a642d"]="¿Buscas un tabardo?"
@@ -750,6 +755,7 @@ G["14509bc8"]="¡Lok'tar, $c! Necesitamos tus servicios en el Valle de Alterac. 
 G["1450f0be"]="Si quieres saber lo que pienso, los elfos de la noche perdieron esta zona hace miles de años. Que nosotros les expulsemos ahora no es más que una mera formalidad."
 G["14577e0e"]="Los recuerdos de este templo me envuelven la mente como una bruma espesa, pero no consigo formar una historia coherente con ellos. Este lugar significó algo para mí antaño. Hasta que pueda recuperar ese recuerdo, me sentiré como si faltara parte de mí.$B$BQuizás los draenei puedan ayudarme a recuperar lo que he perdido."
 G["146f9e40"]="Puedo enseñarte a cocinar."
+G["1477e0a2"]={ia=1,x="Iam Here, Commander"}
 G["147bb84a"]="Es un honor que $gun:una; $r como tú nos ayude a los ogros. Mantienes viva nuestra esperanza de un futuro mejor.$B$BSi tan solo pudiéramos librarnos de estos dolores de cabeza... ¿Estás seguro de que no quieres uno de nuestros hijos?"
 G["147f2c57"]="¡Observa esta devastación, $c! Sangre y cenizas, hasta donde alcanza la vista.$b$bPero no basta para derrotar a la naturaleza. Con un poco de esfuerzo, aún podemos hacer brotar vida de esta tierra arrasada."
 G["14831da3"]="Zamja es la mejor cocinera de O'grimmar, colega.$b$bLa encontrarás juh'to al sur del edificio central del valle. Además, Batansi vende la comida que hace Zamja, si tienes hambre."
@@ -798,14 +804,14 @@ G["16157f8c"]="El ancestro Bramira vela por El Portal Oscuro desde una cresta en
 G["16167b01"]="Tenemos órdenes de arriba de acabar con Rajaxx. Causen daño extremo si quieren mejorar su técnica."
 G["1619eac9"]="Malygos el Tejehechizos, el Señor de la magia, maestro del Vuelo Azul. Es el Aspecto dragón Azul, una de las criaturas más antiguas de Azeroth.$B$BDicen que se está recuperando de una locura que ha durado milenios, pero sus acciones recientes me hacen pensar que aún no está cuerdo.$B$BLa solución que propone para nuestro problema es buscar y matar a todos los mortales de Azeroth que usen la magia.$B$BAl ser el guardián de la vida, el Vuelo Rojo se ha visto obligado a entrar en acción.$B$BAhora un dragón lucha contra otro y el destino de nuestro frágil mundo depende del resultado."
 G["161abb9f"]="Tiene que haber un lugar un Azeroth en el que haya moco no contaminado por la Plaga o libre de cualquier tipo de contaminación. ¡¿Pero dónde?!"
+end load(G) end
+do local function load(G)
 G["161f24c9"]="El cadáver del orco se ha apartado a un lado para no ensuciar el camino."
 G["162eac41"]="¡Oye, colega! ¿Has venido a echa'le una mano a Zen'Kiki?"
 G["1639d4dd"]="Deja que reposen tus pies cansados. Tenemos todo el tiempo del mundo..."
 G["1640a3f8"]="Ummm... tú me rascas la espalda y yo la tuya. Si haces lo que voy a pedirte y lo haces bien, tal vez podamos hablar sobre tu instrucción."
 G["164bdadf"]="Si te metes con Silas, te metes conmigo. Que tengas un buen día."
 G["1659b246"]="Pareces $gagotado:agotada;. ¿Algo va mal?"
-end load(G) end
-do local function load(G)
 G["165c3cec"]="No exactamente. De hecho, muchas de las criaturas de este cráter ya existían mucho antes de la llegada de mi maestro... pero otras no.$b$bSea como sea, nosotros las observamos todas, sin prejuicios."
 G["165e53e5"]="Este lugar no es seguro, $n. Busca cobijo antes de que sea demasiado tarde."
 G["1660c079"]="¡$n, me alegro de verte!$B$B¿O es la primera vez que nos encontramos?$B$BAhora mismo estoy en tantos lugares y momentos que a veces es difícil llevar la cuenta."
@@ -890,6 +896,8 @@ G["182093e8"]="¡Mira lo que has hecho, caballero de la Muerte! ¡Has otorgado g
 G["18266239"]="Aquí yace el cuerpo de uno de los guardias de caravana de Quijacero."
 G["182de842"]="El Cementerio Avalancha se encuentra en la cumbre de una colina en la Tierra de Disputa, al este del Fuerte Hacha Invernal.$B$BAhora mismo no pertenece a nadie."
 G["183aeca2"]="Domina los cielos, pero también la oscuridad. Es del linaje del Guardián de la Tierra. ¡Es invencible!"
+G["18467835"]={ia=1,x="¿Te lo estás pasando bien aquí con nosotros en Ogri'la?$B$BTenemos muchas cosas que nuestros ogros están haciendo, día y noche. ¡Ahorramos lo mejor para vender a nuestros huéspedes más geniales como tú!$B$BAsí que, como estás ahí fuera haciendo tu cosa, y haciendo de las montañas un lugar más seguro, para de vez en cuando para ver lo que tenemos.$B$BBuena suerte, $ghombre:chica;."}
+G["cac2b174"]={ia=1,x="¿Te lo estás pasando bien aquí con nosotros en Ogri'la?$B$BTenemos muchas cosas que nuestros ogros están haciendo, día y noche. ¡Ahorramos lo mejor para vender a nuestros huéspedes más geniales como tú!$B$BAsí que, como estás ahí fuera haciendo tu cosa, y haciendo de las montañas un lugar más seguro, para de vez en cuando para ver lo que tenemos.$B$BBuena suerte, $ghombre:chica;."}
 G["18520469"]="He sido paciente hasta ahora, ¡pero si no consiguen que ese lanzador de cohetes funcione pronto, voy a lanzarle una descarga de las sombras a alguien!"
 G["18580d88"]="¿Qué quieres, cariño?"
 G["185dae7e"]="Hace muchos años, mis hombres y yo seguimos al mago Khadgar y al paladín Turalyon hasta este mundo. Nuestro objetivo era aniquilar a toda la horrible raza orca. Pero algo salió mal en el último momento.$B$BAl final, el mundo oscuro estalló en pedazos y mis amigos se perdieron en el vacío."
@@ -910,6 +918,7 @@ G["18b76bee"]="Supongo que Krenna duda de mis habilidades. Mientras nuestros gue
 G["18b8dcea"]="Todavía no eres lo bastante fuerte como para luchar en el Ojo de la Tormenta. Vuelve cuando hayas ganado más experiencia."
 G["18d40999"]="¿M... morí?$b$bSí, tienes razón. Morí. Fue un orco... Me cortó las manos y me abandonó a mi muerte.$b$b<Valdred se mira las manos.>$b$b¡Estas no son mis manos! ¡ESTAS NO SON MIS MANOS!"
 G["18d5e491"]="¡Adelante, Renegados! ¡Hurra por nosotros!"
+G["18de7ec9"]={ia=1,x="Hey ciudadano! Necesito tu ayuda."}
 G["18e3407f"]="Recuerda que siempre debes mostrar respeto por los elementos del mundo."
 G["18fa6625"]="La raza no determina el honor, $r. Mientras permanezcas en mi hacienda, recuerda y respeta este credo.$B$BHe conocido orcos más honorables que los más nobles de los caballeros, y humanos que han sido tan viles como los más despiadados de la Plaga.$B$B¡Pero no debería aburrirte con las historias de mi juventud! Hay mucho trabajo que hacer... y eso es lo que deseas."
 G["190375e5"]="Venga, $r. Dame una excusa."
@@ -969,6 +978,7 @@ G["1a9d9f2f"]="Puedes enseñar a un soldado a matar, pero no puedes hacer que qu
 G["1aa0daaa"]="Nuestros enemigos pueden enterrar ciudades enteras en la arena. Nuestras tradiciones no nos han preparado para semejante guerra."
 G["1aa96143"]="¿Un cazador? Bien, entonces querrás hablar con Thorfin Petrescudo, en el Distrito de los Enanos. \n Oh, ¡y asegúrate de decirle que si vuelvo a pisar algún regalo de su mascota tendrá que instruir a los cazadores desde detrás de las barras de las Mazmorras!"
 G["1ab178d3"]="Ese calamar gigante no tuvo ninguna oportunidad. El Verne ya está rearmado y listo para la batalla... solo tenemos que esperar.$B$BVolverá.$B$BYa lo verás."
+G["1ab54a8a"]={ia=1,x="Son buenas cuchillas que haces, $N. Corta una piedra y sigue lo suficientemente afilada para cortar la garganta. He visto mejor sin embargo, un orc llamado Kelgrum Bloodaxe los hace, ir y aprender todo lo que puede enseñarte."}
 G["1ab6a9a2"]="Busca a la tabernera Pala en el edificio que hay al sur del Banco de Cima del Trueno, en la pequeña pendiente."
 G["1abac4c1"]="¿De dónde vienen todos estos troggs? ¿Han vivido bajo tierra todo este tiempo?"
 G["1ac07dc2"]="Hay pocas cosas en esta vida en las que puedas confiar. El acero es una de ellas."
@@ -1057,6 +1067,7 @@ G["1d75b4fe"]="Es hora de que te dirijas a un instructor más avanzado. En el Ba
 G["1d7c037e"]="Te doy la bienvenida al Templo del Reposo del Dragón, $r. Disculpa la conmoción de fuera. Con los recientes actos de Malygos, nos hemos visto asediados. De todas formas, podrás descansar aquí bajo nuestra protección si te hace falta."
 G["1d7fff1d"]="El nombre de Rompeterra se conservó en mi familia durante cientos de años y yo, al igual que mi padre y su padre antes que él, también heredé el derecho de crear las armaduras que llevan ese nombre."
 G["1d8fcbc3"]="¿Vienes a por la vara? ¿O simplemente quieres comprar runas?$B$B¡Espera un momento! ¿Intentas cargarme con un montón de porquerías? ¡Maldita sea mi eterna obsesión por comprar, comprar y comprar!"
+G["1d9681ef"]={ia=1,x="¡Arxes! ¡Envíen ayuda! Estoy atrapado en las minas, no estoy seguro de dónde estoy exactamente pero tenía la presencia de la mente para dejar rastros en el gro8und detrás de mí"}
 G["1d968c2e"]="¡Eh, mirad todos, es $n!"
 G["1d98a1bc"]="¡Arr! Nada gustarme más que tipos luchando a muerte en la arena. Si estar aquí en el momento justo, quizás poder ser uno de ellos."
 G["1d9f65ca"]="¡Asere! E'h el Día de los Piratas, ¿tú sabe'?... Y ha'ta qu'el sol no salga mañana, la Bahía del Botín e'h MÍA."
@@ -1113,6 +1124,7 @@ G["1eddb812"]="Ya sé… \"¿pescar en una cloaca?\" Pero te sorprendería lo qu
 G["1eedabd6"]="Puedo enseñarte lo que quieres saber, pero debes tener paciencia. Lleva su tiempo trabajar el acero y sentir cómo va tomando forma bajo el martillo. Cuando te hagas $guno:una; con el acero lo entenderás."
 G["1ef46a40"]="Veo que han llegado.\n$bEstamos en la víspera del Cataclismo, cuando el derrumbe del Pozo de la Eternidad fracturó los continentes del mundo.\n$bAquí, recuperaremos el Alma de dragón antes de que se pierda en la noche de los tiempos.\n$bPero primero, deben eliminar a los resguardos de los lacayos Altonato de Azshara. Me adelantará para explorar.\n$b¡Buena suerte, héroes!"
 G["1ef96665"]="¿Has oído eso? ¿Qué es ese ruido?"
+G["1f027c2e"]={ia=1,x="A veces creo que hay una gran nube gris en el cielo, lloviendo mala suerte sobre nosotros. Primero, estamos expulsados de nuestra tierra, y ahora ni siquiera podemos salir de Westfall. Todo es un desastre. Hay que hacer algo."}
 G["1f1b4cc6"]="<Zen'tabra cierra los ojos y niega con la cabeza.>$B$BCuando Vol'jin ordenó a to'o el mundo que huyera... nosotros no podíamos mirar a la tribu a la cara tras habeh'les falla'o tan miserablemente. Así que huimos al sur, hacia las salvajes islas de la jungla.$B$BLas bestias salvajes se llevaron a unos cuantos de nosotros aquella noche. Encontramos refugio en una profunda cueva en el centro de la ih'la, pero mis sueños no eran tan pacíficos: ¡Tuve una visión!"
 G["1f1ff962"]="Sí, joven, no necesitas convencerme de esas cosas, el Jefe de Guerra y yo tenemos una larga historia. Tu dedicación, sin embargo, no será olvidada.$B$BComo te decía, Rend había encontrado un nuevo hogar para su gente y yo estaba entre los que seguían con desgana.$B$BDe un conflicto surgieron otros... incontables. Y en las batallas que enfrentaron al clan Roca Negra y a los enanos Hierro Negro por la Cumbre de Roca Negra mis hijos fueron asesinados. Fue entonces cuando comprendí que mi tiempo con el clan Roca Negra había llegado a su fin."
 G["1f2a8f18"]="Tanta pérdida sin sentido."
@@ -1176,6 +1188,7 @@ G["20c9ae9d"]="Saludos, $c.$B$BActualmente la Alianza controla la Fortaleza de C
 G["20ce0b31"]="Son tiempos difíciles, ¿verdad, $n? Mires a donde mires, siempre hay alguien que necesita ayuda, y mi mujer y yo no somos ninguna excepción."
 G["20d2e9b9"]="¡Ah, qué día tan bonito para hacer estallar algo!"
 G["20e880fd"]="Ah, una vez fuiste $gun veterano:una veterana;. Kilram puede hacer que te conviertas en eso de nuevo. Sé que eres capaz, solo tienes que pedírmelo y te enseñaré a forjar hachas."
+G["20fd199f"]={ia=1,x="¡Bienvenidos, campeones! Todos nuestros intentos de castigarla han fracasado. Podríamos usar una mano para derribarla con estas armas de arpón."}
 G["2101aaa2"]="$gBienvenido:Bienvenida; al Bastión Allerian, $c."
 G["2101ac0d"]="$GBienvenido:bienvenida; al Bastión Allerian, $n."
 G["210f07b4"]="¡El Jinete decapitado ha incendiado el pueblo! ¡Debemos proteger a los niños!"
@@ -1193,6 +1206,8 @@ G["214cc2d6"]="¡Esa isla de allá está llena de criaturas de obsidium! Iría y
 G["215aaa2d"]="Ah, $gotro:otra; $c que quiere ser $ggladiador:gladiadora;, ¿eh? ¡Bien!\nVendo los estatutos de equipos de arena que necesitarás para participar en los combates de clasificación del Círculo de Lucha de Bonvapor."
 G["2171064f"]="Hola, $c. Según mis datos, ya se ha reunido todo lo necesario y los pertrechos para la guerra están de camino a Silithus mientras hablamos. Debería estar todo allí en menos de $2113w días. Hecho esto, y una vez que se haya hecho sonar el gong utilizando el cetro del Mar de Dunas, la guerra podrá por fin comenzar."
 G["217c05b2"]="Los maestros de batalla se encuentran en el Barrio Real, los encontrarás alrededor de la Sala del Trono."
+end load(G) end
+do local function load(G)
 G["2182b424"]="Yo en tu lugar, compraría un vale de carreras para goblins. Animar al otro equipo constituye una pérdida de tiempo."
 G["219042aa"]="$950w, Soldado."
 G["219e8d7e"]="¿Qué estás mirando tú, inútil con cara de colmillarr?"
@@ -1206,8 +1221,6 @@ G["21b0af4b"]="Hace años, el brujo Nekros Aplastacráneos abusó de un poderoso
 G["21b4903c"]="Umphrum mmphur, murruphru..."
 G["21b8b3fe"]="¡Está bueno! Pero es un poco flojo. Yo le añadiría algo más de aliento de ajo..."
 G["21c1e7b2"]="$gBienvenido:Bienvenida; a El Confín Argenta, $c.$b$bEstás en tu casa, pero no te acomodes demasiado. Aún no estamos a salvo... y lo que nos queda.$b$bSi queremos salir de aquí de una pieza, tendremos que ayudar todos... tú también."
-end load(G) end
-do local function load(G)
 G["21c24468"]="<Eralan parece estar mascando muerteflor.>$b$bSi quieres hacer una poción de amor, estás en el sitio equivocado. Cegar, lisiar y matar es mi negocio, y espero que también el tuyo."
 G["21c703eb"]="Puede que estemos juntos en esto, pero eso solo hace que sea más necesaria la discreción. Te lo repito: ten cuidado con lo que dices y con lo que haces.$B$BTe garantizo que no somos los únicos aquí fuera."
 G["21c80f64"]="Se oye un susurro que proviene del interior de la piedra... $B$BSaludos, $gpequeñajo:pequeñaja;. ¿Tienes noticias para el templario?"
@@ -1294,6 +1307,7 @@ G["23d64cbf"]="Tan fácil de romper."
 G["23dbf8b3"]="Guarda silencio sobre lo que oigas y veas aquí, $r."
 G["23e03644"]="Hay en Terrallende presencias demoníacas mucho más poderosas que nada que hayamos visto en el viejo mundo.$B$BHabrá un gran poder para aquellos que no las rehúyan, sino que aprendan a aprovechar y llegar a dominar su fuerza."
 G["23e86060"]="Confía en tu arco. Estará ahí para ti cuando más lo necesites."
+G["23eafdac"]={ia=1,x="Falta de texto de EE.UU."}
 G["23efa436"]="Tarjeta de seguridad azul introducida correctamente. Preparando unidad con nivel de seguridad delta.\n01010000 01101100 01100001 01111001 00100000 01001101 01101111 01110010 01100101 00100000 01010111 01101111 01010111"
 G["23f05f3e"]="Los Gurubashi están muertos, y Hakkar con ellos. La mayoría de mis compañeros Zandalar han vuelto a su hogar.$b$bAhora somos nosotros, Chabal, los Lanza Negra de Bambala y yo, los que debemos vigilar Zul'Gurub."
 G["23f53ff7"]="Eunice Burch vende sobras. La encontrarás en el Barrio del Comercio."
@@ -1548,6 +1562,7 @@ G["2b148177"]="Tu Plaga va a fracasar aquí, tron."
 G["2b14b7e8"]="La primera vez que vi setas más altas que árboles, no tenía tanta seguridad en que pudiera llamar a este lugar hogar. Después de un tiempo, sencillamente dejas de darte cuenta."
 G["2b213334"]="Todavía estamos aislados del Mando de Vanguardia, pero gracias a tus \"negociaciones\", con un poco de trabajo duro debería ser posible reabrir los caminos."
 G["2b243288"]="¿Tienes hijos, $c?$B$BDeja que te digamos algo, creemos que éramos mucho más felices antes de venir a Ogri'la y que los cristales nos hicieran más conscientes. Antes los habríamos golpeado en la cabeza para callarlos. Ahora, todo lo que hacen es darnos la lata con el Guardia del cielo Sha'tari.$B$B¡La ignorancia es felicidad!"
+G["2b25c416"]={ia=1,x="¡Por favor, $r, sácame de aquí! Desbloquear la jaula seguramente atraerá la atención de mi hermano. ¡Mata a Darkweaver Syth!"}
 G["2b375365"]="Ve a Orgrimmar. Allí la encontrarás y a los de su especie en el Valle del Honor."
 G["2b471789"]="¡Una brava decisión! ¡Respeto sus ansias de gloria y honor! ¡Mueran bien, $n!"
 G["2b49695e"]="Tendremos tiempo para hablar cuando volvamos a la superficie sanos y salvos."
@@ -1593,6 +1608,8 @@ G["2c59d9cb"]="Normalmente puedes encontrar a el puesto de flores de la señorit
 G["2c5bd7cd"]="Corazón Frenético pueden ser despiadados, pero nosotros buena gente. Tú verlo si quedarte un tiempo, nosotros amigos con inteligentes y fuertes.$B$BNo gustarnos los tontos."
 G["2c62ed30"]="¿Por qué me preguntas a mí? No sé nada del Martillo Crepuscular."
 G["2c64e5ba"]="¿No ves que estoy intentando mantener una conversación con la dama? Oh, muy bien, de todos modos parece preocupada.$B$BSolo ofrezco las mejores bebidas, tanto de cosecha local como de procedencia exótica. ¿Quieres echar un vistazo?"
+end load(G) end
+do local function load(G)
 G["2c6bace2"]="Había algo extraño en ese viento; nunca paraba. Durante semanas, sopló sobre la tierra, gimiendo y aullando. No cesaba nunca. Y durante todo ese tiempo, la voz continuó, aunque yo no la entendía ni sabía de dónde venía.$B$BMi tiempo de soledad me enseñó a tranquilizarme y a mirar en mi interior. Eso fue lo que hice para no perder la cordura. Y así fue cómo empecé a entender a la voz. ¡Venía del propio viento y tenía mucho que contar!"
 G["2c6c1fa2"]="La flota estaba intacta en su mayor parte cuando se arrastró hasta el puerto después de nuestro enfrentamiento con la Horda. Echamos el ancla al abrigo de Bancalto para reagruparnos.$B$BEntonces vinieron los nagas.$B$BManos escamadas y brillantes que trepaban por las cadenas de las anclas... y arrastraban a los hombres a las profundidades mientras estos no dejaban de gritar...$B$BSon costas malditas, $n. Malditas."
 G["2c6f6430"]="¡$gBienvenido:Bienvenida;, $gcampeón:campeona;! ¿Has reunido tus tropas como preparación para los retos de la Prueba del Cruzado?"
@@ -1608,8 +1625,6 @@ G["2cbc8e36"]="El antiguo altar de Hakkar permanece en silencio junto a la entra
 G["2cbca496"]="Si necesitas volar a algún sitio, encontrarás un maestro de grifos en Ventormenta. Deberías poder ver los grifos aterrizando a tu derecha cuando atravieses el Valle de los Héroes."
 G["2cc9a3f0"]="Escucha estas sabias palabras y vuelve a tu casa.$B$BEste no es lugar para aventureros despreocupados. Te engullirá y escupirá tus huesos."
 G["2ccaeb2b"]="La justicar Mariel Corazón Veraz nos ha pedido que nos ocupemos del torneo. A los que se han ganado el derecho de alzarse como campeones y han demostrado su valía ante nuestros ojos se les pide que ayuden con estas tareas."
-end load(G) end
-do local function load(G)
 G["2ccea629"]="¿Estás disfrutando del festival, $c?$b$bMientras los vigilantes de la Llama se ocupan de las hogueras del presente, yo soy más bien un historiador y me interesan mucho los festivales anteriores. Por supuesto, estoy documentando las celebraciones de este año. De momento, todo está saliendo bien, ¿no crees?$b$b¿Sabes, $n? Hay un poder inherente a todas las hogueras del festival que se prenderán durante estas fiestas. Nosotros cuidamos las nuestras pero estoy seguro de que en las ciudades enemigas arden hogueras sagradas..."
 G["2cd12b65"]="Nunca daría la espalda a alguien que está listo para instruirse conmigo. Por desgracia ¡tú no lo estás! ¡Todavía te queda un largo camino $gchiquillo:chiquilla;!"
 G["2cdb4910"]="<El fúrbolg te olisquea y gruñe.>"
@@ -1666,6 +1681,7 @@ G["2de4359e"]="Cinturón interior del Barrio de la Guerra, donde trabaja James V
 G["2de8c380"]="¡Saludos, $gviajero:viajera;! ¿Quieres sumergirte en los misterios de la magia Arcana? ¿Um?"
 G["2dea5a75"]="¿Quieres ser un gran guerrero? La guerra no te hace grande. Aun así, encontrarás nuestros instructores de guerreros en el Bancal del Guerrero, por encima del resto de la Grada de los Mercaderes."
 G["2deb781a"]="Nunca olvidaré ese día, $r. Nunca. Aunque hacía tiempo que había abandonado las vías del chamanismo para tomar las de la magia oscura, sentí cómo se cortó el vínculo. Un dolor muy profundo... No podría explicártelo con palabras.$B$BCuando se cortó el vínculo con los elementos, todos los orcos de Draenor cambiaron. Si alguien todavía dudaba del poder de las sombras, esas dudas desaparecieron con los ríos de lava que recorrían la tierra destrozada."
+G["2df0a166"]={ia=1,x="¿Cómo podemos ayudarle?"}
 G["2df72571"]="Medianoche es la montura personal de Attumen el Montero. Nunca he visto una yegua más veloz, fuerte o malintencionada. ¡Y su jinete es aún más temperamental! Todo el mundo guarda sus distancias con ella, por miedo a una coz de Medianoche o un golpe de Attumen."
 G["2dfa5971"]="¡Tú! ¡$R! Ven aquí.<resopla>$B$BEl tiempo es breve y mi fin -resopla-está cerca. Quebrantadientes vencerá, ya lo verás. -resopla-$B$BMi captura todavía puede ayudar <resopla> a mi gente. ¡La tribu Crines de Acero es más poderosa que los Erizapúas!$B$BLa Horda quiere averiguar quién lidera las incursiones sobre su pueblo. Tú <resopla> ayudarás a Quebrantadientes a cambio de la información que solo yo conozco. ¡Quebrantadientes puede ayudarte! <resopla> Pero debes ayudar a Quebrantadientes."
 G["2dfce1c1"]="Otro alumno. Maravilloso. Esta es la razón por la que Lydon supervisa mientras que yo tengo que seguir siendo un instructor. Si gano otro premio a la enseñanza, ¡no podré superarlo!"
@@ -1763,6 +1779,7 @@ G["310b11d7"]="Estamos probando la Batalla del Monte Hyjal. Para participar debe
 G["31118c0d"]="¡Juguetes hechos a mano de todo Azeroth!"
 G["312d9764"]="Comprueba siempre dos veces las medidas antes de comenzar a cortar el cuero. No podemos permitirnos desperdiciar materiales."
 G["313085e8"]="Mira con tus ojos. ¿Qué ves? ¿Qué sientes?"
+G["31349b1c"]={ia=1,x="Serás probado muchas veces por la oscuridad que rodea nuestras tierras, $N. Pero para asegurarte de que estés siempre preparado, a menudo te preguntaremos tareas para que estés a la altura de tu propio poder.$B$BVe con la Luz, y sigue siendo virtuoso."}
 G["3141160c"]="Yo estoy aquí por si alguien se desmaya. Los nuevos reclutas se emocionan y a veces se esfuerzan demasiado.\n...Bueno, eso y que a veces explota uno de los nuevos prototipos de mecanotanque. ¡Vaya!"
 G["3143308c"]="Si el día tuviera unas cuantas horas más..."
 G["31435d5e"]="Los de El Alba Argenta serán unos idealistas impotentes pero su ilusorio líder sabe que no son capaces de aguantar. Estoy aquí en calidad de emisaria de la Cruzada Escarlata. Una embajadora, si preferís... No hay duda de que no podríamos infligir ni el menor de los daños a los ejércitos de Kel'Thuzad, unidos o no, pero debemos intentar contenerlos el mayor tiempo posible a la espera de que se produzca un milagro.$B$B¿En cuanto a mí? Moriré luchando...$B$B<Marjhan se encoge de hombros.>"
@@ -1840,6 +1857,7 @@ G["3327dcf1"]="Deambulé por el resto de mi vida natural en busca de conocimient
 G["33293bd6"]="¿Quién es el previsible ahora, bestia? Seguro que no pensabas que te invocaríamos bajo el control de Malfurion. Se acerca tu redención, Eranikus. Quedarás libre de tu locura y de la corrupción."
 G["3333b280"]="Los hilos de la vida se han cortado.$b$bLos soñadores deben ser vengados."
 G["33342084"]="¿Te interesa el cuero, eh? Creo que deberías hablar con Simon Peletero en el Casco Antiguo. Lleva una tienda llamada La Piel Protectora."
+G["3337d6b5"]={ia=1,x="Si puedo conseguir los ingredientes adecuados, podemos crear algunos explosivos que no sólo me permitirán dañar las operaciones de Venture's Co., sino también causar una distracción.$B$BSé que estás impresionado, pero se pone mejor... Te lo diré lo antes posible."}
 G["334197e6"]="Espero que esa gente de Shattrath deje de luchar pronto. Están empezando a ponerme los nervios de punta.$B$B¿En qué puedo ayudarte?"
 G["3346f8f6"]="Tandrine es la Maestra de la hermandad de Lunargenta. Se encuentra en el Camino de los Ancestros, cerca de la Puerta Magister."
 G["334e4bc1"]="He venido para ser testigo de la memoria de mi maestro y de la verdad del pasado."
@@ -1992,6 +2010,8 @@ G["36d791b9"]="Un barril de grog. A los piratas les encanta.$b$bParece que el co
 G["36df151a"]="Tú no eres de aquí y esto no es asunto tuyo. Márchate antes de que te metas en líos."
 G["36e1158a"]="Vamos, ¡no seas ridículo! ¡Yo soy el único Budd Magallenas!$B$BHe recorrido toda esta tierra, desde lo alto del Monte Hyjal hasta las profundidades del Templo Sumergido. ¡De hecho, yo fui el primero en llamarlo el Templo Sumergido!$B$BSí, fui yo. Pero no lo pienses demasiado."
 G["36e1add8"]="Te diré dónde debes ir siempre y cuando me digas qué te interesa."
+end load(G) end
+do local function load(G)
 G["36e41515"]="<La letrina está en silencio.>"
 G["36e89f10"]="Eh, $r. ¿Has conseguido algún beneficio últimamente?"
 G["36e92ab2"]="¿Ves ese girocóptero en el extremo de la playa, $n?"
@@ -2009,9 +2029,8 @@ G["372b0c7f"]="Has estado bien, $c.$b$bAhora mis hombres y yo nos prepararemos p
 G["373ad75b"]="Antes de empezar una caza, es conveniente preguntar a alguien por lo que estas buscando antes de empezar a buscarlo."
 G["37455acb"]="¡Oye! ¿No habrás venido a liberarnos?"
 G["3746b07c"]="Muy bien, $n. Debemos ser breves, hay mucho que hacer."
+G["37479442"]={ia=1,x="Esta vibrante planta de dragón de noche se encuentra en contraste con la mancha demoníaca que sube Felwood. Rare y fruta exuberante, conocida como Night Dragon's Breath, cuelgan fuertemente de la planta."}
 G["375b830f"]="¡No ves que estoy ocupado! ¡Nunca conseguiremos que esta base esté lista cuando regrese el Príncipe!"
-end load(G) end
-do local function load(G)
 G["375b8fdb"]="Los marineros varados de la Alianza saben que van a morir, pero aun así luchan contra nosotros con todas sus fuerzas.$B$BImpresionante y patético al mismo tiempo."
 G["37605a18"]="El suministrador de D.E.D.I. te ruge expectante."
 G["37615632"]="Hola, $c. ¿Ya has hablado con Fahrad?"
@@ -2243,6 +2262,7 @@ G["3e76f9b7"]="Fui derribado por un insensato, Mulverick. Me temo que si no cons
 G["3e7979f1"]="Sí, $gseñor:señora;... ¡Menuda bebida! ¡MENUDA bebida!"
 G["87fc9f86"]="Sí, $gseñor:señora;... ¡Menuda bebida! ¡MENUDA bebida!"
 G["3e7d6a29"]="¡Me encantaría leértelo!\nNo permanezcas ante mi tumba llorando,\nno estoy allí, no estoy descansando.\nEstoy en los miles de vientos que los árboles mueven,\nen Rasganorte sobre la brillante nieve.\nSoy la suave lluvia que cae gentilmente\nen los campos de Páramos de Poniente.\nEstoy en la calma matutina,\nde la selva de Tuercespina.\nEstoy en el redoble magistral,\nde las pezuñas en Nagrand al pisar.\nEn las cálidas y brillantes estrellas me muevo,\nmientras soñando sobre Darnassus me elevo.\nEstoy en los pájaros cantores\ny en las cosas que inspiran pasiones.\nNo permanezcas ante mi tumba llorando,\nno estoy allí, no estoy descansando."
+G["3e83bfbc"]={ia=1,x="Nos honras con tu presencia, $n."}
 G["3e8bc5f5"]="Tu voluntad es férrea y tus intenciones son claras.$B$BQuizás seas digno..."
 G["3e8f3284"]="El Alto de Krasus se encuentra en la parte más al este de Dalaran.$B$BEl maestro de vuelo de la ciudad se encuentra allí, al igual que la instructora de vuelo en clima frío."
 G["3e9018aa"]="No poseo nada que pudiera serte de utilidad.$b$bA lo mejor D'lom tiene algo que te interese en su colección."
@@ -2250,6 +2270,7 @@ G["3e904761"]="El príncipe mercante Gallywix tomó prisioneros a todos tus amig
 G["3e90de23"]="Vivo para servir al maestro."
 G["3e987e13"]="¿Tienes una historia para mí?"
 G["3ea20919"]="Soy Achelus, oficial en jefe de la expedición de Avanzada de Sangre."
+G["3ea61eac"]={ia=1,x="Las fuerzas oscuras se apoderan de nuestras fronteras, antiguas manchas de resurfacción y nuevos males emergen para superar el delicado equilibrio de la tierra. En tiempos de tal oscuridad, todos debemos estar vigilantes."}
 G["3ea6af01"]="No entiendo por qué quieres aprender otra cosa... pero supongo que puedo indicarte adónde ir. ¿Qué tipo de instrucción te interesa?"
 G["3eaf2b87"]="¿Te envío Balandar Estrellaclara a rescatarme?"
 G["3eb9c426"]="Con suficientes fichas puedes unirte al \"Club de la Cerveza del Mes\". ¡Formar parte del Club de la Cerveza del Mes es como celebrar la Fiesta de la Cerveza durante todo el año!$b$bCada mes recibirás un correo con una nueva cerveza para degustar. Si te gusta esa cerveza, puedes ir a la taberna Roca de Fuego de Forjaz y comprar más a los vendedores de allí."
@@ -2289,6 +2310,7 @@ G["3f87adec"]="Necesitamos tu ayuda, $c. Hemos luchado hasta la extenuación par
 G["3f89ea51"]="Pírate, colega."
 G["3f909c64"]="No tienes por qué luchar conmigo, $r. No te deseo ningún mal."
 G["3f93e6ec"]="Laurna Luzdelalba ofrece su curación a todos los que viven en Dolanaar. quizás pueda enseñarte las artes del sacerdote."
+G["3f964c53"]={ia=1,x="No puedo enseñarte a trabajar en pieles de dragón, $N. Debe ir a Tanaris y encontrar la casa de Narain Soothfancy. Una vez allí, consulte el libro \"Soothsaying for Dummies\"."}
 G["3f98cf78"]="Siempre eres $gbienvenido:bienvenida; aquí, $n. Gracias por el buen rato que me has hecho pasar. Y no te preocupes por Daryl, ¡tenía una en camino!"
 G["3f9a4ebc"]="Has alcanzado el límite de mi saber, pero aún te queda mucho por aprender. Cruzando el mar, en el Barrio de los Magos de la Ciudad de Ventormenta, habita un gran sastre. Su nombre es Georgio Bolero y creo que te entrenará. Ve a hablar con él."
 G["3fafd7c2"]="Los maestros de guerra de Shattrath a menudo se congregan en los huecos de las escaleras entre la parte alta y baja de la ciudad. Los maestros de guerra de la Alianza se reúnen en un lugar, y los de la Horda en otro, con los maestros de batalla de arena entre ellos y en el extremo contrario."
@@ -2384,11 +2406,14 @@ G["416bcd78"]="Incluso el más mínimo atisbo de los secretos que custodio podr�
 G["41711b8f"]="Con la bendición de la Luz y tu ayuda, $n, los Defias dejaron de ser una amenaza.$B$BPero ahora estamos muy lejos de los Páramos de Poniente y si no ganamos esta batalla, puede que no tengamos un hogar al que volver."
 G["417703f4"]="No puedo hacer negocios contigo, $c. Órdenes del Jefe de guerra."
 G["417b02e4"]="Wulan, en la Aldea Cazasombras, puede venderte el \"Libro de cocina para expertos\". Lo necesitarás si quieres mejorar."
+G["419e9257"]={ia=1,x="Nunca dije que estabas aquí para redimirte, $c. Estás aquí para redimirme a mí y a los inocentes asesinados mientras intentas escapar de Stratholme.$B$BMi espíritu y el espíritu de los perdidos están atados aquí, malditos para revivir sin fin nuestras propias muertes trágicas."}
 G["41a2407f"]="<Aunque tienes delante de ti el cuerpo físico de Ysera, su consciencia parece alternar entre este mundo y el otro.>"
 G["41a3b4d3"]="Es un auténtico honor poder ayudar a Brann a explorar el antiguo Ulduar."
 G["41a3e8c2"]="¡Bg'grrml brgl brm!"
 G["41a687dd"]="¡Construimos este lugar con nuestras manos desnudas! Sangre y lágrimas.$B$BCréeme cuando te digo esto: no tenemos intención de abandonar el control de Valgarde."
 G["41b4b373"]="¡El Barcódromo de Fizzle y Pozzik, y una porra! ¡Yo construí esta cosa! ¡Ellos no, ni Razzeric! ¡Debería llamarse el Barcódromo de Jinky!"
+end load(G) end
+do local function load(G)
 G["41b552ec"]="Las dos posadas más populares de Ventormenta están en el Distrito de los Mercaderes y en el de los Enanos: La Rosa Áurea y El Tonel Dorado."
 G["41bf6c43"]="La Mano Destrozada ha colocado espías en la ciudadela superior de Roca Negra. Si bien el proceso de recogida de información ha sido lento, hemos hecho descubrimientos que no podemos desoír."
 G["41c855d5"]="Lo siento $gamigo:amiga;, no hay ninguno de esos aquí en Rémol. Tendrás que dirigirte a Entrañas. Entrañas está bajo las Ruinas de Lordaeron, al sur de Rémol. En la parte trasera de las ruinas encontrarás un ascensor, baja con él a la ciudad y pide a uno de los guardianes de la ciudad que te siga ayudando con las señas."
@@ -2412,8 +2437,6 @@ G["423cde7a"]="¡Ahora eres $gel campeón:la campeona;, colega! ¿Crees que tien
 G["4240bd28"]="Te doy la bienvenida al Círculo Cenarion, $c. ¿Cómo puedo ayudarte?"
 G["4241f802"]="La verdad es que después de un terremoto de proporciones cataclísmicas, el ÚLTIMO sitio en el que te gustaría estar es un lugar cerrado, ¿no crees?"
 G["424445e2"]="Como iba diciendo, me aferré a ese fragmento de cetro durante unos quinientos años y solamente me trajo problemas. Llamaba la atención de todos, muy a mi pesar. Quiero estar tranquilo para poder investigar en lugar de tener cuenta del pasaporte hacia la gloria de alguien. Así pues... Se lo di a un pez."
-end load(G) end
-do local function load(G)
 G["4250bec4"]="No debemos descentrarnos. Si dejamos que la situación nos confunda, podríamos ponernos en peligro. Los soldados necesitan descansar de toda esta locura.$B$BDisfruta de la victoria, $n. De no ser por ti, hubiéramos perdido la Vanguardia."
 G["42601e5b"]="Una vez seguí la senda del Martillo Crepuscular. Obsesionado con resucitar a los dioses antiguos, me interné en las profundidades de esta guarida para intentar absorber el poder de Aku'mai, ¡bestia maldita!$b$bTras presenciar el sacrificio de incontables inocentes, recuperé el sentido.$b$b¡Estaba atrapado, pero ahora soy libre! ¡Y ahora estoy tan lejos de mi tierra natal Khaz Modan!$b$bValiente $gaventurero:aventurera;, te enseñaré el camino a una tierra muy especial a cambio de que mates a Aku'mai. Si lo deseas, puedo transportarte a la ciudad de Darnassus."
 G["426990f9"]="Es todo lo que puedo hacer para mantener activos los resguardos. ¡Busca a uno de los archimagos, Kalytha! Siento que estoy a punto de desmayarme..."
@@ -2451,6 +2474,7 @@ G["430d5df6"]="Los elementos te favorecen. ¿Qué les pedirás?"
 G["43171b21"]="Nuestras unidades han sido mejoradas a experimentadas, pero no tengo suficientes suministros para mejorarlas a veteranas."
 G["431a83ec"]="Mi consejo es muy sencillo, $r.$b$bNo nos incordies."
 G["431c98c2"]="Un draco esmeralda con todo su poder puede realizar Cauce de sueño, que transfiere la propia energía vital del draco a un objetivo amistoso y lo sana. Veneno parasitante se puede usar para restaurar la salud que se pierde al usar esta facultad."
+G["431d9e27"]={ia=1,x="$N, he venido a averiguar qué tan rampante son los efectos de Fel Moss en todo Darkshore. La corrupción de Teldrassil y nuestras tierras circundantes realmente se refiere a los druidos del Cenarian Circle, y todos los elfos Night.$B$BEs mi objetivo averiguar por qué ha pasado esto y poner fin a ello."}
 G["432264a9"]="Inserta monedas y luego procede a ocuparte del Príncipe mercante."
 G["43374f87"]="¡La ingeniería te dará la técnica y el conocimiento para desmontar a tus oponentes! ¿Me permites mostrarte cómo?"
 G["433b223a"]="¡Gracias, $gseñor:señorita; por encontrar mi collar! ¡Eres lo mejor!"
@@ -2460,6 +2484,7 @@ G["43414033"]="$n, tenemos suficientes suministros para lanzar asaltos terrestre
 G["43484178"]="El Mah'tillo Crepuscular ha eh'ta'o asaltando nueh'tros anillos por todas las Tierras Altas, y han incorpora'o a muchos a sus filas en el proceso. Eh'te es el último que tenemos y no tenemos intención de rendirnos, sin impoh'tar los horrores que invoquen de la tierra pa' atacarnos."
 G["434f64ae"]="Ve a la Gran Fundición. Está justo en el centro de Forjaz. Trabaja allí, junto con otros maestros de nuestra hermandad."
 G["435f1f4b"]="Mi plan era conectar estas aguas subterráneas directamente al Sueño Esmeralda. Con mis fieles discípulos, viaje por las profundidades de las Cuevas de los Lamentos, medité y entré en el sueño. A través de mi propio cuerpo, este mundo permaneció conectado a él.$B$BAhí es donde todo salió mal."
+G["436443dd"]={ia=1,x="Hola, $N. ¿Cómo puedo ayudarte?"}
 G["43647f74"]="¡Piérdete, $c! No quiero que los déspotas me vean haciendo negocios contigo..."
 G["4373ddfc"]="En la Taberna del Descanso del Caminante puedes encontrar a Sylann, uno de los mejores cocineros de la ciudad. Allí también puedes comprarle avituallamientos de cocina a su asistente."
 G["43772378"]="Espero que no busques cerveza. ¡No vamos a compartirla y basta!$B$BNo es culpa nuestra que a nadie se le ocurriera traer cerveza a Terrallende excepto a nosotros."
@@ -2542,6 +2567,7 @@ G["45936305"]="Esta tarta de cerezas está tan buena que podría hacer llorar a 
 G["459ff53c"]="El Carnicero hablaba de la \"sangre inocente\" y de su oscuro señor, \"Kirtonos\". De cómo debía aplacar a su señor.$B$BPor último, la bestia terminó sus experimentos. Nos habían quitado toda la vida. Nuestros espíritus estaban destruidos. El dulce abrazo de la muerte vino a nosotros y lo recibimos con los brazos abiertos. Pero en su infinita crueldad, el Carnicero nos revivió a las puertas de la muerte.$B$BSe nos mantuvo con vida y fuimos arrojados a sus feroces necrófagos. Reía mientras veía cómo esos demonios devoraban nuestra carne."
 G["45a0e190"]="¡Lo has conseguido, $gchico:chica;, ¡lo has conseguido!$B$BAhora vayamos a Azshara para montar mi nuevo chiringuito. ¡Han sido unas vacaciones muy largas y tengo facturas que pagar!"
 G["2b759cf4"]="¡Lo has conseguido, $gchico:chica;, ¡lo has conseguido!$B$BAhora vayamos a Azshara para montar mi nuevo chiringuito. ¡Han sido unas vacaciones muy largas y tengo facturas que pagar!"
+G["45a6fd7f"]={ia=1,x="¿Qué quieres saber de Jewelcrafting?"}
 G["45a79ba1"]="Debemos perseverar, $n. Eso es algo que aprendí de nuestro amado ancestro lobo.$B$BNunca, nunca, nunca te rindas."
 G["45c56c42"]="Es posible que sea ciego, pero tengo visión.$B$BTrato principalmente con cazadores y pícaros, $r."
 G["45cdcf78"]="Por supuesto, $n.$B$BLos aventureros que el Alba cataloga de amistosos deben entregar un total de 60 insignias para acceder a objetos excelentes. Para tener acceso a objetos de un poder mayor, tendrán que entregar un total de 220 insignias.$B$BDebo admitir que el precio es bastante alto para aquellos que cuentan con el favor del Alba."
@@ -2587,6 +2613,7 @@ G["46b29096"]="Yo estudio los elementos conocidos y desconocidos de nuestro mund
 G["46b3097f"]="Incapaz... sin poder... restaurar... debo restaurar... Zevrim controla... acabar con este tormento..."
 G["46b31ff8"]="¿Has visto al vigía Backus? Tan valiente... $B$BCreo que es el más duro de La Guardia Nocturna. Creo que ni siquiera se da cuenta que estoy por ahí..."
 G["46baf814"]="Ah, creo que estoy yendo demasiado deprisa. Ras Murmuhielo es el sobrestante de esta escuela. El responsable de la instrucción de todos sus maestros oscuros. Un teniente y el discípulo predilecto de Kel'Thuzad. En su día fue un zahorí encubierto de Stromgarde, un mago pícaro que nunca recibió instrucción formal de Dalaran.$B$BCuando Kel'Thuzad creó el Culto, Ras fue uno de los primeros en unirse a sus filas. Ras sabía que gracias a la magia oscura encontraría la inmortalidad."
+G["46bb670a"]={ia=1,x="Mortals, estoy en deuda contigo por liberarme de la terrible corrupción que pone este lugar. Aunque aún no me he recuperado completamente, puedo ayudarte a luchar contra Yogg-Saron.$B$BPuedo concederle a usted y a sus amigos el Resilience of Nature, aumentando su daño y aumentando la curación tomada de hechizos y efectos. Además, puedo conjurar Sanity Wells que le permitirá recuperar su Sanity cuando su agarre en falters de realidad."}
 G["46c98b90"]="<El portal dimensional emite un zumbido.>"
 G["46ca3765"]="¡Esto no es ningún juego, joven! Vete, habla con Gruños fuera. Quizás no sea más que una serpiente de mi guarida, pero sabe cómo manejar un yunque."
 G["46ce3622"]="¡Desde luego que no me alisté para esto! Pigmeos, zombis... ¡Más vale que Hobart me suba mucho el sueldo!"
@@ -2618,8 +2645,12 @@ G["474141af"]="¡Croac!"
 G["4747b8db"]="Eh'tamos preparándonos pa recuperar las Islas del Eco. Zalazane lleva tiempo trabajando en su vudú, convenciendo a la gente de que eh'tá mueh'to y celebrando antiguos rituales oscuros.$b$bSabe que vamos a atacar, así que tenemos que eh'tar seguros de ir preparados."
 G["474c001b"]="Se oye con claridad una voz que proviene del interior de la piedra... $B$B¿Dónde está tu medallón de estatus, $gpequeñajo:pequeñaja;? No debes hablar con un duque sin mostrar una prueba de tu título..."
 G["474d4eca"]="Vine aquí para estudiar la primitiva cultura del clan Señor del Trueno.$B$BEran débiles y sucumbieron al poder que los transformó en orcos viles a través de la sangre de Mannoroth.$B$BHe leído todos sus textos. Me interesa especialmente recuperar un artefacto; un tambor, una flecha y una tableta que se perdieron cuando aplastamos a los ogros Aguja del Filo y los expulsamos hasta su bastión."
+G["4754f7a4"]={ia=1,x="You observa dónde caminas por aquí, $glad:lass;. You puede que no sea parte de nuestro equipo, pero eso no significa que no te tome un bastón si te caes de la raya!"}
+G["9dcf7966"]={ia=1,x="You observa dónde caminas por aquí, $glad:lass;. You puede que no sea parte de nuestro equipo, pero eso no significa que no te tome un bastón si te caes de la raya!"}
 G["475519d1"]="¿Qué tipo de instructor estás buscando?"
 G["475e0b8d"]="Se ha instalado en Lunargenta una vaca que dice ser druida. Lo más probable es que en estos momentos esté paciendo en nuestros jardines."
+G["4764ad28"]={ia=1,x="¡Ah, aquí está el $ghéroe:heroína; de la hora! ¡Me alegro de verte de nuevo, $N! ¿Confío en que todavía estás destruyendo el Scourge dondequiera que los encuentres?"}
+G["725d5684"]={ia=1,x="¡Ah, aquí está el $ghéroe:heroína; de la hora! ¡Me alegro de verte de nuevo, $N! ¿Confío en que todavía estás destruyendo el Scourge dondequiera que los encuentres?"}
 G["476fa66a"]="¡Mi genio no se puede contener en una caja!$B$B¡¿Espera, esto no es Azshara? ¿Qué es este lugar? ¡Un volcán inactivo!$B$B¡La mitad de mi mente quiere que vaya a unirme al Príncipe mercante! ¡La otra mitad está considerando convertir en armas los huevos de la cloqueadora!"
 G["47839567"]="Ummmm... comida. No está muy lejos, pero debes ir hacia el Norte, a Orgrimmar. Cuando estés allí pregunta a uno de los Brutos."
 G["478d974e"]="$GBienvenido:Bienvenida; al Céfiro, el viaje más tranquilo que tendrás en Los Baldíos. Relájate y disfruta del vuelo, ¿está bien? No hay nada como el dulce aire seco mezclado con el aroma del aceite."
@@ -2783,6 +2814,8 @@ G["4b84c760"]="He debido llevar una vida estupenda, $n. Volver al mundo como Ren
 G["4b9659ee"]="$gBienvenido:Bienvenida;, $n. Somos los Aldor, sacerdotes de la luz y siervos de Sha'tar.$B$BPuedes quedarte con nosotros todo el tiempo que quieras."
 G["4b9c716e"]="Antes de que podamos unirnos a la batalla final en la Brecha Abisal, debemos detener lo que sea que suceda en el interior de ese ancestro de ahí enfrente. De lo contrario, fracasaremos.$B$BDebes prestar a Erunak toda tu ayuda, $n."
 G["4b9e9ca3"]="La fuerza de tu resolución brilla, $n. Sigues demostrando ser muy $gvalioso:valiosa; para los nuestros. Algún día, el mundo se dará cuenta de tus inmensos logros."
+end load(G) end
+do local function load(G)
 G["4ba4627e"]="El hecho de que la Aldea Brisa Pura siga en pie es una prueba irrefutable de la tenacidad de nuestra raza. Nunca más concederemos la derrota a la Plaga."
 G["4bca50bd"]="Siento decirte que no puedo ayudarte, $gnoble señor:gentil dama;, hasta que no sepas mejor cómo trabajar con el cuero. Ve a hablar con Faldron o Darianna. Pueden enseñarte la habilidad que necesitas."
 G["808c9748"]="Siento decirte que no puedo ayudarte, $gnoble señor:gentil dama;, hasta que no sepas mejor cómo trabajar con el cuero. Ve a hablar con Faldron o Darianna. Pueden enseñarte la habilidad que necesitas."
@@ -2802,6 +2835,7 @@ G["2c578daf"]="Umm... Creo que es demasiado grande para montar un mecazancudo, $
 G["4bf5dc19"]="Esta torre es una auténtica locura. Esto no es una biblioteca, es un enorme pajar, ¡y ni siquiera creo que exista la aguja! Bueno, ¿qué estaba haciendo?"
 G["4bfca22b"]="Anveena no es una simple mortal, $r. Aquellos que reconocen su verdadera naturaleza harían todo lo posible para poseerla.$B$BEn una ocasión me rescató a mí y ahora tengo intención de devolverle el favor."
 G["4c032502"]="Cuando te quedas en una posada, descansas cómodamente. Por esta razón, estarás \"más descansado\" en mucho menos tiempo que si lo haces en el bosque. Cuando descansas bien, aprendes más de la experiencia.$B$BAsimismo, puedes pedirle al tabernero que te consiga una piedra de hogar para luego usarla con el fin de regresar rápidamente a la posada."
+G["4c0ac5d2"]={ia=1,x="$C, ¿eh? Soy Krazek, secretario de Baron Revilgaz's. Sé todo lo que pasa en esta jungla y más allá. ¿Tal vez estaría interesado en saber el precio en curso de aceite en Ratchet? ¿No? ¿Buscando trabajo? Puedo ayudarte allí."}
 G["4c14a574"]="Puedes encontrar al ancestro Rugidomazo fuera de las murallas de Ventormenta."
 G["4c151ae2"]="¡Solo me faltaba que la maldita Plaga nos vaya a echar de aquí! Los colonos lo dimos todo para comenzar nuevas vidas en Rasganorte.$B$BSerá mejor que creas que vamos a luchar con uñas y dientes."
 G["4c27be76"]="Te he estado esperando, $n. ¿Estás $gpreparado:preparada; para ayudarnos en la Cuenca de Arathi?"
@@ -2814,8 +2848,6 @@ G["4c620e56"]="¿Sientes el mal que mancilla esta tierra, $c? Procede de lo más
 G["4c65f861"]="Una Ciudad de Bolsillo. ¡Bien!$B$B¿Necesitas instrucción, $n?"
 G["4c73cf30"]="No elegimos ir a la guerra, $n. La guerra viene a nosotros.$b$bDebemos hacer todo lo posible por estar preparados."
 G["4c79528c"]="La Dama Oscura cuida de ti..."
-end load(G) end
-do local function load(G)
 G["4c8a4e23"]="El huevo parece fuerte tal y como debería ser un huevo del Vuelo Negro. ¿Quizá si colocaras muchos fragmentos de ápices cerca, sus vibraciones harían que el huevo se rompiera?$B$BUna lástima que no tengas los 35 fragmentos necesarios para llevar a cabo la tarea."
 G["4c921ea5"]="¡Qué hay! ¿Quieres comprar suministros de pesca o recibir una lección o dos?"
 G["4c9a3aa9"]="Si viajas hasta el Fuerte Cenarion en Silithus, encontrarás al ancestro Cantofilo."
@@ -2824,6 +2856,7 @@ G["4cc0f1cd"]="¿Un banco? El más cercano es la contaduría de Ventormenta. Sig
 G["4ccda95d"]="Buscas un conocimiento superior. Tepa ha sido bendecida con un conocimiento así. Creo que está por aquí cerca..."
 G["4cd23add"]="¡Ey, colega! ¡Llévame con mis hermanos trols!"
 G["4ce49aa1"]="Vale, colega, eh'to es lo que vi...$b$bTodo eh'taba en silencio y, de pronto, oímos un susurro, como cuando el viento sopla entre los árboles. ¡Antes de darnos cuenta, esos Amani y sus mascotas nos rodearon! Lo siguiente que recuerdo es deh'peh'tarme aquí, en eh'ta jaula.$b$bDía y noche, uno tras otro, los exploradores capturados fueron asesinados. Cada vez que moría uno, ese oso-trol parecía hacerse más fueh'te.$b$bEso es todo lo que he podido descubrir desde mi jaula."
+G["4ceb14dd"]={ia=1,x="Soy un artesano de algún renombre, $c. Con los materiales adecuados, puedo crear una armadura conocida como Dreamwalker. Los druidas - e incluso algunos chamanes - se dibujan a esta armadura debido a sus propiedades mágicas. ¿Estás interesado?"}
 G["4cebb554"]="Nuestros progresos en la lucha contra los qiraji se deben a la ayuda que estamos recibiendo de casi todos los rincones de Kalimdor.$B$BNecesitas algo más que Soldados para luchar en una guerra, $n. Los héroes olvidados de la guerra son los comerciantes y artesanos que suministran a nuestras tropas todo lo que necesitan."
 G["4cee8363"]="<El jabaespín arruga el hocico y resopla.>"
 G["4cf638c0"]="El camino que tenemos ante nosotros no es sencillo. Si tienes algo de fuerza, quédate por aquí hasta que uno de mis escuadrones esté preparado para subir a Ymirheim. Les vendrá bien toda la ayuda que puedan conseguir."
@@ -3175,6 +3208,7 @@ G["55cecdb8"]="Celebrar los procesos naturales del mundo es algo tonto... Va a o
 G["55d712ae"]="No, no hay nadie que pueda enseñarte herboristería por aquí. Creo que tendrás más suerte en Forjaz."
 G["55e437de"]="Baja la voz, $r. Ya no soy bienvenido en Sethekk."
 G["55e6f0f4"]="Aquí en Rémol no tenemos banco, tendrás que ir a Entrañas. Al fondo de las Ruinas de Lordaeron, al Sur, encontrarás unos ascensores que te llevarán a Entrañas. Cuando llegues allí pide indicaciones más precisas a uno de los guardianes de Entrañas."
+G["55e7ae5c"]={ia=1,x="¡No interrumpas Niby, tonto! Renderé la carne de tus huesos y usaré tus restos esqueléticos como un estante de abrigo. ¿Dónde estaba? Oh sí, entonces, Kroshius duró casi diez veces más que cualquier infernal ordinario. No estoy seguro por qué, pero estoy seguro de que con suficiente estudio, podría averiguarlo.$B$BNecesito que recuperes Kroshius' Infernal Core."}
 G["55ec3ffe"]="Seguro que, en el fondo, Illidan es un tío majo. Solo necesita una mamá."
 G["55f1b748"]="$gBienvenido: Bienvenida; a nuestro hogar, $gforastero:forastera;."
 G["55fac20d"]="Nunca había visto nada igual a esos dracos abisales. Parece que han heredado el temperamento de su señor, pero, al mismo tiempo, son algo totalmente diferente."
@@ -3182,9 +3216,12 @@ G["56073b45"]="Tienes que prestar un poco más de atención a la guía de los es
 G["560a1ccb"]="¡$gBienvenido:Bienvenida; de nuevo al mejor espectáculo de Azeroth, $gamigo:amiga;! Es un verdadero placer volver a verte.$B$BAcércate y observa todo lo que ofrecemos. ¡No dejes de echar un vistazo, ya que estamos continuamente añadiendo cosas nuevas a la Feria de la Luna Negra! ¡Maravíllate con todo lo que hemos descubierto! ¡Seguimos sin reparar en gastos para proporcionaros diversiones con las que deleitar a niños de todas las edades!"
 G["56202955"]="Los Ala Abisal. Nos hablan. Nos han ofrecido paz y protección. Algo que los Tábidos nunca han sentido. Aceptamos su oferta y ayudamos a Toranaku a hacer salir a las criaturas de esta mina, con un gran coste personal para nosotros. Muchos de mis hermanos dieron sus vidas por esta ofensiva. Estábamos intentado hacer de esta mina un lugar inhabitable, forzando a los Faucedraco a cambiar de hogar y finalmente a mudarse."
 G["5621d970"]="¡Hemos conseguido atravesar Cima del Trueno dos veces!"
+end load(G) end
+do local function load(G)
 G["5626d371"]="Puedes encontrar al ancestro Levesusurro vagando por las calles de Stratholme."
 G["562bf931"]="¡Nunca podré agradecerte lo suficiente que hicieras posible mi peregrinación!"
 G["562c9abc"]="¡Están atacando Kashala! Debemos mantenerlos a distancia hasta que podamos escapar."
+G["56383eca"]={ia=1,x="Vaya, has bombardeado por ahí. Pensemos en eso como un ensayo, ¿de acuerdo? ¿Listo para salir de nuevo?"}
 G["563c9f6b"]="Un cajón enorme, lleno hasta rebosar de balas de cañón. Hay una lata de grasa para cocinar al lado."
 G["5640055b"]="Tyn es la desolladora de talento; fabrica el mejor cuero de lince que haya visto. Si deseas aprender de ella, la encontrarás en el extremo sureste del Camino de los Ancestros."
 G["56514d19"]="¿Te enviaron los Arúspices? Tú no pareces un Arúspice."
@@ -3216,8 +3253,6 @@ G["56eab8f9"]="Cariño, ¿qué opinas de mis abdominales? Acabo de salir del gim
 G["56ebb39a"]="¿Has venido para unirte a mí en la caza, $n?"
 G["570271b7"]="Me temo que no puedo enseñar nada a alguien de tu experiencia. Pero todavía no has llegado al final de tu camino. Habla con Lucan Cordell, está tras el mostrador. Te guiará en la siguiente etapa de tu viaje."
 G["57085893"]="¡Ven, $gescudero:escudera; $n, pues nos esperan aventuras!"
-end load(G) end
-do local function load(G)
 G["5710c7fc"]="Que la Luz te guíe, $n."
 G["57190071"]="Deberías echar un vistazo en Forjaz si tienes la idea de convertirte en $gencantador:hechicera;. Creo que vi una tienda junto al maestro de grifos la última vez que estuve allí."
 G["572e9fa3"]="El cementerio de la ciudad está justo al norte de La Ciudadela Violeta, en la zona oeste de Dalaran."
@@ -3233,6 +3268,7 @@ G["575751b3"]="¡Necesitas la instrucción de un verdadero maestro! ¡Ve a ver a
 G["576839c5"]="Habla en voz baja, $c. Soy una espía de Rencor Venenoso disfrazada."
 G["576c6c46"]="Todo se ha perdido..."
 G["577df06b"]="Te interesará visitar Simplemente encantador, justo a las afueras del Mercado de Magos, en la zona noroeste de Dalaran."
+G["577f6ddd"]={ia=1,x="Nada más que problemas en estas partes. Intenté decirle al tonto Saldean que saliera mientras todavía podía, pero no lo escuchará. But No soy tonto. Verna y yo vamos a mosey en marcha tan pronto como tengamos este carro arreglado."}
 G["57881e60"]="Que la bendición de la tierra caiga sobre ti."
 G["578b4ddc"]="Atiesh, el gran báculo del guardián. El báculo heredado a través de los siglos por cada uno de los guardianes de Tirisfal. El báculo corrompido por Sargeras. El báculo del último guardián. El báculo de Medivh."
 G["578c89e0"]="Todo lo que diga sobre tu trabajo es poco, puedes hacer auténticas maravillas con un yunque y un martillo. No le digas a nadie que te he aconsejado buscar a un goblin para seguir aprendiendo, pero eso es exactamente lo que voy a hacer. Brikk Finoficio es su nombre, y lo último que oí de él es que estaba dirigiendo una tienda en Bahía del Botín."
@@ -3248,6 +3284,7 @@ G["57c7a88f"]="El hipogrifo es una bestia noble, orgullosa y rápida. Es un hono
 G["57ca6123"]="¡$gBienvenido:Bienvenida; a mi cocina! Aquí preparamos algunos de los mejores platos de Dalaran."
 G["57cb883f"]="Sé que te lo prometí ayer por la noche, y la noche anterior, ¡pero ahora te prometo que te llevaré a un sitio muy bonito mañana por la noche!"
 G["57cc359b"]="Perdóname $c, pero he de concentrarme en mi trabajo."
+G["57d6a779"]={ia=1,x="¡Soy libre! But el secreto... ahora está en peligro. Akama debe ser advertido!"}
 G["57d9bae7"]="Por favor, sé comprensivo con el sufrimiento de un orco. Estoy teniendo un par de días muy malos y preferiría que te guardes tus comentarios para ti $gmismo:misma;."
 G["57e802d0"]="Parece que el ejército de la Plaga ha llegado a Tanaris. Han enviado un número considerable de necrópolis y otras fuerzas a la zona.$B$BNúmero de necrópolis restantes: $2283W"
 G["57ef0a09"]="Agh, no debí haberme ofrecido como especialista. ¡Siempre nos piden que hagamos lo imposible!"
@@ -3270,6 +3307,7 @@ G["58761455"]="Cuando corras con los Jinetes Férreos de Razak, aprenderás un p
 G["5876e6d3"]="Casi, pero no. Me temo que tendrás que hablar antes con mi hermana Jemma. Cuando te haya enseñado los principios básicos ven a verme, ¡y te enseñaré lo bueno!"
 G["58819685"]="$966w Comandante(s) Lobo Gélido y $964w Teniente(s) Lobo Gélido."
 G["588674af"]="Guerreromática NX-01 desconectada."
+G["58869686"]={ia=1,x="¡No gracias! Maybe en algún momento en el futuro. O el pasado. Not hoy."}
 G["5887e6f9"]="Veamos si podemos congelar al enemigo ahí mismo, $r."
 G["588bffee"]="¡Tenemos que averiguar qué les dan de comer los qiraji a esos monstruos! ¡Mira qué tamaño tienen!"
 G["588c2ab4"]="¡Si Fizz no hubiera sido tan torpe, no nos habrían atrapado nunca!"
@@ -3322,6 +3360,7 @@ G["5a0217ed"]="Me alegra que estés aquí, $c. La situación militar en la Meset
 G["5a0f0278"]="Me alegro de que lo consiguieras, $n."
 G["5a179482"]="Catálogo de otoño de la Hermandad del Torio:$B$B¡En su interior encontrarás las mejores ofertas para todas las necesidades de un aventurero! Incluso se indica dónde recoger los componentes y suministros más difíciles de encontrar."
 G["5a3bcac6"]="No me molestes, estorbo. Estoy estudiando el combate de ineptos de estos llamados luchadores.$B$BYo les ganaré a todos y después ascenderé para servir al Rey Exánime."
+G["5a415563"]={ia=1,x="La tierra ha sido buena para nuestro pueblo, $c. Debemos estar agradecidos por nuestra buena fortuna."}
 G["5a46f91d"]="El Banco de mercaderes de Dalaran está en la parte sur de la ciudad, a la salida de El Manto de la Noche."
 G["5a568c2e"]="¡Buenos días, $gseñor:señora;! ¿En qué puedo ayudarle?"
 G["71c3a240"]="¡Buenos días, $gseñor:señora;! ¿En qué puedo ayudarle?"
@@ -3579,6 +3618,8 @@ G["609a105c"]="Si alguna vez llega un día en el que tenga algo que decirte, ech
 G["60a3f378"]="Dale un pez a un toro y lo alimentarás por un día. Enséñale a pescar y lo alimentarás para toda su vida. Uthan Aguaserena puede enseñarte a pescar. Busca su sabiduría al oeste de Poblado Pezuña de Sangre, junto a la orilla del Lago Toro de Piedra."
 G["60a6ac3f"]="<El agente IV:7 está inconsciente.>"
 G["60ab81d0"]="¡No toques la capa! Sí, sí, ya sé que quieres una. Todo el mundo quiere una capa mía. Créeme, persona de clase baja y moral distendida, algún día me haré rico gracias a la venta de mis capas. Y todos, desde aquí hasta Forjaz, habrán oído hablar de Bartolo Ginsetti. ¡La marca Ginsetti será codiciada por todos!"
+end load(G) end
+do local function load(G)
 G["60acb356"]="Los centinelas Ala de Plata siguen luchando contra la Horda en la Garganta Grito de Guerra, $c. ¿Volverás a echarles una mano?"
 G["60ba47d5"]="No. Esto es obra de bandidos Vagayermos comunes.$b$bSe rumorea que se van a unir a un grupo más militarizado al oeste. Su violencia es barbárica."
 G["60bae4b9"]="En mis viajes he aprendido el patrón de la capa de fuego fatuo.$B$BEsta capa es una capa épica de lanzamiento de hechizos con la que se puede comerciar que otorga aguante, intelecto y regeneración de maná. Estoy buscando a alguien digno a quien enseñar este patrón.$B$BAlguien que hubiera completado todas las mazmorras normales de Rasganorte y tuviera el logro \"Maestro de mazmorra de Rasganorte\" sería digno de aprender el patrón de la capa de fuego fatuo."
@@ -3618,8 +3659,6 @@ G["619e6bc6"]="\"Controlar los elementos para obtener beneficios.\"$b$bDe eso va
 G["61a10193"]="No hay nada caótico en eh'te ataque. Los elementales y los gigantes se han organizado para atacah'nos. De alguna manera nos hemos granjeado la ira de Therazane, la Madre Pétrea en persona."
 G["61a1b5f3"]="¿Por qué querrías hablar con Kaplak? Es igual. Búscalo encima de la madriguera que hay al suroeste de Cerrotajo. ¡Pero procura mantener las manos quietas!"
 G["61a5f9ad"]="¡Buenos días!"
-end load(G) end
-do local function load(G)
 G["61a5f9ba"]="Que tengas un buen día."
 G["61a60e13"]="Con el tiempo reconstruiremos este lugar y le devolveremos su antigua gloria... Sin esos engorrosos humanos."
 G["61a64b48"]="¿Estás buscando el fragmento de cetro verde confiado al Vuelo Azul?$B$B<Azuregos parece dibujar una sonrisa.>"
@@ -3743,6 +3782,7 @@ G["64d988cb"]="Tendrás que buscar a Zamja, en la fosa de lava de Borstan, en el
 G["64dc2982"]="La Torre de Cristal del Oeste acepta cristales rojos, verdes y azules.$B$BLa torre se centra en la energía que puede crearse usando cristales rojos como fuente principal de poder. Existen dos efectos posibles: uno para aumentar la protección contra el daño y otro para debilitar las defensas del enemigo.$B$BLa protección de cristal requiere el uso de cristales rojos y verdes. Esto fortalecerá tu armadura.$B$BEl rendimiento de cristal requiere el uso de cristales azules y rojos. Puede debilitar la armadura de un blanco específico."
 G["64e4e0ed"]="Sí, pero lo conozco por su verdadero nombre: Eldre'Thalas. Fue un bastión de poder mágico para los elfos de la noche durante muchos, muchos años.$B$B¿Habías oído hablar de Eldre'Thalas, joven? Se podría decir que coincide con mi situación actual... Pero no creo en las coincidencias."
 G["64f2289e"]="<La criatura picotea tu mano.>"
+G["65072f2c"]={ia=1,x="Gracias por liberarme, $r.$b$bTodavía estoy un poco mareado del veneno. Creo que me quedaré aquí hasta que regrese mi fuerza."}
 G["65112188"]="Somos mineros, granjeros y artesanos, no soldados. Pero defenderemos nuestra tierra con los puños desnudos si es necesario."
 G["651968ef"]="Lo siento, $c, no puedo ayudarte. Tendrás que buscar un instructor de $c."
 G["6520fead"]="¡Hay que recuperar el Ojo que todo lo ve!"
@@ -3761,6 +3801,7 @@ G["657efb78"]="El archimago Alvareux escribió hace tiempo un tratado en el que 
 G["658ea0da"]="¿Qué campo de batalla quieres?"
 G["65914584"]="Tu astucia ha aumentado en gran medida, $n."
 G["659b6e24"]="<Mathredis mira el libro intensamente.>$B$B¿Vienes en busca de una fusión? ¿Has actuado según las instrucciones del tratado?"
+G["65a0e4e5"]={ia=1,x="Se han presentado algunas denuncias sobre este... individuo. Me han dicho que es un personaje sombrío. Estoy aquí para determinar si este negocio de él es legítimo... y tomar medidas si demuestra lo contrario."}
 G["65aa00e0"]="Compartiré contigo mis conocimientos de joyería."
 G["65b1a6b0"]="¡Más te vale que tengas una buena razón para abordarme, pezqueñín!"
 G["65b23512"]="¡Mira quién está aquí! ¡$gEl:La; del garrote en persona!"
@@ -3885,7 +3926,10 @@ G["689e52eb"]="Yo ser Tolwe. Trabajar manteniendo paz y vigilando. Así que yo v
 G["68a811f6"]="Espero que estés usando los objetos de la caravana. Si no los estamos utilizando nosotros, puedes tomarlos prestados."
 G["68ab3c51"]="Las fuerzas de Lady Valiente han sufrido para ralentizar el avance de Archimonde y de la Legión Ardiente; ahora nos toca tomar el relevo. ¿Estás $glisto:lista; para luchar a mi lado?"
 G["68ac2e2d"]="Algunos aventureros creen que el encantamiento no funciona. ¡Si los retase a un combate cambiarían su opinión!"
+G["68afd30b"]={ia=1,x="Una corrupción falsa ha entrado en Westfall. While Yo estaba defendiendo mi deber en los campos de batalla de Lordaeron estas granjas honestas fueron invadidas y hechas en escondites para matones y asesinos. El People's Militia necesita su ayuda."}
 G["68b03a8d"]="El pasado vive en estos eriales, $c. Debemos tener cuidado y no despertarlo."
+G["68b83919"]={ia=1,x="■Omarion grume algo bajo su aliento.$B$BPero claro que puedo ayudarte, querido $gchico:chica;. Es mi deseo moribundo... mi deseo final. Por favor, toma este manual. La información de sus páginas es una recopilación de todo lo que sé y he aprendido en los últimos 30 años de mi miserable vida. Dale el manual a ese bien para nada de aprendiz mío que probablemente esté sentado en su bufón gordo en Light's Hope Chapel."}
+G["da895b9d"]={ia=1,x="■Omarion grume algo bajo su aliento.$B$BPero claro que puedo ayudarte, querido $gchico:chica;. Es mi deseo moribundo... mi deseo final. Por favor, toma este manual. La información de sus páginas es una recopilación de todo lo que sé y he aprendido en los últimos 30 años de mi miserable vida. Dale el manual a ese bien para nada de aprendiz mío que probablemente esté sentado en su bufón gordo en Light's Hope Chapel."}
 G["68c3e3d7"]="El Bastión Allerian está rodeado de enemigos por todas partes. Es hora de plantarles cara."
 G["68c5daf6"]="Yo no hablo con basura como tú."
 G["6c2118f9"]="Yo no hablo con basura como tú."
@@ -3976,6 +4020,8 @@ G["6ad23762"]="Eh colega, seguro que venir con barras de mitril. No será sencil
 G["6ad474a1"]="La Fiesta de la Cerveza ha sufrido algunos cambios desde el primer año. Ahora entregamos fichas de la Fiesta de la Cerveza en vez de vales. Si tienes vales viejos, puedo cambiártelos."
 G["6ad6db74"]="El libro habla la unión de los dragones para hacer frente a otro dragón más poderoso llamado Alamuerte. De ello se deduce que el Vuelo Cromático casi había sido desatado sobre el mundo. Los Aspectos estaban preparados."
 G["6ad834e6"]="Oye. Estoy en mi descanso."
+end load(G) end
+do local function load(G)
 G["6ad9932b"]="¡Throm'ka, $c! ¿Estás $gpreparado:preparada; para luchar por la Horda en la Garganta Grito de Guerra?"
 G["6adb8832"]="¡Vuelve $gel joven héroe:la joven heroína;! Me alegra verte de nuevo, $n. Nos encanta que vengas a nuestra aldea."
 G["6ae2722b"]="Aconsejo al Capitán en los asuntos que decide compartir conmigo, pero tengo la sensación de que preferiría escucharte a ti."
@@ -4020,8 +4066,6 @@ G["6bce20f3"]="Saludos $Ghermano:hermana;, ¿cómo podemos ayudar?"
 G["5d3bbab7"]="Saludos $Ghermano:hermana;, ¿cómo podemos ayudar?"
 G["6bd25fb6"]="¿Qué te parece si entregas un mensaje por mí?"
 G["6bd55df9"]="¿Qué le pasa a todo el mundo? Tengo... frío..."
-end load(G) end
-do local function load(G)
 G["6bd875f7"]="Solo hay alguien mejor que yo en este arte. Ya puedes recibir sus saberes. Es Annora, la encontrarás... en Uldaman."
 G["6be7370a"]="Lo siento, no tengo tiempo para hablar con nadie más que los fuegos fatuos y el Capitán para informar de mis hallazgos. Discúlpame."
 G["6beaa934"]="Los espíritus te han guiado hasta mí. ¿Cómo puedo serte de ayuda?"
@@ -4043,6 +4087,7 @@ G["6c575cd1"]="Los diferentes mercaderes de Curiosidades y Más de la zona sur d
 G["6c60a532"]="¡Bien hecho! ¡Has luchado contra esas bestias de forma espléndida! ¡He oído que el siguiente reto será más duro!"
 G["6c62b3fa"]="Nuestros maestros de batalla están en el Arca de las Luces. También encontrarás a 'Miglik Borrón' junto al cuidador Breel; dice ser el representante del círculo de lucha de este mundo."
 G["6c6dacdd"]="En el extremo sudeste de la ciudad encontrarás el Mesón La Horca. Ve allí y sube las escaleras, encontrarás al clérigo oscuro Beryl en su sala de lectura."
+G["6c71c31d"]={ia=1,x="Si voy a enseñarte los secretos de convocar a un sirviente infernal, debes destruir Kroshius y traerme el núcleo infernal de sus restos ardientes. Esto, sin embargo, no es tan fácil como suena. Kroshius se ha quemado completamente. Debes reinar su cadáver y levantarlo de los escombros. Para hacer esto, sin embargo, usted debe reunir algunos componentes de otras entidades demoníacas.$B$BMi imp, Impsy, te pondrá en camino."}
 G["6c72a5c9"]="Si mi madre me hubiera dicho que habría días como estos, no la habría creído."
 G["6c7b1d80"]="¿Qué miras, $r?"
 G["6c7fe5ed"]="Con todos los tornillos que ha ajustado Bronk, creo que alguna vez ha tenido que utilizar alguno de los suyos... ya me comprendes. Aun así sigue teniendo buena cabeza para hacer los inventos más increíbles. Deberías hacerle una visita en el Almacén de Brasacerada."
@@ -4276,6 +4321,7 @@ G["72118e9e"]="Lo siento, pero nuestras cervezas son exclusivamente para los mie
 G["72131cba"]="¡Cuidado, $n!"
 G["7216d7be"]="Mis disculpas, pero ya has aprendido todo lo que sé. Sin embargo, el elfo de la noche Faldron podría seguir instruyéndote. Búscalo en el Bancal del Artesano de Darnassus."
 G["721c7275"]="Tus habilidades preparando pociones superan a las mías. Ve a ver al doctor no-muerto Herbert Halsey, en El Apothecarium de Entrañas. Él podrá seguir instruyéndote, y podrás ser testigo de primera mano de los sufrimientos de su pueblo."
+G["721ebffb"]={ia=1,x="¿Quieres ser un Inscriber? Bueno, aquí encontrarás al entrenador."}
 G["722a67a6"]="Pescamos, dormimos y volamos cosas por los aires. ¿Hay algo mejor?"
 G["722ee543"]="¡Te digo que ese tipo me está volviendo loco! ¿De verdad hay alguien que crea que un goblin podría ayudar a gobernar algo tan magnífico como el Barcódromo?"
 G["72365e11"]="Corazón Frenético nunca ser amigos de lenguas-grandes. ¡Tú $gtonto:tonta; por volver aquí, cosa traidora!"
@@ -4336,6 +4382,7 @@ G["737b182f"]="<Mira al cohete y sonríe nervioso.>$B$BVale, sí, puede que haya
 G["73845772"]="¡Tú traer buen jefe! ¿¿Cómo pasar por Slip'kik?? ¡Yo listo, mirar la próxima vez! ¡Arr, arr!$B$BNadie pasar por Slip'kik nunca más. ¡¡Slip'kik prometer!!"
 G["7384dd69"]="<Para tu sorpresa, la prole de raptor es capaz de comunicarse contigo.>$B$BTe llaman $n. ¿Es tu único significante o es un título honorario?"
 G["7385027d"]="Muy bien. Malfurion se adentrará en las Tierras de Fuego y nos encargaremos de él allí. Su juicio puede esperar un par de días más.$b$b<Los ojos de Leyara brillan.>$b$bSin embargo, el archidruida tauren no tendrá tanta suerte."
+G["73911ec9"]={ia=1,x="¿Estás listo para la próxima etapa?"}
 G["739403c6"]="Ah, bueno, eso depende de a qué socios te refieras. A lo largo de los años muchos han ido y venido, siempre hay alguien ansioso por aprovecharse de la leyenda que es Budd Magallenas.$B$BPuedes descansar tranquilo sabiendo que la mayoría se han jubilado siendo ricos. Pero ese no es el camino que yo he elegido. Yo siempre he sentido que mi destino es desvelar los mayores misterios del mundo. Claro, si no lo hago yo, ¿quién lo hará?"
 G["73964a92"]="El Bastión Lobo Gélido está en la parte sur del Valle de Alterac y protege la Aldea Lobo Gélido, el hogar del clan de orcos que lleva el mismo nombre. Todos los territorios de la Horda del Valle de Alterac se extienden desde este lugar de poder.$B$BEl Bastión Lobo Gélido está intacto."
 G["739a6055"]="Las torres de zepelín están justo al norte de Entrañas."
@@ -4361,6 +4408,7 @@ G["740152d6"]="A veces esos detestables elfos de sangre vienen por aquí y neces
 G["7403b3e2"]="Ysera me ha enviado aquí para que establezca contacto con el espíritu de la naturaleza, Aessina.$B$BSin embargo, el ancestro permanece en silencio."
 G["741373ba"]="He tratado a campesinos, nobles, hijos de mercaderes y pordioseros. Permíteme que comparta algo de sabiduría contigo: cuando miramos a los ojos de la muerte, todos somos iguales."
 G["74156d77"]="Ono'zun aquí para desafiar a los vrykul y subir en el escalafón.$B$BDespués de que Ono'zun luche en Valhalas y gane, Ono'zun trabajar para el Rey Exánime"
+G["741c7783"]={ia=1,x="Debes hacer lo que no pude: Save los campesinos que fueron cortados mientras huían de Stratholme.$B$BEllos caminarán hacia la luz, usted debe asegurar su supervivencia. Si caen demasiados, nuestra existencia maldita continuará - habrás fracasado.$B$BCada habilidad, oración y hechizo que has aprendido serán probados. Que la Luz te proteja, $N."}
 G["74205a24"]="Los centinelas Ala de Plata estarán en deuda contigo, $c. Encontrarás a Elfarran, nuestro maestro de batalla, en el Castillo de Ventormenta, presenciando la audiencia del Rey. ¡Que la diosa vele por ti!"
 G["7428ecf2"]="¡Mira tú allá, compay! ¡Ese tío con escorbuto está cabreando al guajiro! El muy terco va a tragar sal, yunta...  lo van a pasar pol debajo de la quilla y se va a quedar hecho un trapo, asere."
 G["742d8723"]="Admito que siento curiosidad por este pequeño emprendedor.$b$bOdio los prejuicios, no te creas, pero he oído algunos rumores inquietantes.$b$bEl tiempo dirá si sus intenciones son justas."
@@ -4374,6 +4422,8 @@ G["7449d68c"]="Mi trabajo es asegurarme de que este asalto funciona como la maqu
 G["744add7a"]="Aprendes rápido $gmuchacho:muchacha;, tan rápido que no puedo seguirte el paso. Si quieres seguir tu instrucción te sugiero visitar a mi maestro. Su nombre es Rotgath, Rotgath Barbapétrea, lo encontrarás en Forjaz, en La Gran Fundición."
 G["a300571c"]="Aprendes rápido $gmuchacho:muchacha;, tan rápido que no puedo seguirte el paso. Si quieres seguir tu instrucción te sugiero visitar a mi maestro. Su nombre es Rotgath, Rotgath Barbapétrea, lo encontrarás en Forjaz, en La Gran Fundición."
 G["74628831"]="Este no es momento para volvernos unos contra otros, $n."
+end load(G) end
+do local function load(G)
 G["746b8c03"]="Busca en las aguas que dividen esta isla, pero ten cuidado: el asediador cuernohediondo habita en ellas."
 G["7472c44a"]="Saludos, $ghéroe:heroína;. Yo fabrico y vendo la armadura Aquelarre oscuro para brujos."
 G["7484fa73"]="¿Dejar de cavar? ¡Qué ridículo! En mi larga y laboriosa carrera, nunca he abandonado una excavación. No intencionadamente. A lo mejor he extraviado algunas. ¿Quién decías que eras? ¿Qué estamos haciendo aquí?"
@@ -4422,8 +4472,6 @@ G["75af0bcb"]="Operación: Gnomeregan fue todo un éxito. Es cierto que ese coba
 G["75b3cd10"]="¿$n? $GSeñor:Señorita;, no eres $Gun cazador:una cazadora;, eres $gun:una; $c."
 G["bc6a45c5"]="¿$n? $GSeñor:Señorita;, no eres $Gun cazador:una cazadora;, eres $gun:una; $c."
 G["75ba0a01"]="¿Quieres aprender a peh'car, colega? ¿O quizá has veni'o a comprar material para haceh'lo?"
-end load(G) end
-do local function load(G)
 G["75d87cb2"]="Tenemos una gran abundancia de buzones de correo en nuestra hermosa ciudad. El que se encuentra junto al Banco Real de Cambio debería ajustarse a tus necesidades."
 G["75e133be"]="Doctor Herbert Halsey en El Apothecarium, donde nosotros nacer. Podría coser tu espalda mejor como nosotros."
 G["75e770fd"]="¡Hay CUATRO luces!"
@@ -4452,6 +4500,7 @@ G["76f7ea0b"]="Estás perdiendo el tiempo, ve a hablar con mi estudiante Basil."
 G["76fa1d12"]="¿Disfrutando del Festival de Fuego del Solsticio de Verano, $c?"
 G["76fa4587"]="He oído que tras el espectáculo de fuegos artificiales, pondrán copas en las mesas. ¡Y podremos hacer unos buenos brindis!"
 G["76ff9f5f"]="Hola, joven $c. ¿Vienes a traerme un montón de flores de paz? Estamos recogiéndolas para hacer pociones y elixires para la campaña de Ahn'Qiraj. Si tener que ir a la guerra ya es malo, los resultados serán todavía peores si no nos preparamos debidamente.$B$BLa Horda me ha pedido que reúna $2020w flores de paz y hasta el momento hemos conseguido juntar $2021w. Por favor, si sabes hacerlo recoge todas las que puedas y tráemelas."
+G["7700891f"]={ia=1,x="El barbero está en el Cleft of Shadow."}
 G["77017570"]="El Cementerio Piedrahogar se encuentra al este de la Avanzada Piedrahogar, en la Tierra de Disputa.$B$BActualmente pertenece a la Alianza."
 G["77066333"]="Puedes encontrar a Randnaal ejerciendo su profesión a las puertas de su hogar, en el camino hacia Darnassus. Deberías hacer un alto y ver qué es lo que puede enseñarte."
 G["77125fb2"]="Hay uno de esos en los cuarteles, en la parte oriental de Cerrotajo. Pregunta por Rawrk."
@@ -4702,6 +4751,7 @@ G["7d8d6264"]="Aessina es el espíritu de la naturaleza, mi compañera inmortal 
 G["7d997a0c"]="Agg, ¡Es bastante difícil mantener el orden aquí sin que surjan todos estos nuevos problemas! Espero que tengas buenas noticias, $N..."
 G["7d9f6e9b"]="Cumbres Gemelas"
 G["7da95c39"]="Todo lo que esté fuera de ese círculo no podrá verte, pero la ilusión desaparecerá si atacas o recibes daño.\n$bTe aconsejo que permanezcas $goculto:oculta; a no ser que te diga lo contrario. Esos demonios son demasiado poderosos como para plantarles cara mediante la fuerza bruta."
+G["7dac7b44"]={ia=1,x="Justo a tiempo, $c. ¿Sientes la tierra temblando debajo de ti?$B$BAlgo se acerca de la colmena. Take un lugar cerca de los gruñidos, $N. ¡Cuento contigo!"}
 G["7dae73d1"]="¡El Sumo Ejecutor y la Dama Aurífera me están haciendo esperar, pero no tengo tiempo para esto! ¡Mis amigos están ahí fuera muriendo, $c!"
 G["7db18cce"]="Soy lo que ustedes denominan un capitalista, $r."
 G["7db7750c"]="Te doy la bienvenida a bordo, $c. Relájate y disfruta del viaje. A bordo del \"Princesa púrpura\" queremos que te relajes. Tenemos máquinas de refrescos y comida abajo por si necesitas algo mientras estas a bordo."
@@ -4774,11 +4824,14 @@ G["7fd3825b"]="¿Siempre hablas tanto cuando hay cosas que matar?"
 G["7fd746ec"]="No hay demasiados herreros en un lugar tan distante de Forjaz como este. ¿Qué puedo hacer por ti?"
 G["7fe3b7d4"]="¿Por qué ahora, $r? No lo entiendo. Todavía queda mucho por hacer..."
 G["7fe73c88"]="Bienvenido a la Registradora de Hermandades. ¿En qué puedo ayudarte?"
+end load(G) end
+do local function load(G)
 G["7ff77fba"]="¡¿Qué haces aquí?! ¡Muévete al Valle de Alterac, donde se te necesita!"
 G["8006b608"]="Te doy la bienvenida a La Corriente de Magma, $n."
 G["800ba109"]="Puedo instruirte en herrería y conseguirte las herramientas necesarias.$b$b¿En qué te puedo ayudar?"
 G["800e2990"]="¿Qué podemos decir, $n? $GTío:tía;, puedes comprar cualquier cosa que tengamos en la tienda.$B$B¡Adelante!"
 G["0a888bfd"]="¿Qué podemos decir, $n? $GTío:tía;, puedes comprar cualquier cosa que tengamos en la tienda.$B$B¡Adelante!"
+G["8010046b"]={ia=1,x="Bueno, si no es un $c joven, sin duda dibujado aquí por hablar de mis explotaciones en campos de batalla!$B$BNo hay tiempo para las historias ahora, porque hay grandes, importantes hechos que necesitan hacer! Así que si estás buscando gloria, entonces la suerte brilla en ti hoy..."}
 G["8018c46e"]="Dar de comer a un ejército de la Horda no es tarea fácil. Tengo montones de cosas que hacer. ¿Tienes tiempo para echarme una mano?"
 G["801c84cb"]="Vale, lo admito, has demostrado lo que vales y más, $n.$B$BSi antes he sido dura contigo, ha sido porque he visto la chispa de un auténtico Guardia del cielo en ti. ¡Me atrevería a decir que eres el mejor as que tenemos!$B$BCuando quieras ayudar, estaré más que orgullosa de entregarte otro montón de bombas."
 G["8024a2ec"]="Nos gustaría poder crear más de una runaoscura diaria, pero sería una pérdida de tiempo. Simplemente, no es físicamente posible. Además, ni siquiera sería fiable crearlas a ese ritmo.$B$BY confía en nosotros, si hubiera alguien lo suficientemente inteligente para ayudar, sería reclutado y tendríamos todas las runaoscuras que quisiéramos."
@@ -4824,8 +4877,6 @@ G["813f6126"]="¡Tú! ¡VEN! Bebe, aliméntate y descansa para la próxima batal
 G["81424433"]="Yo... No tenemos ningún poder. Illidan encontró y entregó a los Faucedraco a su líder - Zuluhed. Este orco era el único responsable de la captura y encarcelamiento de Alexstrasza. ¿Cómo podríamos luchar contra tal poder? ¡Capturó a un Aspecto!$B$BY con igual facilidad, se llevó a mi compañera."
 G["81446f8a"]="No dejes que las ruinas que nos rodean te engañen, $c. Dalaran es tan poderosa como siempre."
 G["81496025"]="No sé de dónde proceden esos suministros. De alguna manera, el Martillo Crepuscular ha encontrado la manera de asaltar de una sola vez la montaña entera..."
-end load(G) end
-do local function load(G)
 G["8149ff68"]="Las labores de aguja requieren un pulso firme. Y paciencia... por encima de todo, paciencia."
 G["814c3b37"]="¡Firme, Capitán!"
 G["814ec34e"]="Bienvenid$go:a; al torneo, $n."
@@ -4866,6 +4917,7 @@ G["82427565"]="Nos hemos metido en una buena. Ya tendríamos que estar con nuest
 G["824480c7"]="Este es el sistema de transporte más moderno y sofisticado que el dinero permite construir. ¿Qué? ¿El Tranvía Subterráneo? ¿Gnomos? Escucha, $gamigo:amiga;, si te crees esa basura, entonces puedo venderte una estatua que hay en Tuercespina. ¿Vas a ir andando hasta Grom'gol o vas a montar en esta sofisticada máquina voladora? Tú verás."
 G["82649b83"]="La naturaleza nos da todo lo que necesitamos. Habla con Komin Pezuña Invernal de la Herboristería Holística, que está en la cuesta."
 G["826befc7"]="Unos ojos ardientes dentro del prisma llenan tu mente con un sentimiento de pavor..."
+G["82729852"]={ia=1,x="Felicitaciones, tu mente se ha expandido."}
 G["82782de5"]="Pareces audaz, $c. ¿Recuerdas los días gloriosos de Theramore, antes de que Jaina nos hiciera abandonar la lucha contra la Horda? ¿Estás harto de tener que guardar tu espada mientras los orcos siguen provocándonos?"
 G["829c6956"]="El Jefe de Guerra me ha ordenado que estudie todo tipo de armas y armaduras. Me ha enviado aquí, al centro de las culturas tauren y orca, en los Baldíos, para conocer a tantos viajeros como sea posible y para aprender cosas acerca de las culturas de los Baldíos.$B$BCree que hay algo que aprender hasta de la más patética de las culturas... como los jabaespín o centauros."
 G["82abb37f"]="Si te echas colonia o perfume, podrás ver quién está buscando amor. Esos aceptarán pruebas de amor... y te entregarán un regalo a cambio.$B$BPero recuerda: para darle a alguien una prueba de amor, ¡deberás oler bien! A los hombres les gusta el perfume mientras que las mujeres prefieren el olor de la colonia."
@@ -4966,6 +5018,7 @@ G["84e697a0"]="Tienes que aprender con alguien que sepa más que yo. Ve a hablar
 G["84f5025a"]="El sumo encantador Bardolan se puede encontrar en la Biblioteca del Profeta, en la Grada del Arúspice. Es un gran maestro del arte y está rodeado de sus estudiantes: maestros, artesanos, expertos y oficiales."
 G["84fbcde5"]="<El explorador Natoescarcha intenta ponerse en pie mientras te acercas, pero vuelve a caer al suelo mientras se agarra una herida sin duda dolorosa en el costado.>"
 G["84fbf4f5"]="¡$gBienvenido:Bienvenida; a mi tienda!"
+G["85063404"]={ia=1,x="Bienvenido a Camp Mojache, valiente $c. ¿Cómo puedo ayudarle este día?"}
 G["850f8041"]="Al igual que el viento de las llanuras, siempre eres $gbienvenido:bienvenida; aquí."
 G["851d622d"]="Este portal lleva a las Cavernas del Tiempo, en las profundidades de la tierra bajo el lejano Tanaris.$B$BYo poseo el poder necesario para enviarte allí si eso es lo que deseas."
 G["852ce646"]="<La tierra retumba cuando los movimientos de Gordawg se detienen.>$B$BHabla."
@@ -5083,6 +5136,7 @@ G["8835b5a9"]="Las agrestes praderas de Nagrand son el mejor lugar para ir a caz
 G["88368cd5"]="Si no aumentamos la producción todo lo que podamos, puede que la Horda pierda la guerra. Si la Horda pierde la guerra, nos harán prisioneros o peor, nos matarán.$B$BOdio tener que ser yo quien te lo diga pero las cosas bonitas que hayas podido escuchar en Arboleda Susurravientos no nos salvarán... Pero puede que el trabajo duro sí lo haga."
 G["883b9e71"]="Muchos son los caminos de la Luz, $c. Debes decidir cuál seguir en este mundo o en cualquier otro."
 G["885098a5"]="Encontrarás al herrero y a su ayudante en su taller del Bancal de Guerrero, cerca de los vendedores de armaduras y armas."
+G["88594804"]={ia=1,x="Lo eras. El Eye nunca está mal.$B$BEres un $c después de todo. Un poderoso $c, si el Eye te mostró este horrible recuerdo.$B$BHas venido para la redención, pero no te das cuenta de esto... ¿Sí?"}
 G["88610b94"]="Eres grande y fuerte. Pero necesitas darte un baño. Salta a la piscina."
 G["88692106"]="¡Te doy la bienvenida a La Dama Misteriosa, hogar de vinos exquisitos y mercancías exóticas que no se encuentran en ninguna otra parte!"
 G["88716603"]="¿Qué ocurre, débil mort...$b$BEh... ¿Sí, $r? ¿Qué puedo hacer por ti?"
@@ -5101,6 +5155,7 @@ G["88bd2aca"]="Nada de cotillear, $gamigo:amiga;.$b$bSi quieres comprar regalos 
 G["88c95821"]="Hemos vivido bajo las mismas olas, hemos respirado la misma agua y adorado al mismo dios. Entonces, ¿por qué los nagas se volverían contra nosotros?"
 G["88caa43c"]="¡La Plaga está por todas partes! Esto es... una pesadilla."
 G["88cfb034"]="Te doy la bienvenida al hogar del Kirin Tor."
+G["88da0f91"]={ia=1,x="Cuando dice, \"hermano menor\", no menciona que somos gemelos. Sólo es mayor en un par de minutos.$B$BNo dejes que esa 'estrella de revuelta' te engañe. Nunca seré un comerciante de la misma magnitud que él."}
 G["88dc8bff"]="¡Yo me encargaré, $n! Da la orden y subiré para atacar su puente."
 G["88fd4b62"]="Muchos han venido a este santuario, muchos se han ido."
 G["88fd845d"]="Una vez oí que el viejo Grimnur había pescado una espada. ¿O fue un pez espada? Maldito Grimnur, ha contado tantas historias de pescadores que ya no puedo distinguirlas. ¿Por qué no vas a verlo a La Caverna Abandonada y que te cuente él mismo cómo fue?"
@@ -5171,6 +5226,8 @@ G["8ab9cb31"]="En El Místico Militante en la zona sureste de Dalaran puede que 
 G["8ab9e27a"]="Menos charlar y más machacar ogros, ¿trato hecho?"
 G["8ac6e802"]="La mejor fiesta del Festival Lunar se celebra en Claro de la Luna. No vayas hasta allí andando; los druidas del Valle de la Sabiduría te pueden llevar."
 G["8aca15a7"]="Es fascinante ver cómo hay florecillas que resisten el frío de Dun Morogh... pero no encontrarás por aquí a ningún herborista. Tendrás que ir a Forjaz para instruirte en esa profesión."
+end load(G) end
+do local function load(G)
 G["8acb798c"]="Hay varios mercaderes diestros esparcidos por Bruma Azur. ¿A quién buscas?"
 G["8ad0efea"]="Throm-Ka, $n. Hemos colado a unos cuantos más de los nuestros mientras estabas preparando las Puertas para el ataque.$B$BTe enseñaré dónde vamos a reunirnos con Garona.$B$B<El líder de escuadrón saca un mapa de la Ciudadela Crepuscular y señala el lugar.>$B$BAvísame cuando estés $glisto:lista; y nos dirigiremos hacia allá juntos."
 G["8addebad"]="Tuvieron la oportunidad de venir conmigo y, en vez de eso, se burlaron de mis creencias. Ya no significan nada para mí."
@@ -5226,8 +5283,6 @@ G["8c25e4de"]="Zub zub.$b$b¿Qué? Fuera."
 G["8c2f1fbe"]="¿Seguro que esto es una buena idea?"
 G["8c30ee3c"]="Es verdad que nuestros nuevos... invitados están limitando un poco nuestro trabajo, pero es normal no fiarse cuando ha habido un intento de genocidio. Quizá con el tiempo se convenzan de que Putress fue una desafortunada anomalía y nos permitan continuar con nuestro trabajo en paz."
 G["8c33d407"]="Te echaría una mano pero me ha salido... un sarpullido. Creo que mejor voy un poquito por detrás de ti."
-end load(G) end
-do local function load(G)
 G["8c3c3950"]="Hola. Estás a bordo de La Fantasía de la Doncella. Yo soy el capitán Cánula y tienes el privilegio de navegar en el orgullo de los Asaltantes Aguasnegras. Los Velasangre no se nos acercan gracias a mi astuta tripulación y a la gran cantidad de pólvora que llevamos en la bodega. El seguro, ya sabes.$B$BSi tienes alguna pregunta, yo te daré respuestas."
 G["8c41f841"]="¡Gawurgggl! ¡Blrgl-brgl grgl!"
 G["8c46afe7"]="¿Los focos de cristal? Te lo explicaré, ya que solo tienes la mitad del cerebro necesario para imaginarlo.$B$BUn foco de cristal mermado puede combinarse con diez fragmentos de ápices, creando un foco de cristal cargado. Estos focos cargados tienen propiedades curativas, pero lo más importante es que pueden usarse con los demonios poseídos.$B$BMira, el foco cargado puede usarse para permitir que un demonio poseído presente poderes especiales. Cuando pase algo de tiempo, Gahk tendrá una misión para ti que consistirá en eso."
@@ -5251,6 +5306,7 @@ G["8caa1e5b"]="Mira por dónde pisas, $c, porque tengo un encantamiento polimorf
 G["8cb5d2ef"]="Tengo mucho conocimiento que transmitirte, $c. Debes aprender a cazar con honor."
 G["8cbeb98c"]="Que la Madre Tierra te proteja, $n. Gracias por tu ayuda."
 G["8cc1dbfe"]="Bueno, bueno... ¿Ascendiendo en el mundo, eh? Estás buscando la Sala de los Campeones, y la encontrarás en la parte sureste del Casco Antiguo. ¡Buena suerte!"
+G["8cc42610"]={ia=1,x="Ameer, Over y fuera."}
 G["8ccbb1ef"]="Al menos podrías intentar sonar algo convincente.$B$BMira, Nuaar, no iba a decirte esto, pero quizás sea lo mejor, porque también va a involucrarte a ti. Maxnar planea un ataque total a los druidas de la Foresta Ruuan. Y pretende aniquilarlos.$B$BYa es lo malo que hayamos estado luchando contra los ogros Peña'mok, así que no podemos permitirnos tener que encargarnos de otro frente. He organizado una tregua temporal con los arakkoa.$B$BBueno, ¿qué opinas?"
 G["8cd24aa8"]="De acuerdo a nuestra cultura creemos que no puede desperdiciarse nada. Si nos vemos obligados a dar caza a una criatura, hacemos todo lo posible para que su sacrificio no sea en vano. \nSi deseas aprender el modo de quitarle la piel a una bestia a la que se ha dado muerte, busca a Eladriel en el Bancal del Artesano."
 G["8ce2f700"]="¡$gBienvenido:Bienvenida; a Ventormenta! Soy uno de los oficiales de la ciudad y sirvo a la ciudadanía a través de nuestra oficina censal. Si necesitas localizar a alguien en concreto, creo que podré ayudarte. Puedo acceder a los registros a través de métodos arcanos y una aguda disciplina mental.$B$BSi tienes algún asunto conmigo, ¡procede!"
@@ -5300,6 +5356,8 @@ G["8debaefd"]="Y, ¿qué quiere tu pueblo de Lantresor, $r?"
 G["8df2a8ce"]="Saludos, honorable $gamigo:amiga;. Turak Tótem de Runa y los demás druidas te han estado esperando en Sala de los Ancestros."
 G["8df52df4"]="Abre tu mente, trotamundos, y comenzaremos."
 G["8dfab78c"]="¿Hueles algo?"
+G["8e137db1"]={ia=1,x="Hola, ciudadano. You parece un $ghombre:mujer; con un propósito - ¿Tiene negocios con el Stormwind Army?"}
+G["cbe32b37"]={ia=1,x="Hola, ciudadano. You parece un $ghombre:mujer; con un propósito - ¿Tiene negocios con el Stormwind Army?"}
 G["8e2e824e"]="¡Voy a averiguar lo que ese siniestro grupo está haciendo el Poblado Grangol'var!"
 G["8e33d9c7"]="Mi padre me ha regalado esta armadura de batalla y esta hacha. Pronto les daré buen uso."
 G["8e36721e"]="Así que $geste es el:esta es la; $r $c sobre $gel:la; que tanto he oído hablarrr, ¿hmmm?$b$bComo sabes, todavía queda un obelisco porrr activarrr...$b$bCuando llegue el momento de restaurrrar este antiguo mecanismo, ¿estarrrás allí? ¿Te recordarrrá la historia?$b$b¡Eso dependerrrá de tu foluntad de cooperar!"
@@ -5446,6 +5504,7 @@ G["91f7972b"]="Sigue andando, $r.$b$bTu presencia no me interesa."
 G["91fa41e6"]="Mi padre ha partido hacia lugares más exóticos en busca de mayores presas. Pero no te preocupes, ¡todavía hay mucho que cazar aquí!"
 G["92020270"]="Oh, aún tienes muchas cosas que aprender. Te enseñaría todo si pudiera, ¡pero yo también sigo aprendiendo! ¿Por qué no vas a hablar con Trixie Chispaveloz en Forjaz? ¡Te ayudará a seguir adelante con tu educación!"
 G["92034048"]="¿Qué pasa? ¿No ves que estoy ocupado?"
+G["92040eab"]={ia=1,x="¡Qué vergüenza ser tomada como mascota por un cazador!$B$BTe debo mi vida, pero por favor, no te molestes más con mi bienestar. Now que me has liberado de Musel'ek, podré encontrar mi salida. Maybe I'll recoger Rayge en el camino."}
 G["9205a3bd"]="El ancestro Altacumbre vela por las Tierras del Interior desde una montaña cerca del centro."
 G["9206f78f"]="No hay nada como la sensación de que algo muerto se arrastra hacia ti. Puedes encontrar a Shelene Rhobart siguiendo hacia el sureste el camino que sale de la ciudad, y dirigiéndote hacia el este cuando llegues al cruce. La encontrarás en un pequeño campamento, no muy alejado del camino."
 G["92070661"]="Parece que la torre está transmitiendo datos a algún lugar.$B$BUn examen detallado de la torre te permitirá encontrar una pequeña mesa con cristales amarillos, rojos y verdes, dispuestos en una formación específica.$B$BUn gran círculo de cristales amarillos está flanqueado a cada lado por un círculo más pequeño de cristales rojos y otro de cristales verdes.$B$BToma nota cuidadosamente de los colores de los cristales, teniendo en cuenta que alguien podría estar muy interesado en escuchar lo que has descubierto."
@@ -5569,6 +5628,8 @@ G["953e4510"]="Hora de expandir mi imperio de helados.$b$b¡Tigule y Foror caer�
 G["9540009b"]="¿Quién, yo?$b$bVaya, no me considero cualificado para... eh... No, creo que no."
 G["95412a1a"]="¿Numerosos? Tiene dos puntos débiles: la base de la estructura del lado oeste y la base de la estructura del lado este. Eh, espera un momento. ¿Cómo ibas a saber nada de la Espiral Vectorial? ¿No has dicho que te capturaron antes de materializarte siquiera?"
 G["954c9155"]="¡Muerte al Lobo Gélido!"
+end load(G) end
+do local function load(G)
 G["955d9fb8"]="Son muestras de respeto, compradas solo con sangre en el campo de batalla. Ganar suficientes de estas marcas será decisivo si queremos ganar esta guerra."
 G["9564e0d2"]="Me enseñó el chamanismo, que en cierto sentido es solo otra faceta de la Luz. El agua del oasis se reunía con el viento, así como el fuego de mi campamento y la tierra sobre la que me sentaba. Todos tenían algo que decir.$B$BA lo largo de los años siguientes me enseñaron que era invocar y formar parte de los elementos del mundo. Y me dijeron que los mundos de todas las estrellas del cielo, incluso este, están hechos de esos elementos.$B$BPero llegó el día en que sentí que había aprendido suficiente para irme."
 G["956afe18"]="¡Mucho brazo y poco seso! Así son los peones. Trabajan bien cuando eres capaz de motivarlos, pero de vez en cuando necesitan un poco más de \"motivación\", ¿entiendes?"
@@ -5606,6 +5667,7 @@ G["96c336a5"]="El coche de los goblins tiene una gran potencia, pero los gnomos 
 G["96d0c072"]="Tengo una deuda contigo que jamás podré pagar, $n. ¿O sí?$b$b¿Mmm?"
 G["96d180a8"]="Es necesario que los humanos de Ventormenta te consideren $gun exaltado:una exaltada; para que te pueda enseñar la habilidad de equitación, $c."
 G["96d700ba"]="Jamás en mi vida creí que vería una frontera tan espectacular.$B$BOjalá no estuviera contaminada por el mal y por un saber que está mejor oculto."
+G["96dad02a"]={ia=1,x="¿Ve a ver Mog'dorg?"}
 G["96de4a7b"]="¡Tienes que ayudarme, $c! Se ha vuelto loco... Loco, ¿me oyes? Su impotencia ante la inundación de Las Mil Agujas le ha hecho perder el juicio.$b$bMe culpa por todo, hasta por el Cataclismo. Probablemente se piensa que soy Alamuerte disfrazado o algo.$b$b¡Socorro!"
 G["96e23f13"]="<Agarras el orbe, pero la mano de Fizzle se cierra aún más fuerte en torno a él. El orbe brilla ligeramente.>"
 G["96f89e7b"]="Saludos, $gamigo:amiga;. ¿Puedo hacer algo por ti?"
@@ -5628,8 +5690,6 @@ G["975ce74e"]="Cuigdado con los gaptores, pueden seg muy muy muy listos.$B$BLa s
 G["975debbf"]="¿Podrás creer que fallé en mi hora más oscura, en la cúspide de mi vida?$B$BCuando huí de la destrucción fortuita de las fuerzas que nos aplastaron, los únicos sonidos que escuché fueron los gritos de mis soldados y los rápidos latidos de mi corazón.$B$BPoco tiempo después, regresé a Las Tierras Devastadas con la esperanza de rescatar a mis hombres y recuperar mi honor. Por el contrario, me capturaron y me hirieron hasta morir.$B$BLo que descubrí durante mi interrogatorio y posterior tortura fue horripilante."
 G["9764514b"]="Limpiemos esto y saquemos esos cuerpos de aquí. Tengo otra operación en ciernes."
 G["9766b9ca"]="Sí, claro, adelante, dile al viejo Gran Padre Invierno qué te gustaría recibir este Festival de Invierno.$B$B¡Jo, jo, jo, date prisa!"
-end load(G) end
-do local function load(G)
 G["97751f0b"]="Los Tauren Chieftains tocan en este escenario cada hora. Muestra un poco de energía: ¡anima a los juglares para capturar un poco de la intensidad del espectáculo!"
 G["97777922"]="Si los demonios cayeron, ¿de dónde cayeron?"
 G["9777d4f8"]="Hola, $r.$B$B¡Pongámonos manos a la obra! No tiene sentido esperar unos suministros que podrían no llegar nunca.$B$BNecesito mi yunque para poder equipar a las tropas debidamente. Ahora mismo está completado en un $3228w %.$B$BY cuando el yunque esté terminado, habrá muchos más objetos poderosos que podré forjar para ti."
@@ -5878,6 +5938,7 @@ G["9d83c64e"]="Dejar a Kael'thas fue lo mejor que pudimos hacer. Sus seguidores 
 G["9d85ebac"]="Saludos, $c.$B$BActualmente la Alianza controla la Fortaleza de Conquista del Invierno. Cuando la batalla esté a punto de comenzar, habla conmigo para unirte.$B$BLa siguiente batalla comenzará en $4354k."
 G["9d87a3d7"]="Hace poco, un druida elfo de la noche llamado Naralex, descubrió una red de cuevas subterráneas en el corazón de Los Baldíos. Creyendo que podría usar los manantiales de las cuevas para restaurar la exuberancia de Los Baldíos, el druida comenzó a absorber las energías del legendario Sueño Esmeralda. De alguna forma, su visión se transformó en una pesadilla y pronto, las Cuevas de los Lamentos se convirtieron en una guarida de feroces y letales depredadores. Se dice que Naralex sigue en algún lugar del laberinto, atrapado más allá de los límites del Sueño Esmeralda."
 G["9d8984d0"]="El diario de Jandice Barov está lleno de calumnias y sandeces sobre los no-muertos. Ya casi al final del libro, se encuentra lo que parece ser un patrón de sastrería para confeccionar una bolsa de tela vil. Esta bolsa la utilizan los brujos para guardar fragmentos de alma. ¿Deseas copiar el patrón en tu propio diario?"
+G["9d9a6ea1"]={ia=1,x="¿Necesitas suministros para el campo?"}
 G["9da5cc1a"]="Mi deber es examinar a los jóvenes iniciados en el camino de la caza.$b$bEso no ha cambiado. Hoy nuestras presas son los jabaespines."
 G["9db92256"]="He oído hablar mucho de ti, $n. El mundo necesita gente como tú, ahora más que nunca."
 G["9db962aa"]="Incluso en estos días luminosos tras el reinado de Kel'Thuzad, tras la caída del Rey Exánime... La Hermandad sobrevive."
@@ -5969,10 +6030,13 @@ G["9fd35b30"]="El suelo sobre el que Scholomance fue construida fue entregado a 
 G["9fdb8f74"]="¡Escucha!$b$bSi destruimos esos cristales, agotaremos al ensamblaje."
 G["9fe5bdbb"]="Cuando caminaba por el cráter después de estrellarme aquí, recordé algo que me dijeron una vez... \"Sube por la montaña,\" dijo la voz en mi cabeza.$B$B¡Escuchando esa voz es como acabé aquí, $n!"
 G["9fea0f40"]="Hay unos papeles y dibujos esquemáticos esparcidos."
+end load(G) end
+do local function load(G)
 G["9febebc8"]="¡Kalytha! ¡Date prisa! La archimaga Selwyn quería verte, dijo que era urgente. ¿Quizá podemos ganar esta batalla?"
 G["9fed392a"]="Nuestro técnico de éter de la Guardia del cielo y su compañía se dirigen al Alto Bash’ir. ¡Únete a ellos allí y ayúdales con su misión!"
 G["9fed8277"]="Parece que todo está en nuestra contra, pero no debemos flaquear, $n. Nosotros somos lo único que se interpone entre las hordas del enemigo y Nordrassil."
 G["9feeb105"]="Mis hombres están preparados. ¡Derramemos sangre de vrykul!"
+G["9ff00e50"]={ia=1,x="¡Espera $c! Tu búsqueda para el próximo jefe no es por aquí. Prueba de otra manera."}
 G["9ff5183e"]="Ante ti se alza un señor de lo Arcano. Desafiarme sería una necedad. A mi paso he dejado muchos cadáveres en llamas."
 G["9ffbdc58"]="Mi odio es fuerte -resopla-, pero hay tiempo de contarte una historia, $r.$B$BHace mucho tiempo tuvo lugar una batalla entre dioses. Agamaggan, nuestro gran dios jabalí, cayó a tierra tras ser derrotado en la Guerra de los Ancestros, con su sangre derramada y sus huesos partidos en dos. -resopla-$B$BAllí donde su sangre tocó el suelo, se alzaron grandes púas, y su cráneo adorna una de las cavernas del Sur."
 G["a00542ac"]="El chico aún es demasiado estúpido para decirlo, no ha habido suficiente exposición a los cristales todavía, pero agradece que le consiguieras esos frascos.$B$BSolo faltan nueve hijos. ¡Gah!$B$B<Las dos cabezas de Torkus suspiran.>$B$B¿Quieres quitarnos uno de las manos? Te lo venderemos baratito."
@@ -6030,8 +6094,6 @@ G["a149dd25"]="¿Puedo ofrecerte algo de beber? ¡Te prometo que será de un muy
 G["a15820f8"]="Corren tiempos difíciles, $r. Se está levantando un mal ancestral, y no le importa si perteneces a la Horda o a la Alianza."
 G["a159a589"]="En este lugar hay mucha corriente... ¿Pero qué me importa? Estoy muerto."
 G["a1600f30"]="¿Qué? ¿Te parezco $gotro:otra; $c?$b$bVete de aquí, ¿estamos?"
-end load(G) end
-do local function load(G)
 G["a1620b15"]="Torre de la Punta domina el paso entre la Tierra de Disputa y los territorios del sur de la Horda.$B$BActualmente pertenece a la Horda."
 G["a16256b9"]="¡Calculo que las probabilidades de obtener una pieza así serían de una entre un millón! ¡Una piel única en la vida! Incluso los artesanos con más disciplina fracasarían varios cientos de veces desollando la bestia antes de poder obtener una sola muestra prístina."
 G["a163c784"]="Ack, has estado $gocupado:ocupada;, ¿verdad? No puedo agradecerte lo suficiente que hayas bombardeado a los demonios y que nos hayas reabastecido de monturas.$B$BEstás haciendo que nuestro trabajo sea más fácil. ¡Sigue así $gchico:chica;!"
@@ -6043,6 +6105,7 @@ G["a1847833"]="Recuerda, todo está conectado. Si las bestias abandonaran esta t
 G["a195ff3c"]="Me alegro de que hables conmigo. Por favor, ayuda a la Alianza en todo lo que puedas."
 G["a19ecbc8"]="Aquí tienes, $gchico:chica;. ¡Haz que valga la pena!"
 G["a8bf818a"]="Aquí tienes, $gchico:chica;. ¡Haz que valga la pena!"
+G["a1a871c8"]={ia=1,x="Así es, así es. Continúa. Sigue con la muerte."}
 G["a1abbbc2"]="Me gusta construir cosas. ¡Aunque todavía me gusta más destruirlas!"
 G["a1b4b0c8"]="Mi hermano Krixx cree que trabajar en Orgrimmar es malo. Nada se parece a la peste de este lugar. ¡Al menos el jefe me paga un plus de peligrosidad!\n¿Qué? ¿Quieres saber dónde está ahora el zepelín? ¡Estás de suerte, tengo mi dispositivo de seguimiento de zepelines aquí!"
 G["a1d6dc77"]="Ah bien, has venido a rescatarme. ¡Ahora, sácame de aquí!"
@@ -6369,6 +6432,8 @@ G["aae89403"]="Es difícil para todos, pero nos las arreglamos.$b$bA veces toca 
 G["aaeb1d55"]="La espada y Mograine formaban un todo. ¿Comprendes? Esta acción corrompió el acero. Mograine corrió la misma suerte convertido ya en un caballero de la Muerte de Kel'Thuzad. Juro que si estuviera vivo, desenmascararía a los que perpetraron este atroz crimen. Permanecí durante dos días bajo la podredumbre de la Plaga, reuniendo fuerzas para escapar de la ciudad arrasada."
 G["aaf0812c"]="He estado observando cómo trabajan los Aldor en las murallas. Van a reconstruir toda la ciudad, ¿sabes?$B$BTrabajan mucho más de prisa que el viejo supervisor Olento en mi Villa del Lago natal. Constantemente perdía las herramientas en el lago, o los gnolls le robaban los suministros.$B$BDebería pedir a los Aldor que le envíen algo de ayuda. Ellos repararían el puente en menos que canta un gallo."
 G["aaf308bd"]="Concéntrate, $n.$b$b¡Tenemos que conseguir el Arca de la promesa antes que Schnottz!"
+end load(G) end
+do local function load(G)
 G["aafce4e2"]="Hola, $n. ¿Estás echando una mano contra la invasión? $gUn:Una; $c como tú debe ser de mucha ayuda para nuestras fuerzas."
 G["ab0bf31b"]="Cuando el ritual esté completo, Marnal llegará y mis hombres ayudarán a acabar con esta grotesca criatura."
 G["ab1388c6"]="Si intentas escapar es que eres muy valiente, joven Ohgan'aka.$b$bAntes de que continúes, déjame que te enseñe cómo utilizar tus dientes para romper a mordiscos las redes de los trols."
@@ -6395,6 +6460,7 @@ G["ab9e9f31"]="Plantas, plantas... a ver, déjame ver aquí. ¡Ah, sí! Aquí es
 G["aba3479c"]="Tenemos una desolladora excelente, vive en la casa que encontrarás junto al Lago de Cristal. Con ella podrás iniciarte en esta profesión."
 G["aba9bae4"]="¡Tengo mucho que hacer y poco tiempo para hacerlo, $r! Por favor, apártate de mi camino.$B$BSi te has contagiado con baba de gusano o la putrefacción de los necrófagos, quizás pueda ayudarte."
 G["abafbb88"]="Servimos con orgullo a Thrall. Viajaremos tan lejos como sea necesario para derrotar al enemigo."
+G["abb6b3c9"]={ia=1,x="Bien conocido, $N. Es bueno ver que $cs como usted está tomando una parte activa en la protección de los groves."}
 G["abd140b8"]="<Los ojos de Cyrus brillan con intensidad>$B$B¿Te devoro o te dejo vivir?$B$BQuizás aún puedas resultar de utilidad... $B$BDesafía a mi esbirro, $r. Sobrevive y tráeme una prueba de tu victoria."
 G["abf36af7"]="¿Qué puedo decir, $n? ¡Eres lo mejor de la Guardia del cielo Sha’tari!$B$BPero no dejes que se te suba a la cabeza. ¡Todavía puedo enseñarte un par de cosas $gchico:chica;!$B$B<El comandante del cielo Keller sonríe y te guiña un ojo.>"
 G["6b40e319"]="¿Qué puedo decir, $n? ¡Eres lo mejor de la Guardia del cielo Sha’tari!$B$BPero no dejes que se te suba a la cabeza. ¡Todavía puedo enseñarte un par de cosas $gchico:chica;!$B$B<El comandante del cielo Keller sonríe y te guiña un ojo.>"
@@ -6423,6 +6489,7 @@ G["acaf9b2b"]="El hermano Wilhelm suele entrenar con Lyria Du Lac en la parte tr
 G["acb1fea9"]="¿Sí, $ghijo:hija; mía? ¿En qué puedo ayudarte?"
 G["633f1f8d"]="¿Sí, $ghijo:hija; mía? ¿En qué puedo ayudarte?"
 G["acb836ba"]="Todavía no tienes la fuerza necesaria para entrar en La Batalla por Gilneas. Vuelve cuando hayas ganado más experiencia."
+G["acc3cdbd"]={ia=1,x="Tread cuidadosamente, $r.$b$bEstos cadáveres son todos los que quedan de mis mejores hombres."}
 G["acd524cb"]="No sabes nada. ¡Vuelve cuando tus conocimientos sobre la fundición de metales hayan aumentado!"
 G["acd995aa"]="El yeti es una criatura feroz y astuta, y este es uno de los más fuertes de su especie. Lo mantenemos dormido echándole hierbas en la comida.$B$BPero no creas que estará en letargo cuando salte a la arena."
 G["acda500c"]="El almirante y sus tropas avanzaron para tomar una de las bases que habías explorado para ellos con anterioridad. Deberías ir a reunirte con ellos."
@@ -6432,8 +6499,6 @@ G["acea004d"]="Realmente es una bendición que tenga tantos aprendices leales y 
 G["acea5a99"]="Mi deber es recoger estos trágicos eventos para el bien de las generaciones venideras."
 G["acec0575"]="<Angela asiente con la cabeza.>$B$BTras esta sucesión de muertes, los Seis decidieron encerrar el báculo tras unas barreras de magia impenetrables que alguien debía custodiar: el vigía del báculo. Yo ocuparía ese puesto."
 G["acf4950a"]="¡Que se hayan presentado son buenas noticias! Los enanos férreos nos han hecho retroceder hasta este lugar, y apenas estamos consiguiendo mantener la posición. \nY, lo que es peor, han empezado a reforzar sus defensas mágicas. ¡Si no atacamos pronto serán capaces de aniquilarnos en un abrir y cerrar de ojos!\nNos las hemos apañado para reconstruir varias máquinas de asedio, demoledores y motocicletas de expediciones de la Alianza y de la Horda que estuvieron aquí antes que nosotros.\n¡Por favor, $n! ¡Eres nuestra última esperanza!"
-end load(G) end
-do local function load(G)
 G["ad0cd0d0"]="Me alegra verte de nuevo, $n."
 G["ad0d4997"]="Por extraño que parezca, podrás encontrar a Morganus, el maestro de establos, delante de los establos."
 G["ad0d7a30"]="Olvida las baratijas de Vixton. ¿Quieres material bueno? Habla con Krixel aquí. Tengo justo lo que necesitas, suponiendo que tengas la reputación adecuada. Ya sabes, en la arena. Este material no es para nenazas."
@@ -6479,6 +6544,7 @@ G["ae36313d"]="Rápido, $r. Estoy cansada y no tengo tiempo para galanterías…
 G["ae37dda9"]="Una losa de mármol normal y corriente."
 G["ae3a3916"]="Es vergonzoso que nosotros, los sin'dorei, hayamos perdido tanto de lo que solíamos llamar hogar. No pasará mucho tiempo antes de que recobremos nuestra fuerza y recuperemos nuestras tierras del sur del control de la Plaga."
 G["ae3f91e8"]="Creo que puede que les hayamos hecho enfadar."
+G["ae40be56"]={ia=1,x="Bueno, hola. Parece que no te opondrías a hacer monedas, ¿eh? Puedo decir por la mirada en tus ojos. Soy Mogul Kebok, supervisor de operaciones en Azeroth, y si es riqueza que buscas, quizás pueda hacer arreglos."}
 G["ae52cb9d"]="Está al otro lado del puente desde la puerta hasta La Calle Mayor. Sigue el sonido de los gritos de los goblins."
 G["ae52e4c2"]="No está mal... Supongo que puedo ofrecerte instrucción. ¡Muy bien! Comencemos..."
 G["ae61c58a"]="Bien. Otr$go:a; $c. ¿Vienes a aprender Romper escudo?"
@@ -6692,6 +6758,7 @@ G["b3a9f6f6"]="¡Oh, $n, estamos abandonados en una isla!"
 G["b3ae1816"]="Servimos a la luz incondicionalmente. ¿Quizás tengas algo más de curiosidad sobre nuestro fin?"
 G["b3afc722"]="¡Algo o alguien se ha cargado al embajador!"
 G["b3b0ae0d"]="Nunca mires al Comandante directamente a los ojos."
+G["b3b86e18"]={ia=1,x="Copiado, informe Status, Soldier."}
 G["b3b8995b"]="Te lo advierto, $gjovencito:princesa;, no estoy de humor para escuchar ningún comentario que consideres amable o gracioso. Estoy aquí para asegurarme de que la investigación del archidruida avanza según los planes y mis órdenes son las de eliminar a todos los impostores que no lleven encima el equipo necesario para servir a mi amado Círculo Cenarion."
 G["009fca19"]="Te lo advierto, $gjovencito:princesa;, no estoy de humor para escuchar ningún comentario que consideres amable o gracioso. Estoy aquí para asegurarme de que la investigación del archidruida avanza según los planes y mis órdenes son las de eliminar a todos los impostores que no lleven encima el equipo necesario para servir a mi amado Círculo Cenarion."
 G["b3b92c3c"]="Esta posada fue construida antes de que se despertaran los salvajes del norte. Demos gracias a la Luz por eso.$B$B¿Te quedarás mucho?"
@@ -6767,6 +6834,8 @@ G["b5d17f59"]="¡Hola, $c!$B$B¿Estás en condiciones de ir a Bahía Ventura y r
 G["b5d655ba"]="Parece que las últimas provisiones que hemos reunido serán enviadas a Silithus en los próximos $2113w días. Y una vez estén allí, alguien tendrá que hacer sonar el gong situado en el Estrado del Escarabajo, fuera de Ahn'Qiraj, para abrir las puertas. A partir de ese momento nos vendrán muy bien las vendas."
 G["b5dcb926"]="¿Has venido para comprarle algo a Hargus?"
 G["b5ede5e5"]="$C, la Dama Aurífera me ha encargado que te exprese su gran satisfacción con el servicio que nos has prestado. Desea que te comunique que espera que sigas siendo un defensor de los intereses de los sin'dorei aquí en las Tierras Fantasma."
+end load(G) end
+do local function load(G)
 G["b5fbd300"]="Hay vidas que dependen de las decisiones que tomemos aquí. Deprisa, $c, di lo que tengas que decir."
 G["b6113132"]="Busca a Kardris Buscasueños. Ella y los demás chamanes están en el recinto de entrada a la Fortaleza de Thrall en el Valle de la Sabiduría."
 G["b6124d61"]="El mayor de tus desafíos aún está por llegar. El Guardián-Ley Eregos es un dragón Azul de inmenso poder. Lo encontrarás sobrevolando el anillo superior."
@@ -6782,6 +6851,7 @@ G["b64045a6"]="¡Se ha abierto el portal! Gracias a tu esfuerzo, ahora podemos v
 G["b6439904"]="Si deseas aprender la senda de la botánica, debes dirigirte a Cima del Trueno. Sigue el camino que sale al norte de Poblado Pezuña de Sangre y coge el ascensor hasta la cumbre del alto. Cuando llegues pide más ayuda a uno de los vigías de la Cima."
 G["b65f709e"]="Puedes encontrar al ancestro Wanikaya en los Rápidos de Hablalluvia, en la Cuenca de Sholazar."
 G["b66183af"]="Zim'Torga puede proporcionarnos cierto nivel de protección, pero la presencia de la Plaga y las acciones de los Drakkari la han debilitado mucho.$B$BAhunae y yo nos ocuparemos del resto de nuestras defensas."
+G["b6764f09"]={ia=1,x="¿Estás listo para luchar contra los campeones de la vanguardia Silver?"}
 G["b686731c"]="Puedes encontrar al ancestro Lanza Reluciente vagando entre las ruinas de Kel'Theril en Cuna del Invierno."
 G["b6878c96"]="Gracias a tus esfuerzos está subiendo la moral, $c."
 G["b6989f4f"]="Escondida en el Barrio de los Magos hay una pequeña tienda llamada El Rincón del Alquimista. Cuando atravieses el Barrio de los Magos verás todo tipo de extrañas tiendas, pero si no te separas del borde exterior seguro que la encontrarás."
@@ -6834,8 +6904,6 @@ G["b802726c"]="\"¿Darnassae?\"$B$BLa druida de los elfos de la noche te mira ex
 G["b80432d6"]="Puedo adiestrarte en minería. ¿Te interesa?"
 G["b80a7a3a"]="$gOtro:Otra; herborista, mmm... Dudo que tus habilidades sean tan buenas como las mías, así que tal vez pueda instruirte en unas cuantas técnicas."
 G["b81d58df"]="Busca a la tabernera Gryshka en el Valle de la Fuerza. Su taberna está en la zona este, al norte de las puertas principales de la ciudad."
-end load(G) end
-do local function load(G)
 G["b830f8d6"]="Un buen día para navegar, ¿verdad?"
 G["b8394ce6"]="Maraudon es uno de los lugares más sagrados de Desolace. El gran templo caverna, es la sepultura de Zaetar, uno de los dos hijos inmortales del semidiós Cenarius. Dice la leyenda, que Zaetar y la princesa elemental de tierra, Theradras, engendraron a la malnacida raza centaura. Dicen que cuando aparecieron, los brutales centauros se volvieron contra su padre y le mataron. Algunos creen que Theradras, en su profunda pena, atrapó el espíritu de Zaetar en la cueva y utilizó sus energías con algún propósito maligno."
 G["b83a775a"]="¡Cuenta conmigo, entrenador! ¡Estoy listo para luchar!"
@@ -7119,6 +7187,7 @@ G["bf9d6ddb"]="Nosotros necesitar cheque para ver si nuestro Rebana... Rebana...
 G["bfa2d4eb"]="¿Has encontrado una llave? ¿Y bien? ¿Es LA llave? ¿Es la llave que abre estos grilletes? Bueno, $gcaballero:señora;, ¡solo hay una forma de descubrirlo!"
 G["bd723580"]="¿Has encontrado una llave? ¿Y bien? ¿Es LA llave? ¿Es la llave que abre estos grilletes? Bueno, $gcaballero:señora;, ¡solo hay una forma de descubrirlo!"
 G["bfa5d756"]="Salió dando tumbos del cuartel.$b$bPedí ayuda a gritos, ¡pero los guardias ni me miraron!"
+G["bfa6a0ae"]={ia=1,x="Sí, esperaba que volvieras. Envié a Korra antes y se encontró con Dartol's Rod, abandonada en el bosque.$B$BTrabajamos tan duro para recuperarlo, $n. Por favor, cuídate de ver que no lo manejas tan descuidadamente en el futuro."}
 G["bfa7ec64"]="Lissah Prendehechizos, que está en lo alto de la Torre de los Magos, es la señora de los encantadores de Lady Jaina."
 G["bfab5365"]="Busca a Austil de Mon en el comedor principal del Mesón La Horca. Lo encontrarás en el extremo sudeste de Rémol."
 G["bfb20ca8"]="Aunque a mis compatriotas les gustaría que jugaras un papel activo en lo que está pasando en Zul'Drak, nosotros, los Zandalari, estamos aquí principalmente para ser testigos de lo que ocurre y redactar la crónica del final de un imperio."
@@ -7167,6 +7236,8 @@ G["c0dd284d"]="Solo aquellos que hayan demostrado no ser hostiles con los Fauces
 G["c0de7596"]="Hay muchos establecimientos para tomar un trago en Ventormenta, pero solo en uno puedes pasar la noche. Dirígete a La Rosa Áurea del Distrito de Mercaderes. He oído que el precio de una habitación es bastante razonable, y las sábanas están limpias."
 G["c0e87c5b"]="Encantado de tenerte en mi tienda. ¿Qué puedo hacer por ti?"
 G["c0fa5d21"]="¡Qué día tan estupendo! Me inspira para crear un nuevo diseño."
+end load(G) end
+do local function load(G)
 G["c0ffd454"]="Avísame cuando quieras sacar un escuadrón.$b$bTengo reservas, así que vuelve si necesitas más."
 G["c1030238"]="Tú sigue mirando, pero más guapa no me voy a volver."
 G["c1052a8d"]="¿Tengo más pelo del que esperabas, $r?$b$bNo puedo decir que me sorprenda. Me lo dicen a menudo todos los que llegan tan lejos..."
@@ -7216,6 +7287,7 @@ G["c242a8c9"]="El archidruida cree que Ivus, el Señor del Bosque, vendrá cuand
 G["c243944a"]="Que sea rápido... Luchar aquí es macabro y necesito mantenerme fuerte."
 G["c2456ebf"]="No importa, $r. Los detalles de mi pasado ardieron cuando me uní a los Druidas de la Llama. No son asunto tuyo.$b$bAdemás, he venido para hablar del futuro de este reino. Y no tengo intención de hablarlo contigo.$b$bAhora, dime... ¿Dónde está Malfurion?"
 G["c24a375b"]="Después del ataque makrura, pudimos ver que El galante no sobreviviría a otro. Así que los pocos marineros que sobrevivieron y yo abandonamos mi nave.$B$BAhora estamos en tierra y pronto emprenderemos el camino hacia la ciudad de la Punta de Nijel, pero hay mucho peligro entre nosotros y el santuario, y me temo que Desolace nos consumirá.$B$BEscribo esto ahora con la esperanza de que alguien conozca nuestra situación y nos vengue ante los pálidos desalmados que fueron nuestra ruina."
+G["c24c7c65"]={ia=1,x="¡Oy! You aquí para un juego de nudillos?"}
 G["c263ab07"]="Muchos son los caminos de la Madre Tierra. Que tus ancestros te protejan, $c."
 G["c266b048"]="¡Te adoro! Me crees, ¿verdad, cariño?"
 G["c2688c70"]="Tu ayuda en la lucha contra la Legión Ardiente sería de lo más apreciada. Lady Jaina Valiente podría utilizar tu ayuda en las primeras líneas."
@@ -7236,8 +7308,6 @@ G["bfad4329"]="Busco un $g héroe : heroína; de gran habilidad. $G Él : Ella; 
 G["c2ba46d5"]="El Ultracañón Pimpampum 5000 es un artefacto único para el lanzamiento de personas.$b$bProyecta su carga a una velocidad cercana a la del vuelo de un dragón. Este cañón es el orgullo de la familia Pimpampum, conocida en todo el mundo por sus derroches en el campo de la aeronáutica.$B$BSi quieres que te lancen por los cielos y volar como un pájaro, busca a Maxima Pimpampum."
 G["c2bd9364"]="Muchas gracias por preguntar, $c. Sin embargo, parece que ya hemos reunido todas las vendas de paño rúnico que consideramos necesarias para la guerra. ¿Te puedo sugerir que preguntes por ahí a los demás y que les ofrezcas tu ayuda si la precisan? Que los antepasados velen por ti."
 G["c2c944b2"]="¿Eres devoto del arcano? ¡Ajá! Muy bien pues... puedes encontrarlos por las Pozas de las Visiones bajo el Alto de los Espíritus."
-end load(G) end
-do local function load(G)
 G["c2cab2b1"]="Todavía no eres lo bastante fuerte para luchar en las Cumbres Gemelas. Vuelve cuando hayas ganado más experiencia."
 G["c2cae6ca"]="Sí, ¿$g rey : reina;?"
 G["2afae83f"]="Sí, ¿$g rey : reina;?"
@@ -7274,6 +7344,7 @@ G["c37acf85"]="El espíritu flota sobre su cuerpo caído. Sus fantasmales ojos t
 G["c384dd24"]="<Los ojos de Terenthis miran fijamente en la distancia, dejando entrever la tristeza de sus últimos momentos.>"
 G["c386617b"]="Hablaría contigo si olieras mejor. ¿Qué te parecería un poco de colonia? ¿Quizás perfume?"
 G["c38b752a"]="La Horda da mucha importancia al honor y a la guerra. Estoy seguro de que no hay nada de honorable en lo que están haciendo los boticarios."
+G["c38d301a"]={ia=1,x="Descansen, $c. Si estás pasando aunque te sugiero que te quedes con las carreteras y sólo viajes de día. Si su negocio está aquí en Darkshire, considere prestar sus habilidades al Night Watch. Nuestra habilidad es incuestionable pero nuestros números son pequeños."}
 G["c398f551"]="¡Sal de aquí, antes de que te vean los esclavistas!"
 G["c3b9573b"]="El Manto de la Noche es una plaza en la zona sur de Dalaran. La fuente encantada que hay allí es un lugar de pesca muy popular."
 G["c3bc7691"]="Desde aquí puedes ver el alcance completo de la destrucción del Cataclismo. Es espantoso ver lo frágil que es nuestro mundo en realidad."
@@ -7335,6 +7406,7 @@ G["c58716c3"]="¡No permitiré que esos malditos orcos invadan Crestagrana de nu
 G["c5892eec"]="¡Lok'tar! ¿Has venido para servir a la Horda en la batalla?"
 G["c58fe14f"]="Espero que este maldito trasto funcione. *Araxes da golpecitos al transpondedor portátil.*"
 G["c59e48ea"]="Esos tauren locos siempre intentan hacer saltar por los aires mi máquina voladora. ¡Llevamos así años!"
+G["c5b895ef"]={ia=1,x="¿Estás buscando un Inscription Trainer? Bueno, no puedes encontrar al entrenador aquí, mejor vete a la ciudad más cercana."}
 G["c5bcd2a2"]="Cuida tus pasos, $gforastero:forastera;. No nos gustan $glos bellacos:las bellacas; como tú."
 G["c5c6f540"]="¡Silencio! ¿Crees que los dragones apestados nacerán y se adiestrarán solos?"
 G["c5ddaf4b"]="Ese tipo de magia solo trae malas noticias, hazme caso. No sé por qué han permitido que Grimrizz se establezca justo a la puerta de la Destilería Cebatruenos. ¡Más te vale no acercarte a él!"
@@ -7364,8 +7436,10 @@ G["c66f3fd7"]="Además de los Brutos, mis hermanos y yo luchamos en la batalla d
 G["c68b2571"]="<El guardián Arcano hace un gesto hacia el mercado al aire libre de la parte baja de la ciudad.>"
 G["c69db92d"]="Mirren y yo somos dos de los mejores cazadores de cada lado del Portal Oscuro. Quédate, puede que aprendas un par de cosas."
 G["c6a1f865"]="Los trols aceptan bastante bien a los de mi especie. Después de todo llevan siglos hablando con los muertos, mucho antes de que aparecieran los no-muertos.$B$BEs bueno para el negocio."
+G["c6a5baa0"]={ia=1,x="Saludos $N! ¿Estás listo para ser probado en Crusaders Coliseum?"}
 G["c6ac1506"]="No es la primera vez que acabo metido hasta las cejas en una selva que me tiende una emboscada. He recorrido el mundo entero, $ghijo:muchacha;, y que me aspen si voy a dejarme matar aquí."
 G["dbdfc1ab"]="No es la primera vez que acabo metido hasta las cejas en una selva que me tiende una emboscada. He recorrido el mundo entero, $ghijo:muchacha;, y que me aspen si voy a dejarme matar aquí."
+G["c6acb10c"]={ia=1,x="No sé qué te ha poseído para buscar a un chamán... pero he visto a alguien que coincide con el perfil. Hay una mujer que se llama Farseer en la orilla del Valley of Heroes."}
 G["c6ad243b"]="El hacha de Ahunae acabará con los Drakkari.$B$B¡Y tú te encargarás de todo lo que escape a mi hacha!"
 G["c6b03d84"]="¡Yo no sé nada! Pregúntale a otro."
 G["c6bc917b"]="¡¿Qué?! ¿Crees que los mineros crecen en los árboles?$b$b¿Tan malo es?"
@@ -7386,6 +7460,7 @@ G["c715f11f"]="¿Adónde? Era todo lo que conocíamos, todo lo que habíamos con
 G["c71b1dc4"]="¿Qué necesitas?"
 G["c71b2273"]="El banco de los Aldor está situado al noroeste del centro de la ciudad."
 G["c71cecf9"]="¡Lárgate, sobrestante! Ya hemos hablado.$B$B¡Deja de arrastrar los pies y ejecuta tus órdenes en la Foresta Ruuan!"
+G["c7247f6d"]={ia=1,x="Esta planta de girasol se destaca como una roca en el mar de la corrupción que es Felwood. Los pétalos Its tienen una fragancia poderosa que refuerza sus espíritus y fortalece su resolución."}
 G["c72588fa"]="No puedo entrenarte, joven."
 G["c7342366"]="¡Hola! ¿Te interesa aprender más sobre los carneros de carreras y las carreras de carneros?"
 G["c73fda5d"]="¡Me alegro de verte! Estoy demasiado débil para romper los eslabones de esta cadena.$B$B¡Bueno no te quedes ahí! ¡Libérame!"
@@ -7410,6 +7485,7 @@ G["c7bbf122"]="¿Qué es lo que quieres?"
 G["c7c7fd4a"]="Fue en esos días oscuros cuando la tenacidad de Goldrinn en la batalla llegó a ser legendaria. Mientras los demás temblaban nada más ver el rostro de las hordas de demonios, aquellas multitudes animaban al gran ancestro lobo a realizar mayores hazañas de fuerza. Arremetía contra sus filas, mostrando los colmillos salpicados del vil icor de los demonios mientras sus enormes garras los destrozaban por docenas...$B$BSe decía que se quedó atrás para cubrir a los elfos de la noche en su retirada de Eldre'Thalas, la antigua ciudad que ahora conocemos como La Masacre.$B$B¿Acaso murió? No creo que un espíritu de una ferocidad animal como la suya pueda morir de verdad, $n."
 G["c7cb4b50"]="Temen mis palabras. Hacen que sea un ejemplo. Una parodia del único dios verdadero, Neptulon.$B$B<Skar'this escupe.>$B$BSe acerca el jusssto castigo, mortal. La gloriosa mano del Cazamareas se extenderá hasta los no creyentes como una guadaña contra una nueva cosecha."
 G["c7ce4fac"]="Era un buen hombre, $r. Luchamos juntos en muchas batallas...$b$b¡Esas bestias deben pagar!"
+G["c7d3eefd"]={ia=1,x="Ave, $C. En mis años he visto a muchos ansiosos tauten que desean demostrar su valía para la tribu. No debe olvidarse que el entusiasmo no es sustituto de la sabiduría y la experiencia."}
 G["c7d44a16"]="Es el héroe más glorioso entre los arakkoa.$B$BDicen que, en la antigüedad, construyó Skettis con sus propias garras. Era nuestro mayor campeón y defensor, pero nos dejó cuando dejamos de venerar a Rukhmar.$B$BEmpezamos a adorar a un nuevo maestro, uno que nos prometió increíble poder y estatus en el cosmos.$B$BAlgunos dicen que Terokk y Rukhmar son uno y que nos abandonó cuando nosotros le abandonamos a él."
 G["c7d45331"]="Los enanos Hierro Negro de La Fosa de la Escoria en La Garganta de Fuego, tienen muchas cajas fuertes."
 G["c7e24981"]="Soy Atuik, cabecilla de los Kalu'ak de Komawa."
@@ -7440,6 +7516,7 @@ G["c855e5f3"]="La corrupción de Frondavil ha atrapado mi espíritu aquí... Jam
 G["c85a5dea"]="Estas minas son un lugar terrorífico. Por suerte, no tengo intención de quedarme mucho tiempo."
 G["c85e4f99"]="En el caos de la batalla, es el equilibrio entre la luz y la sombra lo que nos conduce a la victoria."
 G["c8617515"]="Busca el Rincón de la Maquinaria de Nogg en el Valle del Honor, al noreste de la minería El Cañón Rojo."
+G["c8647419"]={ia=1,x="El Cataclysm ha destruido las montañas occidentales de Thousand Needles. El South Sea se ha precipitado y los cañones están inundados.$B$BPor favor, $c, ¡debe venir a nuestra ayuda en New Thalanaar!"}
 G["c8648916"]="Busca La Cola del Dracoleón, justo en el exterior del Bastión de los Valientes."
 G["c868ef22"]="Ya los teníamos a la vista... los barcos de la Horda... Y de la nada aparecieron unos tentáculos que atraparon nuestro barco... ¡lo partieron en dos!$b$bLos supervivientes... fuimos capturados por los nagas en cuanto tocamos el agua.$b$bEso fue hace casi una semana."
 G["c86dbfe1"]="Tenemos que seguir adelante, ¿estás $gpreparado:preparada;?"
@@ -7485,6 +7562,7 @@ G["c964129f"]="Tienes talento con el yunque y el martillo, pero no el suficiente
 G["c970ee0e"]="La Horda ha arriesgado mucho para aventurarse en Terrallende - recursos, mano de obra – incluso la defensa táctica de nuestras tierras está en juego. A pesar de todo, Thrall cree en la promesa de esta tierra devastada. Hay una luz extraña en sus ojos estos días – como si sintiera alguna revelación conmovedora que los demás no sentimos.$B$BCon todo, es mi Jefe de Guerra y mi hermano de sangre. Lo seguiría a través de las mismas puertas del abismo."
 G["c9749fc1"]="Mmm... tu cara me resulta familiar, $r. Dame un momento...$B$B¡Ajá! Te recuerdo de los Páramos de Poniente. ¡Eres $n! Me alegro de volver a verte. Pero esperemos que esta vez nos ayudes a terminar el trabajo.$B$BAhora estamos muy lejos de los Páramos de Poniente, pero si no ganamos esta batalla, puede que no haya un hogar al que volver."
 G["c9766c9a"]="Thunderaan no tenía ni idea de los avances del Señor del Fuego. Antes de que mi Señor pudiera reaccionar, Sulfuras, el legendario martillo de Ragnaros, descargó un golpe mortal. Thunderaan cayó, derrotado.$B$BEl Señor del Fuego se dio un festín con la esencia de mi Señor, pero no consiguió consumirlo completamente."
+G["c97cf8dd"]={ia=1,x="¿Qué deliciosos platos podemos ofrecerle?"}
 G["c97dfec6"]="¡Sabía que podrías, $n! Nos has salvado el pellejo.$b$bAhora salgamos de aquí antes de que tenga que matar a Fizz y a Evol."
 G["c989b09e"]="Asegúrate de hablar con mi hijo Marley en la excavación. Es un buen muchacho, mis ojos y mis oídos por todo Bael Modan."
 G["c99595fa"]="¿Has venido para suplicarle a la Luz? ¿O tal vez has venido para instruirte en el arte de lo sagrado?$b$BSi estás aquí para hablar con el arzobispo Benedictus, siento informarte de que ha salido en una misión."
@@ -7560,6 +7638,8 @@ G["cba2eefb"]="¡Eh! ¿Es que esta camisa roja me hace parecer más prescindible
 G["cba42bd1"]="Bena trabaja como una posesa. La he visto encorvada día y noche sobre estas pociones, casi siempre sin comer ni dormir. Sé que nuestros aliados no-muertos necesitan ayuda, pero empiezo a temer que acabará haciéndose daño."
 G["cba67d69"]="Estas salas contienen secretos que van más allá de nuestros sueños más alocados."
 G["cbaf0bb2"]="Al parecer siempre hay cosas que hacer por aquí. Han llegado nuevas órdenes a las tres de la mañana, es muy raro."
+end load(G) end
+do local function load(G)
 G["cbbee14f"]="\"¿Generosidad del Peregrino?\" ¡Más bien \"Ingenuidad del ingenuo!\"$B$BMontones de bodegas de carga llenas de comida regaladas... ¡GRATIS! ¡Es alucinante!$B$BAunque supongo que debería desviar parte de los fondos de mi Muestrario de Aves para pavo... Me cuesta creer que esa inversión en pollo fuera una ruina. ¿De dónde salieron todos esos huevos del Jardín Noble?"
 G["cbc01336"]="Dun Baldar es el punto más álgido de poder de la Alianza en el Valle de Alterac. Enclavado en la parte norte del valle, Dun Baldar es el punto de partida de todos los avances hacia el sur.$B$BDun Baldar sigue intacto."
 G["cbc44468"]="¡Ha vuelto la época de la celebración del Jardín Noble! Es el momento de agradecer a la Luz el renacer del mundo."
@@ -7585,6 +7665,7 @@ G["cc8e0864"]="¡Es extraordinario! El grito de muerte de Kaz'rogal debería lle
 G["cc99638f"]="¡Feliz Halloween! ¿Te gusta mi máscara? ¡Da mucho miedo!"
 G["cc9cdec5"]="Antes he visto soldados de Ventormenta apagando un fuego. ¡Eran héroes!"
 G["cca55e8d"]="¡Cómo me alegro de verte!$B$BHay trabajo que hacer y no tenemos demasiado tiempo."
+G["cca7bda8"]={ia=1,x="Creo que no. Rimblat ya ha demostrado que la nueva vida puede crecer de la tierra sucia. Ahora debemos encontrar una manera de reproducir y, lo que es más importante, mantener el crecimiento.$B$BMientras estoy aquí, también estoy ofreciendo mis servicios a los aventureros que entran en Naxxramas."}
 G["ccaa16dc"]="¡Busca esas cajas con grano plagado y usa tu disruptor arcano en ellas!$B$BEntonces Arthas tendrá las pruebas que necesita para comenzar la purga de Stratholme."
 G["ccaa4ea1"]="Es mi ayudante.$b$bVale, no ha sufrido la peste de la misma forma que nosotros, pero en cualquier caso le ha afectado alguna peste. Se ha arrodillado ante Sylvanas, así que es uno de los nuestros igual que tú y yo.$b$bEntre nosotros... ¡Para ser sincero, creo que la Dama Oscura se ha pensado que ya estaba de rodillas cuando ha entrado en la cámara!"
 G["ccac5c3a"]="Aquí las arañas son tan grandes como... ¡yo! ¿Sabes cómo exterminar una plaga de arañas?$B$BExacto. Dinamita. Un montón de dinamita."
@@ -7638,8 +7719,6 @@ G["ce29ddaa"]="Has venido a aprender, ¿eh? Bueno, quizás tenga algo de trabajo
 G["ce3602a5"]="Los terráneos son una raza sintética que ha sido diseñada por los Creadores y que actúa como una de las razas originales que poblaron el mundo conocido como Azeroth. Los terráneos fueron creados para ayudar a los Creadores en la colonización de las regiones más recónditas de este mundo.$B$BSon una variante de matriz de ente subterráneo utilizado en otros mundos fundados por los Creadores. La construcción de esta raza prototipo produjo varias anomalías que se manifestaron tras la síntesis inicial."
 G["ce37d2d9"]="Somos uno en la Luz, $ghermano:hermana;, pero no puedo instruirte."
 G["2da472dd"]="Somos uno en la Luz, $ghermano:hermana;, pero no puedo instruirte."
-end load(G) end
-do local function load(G)
 G["ce69afed"]="Perdónenme, héroes. Debí escuchar a Uther. Tenía que… verlo por mí misma. Poder mirarlo a los ojos una última vez. Lo siento."
 G["ce6bddce"]="No puedo enseñarte nada más. Pero he oído hablar de una elfa de la noche que podría hacerlo. Su nombre es Ainethil y vive en el Bancal del Artesano de Darnassus."
 G["ce765e00"]="Ahora bien, si lo que quieres es aprender el oficio del desuello, entonces deberás dirigirte al Casco Antiguo y entrar en La Piel Protectora."
@@ -7664,6 +7743,7 @@ G["cedf2f0f"]="Que la peste llegue a Nuevo Avalon solo es cuestión de tiempo."
 G["cee98ac4"]="Si te interesa la ida y venida de las caravanas y los mercaderes aquí, en el Puesto del Hachazo, entonces has tenido suerte, soy el orco que estás buscando. Sin embargo, mala suerte, no me gustan las personas.$B$BSi quieres algo, dilo rápidamente."
 G["ceeacb83"]="El maestro artesano Omarion simplemente desapareció una noche, como un susurro al viento... ¡Paf! ¡Y desapareció! Ahora soy el único que puede fabricar los objetos para los chicos que están en primera línea de batalla."
 G["cef64d64"]="¿Tienes un mensaje para mí?"
+G["cf03e3fa"]={ia=1,x="Cuidar a estas bestias sin miedo, que están entre mis compañeros de clan y la muerte, es un honor."}
 G["cf158c4a"]="¿Tienes alguna idea de lo que tengo que sufrir para traer estos incomparables objetos y ponerlos a la venta? ¡Ven a verlo con tus propios ojos!"
 G["cf186440"]="Encontrarás al ancestro Corona Nevada en la Capilla de la Esperanza de la Luz en las Tierras de la Peste del Este."
 G["cf1f2b6d"]="Este no es mi mayor trabajo, ni por asomo. ¡Puede que este cataclismo sea lo mejor que nos haya pasado nunca!"
@@ -7742,6 +7822,7 @@ G["d138f8cb"]="¿Qué ves cuando miras al oeste, mortal?"
 G["d1512af8"]="Estamos construyendo una avanzada permanente aquí, en las Tierras de Fuego, $n. Aunque derrotásemos a Ragnaros, otro podría ocupar su lugar. No podemos permitir que lo que ocurrió en Las Estepas Ardientes y en el Monte Hyjal vuelva a amenazar nuestro mundo.$B$BCon ese fin, plantaremos un \"Árbol Centinela\". Un árbol con raíces en Azeroth, pero con un dosel protector que crecerá en este terrible reino. Bajo su cobijo, apostaremos de manera permanente un grupo de druidas para mantener una vigilia eterna sobre este mundo desolado."
 G["d15b69ef"]="Me parece que es bastante arriesgado. Hay mucho en juego en este plan. Para empezar, la libertad de Crestagrana."
 G["d1740899"]="¡Ahora ya lo sabes todo, camarada! Prepárate... ¡pronto atacaremos!"
+G["d1895520"]={ia=1,x="¿Estás listo para continuar la batalla con Anub-Arak?"}
 G["d191aa3d"]="¡Jarrr, sí! ¿Qué nesesitas?"
 G["d1950657"]="¿No hubo suerte con el desertor del Martillo Crepuscular? Inspecciona minuciosamente las montañas hacia el sudeste. Se dice que un misterioso ermitaño habita allí."
 G["d195b6c3"]="Dedlow Ajenjo es el cadáver que buscas. Suele andar por la zona sur de la ciudad."
@@ -7758,6 +7839,7 @@ G["d1d2ce38"]="Gran batalla tener aún lugar en Retiro Pavesa.$B$B¿Quizá tú s
 G["d1dd73d0"]="Hay mineros en Lunargenta. Con toda seguridad, estarán cerca de las apestosas forjas en las que funden lo que encuentran."
 G["d1e3856d"]="El ancestro Guardaluna está vigilando El Cruce en Los Baldíos del Norte."
 G["d1f946eb"]="He sufrido, pero ahora, puedo sentir cómo se va lentamente de mí. Me siento... libre."
+G["d20060c1"]={ia=1,x="Unas semanas en este patético castillo nos dará tiempo para trabajar en algunos productos nuevos y dejar que otros se olviden del desafortunado... malentendido en Dragonblight."}
 G["d200f236"]="Tu hedor atraerá a todos los dragones que estén a millas de distancia. Dime qué quieres, y que sea rápido."
 G["d2063e07"]="Los encuentros de arena puntuados volverán a comenzar en $6318d.$B$BLos aspirantes a campeones ya están afinando sus habilidades y consiguiendo el mejor equipo posible. ¿Estarás $gpreparado:preparada;?"
 G["d206f47b"]="Aunque los silítidos semejen muy peligrosos, no son más que dóciles criaturas al lado de los señores supremos qiraji."
@@ -7812,6 +7894,7 @@ G["d3521c3c"]="¡Las Tierras de la Peste son un lugar excelente para atacar a la
 G["d3576cb9"]="¡Fascinante! Hay pasajes que nunca antes había visto. Ha debido llevarte un rato localizarlo. Si vuelves a encontrar un libro como este, me encantaría que me notificases inmediatamente.\nLleva contigo uno de mis familiares del Kirin Tor por si te topas con algo."
 G["d35e956d"]="<El Gran Inquisidor Ribalimpia asiente.>$B$BSí, el joven Mograine, conocido como Comandante Escarlata. Aunque sospecho que bajo la influencia del Gran Cruzado... Dejó que su padre fuera hacia la emboscada como un cordero que llevan al matadero."
 G["d36ee8c3"]="No estamos en posición de juzgar estas atrocidades. Ivus lo hará cuando llegue."
+G["d36fa8c1"]={ia=1,x="Todos estamos aquí por diferentes razones, $c.$B$BSonríe Rayne.$B$BEstoy aquí para reunirme con Rimblat del Earthen Ring. Tiene algunas teorías interesantes sobre la limpieza de estas tierras."}
 G["d3714258"]="Hola, cariño. El zepelín que para aquí te llevará directamente a Cima del Trueno, sin coste alguno. ¿Quién necesita dracoleones, cuando nos tienen a los goblins? ¿Verdad?"
 G["d373bd9f"]="$gBienvenido:Bienvenida; a la Capilla de la Esperanza de la Luz, $gforastero:forastera;."
 G["d3778209"]="¿Cómo podría ayudarte?"
@@ -7869,6 +7952,7 @@ G["d4ad812f"]="Ah... ¿Otro chamán que busca la iluminación? ¿Acaso los espí
 G["d4b4d32e"]="Es una sabia decisión humillarte ante mí, $n, en tu deseo de aumentar tu conocimiento de la brujería."
 G["d4be7c87"]="Aarrgh... Es demasiado tarde para mí, $ghermano:hermana;.$B$BEstoy... acabado..."
 G["0667e7ab"]="Aarrgh... Es demasiado tarde para mí, $ghermano:hermana;.$B$BEstoy... acabado..."
+G["d4c25f91"]={ia=1,x="Hola, amigo. Mi nombre es Remy. Soy de Redridge al este, y vine aquí buscando negocios, buscando negocios. ¿Tienes algo?"}
 G["d4c70359"]="Los Vigiatierra no permitirán que las riñas entre facciones pongan en peligro el trabajo del Anillo de la Tierra en este lugar.\nAquellos que perturben la paz serán castigados... severamente."
 G["d4ce6773"]="Ahh, ¿no has podido resistirte, eh? ¿Quieres ser mejor, más fuerte y más $grápido:rápida;? Pues eso es lo que hacen cada uno de estos amuletos. ¡Pasa y compra una de estas pequeñas maravillas! ¡No encontrarás nada más barato!"
 G["d4e89bcf"]="Perritos de la Luna Negra, ¡recién sacados de la barbacoa! Venid a probarlos mientras están calientes."
@@ -7928,6 +8012,7 @@ G["d672c4e2"]="No parece suceder nada. Puede que la caldera de peste esté arrui
 G["d67ae20c"]="¿Qué buscas? Habla. No voy a venderte un elekk hasta que demuestres amistad y dedicación a mi pueblo."
 G["d67d21b7"]="Encontrarás uno junto al Banco de Orgrimmar, en medio del Valle de la Fuerza."
 G["d69027cc"]="En nombre del ilustre y todavía neutral Cártel Bonvapor, te deseo que disfrutes de tu estancia.$b$b¡Recuerda, todo el mundo es bienvenido en Gadgetzan! Todo el mundo menos los piratas."
+G["d6908577"]={ia=1,x="Estamos aquí para ayudar."}
 G["d690b229"]="¿Sip? ¿Quieres volar? Nop... ¡No-no-no de eso nada!"
 G["d6a4ca5c"]="¿Por qué ser cruel con Zoquete? Zoquete hambriento, eso es todo."
 G["d6a83b36"]="Lisrythe puede ser un poco... intimidante al principio, pero tiene lo que buscas. Vende su mercancía en la parte oriental de la Grada del Arúspice."
@@ -7940,6 +8025,7 @@ G["d6bf3c72"]="Mildred Kuinn se puede encontrar en el hospital, en la sección n
 G["d6f787b3"]="<El servidor Crepuscular balbucea y de su boca mana espuma blanca.>"
 G["d711a557"]="Por supuesto que no, $gchico:chica;. Ustedes, los aventureros, a menudo sois víctimas de las circunstancias; sujetos al drama político que suele desarrollarse entre los ciudadanos y la realeza.$B$BMi consejo es que busques algo más, específicamente, una nueva profesión.$B$BEste mundo ya tiene suficientes héroes."
 G["a057ad7b"]="Por supuesto que no, $gchico:chica;. Ustedes, los aventureros, a menudo sois víctimas de las circunstancias; sujetos al drama político que suele desarrollarse entre los ciudadanos y la realeza.$B$BMi consejo es que busques algo más, específicamente, una nueva profesión.$B$BEste mundo ya tiene suficientes héroes."
+G["d717603a"]={ia=1,x="Hay un poderoso infernal llamado Kroshius al noreste de este campamento. Es por eso que Niby está aquí. Kroshius es un infernal mayor - un infernal que ha durado más de lo esperado. Verás, turba, un infernal cae en la tierra con gran intensidad para servir a su maestro pero esta intensidad se desvanece rápidamente. Una vez que las llamas ardientes han muerto, el infernal se desmorona."}
 G["d71b50e1"]="¡Saludos, $r $gamigo mío:amiga mía;! Me honras con tu presencia.$B$B¿Cómo puedo ayudarte?"
 G["d7205535"]="Hay buenas pieles en los pantanos, si tienes las agallas para conseguirlas. Montones de crocoliscos. Creo que mi hermano y yo nos quedaremos una temporada.\n¿Puedo ayudarte con algo?"
 G["d726e18f"]="Golpear al gnoll es un divertido juego que consiste en golpear... gnolls.$b$bEs una atracción nueva y bastante popular entre nosotros... Bueno, a Sayge no le hace tanta gracia."
@@ -7954,6 +8040,8 @@ G["d74cad8d"]="El emisario Taluun me trajo consigo esperando que pudiera enseña
 G["d74d5313"]="Siempre es un placer conocer a personajes de tu talla en esta tierra abandonada. ¿Puedo ofrecerte algún tipo de ayuda?"
 G["d75b8e15"]="Intento mantener la Colina del Centinela abastecida, y no es fácil con toda esta acción."
 G["d76065a9"]="¿Qué quieres saber sobre el Vuelo Azul?"
+end load(G) end
+do local function load(G)
 G["d763e824"]="El espíritu de agua nos ha dejado. Nuestra tribu está condenada."
 G["d7691d9c"]="¿Quieres que tus demonios sean más poderosos? Te costará, pero has venido al lugar adecuado."
 G["d77191aa"]="Tu jormungar puede moverse si te has sumergido en la nieve, pero así no puede atacar. Cuando emerge, puede utilizar su poderoso ataque ácido para atravesar la armadura del coloso férreo. Prepárate para sumergirte para escapar de los demoledores ataques del coloso."
@@ -7966,6 +8054,7 @@ G["d7b6365c"]="Me temo que no durarías mucho en el Valle de Alterac, $c. Regres
 G["d7b993cc"]="¡¿Goblins zombis?! ¿Qué vendrá después? ¿Un volcán que explote?"
 G["d7bb4482"]="El doctor Gustaf VanHowzen trabaja en la planta baja del cuartel."
 G["d7c111fc"]="Uldaman se encuentra en el extremo más al norte de las Tierras Inhóspitas."
+G["d7c4dfe6"]={ia=1,x="El viento susurra a los que escuchan...$B$B¿Lo oyes?"}
 G["d7cc1d10"]="Mmm... parece que prometes, te concedo eso. ¿Y bien? ¿Dónde estábamos?"
 G["d7d09076"]="Esto no ser juego. Quieres usar hacha, di palabras. ¿Sí? \"Di hola a mi coleguita.\""
 G["d7dedb05"]="En Frondavil hay plantas que pueden librarse del mal cuando se les aplique el bálsamo para plantas Cenarion. Sé cómo fabricar el bálsamo a partir de distintas clases de objetos. Según tus conocimientos, verás que puedes ayudarme de varias maneras.$B$BTambién vas a necesitar una antorcha Cenarion para poder trabajar aquí. Se trata de un objeto que te permite ver el mal y la podredumbre de la naturaleza ocultos a simple vista."
@@ -8040,8 +8129,6 @@ G["7eec6ef5"]="Eres una especie de personaje venerado por aquí $Ghombre:nena;. 
 G["da18cfee"]="¿Qué sería un barco Bonvapor sin un ingeniero? Ejepar puede ayudarte con cualquier cosa que necesites. También es muy hábil reparando cosas rápido, si eso es lo que quieres."
 G["da23e79b"]="¡Tienes que ayudarme, $c! El Martillo Crepuscular ha atacado mi zepelín y sus hombres han intentado llevarse las tablillas y el cristal que transportaba a Orgrimmar."
 G["da25bf98"]="Si la sastrería es lo que te gusta, Vizzklick tiene definitivamente todo lo que necesitas para ello. Echa un vistazo a tu alrededor, $n, y dime si deseas comprar algo."
-end load(G) end
-do local function load(G)
 G["da2b28da"]="Solo un mago puede aprender la magia de los portales, $c."
 G["da36ec4f"]="$gBienvenido:Bienvenida; a Telredor, $c. Si necesitas algo, no dudes en preguntar."
 G["da42e37b"]="¿Has visto cómo me guiña el ojo Ros'eleth cada vez que voy a recoger ropa o algún sombrero? Cuando las cosas se calmen por aquí, me la voy a llevar de paseo al bosque.$B$BAhora sí que echo de menos todas esas tabernas de Ventormenta."
@@ -8162,6 +8249,7 @@ G["dda006f8"]="Tu capacidad de aprendizaje me ha superado. Tendrás que hablar c
 G["dda04936"]="Encontrarás un buzón de correo cerca del centro de cuidadores."
 G["dda1f00d"]="¿Una secta secreta? No tendrás nada que ver con esos orcos de mal aspecto que merodean por la torre de zepelín sur, ¿no?"
 G["dda3cbab"]="¡Si te gustan las emociones fuertes, nuestro Capitán es el mejor! ¡Adoro este trabajo!"
+G["dda8a648"]={ia=1,x="Bienvenido a Ogri'la, $c.$B$BLos ogros han logrado ganar una gran agudeza mental a través de las emanaciones mágicas de los cristales circundantes. Though no entendemos completamente cómo funcionan, hemos venido a apreciar nuestro nuevo hogar y sólo queremos vivir en paz.$B$BDesgraciadamente entonces que los demonios y etéreos, y especialmente el Black Dragonflight, no nos dejarán a esa paz."}
 G["ddb6ecac"]="El arca está justo más allá de esas ruinas.$b$B¡Vamos!"
 G["ddbaeaf4"]="Si permitimos al Martillo Crepuscular abrir portales como este por todo Azeroth, no habrá ejército en el mundo que pueda salvar el planeta. ¡Tenemos que cerrar esa red de túneles!"
 G["ddc7cb0d"]="Buenas, colega."
@@ -8222,6 +8310,7 @@ G["df5d17f6"]="Vira Pezuña Joven tiene su consulta en la casa grande de la part
 G["df5dea02"]="Vamos a ver... Vi unos braceros que salieron corriendo de la mina de allá. Decían algo de una araña. ¿Clientes nuevos? Bueno, está Jeralee, esa gnoma joven y encantadora que la semana pasada trajo un hacha que le doblaba la altura. Ah, y el magus Bisp vino a pedir una armadura. No sé para qué querría una armadura de placas..."
 G["df621423"]="Me alegra ver que has sobrevivido, $n."
 G["df672ee1"]="Cuando Lolo no quiere derramar ná de su valiosa cerveza o mancharse el vestidito, me llama. Sip. El viejo Hansel es el enano al que usan pa administrar algo de justicia y mucho dolor."
+G["df72951e"]={ia=1,x="Ese niño me da escalofríos. Está allí todo el día comunicándose con su abuelo. Luego se convertirá en decirle a su madre lo que el abuelo le dijo y ella - por supuesto - sólo sonríe y asiente su cabeza.$B$B¡Corderos! ¡Lemmings! ¡Todos!$B"}
 G["df7aecb8"]="Muchos son objetos poco comunes y muy preciados que busca mi clientela.$B$BTú podrías traérmelos, $c. A cambio te ofreceré lo que codicies.$B$B¿Hablamos de eso que me gustaría poder obtener hoy?"
 G["df7c1d30"]="Nosotros, los de Darnassus, ansiamos competir en el torneo."
 G["df837f9e"]="¡Ser jefe ahora, perro!"
@@ -8353,6 +8442,8 @@ G["e2bf52da"]="Llevo mucho tiempo observando a los Hierro Negro... Maquinando, e
 G["e2c5016d"]="Hace poco el Martillo Crepuscular invadió estas aguas antes prístinas y las tierras que las rodean.$b$bHan contaminado mi lago, y quiero que se vayan para que pueda volver a purificarlo."
 G["e2caccc9"]="La herrería te permite forjar objetos a partir de metales, minerales y piedras: armas cuerpo a cuerpo, armadura pesada de malla y placas, materias primas para otras profesiones de producción y mejoras para equipo como piedras de afilar y puntas de escudo.\nLos herreros más avanzados pueden añadir una ranura de gema a sus propios brazales y guantes, además de sus cinturones o los de otras personas. Estas ranuras se pueden llenar con gemas mágicas que hacen que el objeto que las lleva sea más poderoso.\nLa herrería se compagina bien con la minería, ya que te permite recolectar tus propios minerales y menas."
 G["e2cf2a16"]="Que los espíritus te guíen, $r."
+end load(G) end
+do local function load(G)
 G["e2d19072"]="El ancestro Primapiedra lleva muchos años en La Vega de Cristal en Silithus."
 G["e2d99b05"]="Te saludo, $r. Qué hago aquí es una historia para otro momento. Uf, es una de las malas.$B$BMi hermano y yo estamos atrapados aquí, entre nuestro tiempo y el presente. No osamos marcharnos por miedo de causar una paradoja temporal. Esperamos pacientemente hasta que los dragones nos devuelvan a nuestra auténtica línea temporal.$B$B¿Cuánto tiempo hace, preguntas? En realidad no estoy seguro. Pregúntaselo a mi hermano.$B$B¿Te apetece algo de queso?"
 G["e2db3057"]="<El agua distorsiona un poco los gemidos de dolor del soldado herido.>"
@@ -8442,8 +8533,6 @@ G["e57e9d0c"]="<El druida parece estar en un sueño profundo, totalmente ajeno a
 G["e59218f7"]="No puedo creerlo. ¡Este etéreo no tiene ni un solo ojo de basilisco!$B$B¡Y su líder tiene la desfachatez de llamarse 'el Príncipe Contrabandista'!"
 G["e598485a"]="Me alegro de volver a verte, $n. He traído a una amiga conmigo. Ella tenía muchas ganas de verte.$B$B<Kessel se ríe.>"
 G["e5a5eb27"]="¡Observad las llamas del verano!"
-end load(G) end
-do local function load(G)
 G["e5a7008a"]="Buscas a Tai'jin. La podrás encontrar en los cuarteles de la parte oriental de la ciudad."
 G["e5b26e5a"]="Que no sea mi corazón no significa que no pueda estar roto."
 G["e5b3452e"]="$962w Comandante(s) Pico Tormenta y $950w Teniente(s) Pico Tormenta."
@@ -8495,6 +8584,7 @@ G["e6cace7b"]="La batalla por la Cuenca de Arathi es una batalla por recursos. M
 G["e6ce031a"]="<El Viejo Aleta Helada te mira con recelo, su ojo de pez parpadea mientras él mueve su cabeza hacia arriba y hacia abajo a modo de brusco rechazo.>"
 G["e6cefb14"]="No... No te puedes sentar encima de mí."
 G["e6d03cc2"]="¡Hola! Acabo de volver de explorar las Ruinas de Kel'Theril, al Suroeste. Ahora pretendo investigar al lechúcico salvaje que se encuentra sobre esa colina, en el Matorral del Ala del Búho.$B$B¿Has hablado con Eralas Cieloámbar de Aldea Rut'theran? Él me pidió venir aquí y quizás tenga también una tarea para ti."
+G["e6df662d"]={ia=1,x="Esta planta de raíz de látigo saludable se encuentra como un polo opuesto a la mancha enferma de corrupción que domina Felwood. Tender y raíces sanas producen deliciosos tubérculos que se colocan en el suelo junto a la planta."}
 G["e6e0cb98"]="Si los fúrbolgs están ya tan perdidos, ¿qué ocurrirá con el resto de Teldrassil?"
 G["e6e2ffda"]="Eso no es cierto, $gamigo:amiga;. Me creas o no, soy capaz de fabricar esta armadura. Si te interesa, podríamos llegar a un acuerdo. Cuanto antes deje mi vida como asesino, mejor."
 G["bed1ea60"]="Eso no es cierto, $gamigo:amiga;. Me creas o no, soy capaz de fabricar esta armadura. Si te interesa, podríamos llegar a un acuerdo. Cuanto antes deje mi vida como asesino, mejor."
@@ -8575,6 +8665,7 @@ G["e8ecf9cd"]="¡Oh, $n, nos has salvado de nuevo! ¡Gracias por ayudarnos a eli
 G["e8ef7616"]="Te doy la bienvenida al puesto de mando del IV:7, $n."
 G["e8ef8e3b"]="Instruyo y guío a los jóvenes cazadores en las tradiciones transmitidas a través de muchas generaciones."
 G["e8f6b94b"]="¿Vienes a aprender del maestro, eh?"
+G["e8fcacd4"]={ia=1,x="Esta planta de windblossom se destaca como un faro de luz en la oscuridad que es Felwood. Plump y bayas jugosas cuelgan de la planta, maduran para la recogida."}
 G["e9087f43"]="¡He oído que iban a intentar hacer estallar el coche de los gnomos en la siguiente carrera! Sea esto verdad o no, yo me mantendría alejado de sus boxes."
 G["e90f447c"]="¡Has llegado a una fogata del Anillo de la Tierra!"
 G["e9166e7a"]="Brujos... No me interesan mucho esos tipos. Como ese Grimrizz que tiene una tienda junto a la Destilería Cebatruenos. ¡Seguro que la cerveza acabará perdiendo todo el gas por su culpa! Brujos... ¡bah!"
@@ -8737,6 +8828,7 @@ G["ed155619"]="Quieres ser $gingeniero:ingeniera;, ¿eh? ¡Bien, por Muradin, ha
 G["ed251ec3"]="Vamos, vamos, $n, relájate y respira hondo. Necesitas aprender a confiar en mí.$B$BTu falta de experiencia en estas situaciones está haciendo que te asustes y el miedo siempre exagera la realidad. ¿Ves? No hay ninguna crisis.$B$BAhora que hemos aclarado esto, tengo que pedirte que dejes de ser tan negativo. No es bueno para la moral del equipo..."
 G["ed490971"]="Solo vendo el mejor equipamiento, probado y comprobado. Y los precios son fijos, así que si quieres regatear, vete a hablar con un goblin."
 G["ed496fea"]="Tienes mi aprobación, $n. Puedes forjar hojas mejor que cualquier otro al que haya instruido en años. No obstante, si quieres fabricar un arma de verdad, tienes que hablar con Myolor Furiahendida. Ese enano te guiará por el buen camino."
+G["ed523c06"]={ia=1,x="Encontrará un par de draenei conversando con Tyrande Whisperwind en el nivel superior de The Temple del Moon.$B$BEllos sabrán cómo ayudarte."}
 G["ed5b1786"]="Bueno, he visto cosas mejores. Pero tienes potencial, no lo negaré. ¡Presta atención e intenta aprender algo!"
 G["ed5c5607"]="Si necesitas un alojamiento para tu mascota mientras estás entrenando a otra, deberías hablar con Jenova Petrescudo, en el Distrito de los Enanos."
 G["ed68be49"]="¿Seguro que estás en condiciones de pelear conmigo?"
@@ -8752,6 +8844,8 @@ G["ed963d31"]="El Príncipe planeó encarcelar a un demonio de gran poder en un 
 G["eda43864"]="Los hipogrifos de Vesprystus te conducirán rápidamente a tu destino."
 G["eda67973"]="¿Sabes qué me gusta, $n?"
 G["edaa3cee"]="Si no me hubiera torcido el tobillo viniendo a este lugar, estaría ahí dentro con mis amigos. Mmmm, ahora que lo pienso, quizás sea mejor que esté aquí fuera, ¿no?"
+end load(G) end
+do local function load(G)
 G["edafe924"]="Debo haber roto cientos de viales cuando empecé a preparar pociones. El cristal era demasiado frágil entre mis torpes manos. Espero que seas más $gcuidadoso:cuidadosa; que yo."
 G["edbb3128"]="¡Hola, $c!$B$BEstas pobres criaturas están luchando con todas sus fuerzas contra los secuaces del Martillo Crepuscular en este lugar tenebroso.$B$BHe hecho todo lo que he podido para revivir a aquellas que han caído.$B$BSi necesitas una montura extra, estas aves están dispuestas a alzar el vuelo de nuevo. ¡Trátalas bien!"
 G["edbeb155"]="Has superado la prueba, ¡bien hecho! Tu instrucción puede continuar."
@@ -8844,8 +8938,6 @@ G["efa8f47a"]="Mmm. Supongo que la magia trae sus consecuencias. El que siembra 
 G["efaa7083"]="¿Quieres ayudar a los Renegados en su lucha contra los humanos en la Cuenca de Arathi? Pues ve al Bastión de los Valientes y habla con Deze Delirioníveo."
 G["efccc766"]="Las reliquias son, en verdad, un gran misterio. Quizá si las estudias de forma regular puedas adquirir un mejor conocimiento de sus capacidades."
 G["efd4304a"]="Esto es lo que he sacado de la información que conseguiste con la inspección.$B$BHay dos campamentos Forja principales: Campamento Forja: Odio, al oeste de aquí y Campamento Forja: Miedo, al suroeste. Cada campamento tiene un teletransportador de la Legión, una forja y varias torres de amparo de hechizos. Además los campamentos están custodiados por guardias de cólera que manejan cañones viles. Para terminar, cada campamento tiene un señor del foso como sobrestante.$B$BEsto no debería suponer ningún problema...$B$B< Altruis ríe.>"
-end load(G) end
-do local function load(G)
 G["efe50fbb"]="Franklin Lloyd en el Barrio de los Pícaros, en el anillo exterior de Entrañas."
 G["efe6dbf8"]="¿Me dará la Horda la posibilidad de luchar contra la Plaga?"
 G["eff3fb53"]="Bueno, vale... ¡no te pongas $gchulo:chula;! Aunque, como has demostrado tu competencia, ¡podemos empezar!"
@@ -8873,6 +8965,7 @@ G["75405ea3"]="Nosotros mucho más limpios que los ogros de Tanaris. Por todo el
 G["f09c9c84"]="Este oso vaga por un camino cercano a El Paso del Espolón, al oeste del Lago Mystral y la Avanzada de la Alianza del Refugio Brisa de Plata. Si bien es la criatura más dócil de las tres a las que te enfrentarás en la Caza de Vallefresno, no deberías subestimarlo. Su presencia es una amenaza constante para los viajeros que pasan por Vallefresno y Sierra Espolón."
 G["f09ef728"]="¿Tienes lo que hay que tener para quedarte en mi cocina?"
 G["f0a3188b"]="<El soldado tiene un corte profundo de aspecto doloroso en un costado.>"
+G["f0b2e647"]={ia=1,x="Vaya a la ciudad Orc de Orgrimmar, encontrarlo en el Valley of Honor en una tienda llamada Arms of Legend."}
 G["f0bb3d3f"]="¿Estás $gpreparado:preparada; para la guerra, $r?"
 G["f0c193c7"]="Esta es mi pregunta, $c:$B¿Cuál de los Aspectos creados por los titanes se convirtió en la malvada criatura conocida como Alamuerte?"
 G["f0d1a0ca"]="Lavinia Crowe es la encantadora local. Ha montado una tienda en el anillo interior de El Apothecarium."
@@ -9000,6 +9093,7 @@ G["f3d87220"]="<Kilag te indica con un gesto que bajes la voz.>"
 G["f3decbb8"]="Ahora tienes dos muestras de aceite. ¿Qué muestra elegirás a continuación?"
 G["f3e21496"]="¿Qué te trae por aquí, $n? No vemos mucha gente por este lugar. Con razón, supongo."
 G["f3f5a9f0"]="¿Qué parece? ¡El suelo está helado como un témpano!$B$BLas ruedas de estos carros de despojos fueron construidas para avanzar sobre barro como mucho. Vamos a necesitar una abominación y algunas cadenas para moverlos."
+G["f3f9cc37"]={ia=1,x="Aceptaré su ayuda en esta inspección, $c. No asuma que confiaré en sus hallazgos o sus motivos sin mi propia verificación."}
 G["f3fc63f8"]="Mumman ha establecido su humilde tienda cerca de la entrada principal de la ciudad, justo después de pasar por la posada. Es un cocinero excelente."
 G["f3fddf46"]="<Se acerca un poco.>$B$BEntre tú y yo. Estoy pensando en escaquearme una noche de estas, ¿me entiendes?"
 G["f4009551"]="Así es. Mal que le pesara al joven Mograine, conseguí llegar al Monasterio Escarlata. Grité y grité, y proclamé a los cuatro vientos lo que había ocurrido por si alguien podía escucharme. Pero me asesinaron a sangre fría y me encerraron en esta cámara, convirtiéndome en el oscuro secreto de la orden. Pero algunos escucharon mis palabras. De este modo nació El Alba Argenta."
@@ -9047,6 +9141,7 @@ G["f533ef3b"]="Ho... hola, $n. Lo siento, me estoy recuperando de mis heridas.$B
 G["f5341de2"]="¿Quieres reforjar un objeto? Ya no realizo esos servicios.\nCreo que los etéreos de \"Los Tres Vientos\" en el Distrito de la Catedral de Ventormenta podrán ayudarte.\nCualquier guardia de la ciudad te puede decir dónde encontrarlos."
 G["f53442f9"]="Después de la cerveza y las salchichas, la parte más popular de la Fiesta de la Cerveza son los souvenirs. Desde las vestimentas tradicionales hasta mini-barriles de sabrosa cerveza, Belbi Tiratrastos tiene toda clase de objetos basados en la Fiesta de la Cerveza. ¡Pero asegúrate de que tienes suficientes fichas de la Fiesta de la Cerveza, ya que es la única forma de comprarlos! Puedes conseguir fichas ayudando en la zona de la Fiesta."
 G["f536faf0"]="Avísame cuando estés $glisto:lista; para viajar a Uldum. Le preguntaremos a Cyclonas qué sabe."
+G["f53c0164"]={ia=1,x="TEXTO DE LA MISIÓN"}
 G["f53d1b20"]="El Cráter de Un'Goro está lejos, al sur de Kalimdor. Más allá de las Mil Agujas en Tanaris. Busca las grandes piedras flotantes... marcan la entrada del Cráter. Pero ten cuidado... no se trata de un camino fácil. Hay raptores no muy lejos de la entrada."
 G["f54569e7"]="Por lo que he entendido, todo está listo y ya se han preparado y enviado los últimos pertrechos al Fuerte Cenarion. El último envío debería llegar en menos de $2113w días. Una vez que nuestro equipo y nuestras tropas estén allí, el portador del cetro del Mar de Dunas podrá hacer sonar el gong de Ahn'Qiraj para abrir sus puertas. Entonces dará comienzo la guerra."
 G["f54c761d"]="Sálvate, $r. ¡Huye de este lugar! El Sigilo Carmesí te ejecutará en el acto si te descubre."
@@ -9099,6 +9194,7 @@ G["f6559717"]="Si bien para mí no hay mejor cama que la fresca hierba que cubre
 G["f656ce69"]="$gForastero:Forastera; date prisa y ponte en contacto con Lady Jaina Valiente. Con su pequeño ejército de la Alianza pretende frenar el asalto de la Legión Ardiente y retrasar la llegada de Archimonde."
 G["f665b4a3"]="¡Oye, yo te conozco! Supongo que debo agradecerte que yo esté aquí. Ese accidente en el teletransporte ha sido lo mejor que me ha pasado.$B$BSi vuelves a la Tundra Boreal, dile a mi copia tonta y santurrona que he ascendido un poco en la vida."
 G["f666142e"]="Aunque el artefacto parece estar en una condición impecable, no percibes nada de particular en él."
+G["f66897c8"]={ia=1,x="No esperaba a nadie aquí. Ven a hacerme compañía, o sólo buscar una salida?"}
 G["f66d3991"]="Todos hemos sido testigos de terribles tragedias, pero no debemos permitir que nos lleven a la desesperación.$B$BEn lugar de ello, aferraos a esos recuerdos para que algún día podamos resarcirnos."
 G["f67bb7f5"]="No puedo ayudarte, $c. El jefe de guerra Mor'ghor me ejecutaría si permitiera que la Horda utilizara uno de nuestros jinetes del viento.$B$BAlgún día recibirá lo que se merece..."
 G["f680d9c1"]="Que las grandes bendiciones caigan sobre ti, amable $r."
@@ -9130,6 +9226,7 @@ G["f77b0035"]="Tienes que derrotar a nuestros rivales en cualquier campo de bata
 G["f7812ebc"]="Es poder, imbécil.$B$B<Los ojos de Mataus se ensombrecen.>$B$BEstos insensatos envían a Naxxramas a idiotas como tú para recuperar la armadura profanada y así purificarla y devolverle su antigua gloria.$B$B<Mataus escupe.>$B$BTan solo pensar en tal estupidez me hace subir la bilis a la boca.$B$BYo también busco esa armadura pero en su estado actual."
 G["f788173c"]="En la Luz todos proyectamos sombras, $ghermano:hermana;. ¿Buscas más orientación hoy?"
 G["b1685820"]="En la Luz todos proyectamos sombras, $ghermano:hermana;. ¿Buscas más orientación hoy?"
+G["f7895324"]={ia=1,x="Aventura de tierras lejanas y cercanas$bEncuentro con gente extraña y queer$bPero si me preguntas una pregunta$b¡Primero debes completar una tarea simple!"}
 G["f78af108"]="Saludos, $c. Nosotros, los Martillo Salvaje, sabemos recompensar a nuestros amigos."
 G["f78b4331"]="Sí, colee'hga, e'te é el momento de la felisidá de viví y de la primave'ra. ¿Ya has conseguío muchos huevos?"
 G["f79580c0"]="¡Me alegra mucho que preguntes, $n!$B$BNadie me pregunta jamás cómo funcionan las cosas. Se limitan a está aquí, dame eso, voy a hacer que explote. O, no me aburras con los detalles, déjame apuntar y disparar. O, aún peor, a quién le importa cómo funcione, ¿es una explosión mayor que la última vez?$B$BJuro que, a veces, podría gritar, ¿sabes? ¡Siempre hago el trabajo de Hobart, pero nunca me llevo el mérito! ¡Tengo que ser la ayudante de manitas más menospreciada, más explotada y con el peor sueldo de la historia!$B$BEspera, ¿qué me habías preguntado?"
@@ -9145,9 +9242,12 @@ G["f7b46c8e"]="Espera, $c..."
 G["f7c1d217"]="Si buscas instrucción en las armas, yo la ofrezco."
 G["f7c86003"]="¡Agh!$b$b¿Por qué no puede ser fácil por una vez?"
 G["f7cac93b"]="Todos los miembros de la Horda son iguales ante mis ojos, $n. Todos hemos sufrido innumerables cargas y si no fuera por la sabiduría y el honor, no seríamos mejores que la Plaga o que mi propia gente cuando nuestra sangre estaba manchada por el demonio Mannoroth.$B$BEs tu deber ayudar a la Horda y defender nuestro modo de vida. Pero también lo es saber cuándo dar clemencia y compasión a amigos y enemigos por igual. Esto es la nueva Horda, no una prole de demonios sin voluntad propia."
+G["f7d717d1"]={ia=1,x="¿Qué? Todos tenemos ganancias que hacer... y no lo haremos por estar ociosos."}
 G["f7d923d7"]="¡Luchamos por la gloria de Brunnhildar!"
 G["f7eb43ac"]="Sabía desde hace mucho tiempo que vendrías a buscarme, $n.$B$BTodos los seres sensibles del mundo dependen en gran medida de las decisiones que toman. Las decisiones conllevan más decisiones y, estas, nos convierten en lo que somos. Ahí yace tu fortuna, quién eres y las decisiones que tomas.$B$B¿$gListo:Lista; para descubrir dónde yace tu fortuna?"
 G["f7edb104"]="Te doy la bienvenida a la Liga de Expedicionarios. Si necesitas información, y esa información viene en algún libro, quizás pueda ayudarte."
+end load(G) end
+do local function load(G)
 G["f8025d5f"]="Mantente alerta, $n.$B$BAún no estamos a salvo..."
 G["f803a470"]="Normalmente los desolladores llevan sus pellejos a Forjaz para curarlos. ¿Por qué no vas allí para ver si encuentras a uno que quiera instruirte?"
 G["f80403ef"]="¿Qué estás mirando, $gmuchacho:muchacha;? ¿Es que nunca has visto un enano?$B$BSerá mejor que te pongas en camino si no quieres tener problemas."
@@ -9160,6 +9260,7 @@ G["f81b5a39"]="Espero que no estuvieras buscando algo para comer, $c."
 G["f81be710"]="Todo esto es insoportable.$b$bOjalá tuviera el valor para... <sollozo>."
 G["f82b06ad"]="Que la Luz ceda a tu voluntad en todos tus esfuerzos."
 G["f82f4d31"]="¿Qué miras tú, asere?"
+G["f83178bd"]={ia=1,x="Así que has venido a Niby para aprender los secretos de llamar a un sirviente infernal del Nether.$B$B¡Silencio! ¡Niby lo sabe todo!$B$BNiby no es tan rápido para separarse con tal conocimiento. En primer lugar, debe ayudar a Niby con una tarea muy importante."}
 G["f8501d95"]="Puedo indicarte cómo encontrar otro maestro de armas, si lo prefieres. ¿Qué armas te interesan?"
 G["f85086db"]="Sí, buscas a Austil de Mon. Siempre está por el mesón, en el extremo sudeste de la ciudad. Se llama Mesón La Horca, no tiene pérdida."
 G["f85e23aa"]="Huesos... carne... músculos... tendones... cartílagos... todo se junta bajo mi sierra."
@@ -9246,8 +9347,6 @@ G["fa6da99a"]="He oído que hay un instructor de minería en Cima del Trueno, al
 G["fa709a1c"]="¿Un poco de ayuda aquí? ¿O es que necesitas más instrucción, $n?$B$BPor si no te has dado cuenta, estoy bastante ocupado ahora mismo."
 G["fa83e205"]="Hola, $n."
 G["fa88ad75"]="Debes derrotar al príncipe Sandoval. Es tu única espranza de sobrevivir, $c."
-end load(G) end
-do local function load(G)
 G["fa8b3406"]="Hola, $gmuchacho:muchacha;... mi nombre es Oglethorpe y es posible que sea el creador del aparato más fascinante que nunca hayas tenido en tu poder. Si te ha explotado, no soy responsable. Si por el contrario te ha hecho rico, ¡podemos empezar a hablar de los derechos de autor!$B$BAh, y si eres de Gnomeregan no tengo nada que hablar contigo."
 G["89399d28"]="Hola, $gmuchacho:muchacha;... mi nombre es Oglethorpe y es posible que sea el creador del aparato más fascinante que nunca hayas tenido en tu poder. Si te ha explotado, no soy responsable. Si por el contrario te ha hecho rico, ¡podemos empezar a hablar de los derechos de autor!$B$BAh, y si eres de Gnomeregan no tengo nada que hablar contigo."
 G["fa8cb7f2"]="Te saludo, $gaventurero:aventurera;. Sigue mis advertencias antes de aventurarte en La Ciénaga Negra."
@@ -9381,6 +9480,7 @@ G["fdbb6de2"]="<Abuela Geyah sonríe.>$B$BSoy vieja. Pronto llegará mi hora. Cu
 G["fdbc278b"]="¿Has tenido suerte?"
 G["fdc18154"]="<A Ahlurglgr le sorprende poder entenderte.>"
 G["fdc3227a"]="Hay dos torres del zepelín a las afueras de Orgrimmar. La del este da servicio a los Claros de Tirisfal y a la Vega de Tuercespina, mientras que la del oeste da servicio a Rasganorte y a Cima del trueno."
+G["fddc31f5"]={ia=1,x="Aquí encontrará el Inscription Trainer."}
 G["fde418c6"]="<Nuainn Alatormenta niega con la cabeza.>$B$BCon la Legión a un lado y los esbirros de Illidan al otro, vamos a necesitar todo lo posible para defender el bastión, ¡y lo haremos! Todo auténtico Martillo Salvaje preferiría morir a renunciar a nuestra tierra."
 G["fde62024"]="La gente vendrá desde todos los rincones para ser testigo de los frutos de nuestro trabajo, $n."
 G["fde7f594"]="¿Buscas instrucción? Mala suerte, no soy tu chica."

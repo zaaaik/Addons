@@ -91,7 +91,9 @@
  },
  "008b5909": {
   "en": "Corruption sneaks into nature's grove. The forest must be protected at all costs.",
-  "en_h": "008b5909"
+  "en_h": "008b5909",
+  "es": "La corrupción entra en el bosque de la naturaleza. El bosque debe ser protegido a toda costa.",
+  "src": "ia"
  },
  "008bc559": {
   "en": "That was an impressive display.  But are you ready for your next challege?",
@@ -1037,7 +1039,9 @@
  },
  "04f2e1e7": {
   "en": "The creation of Teldrassil was a great achievement, but now the world must shift to regain its balance.",
-  "en_h": "04f2e1e7"
+  "en_h": "04f2e1e7",
+  "es": "La creación de Teldrassil fue un gran logro, pero ahora el mundo debe cambiar para recuperar su equilibrio.",
+  "src": "ia"
  },
  "04fee10b": {
   "en": "You want to learn to be a tailor?  Hmmm... I believe there's a tailor over in the Eastvale Logging Camp that may be able to get you started.",
@@ -1767,7 +1771,9 @@
  },
  "08438f49": {
   "en": "I've done my time in the trenches, and spent many years training the pups. It's good to be home. No matter what has become of it, this is my home.",
-  "en_h": "08438f49"
+  "en_h": "08438f49",
+  "es": "He hecho mi tiempo en las trincheras, y he pasado muchos años entrenando a los cachorros. Es bueno estar en casa. No importa lo que sea de ella, este es mi hogar.",
+  "src": "ia"
  },
  "0854248d": {
   "en": "How can I keep a clean inn with all of this going on? Are you going to take care of this pygmy problem?",
@@ -3235,7 +3241,9 @@
  },
  "0f4c685a": {
   "en": "Marshal Windsor has been expecting you, $N. Unfortunately, he is currently indisposed. He should be returning shortly.",
-  "en_h": "0f4c685a"
+  "en_h": "0f4c685a",
+  "es": "El mariscal Windsor te ha estado esperando, $N. Lamentablemente, actualmente está indispuesto. Debería regresar pronto.",
+  "src": "ia"
  },
  "0f5e255d": {
   "en": "$C, back on Azeroth, the Silverwing Sentinels hamper our progress in the woods. We need you there on the battlefront to push them back! You will earn great honor and reputation with the Warsong Outriders for helping us - join us now!",
@@ -3347,7 +3355,9 @@
  },
  "0fe63d7b": {
   "en": "So you want to be a Inscriber? Well you can't find the trainer out here, better head to the nearest city.",
-  "en_h": "0fe63d7b"
+  "en_h": "0fe63d7b",
+  "es": "¿Quieres ser un Inscriber? Bueno, no puedes encontrar al entrenador aquí, mejor vete a la ciudad más cercana.",
+  "src": "ia"
  },
  "0ff466b7": {
   "en": "Fengus make you fierce!  Crazed!  RAR!",
@@ -4359,7 +4369,9 @@
  },
  "1477e0a2": {
   "en": "Iam Here, Commander",
-  "en_h": "1477e0a2"
+  "en_h": "1477e0a2",
+  "es": "Iam Here, Commander",
+  "src": "ia"
  },
  "147bb84a": {
   "en": "It's an honor to have a $r such as yourself aiding us ogres.  You're keeping our hope of a better future alive.$B$BNow if we could just get rid of these headaches.  Are you sure you don't want one of our sons?",
@@ -5173,7 +5185,9 @@
  },
  "18467835": {
   "en": "You having a good time here with us in Ogri'la?$B$BWe have a lot of stuff that our ogres are making, day and night.  We save the best to sell to our coolest guests like you!$B$BSo, as you're out there doing your thing, and making the mountains a safer place, stop by from time to time to see what we have.$B$BGood luck out there, $g man : chicky;.",
-  "en_h": "ac138454"
+  "en_h": "ac138454",
+  "es": "¿Te lo estás pasando bien aquí con nosotros en Ogri'la?$B$BTenemos muchas cosas que nuestros ogros están haciendo, día y noche. ¡Ahorramos lo mejor para vender a nuestros huéspedes más geniales como tú!$B$BAsí que, como estás ahí fuera haciendo tu cosa, y haciendo de las montañas un lugar más seguro, para de vez en cuando para ver lo que tenemos.$B$BBuena suerte, $ghombre:chica;.",
+  "src": "ia"
  },
  "18520469": {
   "en": "I've been patient up to this point, but if they don't get that rocket sling working soon, I'm going to shadow bolt someone!",
@@ -5291,7 +5305,9 @@
  },
  "18de7ec9": {
   "en": "Hey citizen ! I need your help.. .",
-  "en_h": "18de7ec9"
+  "en_h": "18de7ec9",
+  "es": "Hey ciudadano! Necesito tu ayuda.",
+  "src": "ia"
  },
  "18e3407f": {
   "en": "Remember to always show your respect for the elements of the world.",
@@ -5649,7 +5665,9 @@
  },
  "1ab54a8a": {
   "en": "These are good blades you make, $N. Cut a stone and still sharp enough to slit a throat. I have seen better though, an orc named Kelgrum Bloodaxe makes them, go and learn all he can teach you.",
-  "en_h": "1ab54a8a"
+  "en_h": "1ab54a8a",
+  "es": "Son buenas cuchillas que haces, $N. Corta una piedra y sigue lo suficientemente afilada para cortar la garganta. He visto mejor sin embargo, un orc llamado Kelgrum Bloodaxe los hace, ir y aprender todo lo que puede enseñarte.",
+  "src": "ia"
  },
  "1ab6a9a2": {
   "en": "Look for Innkeeper Pala in the building just south of the Thunder Bluff Bank on the lower rise.",
@@ -6175,7 +6193,9 @@
  },
  "1d9681ef": {
   "en": "Arxes! Send help! Im pinned down in the mines, I...Im not sure where iam exactly but i had the presence of mind to drop tracers on the gro8und behind me",
-  "en_h": "1d9681ef"
+  "en_h": "1d9681ef",
+  "es": "¡Arxes! ¡Envíen ayuda! Estoy atrapado en las minas, no estoy seguro de dónde estoy exactamente pero tenía la presencia de la mente para dejar rastros en el gro8und detrás de mí",
+  "src": "ia"
  },
  "1d968c2e": {
   "en": "Hey everyone, it's $N!",
@@ -6515,7 +6535,9 @@
  },
  "1f027c2e": {
   "en": "Sometimes I think there's a big gray cloud in the sky, just raining down bad luck upon us. First, we're driven off our land, and now we can't even get out of Westfall. Everything's a mess. Something needs to be done.",
-  "en_h": "1f027c2e"
+  "en_h": "1f027c2e",
+  "es": "A veces creo que hay una gran nube gris en el cielo, lloviendo mala suerte sobre nosotros. Primero, estamos expulsados de nuestra tierra, y ahora ni siquiera podemos salir de Westfall. Todo es un desastre. Hay que hacer algo.",
+  "src": "ia"
  },
  "1f1b4cc6": {
   "en": "<Zen'tabra closes her eyes and shakes her head.>$B$BWhen Vol'jin called for everyone ta flee, we... we couldn't face de tribe after failing dem so badly. So, we fled south, ta de untamed jungle islands.$B$BDe wilds claimed a few o' us dat first night. We found safety in a deep cave in de center o' de isle, but me dreams dere were not peaceful: I be havin' a vision!",
@@ -6897,7 +6919,9 @@
  },
  "20fd199f": {
   "en": "Welcome, champions! All of our attempts at grounding her have failed. We could use a hand in bringing her down with these harpoon guns.",
-  "en_h": "20fd199f"
+  "en_h": "20fd199f",
+  "es": "¡Bienvenidos, campeones! Todos nuestros intentos de castigarla han fracasado. Podríamos usar una mano para derribarla con estas armas de arpón.",
+  "src": "ia"
  },
  "2101aaa2": {
   "en": "Welcome to the Allerian Stronghold, $c.",
@@ -7579,7 +7603,9 @@
  },
  "23eafdac": {
   "en": "Missing US text",
-  "en_h": "23eafdac"
+  "en_h": "23eafdac",
+  "es": "Falta de texto de EE.UU.",
+  "src": "ia"
  },
  "23efa436": {
   "en": "Blue security card insertion successful.  Dispensing security level delta unit.$b$b01010000 01101100 01100001 01111001 00100000 01001101 01101111 01110010 01100101 00100000 01010111 01101111 01010111",
@@ -9059,7 +9085,9 @@
  },
  "2b25c416": {
   "en": "Please, $r, get me out of here! Unlocking the cage will surely attract my brother's attention. Kill Darkweaver Syth!",
-  "en_h": "2b25c416"
+  "en_h": "2b25c416",
+  "es": "¡Por favor, $r, sácame de aquí! Desbloquear la jaula seguramente atraerá la atención de mi hermano. ¡Mata a Darkweaver Syth!",
+  "src": "ia"
  },
  "2b375365": {
   "en": "Go to Orgrimmar, you will find her and her brood in the Valley of Honor.",
@@ -9753,7 +9781,9 @@
  },
  "2df0a166": {
   "en": "How can we help you?",
-  "en_h": "2df0a166"
+  "en_h": "2df0a166",
+  "es": "¿Cómo podemos ayudarle?",
+  "src": "ia"
  },
  "2df72571": {
   "en": "Midnight is Attumen the Huntsman's personal mount. I've never seen a faster, stronger, or more mean spirited horse. And her rider is even more temperamental! Everyone keeps their distance from her, lest they get a hoof upside the head from Midnight or a beating from Attumen.",
@@ -10327,7 +10357,9 @@
  },
  "31349b1c": {
   "en": "You will be tested many times by the darkness that surrounds our lands, $N. But to ensure you are always prepared, we will often ask tasks of you so you are at the height of your own power.$B$BGo with the Light, and remain virtuous.",
-  "en_h": "309f69a8"
+  "en_h": "309f69a8",
+  "es": "Serás probado muchas veces por la oscuridad que rodea nuestras tierras, $N. Pero para asegurarte de que estés siempre preparado, a menudo te preguntaremos tareas para que estés a la altura de tu propio poder.$B$BVe con la Luz, y sigue siendo virtuoso.",
+  "src": "ia"
  },
  "3141160c": {
   "en": "I'm only here in case someone faints. The new recruits get a little excited and occasionally overexert themselves.$B$B...well, that, and sometimes one of the new mechano-tank prototypes explode. Whoops!",
@@ -10775,7 +10807,9 @@
  },
  "3337d6b5": {
   "en": "If I can get the proper ingredients, we can create some explosives that will not only allow me to damage the Venture's Co.'s operations, but also cause a distraction.$B$BI know you're impressed, but it gets better... I'll tell you more soon enough.",
-  "en_h": "c22a8a41"
+  "en_h": "c22a8a41",
+  "es": "Si puedo conseguir los ingredientes adecuados, podemos crear algunos explosivos que no sólo me permitirán dañar las operaciones de Venture's Co., sino también causar una distracción.$B$BSé que estás impresionado, pero se pone mejor... Te lo diré lo antes posible.",
+  "src": "ia"
  },
  "334197e6": {
   "en": "I hope these Shattrath folks stop fighting soon.  They're beginning to get on my nerves.$B$B How can I help you?",
@@ -11757,7 +11791,9 @@
  },
  "37479442": {
   "en": "This vibrant night dragon plant stands in stark contrast to the demonic taint that sunders Felwood.  Rare and luscious fruit, known as Night Dragon's Breath, hang heavily from the plant.",
-  "en_h": "37479442"
+  "en_h": "37479442",
+  "es": "Esta vibrante planta de dragón de noche se encuentra en contraste con la mancha demoníaca que sube Felwood. Rare y fruta exuberante, conocida como Night Dragon's Breath, cuelgan fuertemente de la planta.",
+  "src": "ia"
  },
  "375b830f": {
   "en": "Can't you see that I'm busy! We'll never have this base ready in time for the Prince's return!",
@@ -13123,7 +13159,9 @@
  },
  "3e83bfbc": {
   "en": "You honor us with your presence, $n.",
-  "en_h": "3e83bfbc"
+  "en_h": "3e83bfbc",
+  "es": "Nos honras con tu presencia, $n.",
+  "src": "ia"
  },
  "3e8bc5f5": {
   "en": "Your will is strong, and your intent is clear.$B$BPerhaps you are worthy...",
@@ -13169,7 +13207,9 @@
  },
  "3ea61eac": {
   "en": "Dark forces encroach upon our borders, ancient taints resurface, and new evils emerge to topple the delicate balance of the land. In times of such darkness, we all must be vigilant.",
-  "en_h": "3ea61eac"
+  "en_h": "3ea61eac",
+  "es": "Las fuerzas oscuras se apoderan de nuestras fronteras, antiguas manchas de resurfacción y nuevos males emergen para superar el delicado equilibrio de la tierra. En tiempos de tal oscuridad, todos debemos estar vigilantes.",
+  "src": "ia"
  },
  "3ea6af01": {
   "en": "I can't see why you want to learn something else... but I suppose I can point you in the right direction. What training are you after, specifically?",
@@ -13407,7 +13447,9 @@
  },
  "3f964c53": {
   "en": "I cannot teach you dragonscale leatherworking, $N. You must go to Tanaris and find the home of Narain Soothfancy. Once there, consult the book \"Soothsaying for Dummies.\"",
-  "en_h": "3f964c53"
+  "en_h": "3f964c53",
+  "es": "No puedo enseñarte a trabajar en pieles de dragón, $N. Debe ir a Tanaris y encontrar la casa de Narain Soothfancy. Una vez allí, consulte el libro \"Soothsaying for Dummies\".",
+  "src": "ia"
  },
  "3f98cf78": {
   "en": "You're always welcome here, $N. Thanks for the laugh -- and don't worry about Daryl, he had one coming!",
@@ -13963,7 +14005,9 @@
  },
  "419e9257": {
   "en": "I never stated that you were here to redeem yourself, $c. You are here to redeem me and the innocents murdered while trying to escape Stratholme.$B$BMy spirit and the spirit of those lost are bound here, cursed to endlessly relive our own tragic deaths.",
-  "en_h": "ed23a563"
+  "en_h": "ed23a563",
+  "es": "Nunca dije que estabas aquí para redimirte, $c. Estás aquí para redimirme a mí y a los inocentes asesinados mientras intentas escapar de Stratholme.$B$BMi espíritu y el espíritu de los perdidos están atados aquí, malditos para revivir sin fin nuestras propias muertes trágicas.",
+  "src": "ia"
  },
  "41a2407f": {
   "en": "<Though Ysera's physical form stands in front of you, her consciousness appears to shift between this world and another.>",
@@ -14357,7 +14401,9 @@
  },
  "431d9e27": {
   "en": "$N, I've come to find out how rampant the effects of Fel Moss are throughout Darkshore. The corruption of Teldrassil and our surrounding lands really concerns the druids of the Cenarian Circle, and all Night elves.$B$BIt is my goal to find out why this has happened and to put an end to it.",
-  "en_h": "ad06e173"
+  "en_h": "ad06e173",
+  "es": "$N, he venido a averiguar qué tan rampante son los efectos de Fel Moss en todo Darkshore. La corrupción de Teldrassil y nuestras tierras circundantes realmente se refiere a los druidos del Cenarian Circle, y todos los elfos Night.$B$BEs mi objetivo averiguar por qué ha pasado esto y poner fin a ello.",
+  "src": "ia"
  },
  "432264a9": {
   "en": "Please insert coins and then proceed to deal with the Trade Prince.",
@@ -14409,7 +14455,9 @@
  },
  "436443dd": {
   "en": "Hey there, $N. How can I help you?",
-  "en_h": "436443dd"
+  "en_h": "436443dd",
+  "es": "Hola, $N. ¿Cómo puedo ayudarte?",
+  "src": "ia"
  },
  "43647f74": {
   "en": "Get lost, $c! I don't want the enforcers to see me doing business with you...",
@@ -14887,7 +14935,9 @@
  },
  "45a6fd7f": {
   "en": "What do you wish to know of Jewelcrafting?",
-  "en_h": "45a6fd7f"
+  "en_h": "45a6fd7f",
+  "es": "¿Qué quieres saber de Jewelcrafting?",
+  "src": "ia"
  },
  "45a79ba1": {
   "en": "We must perservere, $N. That is something I learned from our beloved wolf ancient.$B$BNever, never, never give up.",
@@ -15137,7 +15187,9 @@
  },
  "46bb670a": {
   "en": "Mortals, I am indebted to you for freeing me from the terrible corruption that besets this place. Though I have not yet recovered fully, I can help you battle Yogg-Saron.$B$BI can grant you and your friends the Resilience of Nature, increasing your damage and increasing healing taken from spells and effects. In addition, I can conjure Sanity Wells that will allow you to recover your Sanity when your grip on reality falters.",
-  "en_h": "40a8a336"
+  "en_h": "40a8a336",
+  "es": "Mortals, estoy en deuda contigo por liberarme de la terrible corrupción que pone este lugar. Aunque aún no me he recuperado completamente, puedo ayudarte a luchar contra Yogg-Saron.$B$BPuedo concederle a usted y a sus amigos el Resilience of Nature, aumentando su daño y aumentando la curación tomada de hechizos y efectos. Además, puedo conjurar Sanity Wells que le permitirá recuperar su Sanity cuando su agarre en falters de realidad.",
+  "src": "ia"
  },
  "46c98b90": {
   "en": "<The dimensional portal hums.>",
@@ -15321,7 +15373,9 @@
  },
  "4754f7a4": {
   "en": "You watch where you step around here, $Glad:lass;.  You might not be a part of our outfit, but that doesn't mean I won't take a cane to you if you fall out of line!",
-  "en_h": "cc15a677"
+  "en_h": "cc15a677",
+  "es": "You observa dónde caminas por aquí, $glad:lass;. You puede que no sea parte de nuestro equipo, pero eso no significa que no te tome un bastón si te caes de la raya!",
+  "src": "ia"
  },
  "475519d1": {
   "en": "Which class trainer are you looking for?",
@@ -15337,7 +15391,9 @@
  },
  "4764ad28": {
   "en": "Ah, here's the $g hero : heroine; of the hour now! Good to see you again, $N! I trust that you're still destroying the Scourge wherever you find them?",
-  "en_h": "4465a772"
+  "en_h": "4465a772",
+  "es": "¡Ah, aquí está el $ghéroe:heroína; de la hora! ¡Me alegro de verte de nuevo, $N! ¿Confío en que todavía estás destruyendo el Scourge dondequiera que los encuentres?",
+  "src": "ia"
  },
  "476fa66a": {
   "en": "My genius cannot be contained within a box!$B$BWait, this isn't Azshara?! What is this place? That's a dormant volcano!$B$BI have half a mind to go join the Trade Prince! The other half of my mind is considering the possible weaponization of the clucker eggs!",
@@ -16379,7 +16435,9 @@
  },
  "4c0ac5d2": {
   "en": "$C, eh? I am Krazek, Baron Revilgaz's secretary. I know everything about the goings on in this jungle and beyond. Perhaps you'd be interested in knowing the going price on oil in Ratchet? No? Looking for work, maybe? I can help you there.",
-  "en_h": "4c0ac5d2"
+  "en_h": "4c0ac5d2",
+  "es": "$C, ¿eh? Soy Krazek, secretario de Baron Revilgaz's. Sé todo lo que pasa en esta jungla y más allá. ¿Tal vez estaría interesado en saber el precio en curso de aceite en Ratchet? ¿No? ¿Buscando trabajo? Puedo ayudarte allí.",
+  "src": "ia"
  },
  "4c14a574": {
   "en": "Elder Hammershout can be found within the walls of Stormwind.",
@@ -16503,7 +16561,9 @@
  },
  "4ceb14dd": {
   "en": "I am a crafter of some renown, $c. With the proper materials, I am able to craft an armor known as Dreamwalker. Druids - and even some shaman - are drawn to this armor due to its magical properties. Are you interested?",
-  "en_h": "4ceb14dd"
+  "en_h": "4ceb14dd",
+  "es": "Soy un artesano de algún renombre, $c. Con los materiales adecuados, puedo crear una armadura conocida como Dreamwalker. Los druidas - e incluso algunos chamanes - se dibujan a esta armadura debido a sus propiedades mágicas. ¿Estás interesado?",
+  "src": "ia"
  },
  "4cebb554": {
   "en": "Our steady progress in our fight against the Qiraji can be attributed to the diverse help we received from nearly every corner of Kalimdor.$B$BYou need more than just soldiers to fight a war, $N.  Many of the war's unsung heroes are the traders and craftsmen that keep our forces supplied with the resources they need.",
@@ -18517,7 +18577,9 @@
  },
  "55e7ae5c": {
   "en": "Do not interrupt Niby, fool! I shall rend the flesh from your bones and use your skeletal remains as a coat rack. Now where was I? Oh yes, so, Kroshius lasted nearly ten times longer than any ordinary infernal. I am not sure why but I am confident that with enough study, I could find out.$B$BI need you to recover Kroshius' Infernal Core.",
-  "en_h": "53a6dd48"
+  "en_h": "53a6dd48",
+  "es": "¡No interrumpas Niby, tonto! Renderé la carne de tus huesos y usaré tus restos esqueléticos como un estante de abrigo. ¿Dónde estaba? Oh sí, entonces, Kroshius duró casi diez veces más que cualquier infernal ordinario. No estoy seguro por qué, pero estoy seguro de que con suficiente estudio, podría averiguarlo.$B$BNecesito que recuperes Kroshius' Infernal Core.",
+  "src": "ia"
  },
  "55ec3ffe": {
   "en": "I bet Illidan is a nice guy underneath.  He just needs a mama, too.",
@@ -18581,7 +18643,9 @@
  },
  "56383eca": {
   "en": "Wow, you totally bombed out there. Let's think of that as a rehearsal, shall we? Ready to go out again?",
-  "en_h": "56383eca"
+  "en_h": "56383eca",
+  "es": "Vaya, has bombardeado por ahí. Pensemos en eso como un ensayo, ¿de acuerdo? ¿Listo para salir de nuevo?",
+  "src": "ia"
  },
  "563c9f6b": {
   "en": "An enormous crate, filled to the brim with cannonballs.  There is a can of cooking grease sitting innocently nearby.",
@@ -18861,7 +18925,9 @@
  },
  "577f6ddd": {
   "en": "Nothing but trouble in these parts.  I tried to tell that fool Saldean to get out while he still could but he won't hear of it.  But I ain't no fool.  Verna and I are gonna mosey on out as soon as we get this wagon fixed.",
-  "en_h": "577f6ddd"
+  "en_h": "577f6ddd",
+  "es": "Nada más que problemas en estas partes. Intenté decirle al tonto Saldean que saliera mientras todavía podía, pero no lo escuchará. But No soy tonto. Verna y yo vamos a mosey en marcha tan pronto como tengamos este carro arreglado.",
+  "src": "ia"
  },
  "57881e60": {
   "en": "The blessing of the land be with you.",
@@ -18955,7 +19021,9 @@
  },
  "57d6a779": {
   "en": "I am free!  But the secret... is now in peril.  Akama must be warned!",
-  "en_h": "57d6a779"
+  "en_h": "57d6a779",
+  "es": "¡Soy libre! But el secreto... ahora está en peligro. Akama debe ser advertido!",
+  "src": "ia"
  },
  "57d9bae7": {
   "en": "Please, try and be sensitive to an orc's condition.  I'm having a rough couple of days, and I'd prefer if you kept your comments to yourself.",
@@ -19091,7 +19159,9 @@
  },
  "58869686": {
   "en": "No thanks!  Maybe sometime in the future.  Or the past.  Not today.",
-  "en_h": "58869686"
+  "en_h": "58869686",
+  "es": "¡No gracias! Maybe en algún momento en el futuro. O el pasado. Not hoy.",
+  "src": "ia"
  },
  "5887e6f9": {
   "en": "Let us see if we can freeze the enemy where they stand, little $r.",
@@ -19401,7 +19471,9 @@
  },
  "5a415563": {
   "en": "The land has been good to our people, $c. We must be thankful for our good fortune.",
-  "en_h": "5a415563"
+  "en_h": "5a415563",
+  "es": "La tierra ha sido buena para nuestro pueblo, $c. Debemos estar agradecidos por nuestra buena fortuna.",
+  "src": "ia"
  },
  "5a46f91d": {
   "en": "The Dalaran Merchants' Bank is in the southern part of the city, off the Eventide.",
@@ -21865,7 +21937,9 @@
  },
  "65072f2c": {
   "en": "Thank you for freeing me, $r.$b$bI'm still a bit woozy from the venom. I think I'll stay here until my strength returns.",
-  "en_h": "a6584978"
+  "en_h": "a6584978",
+  "es": "Gracias por liberarme, $r.$b$bTodavía estoy un poco mareado del veneno. Creo que me quedaré aquí hasta que regrese mi fuerza.",
+  "src": "ia"
  },
  "65112188": {
   "en": "We're miners, farmers and craftsmen - not soldiers.  But we'll defend our land with our bare fists if we must.",
@@ -21977,7 +22051,9 @@
  },
  "65a0e4e5": {
   "en": "There have been some complaints filed about this... individual. I'm told he's something of a shady character. I am here to determine whether or not this business of his is legitimate... and take action if it proves otherwise.",
-  "en_h": "65a0e4e5"
+  "en_h": "65a0e4e5",
+  "es": "Se han presentado algunas denuncias sobre este... individuo. Me han dicho que es un personaje sombrío. Estoy aquí para determinar si este negocio de él es legítimo... y tomar medidas si demuestra lo contrario.",
+  "src": "ia"
  },
  "65aa00e0": {
   "en": "My knowledge of Jewelcrafting I will share with you.",
@@ -22695,7 +22771,9 @@
  },
  "68afd30b": {
   "en": "A foul corruption has crept into Westfall.  While I was upholding my duty on the battlefields of Lordaeron these honest farms were overrun and made into hide-outs for thugs and murderers. The People's Militia needs your help.",
-  "en_h": "68afd30b"
+  "en_h": "68afd30b",
+  "es": "Una corrupción falsa ha entrado en Westfall. While Yo estaba defendiendo mi deber en los campos de batalla de Lordaeron estas granjas honestas fueron invadidas y hechas en escondites para matones y asesinos. El People's Militia necesita su ayuda.",
+  "src": "ia"
  },
  "68b03a8d": {
   "en": "The past lives in these wastes, $c.  We must be careful to not awaken it.",
@@ -22705,7 +22783,9 @@
  },
  "68b83919": {
   "en": "<Omarion grumbles something under his breath.>$B$BBut of course I can help you, dear $g boy:girl;. It is my dying wish... my final desire. Please, take this handbook. The information on its pages are a compilation of all that I know and have learned in the past 30 some-odd years of my miserable life. Give the handbook to that good for nothing apprentice of mine that's probably sitting on his fat duff at Light's Hope Chapel.",
-  "en_h": "79104bf3"
+  "en_h": "79104bf3",
+  "es": "■Omarion grume algo bajo su aliento.$B$BPero claro que puedo ayudarte, querido $gchico:chica;. Es mi deseo moribundo... mi deseo final. Por favor, toma este manual. La información de sus páginas es una recopilación de todo lo que sé y he aprendido en los últimos 30 años de mi miserable vida. Dale el manual a ese bien para nada de aprendiz mío que probablemente esté sentado en su bufón gordo en Light's Hope Chapel.",
+  "src": "ia"
  },
  "68c3e3d7": {
   "en": "With the Allerian Stronghold surrounded by enemies on all sides it's time for us to take the fight to them.",
@@ -23615,7 +23695,9 @@
  },
  "6c71c31d": {
   "en": "If I am to teach you the secrets of summoning an infernal servant, you must destroy Kroshius and bring me the infernal core from his burning remains. This, however, is not as easy as it sounds. Kroshius has all but burned out completely. You must reignite his corpse and raise him from the rubble. To do this, however, you must gather some components from other demonic entities.$B$BMy imp, Impsy, shall set you on your way.",
-  "en_h": "f43043a9"
+  "en_h": "f43043a9",
+  "es": "Si voy a enseñarte los secretos de convocar a un sirviente infernal, debes destruir Kroshius y traerme el núcleo infernal de sus restos ardientes. Esto, sin embargo, no es tan fácil como suena. Kroshius se ha quemado completamente. Debes reinar su cadáver y levantarlo de los escombros. Para hacer esto, sin embargo, usted debe reunir algunos componentes de otras entidades demoníacas.$B$BMi imp, Impsy, te pondrá en camino.",
+  "src": "ia"
  },
  "6c72a5c9": {
   "en": "If my mother had told me there would be days like this I would not have believed her.",
@@ -24999,7 +25081,9 @@
  },
  "721ebffb": {
   "en": "So you want to be a Inscriber? Well here you will find the trainer.",
-  "en_h": "721ebffb"
+  "en_h": "721ebffb",
+  "es": "¿Quieres ser un Inscriber? Bueno, aquí encontrarás al entrenador.",
+  "src": "ia"
  },
  "722a67a6": {
   "en": "We fish, we sleep, and we explode things.  What could be better than that?",
@@ -25345,7 +25429,9 @@
  },
  "73911ec9": {
   "en": "Are you ready for the next stage?",
-  "en_h": "73911ec9"
+  "en_h": "73911ec9",
+  "es": "¿Estás listo para la próxima etapa?",
+  "src": "ia"
  },
  "739403c6": {
   "en": "Oh, well, that all depends on which partners you mean. Many have come and gone over the years - always someone eager to ride the coat-tails of the legend that is Budd Nedreck!$b$bYou can rest assured that most of them have become wealthy and retired. That's simply not the path I've chosen. You see, I've always felt that I've been called to reveal the world's great mysteries. Alas, if I don't do it, who could?$B",
@@ -25493,7 +25579,9 @@
  },
  "741c7783": {
   "en": "You must do what I could not: Save the peasants that were cut down while fleeing from Stratholme.$B$BThey will walk towards the light, you must ensure their survival. Should too many fall, our cursed existence shall continue - you will have failed.$B$BEvery ability, prayer and spell that you have learned will be tested. May the Light protect you, $N.",
-  "en_h": "24b6597b"
+  "en_h": "24b6597b",
+  "es": "Debes hacer lo que no pude: Save los campesinos que fueron cortados mientras huían de Stratholme.$B$BEllos caminarán hacia la luz, usted debe asegurar su supervivencia. Si caen demasiados, nuestra existencia maldita continuará - habrás fracasado.$B$BCada habilidad, oración y hechizo que has aprendido serán probados. Que la Luz te proteja, $N.",
+  "src": "ia"
  },
  "74205a24": {
   "en": "The Silverwing Sentinels shall be in your debt $c.  You will find Elfarran, our battlemaster, inside Stormwind Keep, attending the boy-king's audience.  Goddess watch over you!",
@@ -26019,7 +26107,9 @@
  },
  "7700891f": {
   "en": "The barber is in the Cleft of Shadow.",
-  "en_h": "7700891f"
+  "en_h": "7700891f",
+  "es": "El barbero está en el Cleft of Shadow.",
+  "src": "ia"
  },
  "77017570": {
   "en": "The Stonehearth Graveyard lies east of the Stonehearth Outpost in the Field of Strife.$B$BThe Alliance currently controls it.",
@@ -27457,7 +27547,9 @@
  },
  "7dac7b44": {
   "en": "You're just in time, $c.  Do you feel the ground shaking beneath you?$B$BSomething approaches from the hive.  Take a place near the grunts, $N.  I'm counting on you!",
-  "en_h": "caf31210"
+  "en_h": "caf31210",
+  "es": "Justo a tiempo, $c. ¿Sientes la tierra temblando debajo de ti?$B$BAlgo se acerca de la colmena. Take un lugar cerca de los gruñidos, $N. ¡Cuento contigo!",
+  "src": "ia"
  },
  "7dae73d1": {
   "en": "The high executor and Dame Auriferous are making me wait, but I don't have time for this! My friends are out there dying, $c!",
@@ -27911,7 +28003,9 @@
  },
  "8010046b": {
   "en": "Well, if it isn't a young, bristling $c, no doubt drawn here by talk of my exploits in fields of battle!$B$BNo time for stories now, for there are great, important deeds that need doing!  So if you're looking for glory, then luck shines on you today...",
-  "en_h": "b4c4ae77"
+  "en_h": "b4c4ae77",
+  "es": "Bueno, si no es un $c joven, sin duda dibujado aquí por hablar de mis explotaciones en campos de batalla!$B$BNo hay tiempo para las historias ahora, porque hay grandes, importantes hechos que necesitan hacer! Así que si estás buscando gloria, entonces la suerte brilla en ti hoy...",
+  "src": "ia"
  },
  "8018c46e": {
   "en": "Feeding a Horde army is no easy task.  I have lots to do, do you have time to help?",
@@ -28419,7 +28513,9 @@
  },
  "82729852": {
   "en": "Congratulations, your mind has been expanded.",
-  "en_h": "82729852"
+  "en_h": "82729852",
+  "es": "Felicitaciones, tu mente se ha expandido.",
+  "src": "ia"
  },
  "82782de5": {
   "en": "You seem like a sensible $c, friend. Do you remember the glory days of Theramore, back before Jaina made us give up the fight against the Horde? Are you sick of being told to stay your blade while the orcs continue to provoke us?",
@@ -29005,7 +29101,9 @@
  },
  "85063404": {
   "en": "Welcome to Camp Mojache, brave $c. How may I assist you this day?",
-  "en_h": "85063404"
+  "en_h": "85063404",
+  "es": "Bienvenido a Camp Mojache, valiente $c. ¿Cómo puedo ayudarle este día?",
+  "src": "ia"
  },
  "850f8041": {
   "en": "As the wind on the plains, you are always welcome here.",
@@ -29663,7 +29761,9 @@
  },
  "88594804": {
   "en": "You were. The Eye is never wrong.$B$BYou are a $c after all. A powerful $c, if the Eye showed you this horrible memory.$B$BYou have come for redemption, yet you yourself do not realize this... Do you?",
-  "en_h": "093e169c"
+  "en_h": "093e169c",
+  "es": "Lo eras. El Eye nunca está mal.$B$BEres un $c después de todo. Un poderoso $c, si el Eye te mostró este horrible recuerdo.$B$BHas venido para la redención, pero no te das cuenta de esto... ¿Sí?",
+  "src": "ia"
  },
  "88610b94": {
   "en": "You're big and strong. But you need a bath. Go jump in the pool.",
@@ -29775,7 +29875,9 @@
  },
  "88da0f91": {
   "en": "When he says, 'younger brother,' he fails to mention that we're twins. He's really only older by a couple of minutes.$B$BDon't let that 'rising star' bit of his fool you. I'll never be a trader of the same magnitude that he is.",
-  "en_h": "2a98877d"
+  "en_h": "2a98877d",
+  "es": "Cuando dice, \"hermano menor\", no menciona que somos gemelos. Sólo es mayor en un par de minutos.$B$BNo dejes que esa 'estrella de revuelta' te engañe. Nunca seré un comerciante de la misma magnitud que él.",
+  "src": "ia"
  },
  "88dc8bff": {
   "en": "Let me at 'em, $N! Just give the word and I'll mount up and attack their bridge!",
@@ -30649,7 +30751,9 @@
  },
  "8cc42610": {
   "en": "Ameer, Over and out.",
-  "en_h": "8cc42610"
+  "en_h": "8cc42610",
+  "es": "Ameer, Over y fuera.",
+  "src": "ia"
  },
  "8ccbb1ef": {
   "en": "You could at least try to sound a little bit convincing.$B$BLook, Nuaar, I wasn't going to tell you this, but I might as well because it's going to involve you, too.  Maxnar is planning an all-out attack on the druids at Ruuan Weald.  And he intends to wipe them out.$B$BIt's bad enough that we've been fighting with the Boulder'mok ogres, so we can't afford another front to deal with.  I've arranged for a temporary truce with the arakkoa.$B$BWell, what do you think?",
@@ -30947,7 +31051,9 @@
  },
  "8e137db1": {
   "en": "Hello, citizen.  You look like a $g man : woman; with a purpose - do you have business with the Stormwind Army?",
-  "en_h": "af7467d3"
+  "en_h": "af7467d3",
+  "es": "Hola, ciudadano. You parece un $ghombre:mujer; con un propósito - ¿Tiene negocios con el Stormwind Army?",
+  "src": "ia"
  },
  "8e2e824e": {
   "en": "I'm going to figure out what this shadowy group is up to no matter what!",
@@ -31809,7 +31915,9 @@
  },
  "92040eab": {
   "en": "How embarrassing to be taken as a pet by a hunter!$B$BI owe you my life, but please, trouble yourself no longer with my welfare.  Now that you've freed me from Musel'ek, I'll be able to find my way out.  Maybe I'll pick up Rayge along the way.",
-  "en_h": "fd8cd237"
+  "en_h": "fd8cd237",
+  "es": "¡Qué vergüenza ser tomada como mascota por un cazador!$B$BTe debo mi vida, pero por favor, no te molestes más con mi bienestar. Now que me has liberado de Musel'ek, podré encontrar mi salida. Maybe I'll recoger Rayge en el camino.",
+  "src": "ia"
  },
  "9205a3bd": {
   "en": "Elder Highpeak watches over the Hinterlands from a hill near its center.",
@@ -32755,7 +32863,9 @@
  },
  "96dad02a": {
   "en": "You go see Mog'dorg?",
-  "en_h": "96dad02a"
+  "en_h": "96dad02a",
+  "es": "¿Ve a ver Mog'dorg?",
+  "src": "ia"
  },
  "96de4a7b": {
   "en": "You've got to save me here, $c! He's gone mad... mad I telll you! His inability to stop the flooding of Thousand Needles has caused him to go completely bonkers!$B$BHe blames me for everything, including the Cataclysm. He probably thinks that I'm Deathwing in disguise, or something!$B$BHelp!",
@@ -34365,7 +34475,9 @@
  },
  "9d9a6ea1": {
   "en": "Need supplies for the field?",
-  "en_h": "9d9a6ea1"
+  "en_h": "9d9a6ea1",
+  "es": "¿Necesitas suministros para el campo?",
+  "src": "ia"
  },
  "9da5cc1a": {
   "en": "It is my role to test our young initiates on the ways of the hunt.$B$BAnd that hasn't changed. Today, the quilboar are our prey.",
@@ -34927,7 +35039,9 @@
  },
  "9ff00e50": {
   "en": "WAIT $c! Your search for the next boss isn't this way. Try another way.",
-  "en_h": "9ff00e50"
+  "en_h": "9ff00e50",
+  "es": "¡Espera $c! Tu búsqueda para el próximo jefe no es por aquí. Prueba de otra manera.",
+  "src": "ia"
  },
  "9ff5183e": {
   "en": "You stand before a master of the Arcane. One would be unwise to challenge me. Many corpses have been left ablaze in my wake.",
@@ -35315,7 +35429,9 @@
  },
  "a1a871c8": {
   "en": "Ahh... so it is, so it is. Carry on then. Carry on t'yer death.",
-  "en_h": "a1a871c8"
+  "en_h": "a1a871c8",
+  "es": "Así es, así es. Continúa. Sigue con la muerte.",
+  "src": "ia"
  },
  "a1abbbc2": {
   "en": "I like to build stuff. Of course, I like to blow stuff up even more!",
@@ -37353,7 +37469,9 @@
  },
  "abb6b3c9": {
   "en": "Well met, $N. It is good to see that $cs like yourself are taking an active part in protecting the groves.",
-  "en_h": "abb6b3c9"
+  "en_h": "abb6b3c9",
+  "es": "Bien conocido, $N. Es bueno ver que $cs como usted está tomando una parte activa en la protección de los groves.",
+  "src": "ia"
  },
  "abd140b8": {
   "en": "<Cyrus's eyes glow brightly>$B$BDo I devour you whole or do I allow you to live?$B$BPerhaps you could still be of some use...$B$BChallenge my minion, $r. Survive and return proof of your victory to me.",
@@ -37513,7 +37631,9 @@
  },
  "acc3cdbd": {
   "en": "Tread carefully, $r.$b$bThese corpses here are all that remain of my best men.",
-  "en_h": "28f2eaa9"
+  "en_h": "28f2eaa9",
+  "es": "Tread cuidadosamente, $r.$b$bEstos cadáveres son todos los que quedan de mis mejores hombres.",
+  "src": "ia"
  },
  "acd524cb": {
   "en": "Your knowledge is lacking.  Return to me when your skills in smelting have grown!",
@@ -37835,7 +37955,9 @@
  },
  "ae40be56": {
   "en": "Well, hello there. You seem like you wouldn't be opposed to making some coin, hm? I can tell from the look in your eyes. I am Mogul Kebok, overseer of operations in Azeroth, and if it is riches you seek, perhaps I can make arrangements.",
-  "en_h": "ae40be56"
+  "en_h": "ae40be56",
+  "es": "Bueno, hola. Parece que no te opondrías a hacer monedas, ¿eh? Puedo decir por la mirada en tus ojos. Soy Mogul Kebok, supervisor de operaciones en Azeroth, y si es riqueza que buscas, quizás pueda hacer arreglos.",
+  "src": "ia"
  },
  "ae52cb9d": {
   "en": "It's across the bridge from the gate to The Drag. Listen for the sound of shouting goblins.",
@@ -39081,7 +39203,9 @@
  },
  "b3b86e18": {
   "en": "Copy, Status report, Soldier.",
-  "en_h": "b3b86e18"
+  "en_h": "b3b86e18",
+  "es": "Copiado, informe Status, Soldier.",
+  "src": "ia"
  },
  "b3b8995b": {
   "en": "Be advised, $g Jackson : Princess; - I am in no mood for any comment that you think is cute or funny.  I am here to make sure that the Arch Druid's research proceeds as planned, and my orders are to weed out all non-hackers who do not pack the gear to serve in my beloved Cenarion Circle.",
@@ -39601,7 +39725,9 @@
  },
  "b6764f09": {
   "en": "Are you ready to fight the champions of the Silver vanguard?",
-  "en_h": "b6764f09"
+  "en_h": "b6764f09",
+  "es": "¿Estás listo para luchar contra los campeones de la vanguardia Silver?",
+  "src": "ia"
  },
  "b686731c": {
   "en": "Elder Brightspear can be found wandering amongst the ruins of Kel'Theril in Winterspring.",
@@ -41567,7 +41693,9 @@
  },
  "bfa6a0ae": {
   "en": "Yes, I expected that you would be back. I sent Korra out earlier and she came across Dartol's Rod, abandoned in the forest.$B$BWe worked so hard to recover it, $n. Please take care to see that you do not handle it so carelessly in the future.",
-  "en_h": "3c114c1a"
+  "en_h": "3c114c1a",
+  "es": "Sí, esperaba que volvieras. Envié a Korra antes y se encontró con Dartol's Rod, abandonada en el bosque.$B$BTrabajamos tan duro para recuperarlo, $n. Por favor, cuídate de ver que no lo manejas tan descuidadamente en el futuro.",
+  "src": "ia"
  },
  "bfa7ec64": {
   "en": "Lissah Spellwick, at the top of mage tower, is the mistress of Lady Jaina's enchanters.",
@@ -42141,7 +42269,9 @@
  },
  "c24c7c65": {
   "en": "Oy!  You here for a game of knuckles?",
-  "en_h": "c24c7c65"
+  "en_h": "c24c7c65",
+  "es": "¡Oy! You aquí para un juego de nudillos?",
+  "src": "ia"
  },
  "c263ab07": {
   "en": "Many are the paths of the Earth Mother.  May your ancestors watch over you $c.",
@@ -42469,7 +42599,9 @@
  },
  "c38d301a": {
   "en": "At ease, $c. If you are just passing though I suggest you stick to the roads and only travel by day. If your business is here in Darkshire, consider lending your abilities to the Night Watch. Our skill is unquestionable but our numbers are small.",
-  "en_h": "c38d301a"
+  "en_h": "c38d301a",
+  "es": "Descansen, $c. Si estás pasando aunque te sugiero que te quedes con las carreteras y sólo viajes de día. Si su negocio está aquí en Darkshire, considere prestar sus habilidades al Night Watch. Nuestra habilidad es incuestionable pero nuestros números son pequeños.",
+  "src": "ia"
  },
  "c398f551": {
   "en": "Get out of here, before the slavers see you!",
@@ -42833,7 +42965,9 @@
  },
  "c5b895ef": {
   "en": "So you are looking for a Inscription Trainer? Well you can't find the trainer out here, better head to the nearest city.",
-  "en_h": "c5b895ef"
+  "en_h": "c5b895ef",
+  "es": "¿Estás buscando un Inscription Trainer? Bueno, no puedes encontrar al entrenador aquí, mejor vete a la ciudad más cercana.",
+  "src": "ia"
  },
  "c5bcd2a2": {
   "en": "Watch your step, stranger. We do not allow miscreants in our town.",
@@ -43011,7 +43145,9 @@
  },
  "c6a5baa0": {
   "en": "Greetings $N! Are you ready to be tested in Crusaders Coliseum?",
-  "en_h": "c6a5baa0"
+  "en_h": "c6a5baa0",
+  "es": "Saludos $N! ¿Estás listo para ser probado en Crusaders Coliseum?",
+  "src": "ia"
  },
  "c6ac1506": {
   "en": "This ain't the first time I been stuck up to me teef in a jungle that up an' done ambushed me. I been all over the world, $gson:missy;, an' I'll be hog-smacked if this one's gonna be the end of me.",
@@ -43021,7 +43157,9 @@
  },
  "c6acb10c": {
   "en": "I don't know what's possessed you to look for a shaman... but I have seen someone who matches the profile. There's a woman who calls herself a Farseer on the shore in the Valley of Heroes.",
-  "en_h": "c6acb10c"
+  "en_h": "c6acb10c",
+  "es": "No sé qué te ha poseído para buscar a un chamán... pero he visto a alguien que coincide con el perfil. Hay una mujer que se llama Farseer en la orilla del Valley of Heroes.",
+  "src": "ia"
  },
  "c6ad243b": {
   "en": "Ahunae's axe will be the end of the Drakkari.$B$BYou be takin' care of any that get past my axe!",
@@ -43133,7 +43271,9 @@
  },
  "c7247f6d": {
   "en": "This songflower plant stands out as a rock in the sea of corruption that is Felwood.  Its petals have a powerful fragrance that bolsters your spirits and strengthens your resolve.",
-  "en_h": "c7247f6d"
+  "en_h": "c7247f6d",
+  "es": "Esta planta de girasol se destaca como una roca en el mar de la corrupción que es Felwood. Los pétalos Its tienen una fragancia poderosa que refuerza sus espíritus y fortalece su resolución.",
+  "src": "ia"
  },
  "c72588fa": {
   "en": "I can not train you, young one.",
@@ -43281,7 +43421,9 @@
  },
  "c7d3eefd": {
   "en": "Hail, $C. In my years I have seen many eager tauten who wish to prove their worth to the tribe. It should not be forgotten thet eagerness is no substitute for wisdom and experience.",
-  "en_h": "c7d3eefd"
+  "en_h": "c7d3eefd",
+  "es": "Ave, $C. En mis años he visto a muchos ansiosos tauten que desean demostrar su valía para la tribu. No debe olvidarse que el entusiasmo no es sustituto de la sabiduría y la experiencia.",
+  "src": "ia"
  },
  "c7d44a16": {
   "en": "He is the greatest hero the arakkoa have ever known.$B$BIt is said that in ancient times, he built the city of Skettis with his own claws. He was our greatest champion and defender, but he left us when we turned away from the veneration of Rukhmar.$B$BWe came to worship a new master, one who promised us untold power and status in the cosmos.$B$BThere are some who say that Terokk and Rukhmar are one, and he withdrew his presence from us when we turned away from him.",
@@ -43465,7 +43607,9 @@
  },
  "c8647419": {
   "en": "The Cataclysm has destroyed the western mountains of Thousand Needles. The South Sea has rushed in and the canyons are flooded.$B$BPlease, $c, you must come to our aid at New Thalanaar!",
-  "en_h": "782e5da5"
+  "en_h": "782e5da5",
+  "es": "El Cataclysm ha destruido las montañas occidentales de Thousand Needles. El South Sea se ha precipitado y los cañones están inundados.$B$BPor favor, $c, ¡debe venir a nuestra ayuda en New Thalanaar!",
+  "src": "ia"
  },
  "c8648916": {
   "en": "Look for The Wyvern's Tail, just outside the Hall of the Brave.",
@@ -43739,7 +43883,9 @@
  },
  "c97cf8dd": {
   "en": "What tasty treats can we offer you?",
-  "en_h": "c97cf8dd"
+  "en_h": "c97cf8dd",
+  "es": "¿Qué deliciosos platos podemos ofrecerle?",
+  "src": "ia"
  },
  "c97dfec6": {
   "en": "I knew you had it in you, $N! You saved our skins.$B$BNow let's get out of here before I have to kill Fizz and Evol.",
@@ -44331,7 +44477,9 @@
  },
  "cca7bda8": {
   "en": "I think not. Rimblat has already proven that new life can grow from the sundered earth. Now we must find a way to reproduce and, more importantly, sustain the growth.$B$BWhile I am here, I am also offering my services to adventurers entering Naxxramas.",
-  "en_h": "51cfd3f4"
+  "en_h": "51cfd3f4",
+  "es": "Creo que no. Rimblat ya ha demostrado que la nueva vida puede crecer de la tierra sucia. Ahora debemos encontrar una manera de reproducir y, lo que es más importante, mantener el crecimiento.$B$BMientras estoy aquí, también estoy ofreciendo mis servicios a los aventureros que entran en Naxxramas.",
+  "src": "ia"
  },
  "ccaa16dc": {
   "en": "Go find those hidden plagued grain crates and use your Arcane Disruptor on them! Arthas will then have the evidence he needs to begin the culling of Stratholme.",
@@ -44779,7 +44927,9 @@
  },
  "cf03e3fa": {
   "en": "To care for these fearless beasts, who stand between my clanmates and death, is an honor.",
-  "en_h": "cf03e3fa"
+  "en_h": "cf03e3fa",
+  "es": "Cuidar a estas bestias sin miedo, que están entre mis compañeros de clan y la muerte, es un honor.",
+  "src": "ia"
  },
  "cf158c4a": {
   "en": "Have you any idea what I go through to bring these incomparable valuables to sell?  Come see them all for yourself!",
@@ -45245,7 +45395,9 @@
  },
  "d1895520": {
   "en": "Are you ready to continue battle with Anub-Arak?",
-  "en_h": "d1895520"
+  "en_h": "d1895520",
+  "es": "¿Estás listo para continuar la batalla con Anub-Arak?",
+  "src": "ia"
  },
  "d191aa3d": {
   "en": "Aye, what need ye?",
@@ -45345,7 +45497,9 @@
  },
  "d20060c1": {
   "en": "A few weeks in this pathetic castle will give us time to work on some new products and let others forget about the unfortunate... misunderstanding in Dragonblight.",
-  "en_h": "d20060c1"
+  "en_h": "d20060c1",
+  "es": "Unas semanas en este patético castillo nos dará tiempo para trabajar en algunos productos nuevos y dejar que otros se olviden del desafortunado... malentendido en Dragonblight.",
+  "src": "ia"
  },
  "d200f236": {
   "en": "Your stench will attract every dragon for miles.  Tell me what you want, and quickly.",
@@ -45667,7 +45821,9 @@
  },
  "d36fa8c1": {
   "en": "We are all drawn here for different reasons, $c.$B$B<Rayne smiles.>$B$BI am here to meet with Rimblat of the Earthen Ring. He has some interesting theories on cleansing these lands.",
-  "en_h": "ffb8ce99"
+  "en_h": "ffb8ce99",
+  "es": "Todos estamos aquí por diferentes razones, $c.$B$BSonríe Rayne.$B$BEstoy aquí para reunirme con Rimblat del Earthen Ring. Tiene algunas teorías interesantes sobre la limpieza de estas tierras.",
+  "src": "ia"
  },
  "d3714258": {
   "en": "Hey, sweetheart. The zeppelin that parks here'll take ya straight to Thunder Bluff, free of charge. Who needs wyverns when you got us goblins here, am I right?",
@@ -46007,7 +46163,9 @@
  },
  "d4c25f91": {
   "en": "Hey there, friend. My name's Remy. I'm from Redridge to the east, and came here looking for business, looking for business. You got any...got any??",
-  "en_h": "d4c25f91"
+  "en_h": "d4c25f91",
+  "es": "Hola, amigo. Mi nombre es Remy. Soy de Redridge al este, y vine aquí buscando negocios, buscando negocios. ¿Tienes algo?",
+  "src": "ia"
  },
  "d4c70359": {
   "en": "The Earthwatchers won't allow faction squabbling to jeopardize the Earthen Ring's work here.\r\n\r\n\r\n\r\nThose who break the peace will be dealt with... harshly.",
@@ -46359,7 +46517,9 @@
  },
  "d6908577": {
   "en": "We are here to help.",
-  "en_h": "d6908577"
+  "en_h": "d6908577",
+  "es": "Estamos aquí para ayudar.",
+  "src": "ia"
  },
  "d690b229": {
   "en": "Yarp? Yar wannar fly? Narp... No-no-no-norp gonnarp ha-hap-hap-happen!",
@@ -46423,7 +46583,9 @@
  },
  "d717603a": {
   "en": "There is a powerful infernal named Kroshius northeast of this camp. It is why Niby is here. Kroshius is a greater infernal - an infernal that has lasted longer than expected. You see, nub, an infernal crashes down into the earth with great intensity to serve its master but this intensity fades fast. Once the blazing flames have died down, the infernal crumbles.",
-  "en_h": "d717603a"
+  "en_h": "d717603a",
+  "es": "Hay un poderoso infernal llamado Kroshius al noreste de este campamento. Es por eso que Niby está aquí. Kroshius es un infernal mayor - un infernal que ha durado más de lo esperado. Verás, turba, un infernal cae en la tierra con gran intensidad para servir a su maestro pero esta intensidad se desvanece rápidamente. Una vez que las llamas ardientes han muerto, el infernal se desmorona.",
+  "src": "ia"
  },
  "d71b50e1": {
   "en": "Greetings, my $r friend. You honor me with your presence.$B$BHow may I help you?",
@@ -46583,7 +46745,9 @@
  },
  "d7c4dfe6": {
   "en": "The wind whispers to those who listen...$B$BDo you hear it?",
-  "en_h": "7cf48b92"
+  "en_h": "7cf48b92",
+  "es": "El viento susurra a los que escuchan...$B$B¿Lo oyes?",
+  "src": "ia"
  },
  "d7cc1d10": {
   "en": "Hmm... you show a little promise, I'll give you that. Okay then, where were we?",
@@ -47697,7 +47861,9 @@
  },
  "dda8a648": {
   "en": "Welcome to Ogri'la, $c.$B$BThe ogres here have managed to gain a great mental acuity through the magical emanations of the surrounding crystals.  Though we do not fully understand how they work, we have come to appreciate our new home and only want to live in peace.$B$BUnfortunate then that the demons and ethereals, and especially the Black Dragonflight, will not leave us to that peace.",
-  "en_h": "9a157700"
+  "en_h": "9a157700",
+  "es": "Bienvenido a Ogri'la, $c.$B$BLos ogros han logrado ganar una gran agudeza mental a través de las emanaciones mágicas de los cristales circundantes. Though no entendemos completamente cómo funcionan, hemos venido a apreciar nuestro nuevo hogar y sólo queremos vivir en paz.$B$BDesgraciadamente entonces que los demonios y etéreos, y especialmente el Black Dragonflight, no nos dejarán a esa paz.",
+  "src": "ia"
  },
  "ddb6ecac": {
   "en": "The coffer is just beyond these ruins.$b$bLet's go!",
@@ -48055,7 +48221,9 @@
  },
  "df72951e": {
   "en": "That child gives me chills. He stands there all day long communing with his grandfather. He'll then turn to tell his mother what the grandfather told him and she - of course - just smiles and nods her head.$B$BLambs! Lemmings! All of them!$B",
-  "en_h": "98aff710"
+  "en_h": "98aff710",
+  "es": "Ese niño me da escalofríos. Está allí todo el día comunicándose con su abuelo. Luego se convertirá en decirle a su madre lo que el abuelo le dijo y ella - por supuesto - sólo sonríe y asiente su cabeza.$B$B¡Corderos! ¡Lemmings! ¡Todos!$B",
+  "src": "ia"
  },
  "df7aecb8": {
   "en": "Many are the rare and precious objects that my clientele seek.$B$BYou could be the one to bring them to me, $c. In return I offer that which you covet.$B$BShall we speak more on that which I look to procure today?",
@@ -49649,7 +49817,9 @@
  },
  "e6df662d": {
   "en": "This healthy whipper root plant stands as a polar opposite to the sickly taint of corruption that dominates Felwood.  Tender and healthy roots yield delicious tubers that lay on the ground next to the plant.",
-  "en_h": "e6df662d"
+  "en_h": "e6df662d",
+  "es": "Esta planta de raíz de látigo saludable se encuentra como un polo opuesto a la mancha enferma de corrupción que domina Felwood. Tender y raíces sanas producen deliciosos tubérculos que se colocan en el suelo junto a la planta.",
+  "src": "ia"
  },
  "e6e0cb98": {
   "en": "If the furbolg could be this far gone, what does that say for the rest of Teldrassil?",
@@ -50121,7 +50291,9 @@
  },
  "e8fcacd4": {
   "en": "This windblossom plant stands out as a beacon of light in the darkness that is Felwood.  Plump and juicy berries hang from the plant, ripe for the picking.",
-  "en_h": "e8fcacd4"
+  "en_h": "e8fcacd4",
+  "es": "Esta planta de windblossom se destaca como un faro de luz en la oscuridad que es Felwood. Plump y bayas jugosas cuelgan de la planta, maduran para la recogida.",
+  "src": "ia"
  },
  "e9087f43": {
   "en": "I heard they were going to try to blow up the gnome's car in the next race!  True or not, I'd stand clear of their pit area.",
@@ -51073,7 +51245,9 @@
  },
  "ed523c06": {
   "en": "You will find a pair of draenei conversing with Tyrande Whisperwind in the upper level of The Temple of the Moon.$B$BThey will know how to help you.",
-  "en_h": "ed78abf2"
+  "en_h": "ed78abf2",
+  "es": "Encontrará un par de draenei conversando con Tyrande Whisperwind en el nivel superior de The Temple del Moon.$B$BEllos sabrán cómo ayudarte.",
+  "src": "ia"
  },
  "ed5b1786": {
   "en": "Well, I've seen better. But, you have potential, I won't deny it. Pay attention and you just might learn something!",
@@ -51839,7 +52013,9 @@
  },
  "f0b2e647": {
   "en": "Go to the Orc city of Orgrimmar, find him in the Valley of Honor at a shop called the Arms of Legend.",
-  "en_h": "f0b2e647"
+  "en_h": "f0b2e647",
+  "es": "Vaya a la ciudad Orc de Orgrimmar, encontrarlo en el Valley of Honor en una tienda llamada Arms of Legend.",
+  "src": "ia"
  },
  "f0bb3d3f": {
   "en": "Are you prepared for war, $r?",
@@ -52587,7 +52763,9 @@
  },
  "f3f9cc37": {
   "en": "I will accept your help in this inspection, $c. Do not assume that I will trust your findings or your motives without my own verification.",
-  "en_h": "f3f9cc37"
+  "en_h": "f3f9cc37",
+  "es": "Aceptaré su ayuda en esta inspección, $c. No asuma que confiaré en sus hallazgos o sus motivos sin mi propia verificación.",
+  "src": "ia"
  },
  "f3fc63f8": {
   "en": "Mumman has set up her humble shop near the main entrance of the city, just past the inn. A fine cook, that one.",
@@ -52871,7 +53049,9 @@
  },
  "f53c0164": {
   "en": "MISSING TEXT",
-  "en_h": "f53c0164"
+  "en_h": "f53c0164",
+  "es": "TEXTO DE LA MISIÓN",
+  "src": "ia"
  },
  "f53d1b20": {
   "en": "Un'Goro Crater be far to the south of Kalimdor. Beyond the Thousand Needles in Tanaris. Look for the large floating stones... they mark the entrance to the Crater. But be careful... it is no easy path. The raptors are not far from the entrance.",
@@ -53175,7 +53355,9 @@
  },
  "f66897c8": {
   "en": "I wasn't expecting anyone down here. Come to keep me company, or just looking for a way out?",
-  "en_h": "f66897c8"
+  "en_h": "f66897c8",
+  "es": "No esperaba a nadie aquí. Ven a hacerme compañía, o sólo buscar una salida?",
+  "src": "ia"
  },
  "f66d3991": {
   "en": "We have all been witness to terrible tragedies, but we must not let them drag us to despair.$B$BInstead, hold those memories close so that one day, we might find a reckoning.",
@@ -53359,7 +53541,9 @@
  },
  "f7895324": {
   "en": "Adventure from lands far and near $bMeeting with folks both odd and queer $bBut if of me a question you ask $bYou must first complete a simple task!",
-  "en_h": "0e2e20f6"
+  "en_h": "0e2e20f6",
+  "es": "Aventura de tierras lejanas y cercanas$bEncuentro con gente extraña y queer$bPero si me preguntas una pregunta$b¡Primero debes completar una tarea simple!",
+  "src": "ia"
  },
  "f78af108": {
   "en": "Greetings, $c. We Wildhammer reward our friends.",
@@ -53453,7 +53637,9 @@
  },
  "f7d717d1": {
   "en": "What what?!?  We all have profit to make... and we won't do it by standing idle.",
-  "en_h": "f7d717d1"
+  "en_h": "f7d717d1",
+  "es": "¿Qué? Todos tenemos ganancias que hacer... y no lo haremos por estar ociosos.",
+  "src": "ia"
  },
  "f7d923d7": {
   "en": "We fight for the glory of Brunnhildar!",
@@ -53541,7 +53727,9 @@
  },
  "f83178bd": {
   "en": "So you have come to Niby to learn the secrets of calling down an infernal servant from the Nether.$B$BSilence! Niby knows all!$B$BNiby is not so quick to part with such knowledge. First, you must assist Niby with a very important task.",
-  "en_h": "55370a15"
+  "en_h": "55370a15",
+  "es": "Así que has venido a Niby para aprender los secretos de llamar a un sirviente infernal del Nether.$B$B¡Silencio! ¡Niby lo sabe todo!$B$BNiby no es tan rápido para separarse con tal conocimiento. En primer lugar, debe ayudar a Niby con una tarea muy importante.",
+  "src": "ia"
  },
  "f8501d95": {
   "en": "I can direct you to other weapon masters if you prefer. What interests you?",
@@ -54811,7 +54999,9 @@
  },
  "fddc31f5": {
   "en": "Here you will find the Inscription Trainer.",
-  "en_h": "fddc31f5"
+  "en_h": "fddc31f5",
+  "es": "Aquí encontrará el Inscription Trainer.",
+  "src": "ia"
  },
  "fde418c6": {
   "en": "<Nuainn Stormwing shakes his head.>$B$BWith the Legion on one side and Illidan's minions on the other, it's going to take everything we've got to defend the stronghold, and defend it we will! Every true Wildhammer would sooner die than surrender our home.",
