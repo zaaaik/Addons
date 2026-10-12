@@ -132,8 +132,19 @@ end
 -- Utilidades del juego
 ------------------------------------------------------------------------------------------------
 
+-- El cliente moderno quitó la global MouseIsOver: se usa el método del frame si existe.
+function MES.IsMouseOver(frame)
+	if frame.IsMouseOver then return frame:IsMouseOver() end
+	return MouseIsOver and MouseIsOver(frame) or false
+end
+
 -- questID de la misión seleccionada en el registro (soporta API clásica y moderna).
 function MES.SelectedLogQuestID()
+	-- Registro moderno en el mapa (WoW Forever): el panel de detalle guarda el questID.
+	local details = QuestMapFrame and QuestMapFrame.DetailsFrame
+	if details and details.questID and details.questID > 0 and details:IsShown() then
+		return details.questID
+	end
 	if C_QuestLog and C_QuestLog.GetSelectedQuest then
 		local id = C_QuestLog.GetSelectedQuest()
 		if id and id > 0 then return id end

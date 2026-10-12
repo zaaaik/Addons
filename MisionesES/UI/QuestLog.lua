@@ -30,8 +30,8 @@ local function update()
 	end
 	for _, c in ipairs(candidates()) do
 		local detail, anchor = c[1], c[2]
-		if detail:IsVisible() and MouseIsOver(detail) then
-			local id = MES.SelectedLogQuestID()
+		if detail:IsVisible() and MES.IsMouseOver(detail) then
+			local id = (detail.questID and detail.questID > 0 and detail.questID) or MES.SelectedLogQuestID()
 			local q = MES.GetQuest(id)
 			if q then
 				if shownID ~= id or not panel:IsShown() then
@@ -45,7 +45,7 @@ local function update()
 		end
 	end
 	-- El pergamino también cuenta como zona activa para poder hacer scroll en él.
-	if panel:IsShown() and MouseIsOver(panel) then return end
+	if panel:IsShown() and MES.IsMouseOver(panel) then return end
 	panel:Hide()
 	shownID = nil
 end

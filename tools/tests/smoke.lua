@@ -41,6 +41,7 @@ local function newObject(kind)
 	function o:CreateFontString() return newObject("FontString") end
 	function o:GetVerticalScroll() return 0 end
 	function o:GetID() return 1 end
+	function o:IsMouseOver() return self._mouse == true end
 	return o
 end
 
@@ -61,7 +62,6 @@ _G.UISpecialFrames = {}
 _G.SlashCmdList = {}
 _G.tinsert = table.insert
 _G.hooksecurefunc = function() end
-_G.MouseIsOver = function() return false end
 _G.BackdropTemplateMixin = {}
 _G.DEFAULT_CHAT_FRAME = { AddMessage = function(_, m) print("     chat: " .. m) end }
 _G.Settings = {
@@ -79,6 +79,12 @@ _G.strsplit = function(sep, s, n)
 	end
 	return unpack(out)
 end
+-- Registro moderno en el mapa, como en WoW Forever
+_G.WorldMapFrame = newObject("Frame")
+_G.QuestMapFrame = newObject("Frame")
+QuestMapFrame.DetailsFrame = newObject("Frame")
+_G.C_QuestLog = { GetTitleForQuestID = function() return titleEN end }
+_G.GetQuestLogQuestText = function() return textEN, "Kill things." end
 _G.C_Timer = { NewTicker = function() return { Cancel = function() end } end }
 _G.GetTime = function() return 0 end
 
@@ -169,6 +175,20 @@ check(shownText():find(MES.Personalize(gossipES), 1, true) ~= nil, "panel de di�
 check(shownText():find(MES.Personalize(q.title), 1, true) ~= nil, "panel de diálogo lista la misión traducida")
 fire("GOSSIP_CLOSED")
 check(not MisionesES_SidePanel:IsShown(), "GOSSIP_CLOSED oculta el panel")
+
+-- Registro de misiones del mapa: pasar el ratón por el detalle muestra la traducción
+local watcher
+for _, f in ipairs(frames) do if f._scripts.OnUpdate then watcher = f end end
+QuestMapFrame.DetailsFrame.questID = questID
+QuestMapFrame.DetailsFrame:Show()
+QuestMapFrame.DetailsFrame._mouse = true
+watcher._scripts.OnUpdate(watcher, 1)
+check(MisionesES_LogPanel:IsShown(), "registro del mapa: panel visible al pasar el ratón")
+check(lastBlocks and lastBlocks[1].text == MES.Personalize(q.title), "registro del mapa: muestra el título ES")
+QuestMapFrame.DetailsFrame._mouse = false
+watcher._scripts.OnUpdate(watcher, 1)
+check(not MisionesES_LogPanel:IsShown(), "registro del mapa: se oculta al quitar el ratón")
+QuestMapFrame.DetailsFrame:Hide()
 
 -- Recolector
 MisionesES_Config.collector = true
