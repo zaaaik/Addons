@@ -5,14 +5,14 @@ local side, log
 
 function MES.SidePanel()
 	if not side then
-		side = MES.CreateParchment("MisionesES_SidePanel", UIParent, 320, 420)
+		side = MES.CreateParchment("MisionesES_SidePanel", UIParent, 330, 420, { rolls = true })
 	end
 	return side
 end
 
 function MES.LogPanel()
 	if not log then
-		log = MES.CreateParchment("MisionesES_LogPanel", UIParent, 320, 420)
+		log = MES.CreateParchment("MisionesES_LogPanel", UIParent, 330, 420, { rolls = true })
 	end
 	return log
 end
@@ -20,8 +20,10 @@ end
 -- Notas al pie: traducción por IA o inglés distinto al de la base de datos.
 function MES.NoteBlocks(blocks, isAI, outdated)
 	if isAI or outdated then blocks[#blocks + 1] = { kind = "sep" } end
-	if isAI then blocks[#blocks + 1] = { kind = "original", text = MES.L.NOTE_AI } end
-	if outdated then blocks[#blocks + 1] = { kind = "original", text = MES.L.NOTE_OUTDATED } end
+	if isAI then
+		blocks[#blocks + 1] = { kind = "note", text = "|T" .. MES.TEX .. "ink_quill_icon:14:14|t " .. MES.L.NOTE_AI }
+	end
+	if outdated then blocks[#blocks + 1] = { kind = "note", text = MES.L.NOTE_OUTDATED } end
 	return blocks
 end
 
@@ -29,7 +31,7 @@ end
 function MES.QuestBlocks(q, ctx)
 	local P = MES.Personalize
 	local phase = ctx and ctx.phase
-	local blocks = { { kind = "title", text = P(q.title) } }
+	local blocks = { { kind = "title", text = P(q.title) }, { kind = "sep" } }
 	if phase == "progress" then
 		blocks[#blocks + 1] = { kind = "text", text = P(q.progress) }
 	elseif phase == "complete" then
@@ -55,9 +57,9 @@ function MES.ShowBeside(panel, anchorFrame, blocks)
 		return false
 	end
 	panel:ClearAllPoints()
-	panel:SetPoint("TOPLEFT", anchorFrame, "TOPRIGHT", 4, -14)
+	panel:SetPoint("TOPLEFT", anchorFrame, "TOPRIGHT", 26, -40)
 	panel:Show()
 	panel:SetBlocks(blocks)
-	panel:FitHeight(160, math.max(220, (anchorFrame:GetHeight() or 420) - 30))
+	panel:FitHeight(180, math.max(240, (anchorFrame:GetHeight() or 420) - 70))
 	return true
 end

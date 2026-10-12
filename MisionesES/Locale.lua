@@ -12,6 +12,7 @@ MES.L = {
 	COMPLETE = "Completar misión",
 	XP = "%d PX",
 	NOTE_AI = "Traducción automática (IA).",
+	SEAL_TOOLTIP = "Mostrar u ocultar el texto original en inglés",
 	NOTE_OUTDATED = "El texto en inglés de esta versión cambió: la traducción puede no coincidir.",
 	SETUP_TITLE = "MisionesES - Configuración inicial",
 	SETUP_INTRO = "Elige cómo quieres ver las traducciones. Podrás cambiarlo cuando quieras en Opciones > AddOns > MisionesES o con /mes config.",

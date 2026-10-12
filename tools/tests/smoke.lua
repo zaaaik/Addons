@@ -42,6 +42,9 @@ local function newObject(kind)
 	function o:GetVerticalScroll() return 0 end
 	function o:GetID() return 1 end
 	function o:IsMouseOver() return self._mouse == true end
+	function o:GetVerticalScrollRange() return 0 end
+	function o:GetFrameLevel() return 1 end
+	function o:GetNormalTexture() return newObject("Texture") end
 	return o
 end
 
@@ -164,6 +167,11 @@ MisionesES_Config.mode = "bilingue"
 fire("QUEST_DETAIL")
 check(MisionesES_Bilingual and MisionesES_Bilingual:IsShown(), "ventana bilingüe visible")
 check(QuestFrame:GetAlpha() == 0, "QuestFrame original oculto en modo bilingüe")
+local before = MisionesES_Config.showOriginal
+MisionesES_Bilingual.seal._scripts.OnClick(MisionesES_Bilingual.seal)
+check(MisionesES_Config.showOriginal == not before, "el sello de lacre alterna el texto original")
+local ib = MES.Interleave({}, "Uno.\n\nDos.", "One.\n\nTwo.", true)
+check(#ib == 4 and ib[2].text == "One." and ib[3].text == "Dos.", "párrafos ES/EN intercalados")
 fire("QUEST_FINISHED")
 check(QuestFrame:GetAlpha() == 1 and not MisionesES_Bilingual:IsShown(), "QUEST_FINISHED restaura la ventana original")
 MisionesES_Config.mode = "lateral"

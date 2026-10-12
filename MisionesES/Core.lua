@@ -13,6 +13,7 @@ MES.defaults = {
 	showQuest = true,
 	showQuestLog = true,
 	showGossip = true,
+	showOriginal = true,   -- ventana bilingüe: mostrar el inglés bajo cada párrafo (sello de lacre)
 	collector = false,     -- solo para el mantenedor: captura textos EN que faltan
 }
 
@@ -170,7 +171,8 @@ function MES.GossipText()
 	if GetGossipText then return GetGossipText() end
 end
 
--- Fuentes con tamaño configurable.
+-- Fuentes con tamaño configurable. Títulos y encabezados en letra medieval (Morpheus), como los libros del juego.
+local MORPHEUS = "Fonts\\MORPHEUS.TTF"
 function MES.Fonts()
 	if not MES.fonts then
 		MES.fonts = {
@@ -178,14 +180,16 @@ function MES.Fonts()
 			header = CreateFont("MisionesES_HeaderFont"),
 			text = CreateFont("MisionesES_TextFont"),
 			small = CreateFont("MisionesES_SmallFont"),
+			button = CreateFont("MisionesES_ButtonFont"),
 		}
 	end
 	local size = MES.cfg and MES.cfg.fontSize or 13
 	local base = (QuestFont and QuestFont:GetFont()) or STANDARD_TEXT_FONT
-	local titleBase = (QuestTitleFont and QuestTitleFont:GetFont()) or base
-	MES.fonts.title:SetFont(titleBase, size + 5, "")
-	MES.fonts.header:SetFont(titleBase, size + 2, "")
+	MES.fonts.title:SetFont(MORPHEUS, size + 8, "")
+	MES.fonts.header:SetFont(MORPHEUS, size + 3, "")
 	MES.fonts.text:SetFont(base, size, "")
 	MES.fonts.small:SetFont(base, size - 2, "")
+	MES.fonts.button:SetFont(MORPHEUS, 15, "")
+	for _, f in pairs(MES.fonts) do f:SetSpacing(2) end
 	return MES.fonts
 end
