@@ -34,7 +34,7 @@ FIELDS = ("title", "text", "objectives", "progress", "completion")
 SHORT = {"title": "t", "text": "d", "objectives": "o", "progress": "p", "completion": "c"}
 DEFAULT_MAX_ID = 9000
 # Misiones de relleno o eliminadas que AzerothCore conserva ("<NYI>", "<TXT>", "[UNUSED]"...).
-PLACEHOLDER = re.compile(r"^\s*[<\[]|UNUSED|DEPRECATED|\[PH\]|^zz", re.I)
+PLACEHOLDER = re.compile(r"^\s*[<\[(]|UNUSED|DEPRECATED|\[PH\]|^zz|^jk|testquest", re.I)
 # Términos que delatan un español de una expansión posterior al texto inglés.
 LATER_TERMS = ("Alamuerte", "Cataclismo", "Crepúsculo", "Garrosh", "Pandaria", "Draenor", "Rasganorte")
 LATER_TERMS_EN = ("Deathwing", "Cataclysm", "Twilight", "Garrosh", "Pandaria", "Draenor", "Northrend")
@@ -101,7 +101,7 @@ def merge_quests(ac, captured, previous, revisions, allowed):
         en.update(captured.get(qid, {}))
         if not en.get("title") and not en.get("text"):
             continue
-        if qid not in captured and PLACEHOLDER.search(en.get("title") or ""):
+        if PLACEHOLDER.search(en.get("title") or ""):
             continue
         entry = {"en": en, "es": {}, "src": {}, "en_h": {}, "descartado": {}}
         for f in FIELDS:
@@ -116,7 +116,9 @@ def merge_quests(ac, captured, previous, revisions, allowed):
                 entry["es"][f], entry["src"][f] = rev[f], "revisado"
             elif official and same_en and not suspicious(en[f], official):
                 entry["es"][f], entry["src"][f] = official, "oficial"
-            elif prev.get("src", {}).get(f) == "ia" and prev.get("en_h", {}).get(f) == h:
+            elif (prev.get("src", {}).get(f) == "ia" and prev.get("en_h", {}).get(f) == h
+                  and prev["es"].get(f) != en[f]  # una "traducción" idéntica al inglés se repite
+                  and protect.is_clean(en[f], prev["es"].get(f, ""))):
                 entry["es"][f], entry["src"][f] = prev["es"][f], "ia"
             else:
                 pending.append((qid, f))
@@ -162,7 +164,8 @@ def translate_pending(engine, quests, q_pending, gossip, g_pending, names, limit
     chunk = 200
     for i in range(0, len(jobs), chunk):
         part = jobs[i:i + chunk]
-        results = protect.translate_all(engine, [j[3] for j in part], names)
+        titles = [i for i, j in enumerate(part) if j[2] == "title"]
+        results = protect.translate_all(engine, [j[3] for j in part], names, titles=titles)
         for (kind, key, f, _), es in zip(part, results):
             if not es:
                 failed += 1

@@ -102,6 +102,20 @@ class ProtectTest(unittest.TestCase):
                 return ["nada" for _ in texts]
         self.assertEqual(protect.translate_all(Broken(), ["Hi $N"]), [None])
 
+    def test_titles_are_not_masked_as_names(self):
+        out = protect.translate_all(FakeEngine(), ["Stonetalon Supply Run"], titles=[0])[0]
+        self.assertEqual(out, "[ES] Stonetalon supply run")
+        job = protect.Job("Stonetalon Supply Run", heuristic=False)
+        self.assertEqual(job.segments, ["Stonetalon supply run"])
+
+    def test_profanity_is_rejected(self):
+        class Rude:
+            name = "rude"
+
+            def translate(self, texts):
+                return ["Trinkets de mierda" for _ in texts]
+        self.assertEqual(protect.translate_all(Rude(), ["Bloodfury Trinkets"], titles=[0]), [None])
+
     def test_neutral(self):
         self.assertEqual(protect.neutral_spanish("Vosotros y vosotras"), "Ustedes y ustedes")
 
