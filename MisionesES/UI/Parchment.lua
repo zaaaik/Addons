@@ -77,7 +77,7 @@ function Parchment:SetBlocks(blocks)
 	end
 	self.used = {}
 
-	local width = self:GetWidth() - PADDING * 2 - 6
+	local width = self:GetWidth() - PADDING * 2 - 22  -- margen derecho reservado para la flecha
 	self.child:SetWidth(width)
 
 	local y = 0
@@ -156,13 +156,22 @@ function Parchment:UpdateQuill()
 	local visible = self.scroll:GetHeight() or 0
 	if visible > 0 then range = math.max(range, (self.contentHeight or 0) - visible) end
 	local pos = self.scroll:GetVerticalScroll() or 0
-	if range > 2 and pos < range - 2 then self.quill:Show() else self.quill:Hide() end
+	if range > 2 and pos < range - 2 then
+		self:PlaceArrow(visible)
+		self.quill:Show()
+	else
+		self.quill:Hide()
+	end
 end
 
--- Coloca la flecha dentro del área de texto (cuando bajo el texto no hay hueco, p. ej. hay botones).
-function Parchment:ArrowInside()
+-- La flecha va siempre a 4/5 de la altura del área de texto (desde arriba), pegada al borde derecho.
+local ARROW_AT = 0.8
+function Parchment:PlaceArrow(visible)
+	visible = visible or self.scroll:GetHeight() or 0
+	if visible <= 0 or self.arrowAt == visible then return end
+	self.arrowAt = visible
 	self.quill:ClearAllPoints()
-	self.quill:SetPoint("BOTTOMRIGHT", self.scroll, "BOTTOMRIGHT", 4, 4)
+	self.quill:SetPoint("CENTER", self.scroll, "TOPRIGHT", -8, -visible * ARROW_AT)
 end
 
 function Parchment:ScrollBy(delta)
@@ -258,8 +267,7 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
 	local quill = CreateFrame("Button", nil, f)
 	quill:SetSize(30, 30)
-	-- Por defecto va en el hueco bajo el texto, para no tapar la última línea.
-	quill:SetPoint("TOPRIGHT", scroll, "BOTTOMRIGHT", 4, 0)
+	quill:SetPoint("CENTER", scroll, "TOPRIGHT", -8, -100)  -- se recoloca en PlaceArrow
 	quill:SetFrameLevel(scroll:GetFrameLevel() + 5)
 	quill:SetNormalTexture(TEX .. "arrow_down")
 	quill:SetPushedTexture(TEX .. "arrow_down")
@@ -296,6 +304,7 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	end
 
 	f.scroll, f.child, f.quill = scroll, child, quill
+	f.arrowAt = false
 	f.pool = { fs = {}, sep = {}, reward = {} }
 	f.used = {}
 	for k, v in pairs(Parchment) do f[k] = v end

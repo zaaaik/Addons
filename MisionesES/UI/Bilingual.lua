@@ -63,7 +63,6 @@ local function create()
 	})
 	win:SetFrameStrata("DIALOG")
 	win.scroll:SetPoint("BOTTOMRIGHT", -22, 62)
-	win:ArrowInside()
 	-- Acción principal (Aceptar / Continuar / Completar) siempre a la derecha, como en el juego.
 	win.primary = MES.CreateRibbonButton(win, "red")
 	win.primary:SetPoint("BOTTOMRIGHT", -14, 14)
