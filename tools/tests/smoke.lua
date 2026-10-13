@@ -44,6 +44,11 @@ local function newObject(kind)
 	function o:IsMouseOver() return self._mouse == true end
 	function o:GetVerticalScrollRange() return 0 end
 	function o:GetFrameLevel() return 1 end
+	function o:CreateAnimationGroup()
+		local g = newObject("AnimationGroup")
+		function g:CreateAnimation() return newObject("Animation") end
+		return g
+	end
 	function o:GetNormalTexture() return newObject("Texture") end
 	return o
 end

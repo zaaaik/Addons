@@ -145,16 +145,23 @@ function Parchment:SetBlocks(blocks)
 	self:UpdateQuill()
 end
 
--- La pluma del margen indica que queda texto por leer más abajo.
+-- La flecha indica que queda texto por leer más abajo (y al pulsarla baja el texto).
 function Parchment:UpdateQuill()
 	local range = self.scroll:GetVerticalScrollRange() or 0
 	local pos = self.scroll:GetVerticalScroll() or 0
 	if range > 2 and pos < range - 2 then self.quill:Show() else self.quill:Hide() end
 end
 
+function Parchment:ScrollBy(delta)
+	local range = self.scroll:GetVerticalScrollRange() or 0
+	local pos = math.max(0, math.min(range, (self.scroll:GetVerticalScroll() or 0) + delta))
+	self.scroll:SetVerticalScroll(pos)
+	self:UpdateQuill()
+end
+
 -- Ajusta la altura del pergamino al contenido, entre minH y maxH.
 function Parchment:FitHeight(minH, maxH)
-	local h = (self.contentHeight or 0) + PADDING * 2 + self.sealSpace
+	local h = (self.contentHeight or 0) + PADDING * 2 + self.sealSpace + self.topSpace
 	self:SetHeight(math.max(minH, math.min(maxH, h)))
 	self:UpdateQuill()
 end
@@ -213,24 +220,36 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	addEdges(f)
 	if opts.rolls then addRolls(f) end
 
+	-- Con rollos, el de arriba invade la hoja: el contenido empieza más abajo para no tapar el título.
+	f.topSpace = opts.rolls and 14 or 0
 	local scroll = CreateFrame("ScrollFrame", nil, f)
-	scroll:SetPoint("TOPLEFT", PADDING, -PADDING)
+	scroll:SetPoint("TOPLEFT", PADDING, -PADDING - f.topSpace)
 	scroll:SetPoint("BOTTOMRIGHT", -PADDING + 6, PADDING)
 	local child = CreateFrame("Frame", nil, scroll)
 	child:SetSize(1, 1)
 	scroll:SetScrollChild(child)
 	scroll:EnableMouseWheel(true)
-	scroll:SetScript("OnMouseWheel", function(sf, delta)
-		local range = sf:GetVerticalScrollRange() or 0
-		local pos = math.max(0, math.min(range, (sf:GetVerticalScroll() or 0) - delta * 30))
-		sf:SetVerticalScroll(pos)
-		f:UpdateQuill()
-	end)
+	scroll:SetScript("OnMouseWheel", function(_, delta) f:ScrollBy(-delta * 30) end)
 
-	local quill = f:CreateTexture(nil, "OVERLAY")
-	quill:SetTexture(TEX .. "quill_scroll")
-	quill:SetSize(16, 32)
-	quill:SetPoint("BOTTOMRIGHT", -12, 14)
+	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
+	local quill = CreateFrame("Button", nil, f)
+	quill:SetSize(26, 26)
+	quill:SetPoint("BOTTOMRIGHT", scroll, "BOTTOMRIGHT", 4, -2)
+	quill:SetFrameLevel(scroll:GetFrameLevel() + 5)
+	quill:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
+	quill:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
+	quill:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
+	quill:SetScript("OnClick", function() f:ScrollBy(60) end)
+	if quill.CreateAnimationGroup then
+		local bob = quill:CreateAnimationGroup()
+		local down = bob:CreateAnimation("Translation")
+		down:SetOffset(0, -3); down:SetDuration(0.6); down:SetOrder(1)
+		local up = bob:CreateAnimation("Translation")
+		up:SetOffset(0, 3); up:SetDuration(0.6); up:SetOrder(2)
+		bob:SetLooping("REPEAT")
+		quill:SetScript("OnShow", function() bob:Play() end)
+		quill:SetScript("OnHide", function() bob:Stop() end)
+	end
 	quill:Hide()
 
 	f.sealSpace = opts.seal and 6 or 0

@@ -63,10 +63,11 @@ local function create()
 	})
 	win:SetFrameStrata("DIALOG")
 	win.scroll:SetPoint("BOTTOMRIGHT", -22, 62)
-	win.left = MES.CreateRibbonButton(win, "red")
-	win.left:SetPoint("BOTTOMLEFT", 14, 14)
-	win.right = MES.CreateRibbonButton(win, "brown")
-	win.right:SetPoint("BOTTOMRIGHT", -14, 14)
+	-- Acción principal (Aceptar / Continuar / Completar) siempre a la derecha, como en el juego.
+	win.primary = MES.CreateRibbonButton(win, "red")
+	win.primary:SetPoint("BOTTOMRIGHT", -14, 14)
+	win.secondary = MES.CreateRibbonButton(win, "brown")
+	win.secondary:SetPoint("BOTTOMLEFT", 14, 14)
 	win:SetScript("OnHide", function()
 		if QuestFrame then QuestFrame:SetAlpha(1) end
 	end)
@@ -92,27 +93,27 @@ function MES.ShowBilingual(q, ctx)
 			blocks[#blocks + 1] = { kind = "header", text = MES.L.OBJECTIVES }
 			MES.Interleave(blocks, q.objectives, ctx.objectives, show)
 		end
-		win.left:SetText(MES.L.ACCEPT)
-		win.left:SetScript("OnClick", function() AcceptQuest() end)
-		win.right:SetText(MES.L.DECLINE)
-		win.right:SetScript("OnClick", function() DeclineQuest() end)
-		win.left:Enable()
+		win.primary:SetText(MES.L.ACCEPT)
+		win.primary:SetScript("OnClick", function() AcceptQuest() end)
+		win.secondary:SetText(MES.L.DECLINE)
+		win.secondary:SetScript("OnClick", function() DeclineQuest() end)
+		win.primary:Enable()
 	elseif phase == "progress" then
 		MES.Interleave(blocks, q.progress, ctx.progress, show)
-		win.left:SetText(MES.L.CONTINUE)
-		win.left:SetScript("OnClick", function() CompleteQuest() end)
-		if IsQuestCompletable() then win.left:Enable() else win.left:Disable() end
-		win.right:SetText(MES.L.CANCEL)
-		win.right:SetScript("OnClick", function() CloseQuest() end)
+		win.primary:SetText(MES.L.CONTINUE)
+		win.primary:SetScript("OnClick", function() CompleteQuest() end)
+		if IsQuestCompletable() then win.primary:Enable() else win.primary:Disable() end
+		win.secondary:SetText(MES.L.CANCEL)
+		win.secondary:SetScript("OnClick", function() CloseQuest() end)
 	else
 		MES.Interleave(blocks, q.completion, ctx.completion, show)
-		win.left:SetText(MES.L.COMPLETE)
-		win.left:SetScript("OnClick", function()
+		win.primary:SetText(MES.L.COMPLETE)
+		win.primary:SetScript("OnClick", function()
 			GetQuestReward((GetNumQuestChoices() or 0) == 1 and 1 or 0)
 		end)
-		win.left:Enable()
-		win.right:SetText(MES.L.CANCEL)
-		win.right:SetScript("OnClick", function() CloseQuest() end)
+		win.primary:Enable()
+		win.secondary:SetText(MES.L.CANCEL)
+		win.secondary:SetScript("OnClick", function() CloseQuest() end)
 	end
 
 	if phase ~= "progress" then
