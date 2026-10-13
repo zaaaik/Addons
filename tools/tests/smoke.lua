@@ -203,7 +203,9 @@ panel:Hide()
 
 -- Registro de misiones del mapa: abrir el detalle muestra la traducción sin pasar el ratón
 local watcher
-for _, f in ipairs(frames) do if f._scripts.OnUpdate then watcher = f end end
+for _, f in ipairs(frames) do
+	if f._scripts.OnUpdate and rawget(f, "scroll") == nil then watcher = f end  -- el vigilante del registro, no un pergamino
+end
 QuestMapFrame.DetailsFrame.questID = questID
 QuestMapFrame.DetailsFrame:Show()
 watcher._scripts.OnUpdate(watcher, 1)

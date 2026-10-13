@@ -154,7 +154,7 @@ function Parchment:UpdateQuill()
 	-- la altura del contenido frente a la del área visible.
 	local range = self.scroll:GetVerticalScrollRange() or 0
 	local visible = self.scroll:GetHeight() or 0
-	if range <= 2 and visible > 0 then range = math.max(0, (self.contentHeight or 0) - visible) end
+	if visible > 0 then range = math.max(range, (self.contentHeight or 0) - visible) end
 	local pos = self.scroll:GetVerticalScroll() or 0
 	if range > 2 and pos < range - 2 then self.quill:Show() else self.quill:Hide() end
 end
@@ -245,6 +245,15 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	scroll:SetScript("OnMouseWheel", function(_, delta) f:ScrollBy(-delta * 30) end)
 	scroll:SetScript("OnScrollRangeChanged", function() f:UpdateQuill() end)
 	scroll:SetScript("OnSizeChanged", function() f:UpdateQuill() end)
+	-- Respaldo: mientras el pergamino está abierto se revisa cada 0,2 s (WoW coloca el texto con retraso).
+	local elapsed = 0
+	f:SetScript("OnUpdate", function(_, dt)
+		elapsed = elapsed + dt
+		if elapsed >= 0.2 then
+			elapsed = 0
+			f:UpdateQuill()
+		end
+	end)
 
 	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
 	local quill = CreateFrame("Button", nil, f)
