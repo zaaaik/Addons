@@ -257,13 +257,13 @@ function MES.CreateParchment(name, parent, width, height, opts)
 
 	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
 	local quill = CreateFrame("Button", nil, f)
-	quill:SetSize(24, 24)
+	quill:SetSize(30, 30)
 	-- Por defecto va en el hueco bajo el texto, para no tapar la última línea.
 	quill:SetPoint("TOPRIGHT", scroll, "BOTTOMRIGHT", 4, 0)
 	quill:SetFrameLevel(scroll:GetFrameLevel() + 5)
-	quill:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
-	quill:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
-	quill:SetHighlightTexture("Interface\\Buttons\\UI-Common-MouseHilight", "ADD")
+	quill:SetNormalTexture(TEX .. "arrow_down")
+	quill:SetPushedTexture(TEX .. "arrow_down")
+	quill:SetHighlightTexture(TEX .. "arrow_down_hover", "BLEND")
 	quill:SetScript("OnClick", function() f:ScrollBy(60) end)
 	if quill.CreateAnimationGroup then
 		local bob = quill:CreateAnimationGroup()
