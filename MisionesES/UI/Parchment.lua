@@ -161,7 +161,7 @@ end
 
 -- Ajusta la altura del pergamino al contenido, entre minH y maxH.
 function Parchment:FitHeight(minH, maxH)
-	local h = (self.contentHeight or 0) + PADDING * 2 + self.sealSpace + self.topSpace
+	local h = (self.contentHeight or 0) + PADDING * 2 + self.sealSpace + self.topSpace * 2
 	self:SetHeight(math.max(minH, math.min(maxH, h)))
 	self:UpdateQuill()
 end
@@ -224,7 +224,7 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	f.topSpace = opts.rolls and 14 or 0
 	local scroll = CreateFrame("ScrollFrame", nil, f)
 	scroll:SetPoint("TOPLEFT", PADDING, -PADDING - f.topSpace)
-	scroll:SetPoint("BOTTOMRIGHT", -PADDING + 6, PADDING)
+	scroll:SetPoint("BOTTOMRIGHT", -PADDING + 6, PADDING + f.topSpace)  -- el rollo de abajo también invade
 	local child = CreateFrame("Frame", nil, scroll)
 	child:SetSize(1, 1)
 	scroll:SetScrollChild(child)
@@ -234,7 +234,7 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
 	local quill = CreateFrame("Button", nil, f)
 	quill:SetSize(26, 26)
-	quill:SetPoint("BOTTOMRIGHT", scroll, "BOTTOMRIGHT", 4, -2)
+	quill:SetPoint("BOTTOMRIGHT", scroll, "BOTTOMRIGHT", 4, 6)
 	quill:SetFrameLevel(scroll:GetFrameLevel() + 5)
 	quill:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
 	quill:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
