@@ -1,3 +1,3 @@
 -- Generado por tools/build_db.py. No editar a mano.
 local _, MES = ...
-MES.DB.meta = {fuente="AzerothCore ed9d632ab6 + Wowhead",generado="2026-10-12"}
+MES.DB.meta = {fuente="AzerothCore ed9d632ab6 + Wowhead",generado="2026-10-13"}
