@@ -152,6 +152,12 @@ function Parchment:UpdateQuill()
 	if range > 2 and pos < range - 2 then self.quill:Show() else self.quill:Hide() end
 end
 
+-- Coloca la flecha dentro del área de texto (cuando bajo el texto no hay hueco, p. ej. hay botones).
+function Parchment:ArrowInside()
+	self.quill:ClearAllPoints()
+	self.quill:SetPoint("BOTTOMRIGHT", self.scroll, "BOTTOMRIGHT", 4, 4)
+end
+
 function Parchment:ScrollBy(delta)
 	local range = self.scroll:GetVerticalScrollRange() or 0
 	local pos = math.max(0, math.min(range, (self.scroll:GetVerticalScroll() or 0) + delta))
@@ -233,8 +239,9 @@ function MES.CreateParchment(name, parent, width, height, opts)
 
 	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
 	local quill = CreateFrame("Button", nil, f)
-	quill:SetSize(26, 26)
-	quill:SetPoint("BOTTOMRIGHT", scroll, "BOTTOMRIGHT", 4, 6)
+	quill:SetSize(24, 24)
+	-- Por defecto va en el hueco bajo el texto, para no tapar la última línea.
+	quill:SetPoint("TOPRIGHT", scroll, "BOTTOMRIGHT", 4, 0)
 	quill:SetFrameLevel(scroll:GetFrameLevel() + 5)
 	quill:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Up")
 	quill:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIcon-ScrollDown-Down")
