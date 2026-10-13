@@ -93,7 +93,7 @@ _G.QuestMapFrame = newObject("Frame")
 QuestMapFrame.DetailsFrame = newObject("Frame")
 _G.C_QuestLog = { GetTitleForQuestID = function() return titleEN end }
 _G.GetQuestLogQuestText = function() return textEN, "Kill things." end
-_G.C_Timer = { NewTicker = function() return { Cancel = function() end } end }
+_G.C_Timer = { NewTicker = function() return { Cancel = function() end } end, After = function(_, f) f() end }
 _G.GetTime = function() return 0 end
 
 local locale = "enUS"
@@ -188,6 +188,18 @@ check(shownText():find(MES.Personalize(gossipES), 1, true) ~= nil, "panel de di�
 check(shownText():find(MES.Personalize(q.title), 1, true) ~= nil, "panel de diálogo lista la misión traducida")
 fire("GOSSIP_CLOSED")
 check(not MisionesES_SidePanel:IsShown(), "GOSSIP_CLOSED oculta el panel")
+
+-- La flecha de "más texto" aparece sin hacer scroll cuando el texto no cabe
+local panel = MES.SidePanel()
+panel.scroll.GetHeight = function() return 100 end
+panel:SetBlocks({ { kind = "title", text = "T" }, { kind = "text", text = string.rep("x ", 50) } })
+panel.contentHeight = 400
+panel:UpdateQuill()
+check(panel.quill:IsShown(), "flecha visible al abrir si el texto no cabe")
+panel.contentHeight = 50
+panel:UpdateQuill()
+check(not panel.quill:IsShown(), "flecha oculta si el texto cabe")
+panel:Hide()
 
 -- Registro de misiones del mapa: abrir el detalle muestra la traducción sin pasar el ratón
 local watcher

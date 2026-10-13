@@ -143,11 +143,18 @@ function Parchment:SetBlocks(blocks)
 	self.child:SetHeight(math.max(y, 1))
 	self.scroll:SetVerticalScroll(0)
 	self:UpdateQuill()
+	if C_Timer and C_Timer.After then
+		C_Timer.After(0, function() self:UpdateQuill() end)
+	end
 end
 
 -- La flecha indica que queda texto por leer más abajo (y al pulsarla baja el texto).
 function Parchment:UpdateQuill()
+	-- WoW recalcula el rango de scroll un instante después de mostrar el texto; mientras tanto se usa
+	-- la altura del contenido frente a la del área visible.
 	local range = self.scroll:GetVerticalScrollRange() or 0
+	local visible = self.scroll:GetHeight() or 0
+	if range <= 2 and visible > 0 then range = math.max(0, (self.contentHeight or 0) - visible) end
 	local pos = self.scroll:GetVerticalScroll() or 0
 	if range > 2 and pos < range - 2 then self.quill:Show() else self.quill:Hide() end
 end
@@ -236,6 +243,8 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	scroll:SetScrollChild(child)
 	scroll:EnableMouseWheel(true)
 	scroll:SetScript("OnMouseWheel", function(_, delta) f:ScrollBy(-delta * 30) end)
+	scroll:SetScript("OnScrollRangeChanged", function() f:UpdateQuill() end)
+	scroll:SetScript("OnSizeChanged", function() f:UpdateQuill() end)
 
 	-- Flecha "hay más texto": en la esquina inferior derecha del área de texto, con un leve vaivén.
 	local quill = CreateFrame("Button", nil, f)
