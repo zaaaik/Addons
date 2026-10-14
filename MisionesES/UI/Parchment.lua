@@ -215,26 +215,28 @@ end
 
 -- Rollos: la textura (512x128) lleva margen transparente; el dibujo ocupa el 52 % de su altura. La altura
 -- se calcula con el ancho para no deformarlo, y el rollo se hunde 12 px en la hoja.
-local ROLL_ART = 0.523
+local ROLL_ART_TOP = 0.523     -- fracción de la altura de la textura que ocupa el dibujo
+local ROLL_ART_BOTTOM = 0.586
 local ROLL_SINK = 12
 
 local function addRolls(f)
 	local top = f:CreateTexture(nil, "OVERLAY")
 	top:SetTexture(TEX .. "scroll_top")
 	local bottom = f:CreateTexture(nil, "OVERLAY")
-	bottom:SetTexture(TEX .. "scroll_bottom")  -- el mismo dibujo girado 180 grados
+	bottom:SetTexture(TEX .. "scroll_bottom")
 	local function layout()
 		local w = (f:GetWidth() or 330) + 44
 		local height = w * 128 / 512
-		local off = ROLL_SINK + height * (1 - ROLL_ART) / 2
+		local off = ROLL_SINK + height * (1 - ROLL_ART_TOP) / 2
+		local offBottom = ROLL_SINK + height * (1 - ROLL_ART_BOTTOM) / 2
 		top:SetHeight(height)
 		top:ClearAllPoints()
 		top:SetPoint("BOTTOMLEFT", f, "TOPLEFT", -22, -off)
 		top:SetPoint("BOTTOMRIGHT", f, "TOPRIGHT", 22, -off)
 		bottom:SetHeight(height)
 		bottom:ClearAllPoints()
-		bottom:SetPoint("TOPLEFT", f, "BOTTOMLEFT", -22, off)
-		bottom:SetPoint("TOPRIGHT", f, "BOTTOMRIGHT", 22, off)
+		bottom:SetPoint("TOPLEFT", f, "BOTTOMLEFT", -22, offBottom)
+		bottom:SetPoint("TOPRIGHT", f, "BOTTOMRIGHT", 22, offBottom)
 	end
 	layout()
 	f:SetScript("OnSizeChanged", layout)
