@@ -126,9 +126,10 @@ function MES.ShowBilingual(q, ctx)
 	end
 	MES.NoteBlocks(blocks, q.ia, ctx.outdated)
 
-	-- Cubre la ventana original entera para que sus botones (invisibles) no reciban clics.
+	-- Más angosta que la ventana original (84 %) y centrada en ella, como en el diseño de referencia.
 	win:ClearAllPoints()
-	win:SetAllPoints(QuestFrame)
+	win:SetPoint("CENTER", QuestFrame, "CENTER", 0, 0)
+	win:SetSize(math.floor((QuestFrame:GetWidth() or 384) * 0.84), QuestFrame:GetHeight() or 512)
 	QuestFrame:SetAlpha(0)
 	win:Show()
 	win:SetBlocks(blocks)

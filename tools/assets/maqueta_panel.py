@@ -3,7 +3,7 @@
 from PIL import Image, ImageDraw, ImageFont
 
 T = 'MisionesES/Textures/'
-W, H, S = 330, 420, 2
+W, H, S = 285, 420, 2
 PAD, TOP, EDGE, OUT = 28, 18, 40, 6
 canvas = Image.new('RGBA', ((W + 80) * S, (H + 100) * S), (88, 58, 30, 255))
 ox, oy = 40 * S, 50 * S

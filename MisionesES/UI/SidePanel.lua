@@ -1,18 +1,21 @@
 -- Modo "lateral": pergamino con la traducción junto a la ventana original.
 local _, MES = ...
 
+-- Ancho del pergamino: 16 % menos que antes, como en el diseño de referencia.
+local PANEL_WIDTH = 285
+
 local side, log
 
 function MES.SidePanel()
 	if not side then
-		side = MES.CreateParchment("MisionesES_SidePanel", UIParent, 330, 420, { rolls = true })
+		side = MES.CreateParchment("MisionesES_SidePanel", UIParent, PANEL_WIDTH, 420, { rolls = true })
 	end
 	return side
 end
 
 function MES.LogPanel()
 	if not log then
-		log = MES.CreateParchment("MisionesES_LogPanel", UIParent, 330, 420, { rolls = true })
+		log = MES.CreateParchment("MisionesES_LogPanel", UIParent, PANEL_WIDTH, 420, { rolls = true })
 	end
 	return log
 end
