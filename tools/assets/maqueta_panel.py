@@ -30,8 +30,10 @@ canvas.alpha_composite(crop((c, 0, 256 - c, c), R - L - 2 * E, E), (L + E, Tp))
 canvas.alpha_composite(crop((c, 256 - c, 256 - c, 256), R - L - 2 * E, E), (L + E, B - E))
 canvas.alpha_composite(crop((0, c, c, 256 - c), E, B - Tp - 2 * E), (L, Tp + E))
 canvas.alpha_composite(crop((256 - c, c, 256, 256 - c), E, B - Tp - 2 * E), (R - E, Tp + E))
-canvas.alpha_composite(tex('scroll_top').resize(((W + 44) * S, 72 * S)), (ox - 22 * S, oy + 22 * S - 72 * S))
-canvas.alpha_composite(tex('scroll_bottom').resize(((W + 44) * S, 72 * S)), (ox - 22 * S, oy + H * S - 22 * S))
+RH = int((W + 44) * 128 / 512)            # alto del rollo (la textura es 512x128)
+OFF = int(12 + RH * (1 - 0.523) / 2)      # se hunde 12 px en la hoja
+canvas.alpha_composite(tex('scroll_top').resize(((W + 44) * S, RH * S)), (ox - 22 * S, oy + OFF * S - RH * S))
+canvas.alpha_composite(tex('scroll_bottom').resize(((W + 44) * S, RH * S)), (ox - 22 * S, oy + H * S - OFF * S))
 
 d = ImageDraw.Draw(canvas)
 title = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', 17 * S)
