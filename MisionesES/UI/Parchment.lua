@@ -216,14 +216,15 @@ end
 local function addRolls(f)
 	local top = f:CreateTexture(nil, "OVERLAY")
 	top:SetTexture(TEX .. "scroll_top")
-	top:SetHeight(42)
-	top:SetPoint("BOTTOMLEFT", f, "TOPLEFT", -22, -16)
-	top:SetPoint("BOTTOMRIGHT", f, "TOPRIGHT", 22, -16)
+	-- La textura (512x128) lleva margen transparente: el rollo se hunde unos 14 px en la hoja.
+	top:SetHeight(72)
+	top:SetPoint("BOTTOMLEFT", f, "TOPLEFT", -22, -22)
+	top:SetPoint("BOTTOMRIGHT", f, "TOPRIGHT", 22, -22)
 	local bottom = f:CreateTexture(nil, "OVERLAY")
 	bottom:SetTexture(TEX .. "scroll_bottom")
-	bottom:SetHeight(42)
-	bottom:SetPoint("TOPLEFT", f, "BOTTOMLEFT", -22, 16)
-	bottom:SetPoint("TOPRIGHT", f, "BOTTOMRIGHT", 22, 16)
+	bottom:SetHeight(72)
+	bottom:SetPoint("TOPLEFT", f, "BOTTOMLEFT", -22, 22)
+	bottom:SetPoint("TOPRIGHT", f, "BOTTOMRIGHT", 22, 22)
 end
 
 -- opts: { rolls = true, seal = function() end, sealTooltip = "..." }
@@ -243,7 +244,7 @@ function MES.CreateParchment(name, parent, width, height, opts)
 	if opts.rolls then addRolls(f) end
 
 	-- Con rollos, el de arriba invade la hoja: el contenido empieza más abajo para no tapar el título.
-	f.topSpace = opts.rolls and 14 or 0
+	f.topSpace = opts.rolls and 18 or 0
 	local scroll = CreateFrame("ScrollFrame", nil, f)
 	scroll:SetPoint("TOPLEFT", PADDING, -PADDING - f.topSpace)
 	scroll:SetPoint("BOTTOMRIGHT", -PADDING + 6, PADDING + f.topSpace)  -- el rollo de abajo también invade
