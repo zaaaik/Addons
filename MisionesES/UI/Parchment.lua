@@ -24,7 +24,6 @@ local function acquire(self, kind)
 		if kind == "sep" then
 			obj = self.child:CreateTexture(nil, "ARTWORK")
 			obj:SetTexture(TEX .. "divider_ink")
-			obj:SetHeight(16)
 		elseif kind == "reward" then
 			obj = CreateFrame("Button", nil, self.child)
 			obj:SetSize(44, 44)
@@ -83,12 +82,16 @@ function Parchment:SetBlocks(blocks)
 	local y = 0
 	for _, b in ipairs(blocks) do
 		if b.kind == "sep" then
+			-- Separador (textura 512x64, el dibujo ocupa el 58 % de la altura): altura según el ancho para no deformarlo.
 			local t = acquire(self, "sep")
-			y = y + 2
+			local h = width / 8
+			local artH, pad = h * 0.578, h * (1 - 0.578) / 2
+			y = y + 4
+			t:SetHeight(h)
 			t:ClearAllPoints()
-			t:SetPoint("TOPLEFT", self.child, "TOPLEFT", 8, -y)
-			t:SetPoint("TOPRIGHT", self.child, "TOPRIGHT", -8, -y)
-			y = y + 20
+			t:SetPoint("TOPLEFT", self.child, "TOPLEFT", 0, -(y - pad))
+			t:SetPoint("TOPRIGHT", self.child, "TOPRIGHT", 0, -(y - pad))
+			y = y + artH + 8
 		elseif b.kind == "rewards" then
 			local col = 0
 			for _, item in ipairs(b.items or {}) do

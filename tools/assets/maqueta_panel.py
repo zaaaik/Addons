@@ -68,8 +68,9 @@ def para(text, font=body, fill=INK, step=17, gap=8):
 
 d.text((x, y), 'Los tubérculos hojazul', font=title, fill=BLACK)
 y += 26 * S
-canvas.alpha_composite(tex('divider_ink').resize((width - 16 * S, 16 * S)), (x + 8 * S, y))
-y += 22 * S
+dh = width // 8
+canvas.alpha_composite(tex('divider_ink').resize((width, dh)), (x, y - int(dh * 0.211) + 4 * S))
+y += int(dh * 0.578) + 12 * S
 para('Los tubérculos hojazul son muy apreciados en todo el mundo. Pero son muy raros. Solo se encuentran aquí, en Los Baldíos, enterrados profundamente en Horado Rajacieno.')
 para('¡Y es imposible encontrarlos a no ser que sepas dónde mirar! Por eso he amaestrado husmeadores taltuza para que los busquen.')
 para('No será fácil, pero si me traes tubérculos te pagaré muy bien.')
