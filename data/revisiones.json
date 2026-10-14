@@ -1,0 +1,938 @@
+{
+ "gossip": {},
+ "quests": {
+  "140": {
+   "title": "El tesoro oculto del capitán Sander"
+  },
+  "167": {
+   "title": "Ay, hermano..."
+  },
+  "490": {
+   "title": "Recompensa: furbolgs Gnarlpine"
+  },
+  "5147": {
+   "title": "SE BUSCA: Arnak Grimtotem"
+  },
+  "5641": {
+   "title": "Castigo"
+  },
+  "5644": {
+   "title": "Sacrificio oscuro"
+  },
+  "5645": {
+   "title": "Castigo"
+  },
+  "5646": {
+   "title": "Sacrificio oscuro"
+  },
+  "5647": {
+   "title": "Castigo"
+  },
+  "5679": {
+   "title": "Sacrificio oscuro"
+  },
+  "6386": {
+   "title": "Regreso al Crossroads"
+  },
+  "684": {
+   "title": "SE BUSCA: Marez Cowl"
+  },
+  "685": {
+   "title": "SE BUSCA: Otto y Falconcrest"
+  },
+  "86574": {
+   "title": "Suministros para Stonetalon"
+  },
+  "86576": {
+   "title": "Baratijas Bloodfury"
+  },
+  "86585": {
+   "title": "El estandarte de los caídos"
+  },
+  "86613": {
+   "title": "Herramientas de excavación"
+  },
+  "86614": {
+   "title": "La plata de las olas"
+  },
+  "86667": {
+   "title": "Atrapados por la nieve"
+  },
+  "86757": {
+   "title": "Frenar el avance orco"
+  },
+  "86758": {
+   "title": "Retorcer el cuchillo"
+  },
+  "86776": {
+   "title": "Ingredientes para la forja"
+  },
+  "86784": {
+   "title": "Palos y huesos"
+  },
+  "87288": {
+   "title": "Pieles suaves de sable"
+  },
+  "87318": {
+   "title": "Corazones de los perdidos"
+  },
+  "87491": {
+   "title": "Chispa de libertad"
+  },
+  "87760": {
+   "title": "Buceador sagrado"
+  },
+  "88756": {
+   "title": "Volver con un estallido"
+  },
+  "88757": {
+   "title": "Accesorios de los perdidos"
+  },
+  "88758": {
+   "title": "Recuerdos de los perdidos"
+  },
+  "90902": {
+   "title": "Redescubrir la Luz"
+  },
+  "91208": {
+   "title": "Asumir la realidad"
+  },
+  "91209": {
+   "title": "Continúa tu entrenamiento"
+  },
+  "91282": {
+   "title": "Un segundo hogar"
+  },
+  "91285": {
+   "title": "Múrlocs a las puertas"
+  },
+  "91294": {
+   "title": "Recorrido por el lugar"
+  },
+  "91316": {
+   "title": "Reparaciones"
+  },
+  "91317": {
+   "title": "Los Deslustrados"
+  },
+  "91723": {
+   "title": "Instrumentos delicados"
+  },
+  "91724": {
+   "title": "Instrumentos delicados"
+  },
+  "91725": {
+   "title": "Suministros de encantamiento robados"
+  },
+  "91732": {
+   "title": "Buen acero"
+  },
+  "91733": {
+   "title": "Río abajo"
+  },
+  "91736": {
+   "title": "El alambique de sidra"
+  },
+  "91738": {
+   "title": "Un capricho de manzana"
+  },
+  "91740": {
+   "title": "La cabeza de Croaky"
+  },
+  "91741": {
+   "title": "Un libro mordisqueado"
+  },
+  "91743": {
+   "title": "Roedores traviesos"
+  },
+  "91745": {
+   "title": "Asesor de minería"
+  },
+  "91746": {
+   "title": "La cabeza de Elmpaw"
+  },
+  "91751": {
+   "title": "Pieles de lobo ásperas"
+  },
+  "91752": {
+   "title": "El panorama completo"
+  },
+  "91753": {
+   "title": "Una lección de encantamiento"
+  },
+  "91758": {
+   "title": "¡Sigue a ese kóbold!"
+  },
+  "91772": {
+   "title": "¡Shhh! Estamos cazando kóbolds"
+  },
+  "91775": {
+   "title": "Devolución de libros"
+  },
+  "91777": {
+   "title": "Libros raros"
+  },
+  "91858": {
+   "title": "Incidente diplomático"
+  },
+  "91859": {
+   "title": "Una pareja curiosa"
+  },
+  "91860": {
+   "title": "Un destino sombrío"
+  },
+  "91861": {
+   "title": "Hacia Fenris Keep"
+  },
+  "91862": {
+   "title": "Lumina Windsinger"
+  },
+  "91899": {
+   "title": "Una caja sellada"
+  },
+  "91900": {
+   "title": "Una caja sellada"
+  },
+  "91901": {
+   "title": "Una caja sellada"
+  },
+  "91904": {
+   "title": "Una caja sellada"
+  },
+  "91905": {
+   "title": "Una caja sellada"
+  },
+  "91906": {
+   "title": "Una caja sellada"
+  },
+  "91920": {
+   "title": "Ojos salvajes"
+  },
+  "91921": {
+   "title": "De vuelta con Quinn (otra vez)"
+  },
+  "92109": {
+   "title": "Mi primer equipo de alquimia"
+  },
+  "92110": {
+   "title": "Mi primera poción de verdad"
+  },
+  "92124": {
+   "title": "Inventario de libros"
+  },
+  "92401": {
+   "title": "Una petición asustada"
+  },
+  "92415": {
+   "title": "Recuerda que te quiero"
+  },
+  "92421": {
+   "title": "La justicia de la Luz"
+  },
+  "92422": {
+   "title": "La ira de Rath'mael"
+  },
+  "92432": {
+   "title": "Una petición alarmante"
+  },
+  "92434": {
+   "title": "Sangre en las calles"
+  },
+  "92454": {
+   "title": "¡Bienvenido!"
+  },
+  "92456": {
+   "title": "Una muestra verde"
+  },
+  "92457": {
+   "title": "Hambre arcana"
+  },
+  "92458": {
+   "title": "Corazón de la disrupción"
+  },
+  "92459": {
+   "title": "Amigo del Kirin Tor"
+  },
+  "92460": {
+   "title": "La mayoría de edad"
+  },
+  "92461": {
+   "title": "Armonía en equilibrio"
+  },
+  "92462": {
+   "title": "Investigación de la plaga"
+  },
+  "92463": {
+   "title": "La reina Cirrusfly"
+  },
+  "92464": {
+   "title": "Disturbios elementales"
+  },
+  "92465": {
+   "title": "Agitadores"
+  },
+  "92466": {
+   "title": "La llamada de la tierra"
+  },
+  "92467": {
+   "title": "La llamada de la tierra"
+  },
+  "92468": {
+   "title": "La llamada de la tierra"
+  },
+  "92469": {
+   "title": "De vuelta con Rorian"
+  },
+  "92470": {
+   "title": "Matriarca inmunda"
+  },
+  "92471": {
+   "title": "Aetheen de los Vendavales"
+  },
+  "92472": {
+   "title": "El siguiente paso"
+  },
+  "92473": {
+   "title": "Invasión agresiva"
+  },
+  "92474": {
+   "title": "Caer con estilo"
+  },
+  "92479": {
+   "title": "Una carta garabateada"
+  },
+  "92481": {
+   "title": "Un estudiante de lo arcano"
+  },
+  "92482": {
+   "title": "El camino del cazador"
+  },
+  "92483": {
+   "title": "Como en casa entre las sombras"
+  },
+  "92484": {
+   "title": "Abrazar los elementos"
+  },
+  "92485": {
+   "title": "Un estudiante de la naturaleza"
+  },
+  "92489": {
+   "title": "Poder abrumador"
+  },
+  "92514": {
+   "title": "Bienvenido a Shen'dar Village"
+  },
+  "92515": {
+   "title": "El problema de los Prideclaws"
+  },
+  "92516": {
+   "title": "Acoso de hipogrifos"
+  },
+  "92517": {
+   "title": "El elemento criminal"
+  },
+  "92519": {
+   "title": "Reponer las salvaguardas"
+  },
+  "92528": {
+   "title": "Entre los fieles"
+  },
+  "92529": {
+   "title": "Falaath Village"
+  },
+  "92532": {
+   "title": "El camino del guerrero"
+  },
+  "92544": {
+   "title": "Matones Al'Aketh"
+  },
+  "92550": {
+   "title": "Caos en las tierras altas"
+  },
+  "92551": {
+   "title": "Suministros robados"
+  },
+  "92553": {
+   "title": "Reabastecer las despensas"
+  },
+  "92579": {
+   "title": "Hacia Valanaar"
+  },
+  "92595": {
+   "title": "Los Windshapers"
+  },
+  "92596": {
+   "title": "La Alta Orden"
+  },
+  "92597": {
+   "title": "Leer las líneas ley"
+  },
+  "92598": {
+   "title": "El don de la visión celeste"
+  },
+  "92640": {
+   "title": "Tiempos desesperados"
+  },
+  "92642": {
+   "title": "Sabotear la logística"
+  },
+  "92643": {
+   "title": "El traidor"
+  },
+  "92644": {
+   "title": "Malas noticias"
+  },
+  "92645": {
+   "title": "Romper al Rompedor"
+  },
+  "92646": {
+   "title": "Enfrentarse a Lorthuna"
+  },
+  "92679": {
+   "title": "Diezmo de sangre"
+  },
+  "92682": {
+   "title": "Hazte útil"
+  },
+  "92683": {
+   "title": "Polvo de Flutterfly"
+  },
+  "92684": {
+   "title": "Galestriders muy ariscos"
+  },
+  "92685": {
+   "title": "Las colinas tienen ojos"
+  },
+  "92693": {
+   "title": "Mantenernos firmes"
+  },
+  "92698": {
+   "title": "¿Cuál es mi propósito?"
+  },
+  "92699": {
+   "title": "El magister supremo"
+  },
+  "92700": {
+   "title": "El gran vidente celeste"
+  },
+  "92701": {
+   "title": "Hacia Valanaar"
+  },
+  "92703": {
+   "title": "Llevar la noticia"
+  },
+  "92706": {
+   "title": "SE BUSCA: Bruuz"
+  },
+  "92707": {
+   "title": "El gigante de la guarida"
+  },
+  "92708": {
+   "title": "Una gran aventura"
+  },
+  "92709": {
+   "title": "Una gran aventura"
+  },
+  "92727": {
+   "title": "El erudito desaparecido"
+  },
+  "92741": {
+   "title": "Visitantes indeseados"
+  },
+  "92742": {
+   "title": "Probar los pozos"
+  },
+  "92743": {
+   "title": "La corona de un conquistador"
+  },
+  "92744": {
+   "title": "Branquias de múrloc"
+  },
+  "92745": {
+   "title": "El estado de las minas"
+  },
+  "92747": {
+   "title": "Espionaje en Moonbrook"
+  },
+  "92748": {
+   "title": "Consulta explosiva"
+  },
+  "92749": {
+   "title": "Un plan con dinamita"
+  },
+  "92750": {
+   "title": "Detonación a distancia"
+  },
+  "92751": {
+   "title": "Detonación a distancia"
+  },
+  "92752": {
+   "title": "Consulta explosiva"
+  },
+  "92753": {
+   "title": "Destrucción en las Deadmines"
+  },
+  "92754": {
+   "title": "Una nueva necesidad de protección contra las Sombras"
+  },
+  "92755": {
+   "title": "Misticismo misterioso"
+  },
+  "92811": {
+   "title": "Guerra económica"
+  },
+  "92812": {
+   "title": "Guerra económica"
+  },
+  "92814": {
+   "title": "Necesito un sastre"
+  },
+  "92817": {
+   "title": "Técnica de peletería"
+  },
+  "92818": {
+   "title": "Hachas de hierro grandes, no, ENORMES"
+  },
+  "92819": {
+   "title": "Destrucción en las Deadmines"
+  },
+  "92834": {
+   "title": "Vengados por diez"
+  },
+  "92840": {
+   "title": "Atrapar el viento"
+  },
+  "92841": {
+   "title": "El valle de los huesos"
+  },
+  "92844": {
+   "title": "La montaña de huesos"
+  },
+  "92846": {
+   "title": "Nigromantes proscritos"
+  },
+  "92847": {
+   "title": "Lágrimas corruptoras"
+  },
+  "92849": {
+   "title": "El erudito desaparecido"
+  },
+  "92850": {
+   "title": "El erudito desaparecido"
+  },
+  "92860": {
+   "title": "Al servicio de Zephras"
+  },
+  "92867": {
+   "title": "Terreno que defender"
+  },
+  "92871": {
+   "title": "Al servicio de Zephras"
+  },
+  "92873": {
+   "title": "Prueba de concepto"
+  },
+  "92880": {
+   "title": "Regreso a Valanaar"
+  },
+  "92881": {
+   "title": "La petición del sumo anciano"
+  },
+  "92893": {
+   "title": "Sin piedad para los débiles"
+  },
+  "92894": {
+   "title": "Alzar huesos"
+  },
+  "92909": {
+   "title": "Cosechar a los cosechadores"
+  },
+  "92910": {
+   "title": "Cosechar a los cosechadores"
+  },
+  "92911": {
+   "title": "Cosechar a los cosechadores"
+  },
+  "92947": {
+   "title": "Nuestro turno de actuar"
+  },
+  "93034": {
+   "title": "El valle de los huesos"
+  },
+  "93035": {
+   "title": "Devastar a los devastadores"
+  },
+  "93036": {
+   "title": "Infiltrarse en el culto"
+  },
+  "93037": {
+   "title": "Desenmascarar a los proscritos"
+  },
+  "93041": {
+   "title": "Afrontar la verdad"
+  },
+  "93044": {
+   "title": "Un grito purificador"
+  },
+  "93045": {
+   "title": "Pon a prueba tu teoría"
+  },
+  "93058": {
+   "title": "Salvar a los nuestros"
+  },
+  "93062": {
+   "title": "Enterrar huesos"
+  },
+  "93065": {
+   "title": "Prepárate para la batalla"
+  },
+  "93066": {
+   "title": "La retirada de los Bristleback"
+  },
+  "93072": {
+   "title": "Soluciones a largo plazo"
+  },
+  "93089": {
+   "title": "Lo que viene después"
+  },
+  "93090": {
+   "title": "Lo que viene después"
+  },
+  "93122": {
+   "title": "Echar un vistazo"
+  },
+  "93125": {
+   "title": "Volver a casa"
+  },
+  "93128": {
+   "title": "Khan Jehn"
+  },
+  "93129": {
+   "title": "La amenaza del hambre"
+  },
+  "93159": {
+   "title": "El ermitaño extraño"
+  },
+  "93160": {
+   "title": "La generosidad del bosque"
+  },
+  "93165": {
+   "title": "La piedad cae en oídos sordos"
+  },
+  "93172": {
+   "title": "Liberar las Hollows"
+  },
+  "93176": {
+   "title": "Mis pequeños amigos"
+  },
+  "93188": {
+   "title": "De vuelta con Orgrul"
+  },
+  "93196": {
+   "title": "Khan Jehn"
+  },
+  "93224": {
+   "title": "Tótems de centauro tallados"
+  },
+  "93225": {
+   "title": "Tótems de centauro tallados"
+  },
+  "93226": {
+   "title": "Comprar amistad: Magram"
+  },
+  "93227": {
+   "title": "Comprar amistad: Gelkis"
+  },
+  "93317": {
+   "title": "Temporada de cangrejos"
+  },
+  "93318": {
+   "title": "SE BUSCA: Vulgara la Insaciable"
+  },
+  "93319": {
+   "title": "Piedras de viento robadas"
+  },
+  "93320": {
+   "title": "Defensa de la torre"
+  },
+  "93429": {
+   "title": "Sangre de mi sangre"
+  },
+  "93430": {
+   "title": "Recuperar el cebo"
+  },
+  "93459": {
+   "title": "Más orejas Al'Aketh"
+  },
+  "93461": {
+   "title": "Bienvenido a Shen'dar Village"
+  },
+  "93464": {
+   "title": "El mago visitante"
+  },
+  "93465": {
+   "title": "Notas sobre el draenetista"
+  },
+  "93552": {
+   "title": "Recolectar piedras de viento"
+  },
+  "93585": {
+   "title": "Esta luz mía"
+  },
+  "93663": {
+   "title": "Perdido en el camino"
+  },
+  "93680": {
+   "title": "La llave de la ciudad"
+  },
+  "93735": {
+   "title": "El autómata roto"
+  },
+  "93736": {
+   "title": "Espíritus indeseados"
+  },
+  "93737": {
+   "title": "El autómata roto"
+  },
+  "93738": {
+   "title": "El autómata roto"
+  },
+  "93739": {
+   "title": "Explorar la Horda"
+  },
+  "93740": {
+   "title": "Sangre por sangre"
+  },
+  "93746": {
+   "title": "Una respuesta firme"
+  },
+  "93791": {
+   "title": "Habla con Belann"
+  },
+  "93797": {
+   "title": "Ramas al viento"
+  },
+  "93835": {
+   "title": "Enfrentarse a Lorthuna"
+  },
+  "93836": {
+   "title": "El destino de Zephras"
+  },
+  "93862": {
+   "title": "Devolución de cajas"
+  },
+  "93926": {
+   "title": "La guardia occidental"
+  },
+  "93927": {
+   "title": "Una última petición"
+  },
+  "93928": {
+   "title": "De ratones y leche"
+  },
+  "93948": {
+   "title": "Entregar el sello"
+  },
+  "93949": {
+   "title": "Bichos"
+  },
+  "93951": {
+   "title": "Una pequeña belleza"
+  },
+  "93958": {
+   "title": "El sanctasanctórum"
+  },
+  "93963": {
+   "title": "Explorar la Alianza"
+  },
+  "94003": {
+   "title": "El baluarte Skybreaker"
+  },
+  "94004": {
+   "title": "Encargo de artesano: Elixir of Ogre's Strength"
+  },
+  "94006": {
+   "title": "El gran espíritu Ursera"
+  },
+  "94007": {
+   "title": "Domar a la bestia"
+  },
+  "94013": {
+   "title": "Domar a la bestia"
+  },
+  "94050": {
+   "title": "Adiestrar a la bestia"
+  },
+  "94212": {
+   "title": "Encargo de artesano: Elixir of Wisdom"
+  },
+  "94213": {
+   "title": "Encargo de artesano: Lesser Mana Potion"
+  },
+  "94214": {
+   "title": "Encargo de artesano: Shadow Protection Potion"
+  },
+  "94215": {
+   "title": "Encargo de artesano: Free Action Potion"
+  },
+  "94216": {
+   "title": "Encargo de artesano: Elixir of Lesser Agility"
+  },
+  "94217": {
+   "title": "Encargo de artesano: Lesser Troll's Blood Elixir"
+  },
+  "94218": {
+   "title": "Encargo de artesano: Elixir of Defense"
+  },
+  "94219": {
+   "title": "Encargo de artesano: Draught of Water Breathing"
+  },
+  "94220": {
+   "title": "Encargo de artesano: Pearl-Handled Dagger"
+  },
+  "94221": {
+   "title": "Encargo de artesano: Golden Rod"
+  },
+  "94222": {
+   "title": "Encargo de artesano: Iridescent Hammer"
+  },
+  "94223": {
+   "title": "Encargo de artesano: Silver Skeleton Key"
+  },
+  "94224": {
+   "title": "Encargo de artesano: Heavy Bronze Mace"
+  },
+  "94225": {
+   "title": "Encargo de artesano: Rough Bronze Leggings"
+  },
+  "94226": {
+   "title": "Encargo de artesano: Green Iron Gauntlets"
+  },
+  "94227": {
+   "title": "Encargo de artesano: Big Bronze Knife"
+  },
+  "94228": {
+   "title": "Encargo de artesano: Green Iron Boots"
+  },
+  "94229": {
+   "title": "Encargo de artesano: Ornate Spyglass"
+  },
+  "94230": {
+   "title": "Encargo de artesano: Explosive Sheep"
+  },
+  "94231": {
+   "title": "Encargo de artesano: Moonsight Rifle"
+  },
+  "94232": {
+   "title": "Encargo de artesano: Minor Recombobulator"
+  },
+  "94233": {
+   "title": "Encargo de artesano: Practice Lock"
+  },
+  "94234": {
+   "title": "Encargo de artesano: Shadow Goggles"
+  },
+  "94235": {
+   "title": "Encargo de artesano: Gnomish Universal Remote"
+  },
+  "94236": {
+   "title": "Encargo de artesano: Big Bronze Bomb"
+  },
+  "94237": {
+   "title": "Encargo de artesano: Crafted Solid Shot"
+  },
+  "94238": {
+   "title": "Encargo de artesano: Heavy Leather Ball"
+  },
+  "94239": {
+   "title": "Encargo de artesano: Fine Leather Pants"
+  },
+  "94240": {
+   "title": "Encargo de artesano: Herbalist's Gloves"
+  },
+  "94241": {
+   "title": "Encargo de artesano: Dark Leather Tunic"
+  },
+  "94242": {
+   "title": "Encargo de artesano: Pilferer's Gloves"
+  },
+  "94243": {
+   "title": "Encargo de artesano: Heavy Quiver"
+  },
+  "94244": {
+   "title": "Encargo de artesano: Dark Leather Shoulders"
+  },
+  "94245": {
+   "title": "Encargo de artesano: Barbaric Gloves"
+  },
+  "94246": {
+   "title": "Encargo de artesano: Red Whelp Gloves"
+  },
+  "94247": {
+   "title": "Encargo de artesano: Lesser Wizard's Robe"
+  },
+  "94248": {
+   "title": "Encargo de artesano: Blue Overalls"
+  },
+  "94249": {
+   "title": "Encargo de artesano: Azure Silk Hood"
+  },
+  "94250": {
+   "title": "Encargo de artesano: Small Silk Pack"
+  },
+  "94251": {
+   "title": "Encargo de artesano: Phoenix Pants"
+  },
+  "94252": {
+   "title": "Encargo de artesano: Red Woolen Boots"
+  },
+  "94253": {
+   "title": "Encargo de artesano: Colorful Kilt"
+  },
+  "94254": {
+   "title": "Encargo de artesano: Greater Adept's Robe"
+  },
+  "94255": {
+   "title": "Encargo de artesano: Spider Silk Slippers"
+  },
+  "94256": {
+   "title": "Encargo de artesano: Frost Protection Potion"
+  },
+  "94257": {
+   "title": "Encargo de artesano: Lesser Invisibility Potion"
+  },
+  "94258": {
+   "title": "Encargo de artesano: Lesser Stoneshield Potion"
+  },
+  "94259": {
+   "title": "Encargo de artesano: Nature Protection Potion"
+  },
+  "94260": {
+   "title": "Encargo de artesano: Catseye Draught"
+  },
+  "94261": {
+   "title": "Encargo de artesano: Great Rage Potion"
+  },
+  "94262": {
+   "title": "Encargo de artesano: Mana Potion"
+  },
+  "94263": {
+   "title": "Encargo de artesano: Fire Protection Potion"
+  },
+  "94264": {
+   "title": "Encargo de artesano: Shadow Oil"
+  },
+  "94265": {
+   "title": "Encargo de artesano: Goblin Rocket Fuel"
+  },
+  "94266": {
+   "title": "Encargo de artesano: Elixir of Agility"
+  },
+  "94267": {
+   "title": "Encargo de artesano: Wildvine Potion"
+  },
+  "96984": {
+   "title": "Corazón de la disrupción"
+  }
+ }
+}

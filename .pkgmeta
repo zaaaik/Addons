@@ -1,0 +1,11 @@
+package-as: MisionesES
+
+ignore:
+  - data
+  - tools
+  - capturas
+  - docs
+  - .github
+
+move-folders:
+  MisionesES/MisionesES: MisionesES

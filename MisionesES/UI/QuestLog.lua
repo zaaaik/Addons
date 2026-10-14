@@ -1,0 +1,59 @@
+-- Registro de misiones: al abrir el detalle de una misión se muestra la traducción al lado.
+local _, MES = ...
+
+-- Pares { marco de detalle a vigilar, marco al que anclar el pergamino } según la versión del cliente.
+local function candidates()
+	local list = {}
+	if QuestLogDetailScrollFrame and QuestLogFrame then
+		list[#list + 1] = { QuestLogDetailScrollFrame, QuestLogFrame }
+	end
+	if QuestLogDetailFrame then
+		list[#list + 1] = { QuestLogDetailFrame, QuestLogDetailFrame }
+	end
+	if QuestMapFrame and QuestMapFrame.DetailsFrame and WorldMapFrame then
+		list[#list + 1] = { QuestMapFrame.DetailsFrame, WorldMapFrame }
+	end
+	if QuestLogPopupDetailFrame then
+		list[#list + 1] = { QuestLogPopupDetailFrame, QuestLogPopupDetailFrame }
+	end
+	return list
+end
+
+local shownID, elapsed = nil, 0
+
+local function update()
+	local panel = MES.LogPanel()
+	if not MES.cfg.showQuestLog or not MES.IsEnglishClient() then
+		panel:Hide()
+		shownID = nil
+		return
+	end
+	for _, c in ipairs(candidates()) do
+		local detail, anchor = c[1], c[2]
+		if detail:IsVisible() then
+			local id = (detail.questID and detail.questID > 0 and detail.questID) or MES.SelectedLogQuestID()
+			local q = MES.GetQuest(id)
+			if q then
+				if shownID ~= id or not panel:IsShown() then
+					local ctx = MES.QuestLogContext() or { phase = "log" }
+					ctx.outdated = MES.IsOutdated(q, ctx.title, ctx.text)
+					MES.ShowBeside(panel, anchor, MES.QuestBlocks(q, ctx))
+					shownID = id
+				end
+				return
+			end
+		end
+	end
+	panel:Hide()
+	shownID = nil
+end
+
+function MES.InitQuestLog()
+	local watcher = CreateFrame("Frame")
+	watcher:SetScript("OnUpdate", function(_, dt)
+		elapsed = elapsed + dt
+		if elapsed < 0.15 then return end
+		elapsed = 0
+		update()
+	end)
+end
