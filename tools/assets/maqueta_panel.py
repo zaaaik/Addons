@@ -37,7 +37,7 @@ d = ImageDraw.Draw(canvas)
 title = ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf', 17 * S)
 body = ImageFont.truetype('/usr/share/fonts/truetype/freefont/FreeSerif.ttf', 14 * S)
 INK, BLACK = (46, 31, 15), (0, 0, 0)
-x, y, width = ox + PAD * S, oy + (PAD + TOP) * S, (W - 2 * PAD - 6) * S
+x, y, width = ox + PAD * S, oy + (PAD + TOP) * S, (W - 2 * PAD - 22) * S
 clip = oy + (H - PAD - TOP) * S
 
 
@@ -75,9 +75,10 @@ y += 24 * S
 para('Coge un cajón con agujeros. Coge una vara de mando de husmeador. Lee el manual de propietario de husmeador. '
      'Cuando llegues a Horado Rajacieno, usa la vara de mando con el husmeador.', gap=0)
 
-# Flecha "hay más texto": en el hueco bajo el texto, a la derecha.
-ax, ay = ox + (W - PAD + 6 + 4 - 24) * S, clip
-d.ellipse((ax, ay, ax + 24 * S, ay + 24 * S), fill=(40, 28, 16, 230), outline=(200, 160, 60), width=2 * S)
-cx = ax + 12 * S
-d.polygon([(cx - 6 * S, ay + 8 * S), (cx + 6 * S, ay + 8 * S), (cx, ay + 17 * S)], fill=(255, 210, 60))
+# Flecha "hay más texto": siempre a 4/5 de la altura del área de texto, pegada a la derecha.
+top, right = oy + (PAD + TOP) * S, ox + (W - PAD + 6) * S
+visible = clip - top
+arrow = tex('arrow_down').resize((30 * S, 30 * S))
+cx, cy = right - 8 * S, top + int(visible * 0.8)
+canvas.alpha_composite(arrow, (cx - 15 * S, cy - 15 * S))
 canvas.convert('RGB').save('docs/maquetas/panel_registro.png')
