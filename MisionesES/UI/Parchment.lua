@@ -216,7 +216,7 @@ end
 -- Rollos: la textura (512x128) lleva margen transparente; el dibujo ocupa el 52 % de su altura. La altura
 -- se calcula con el ancho para no deformarlo, y el rollo se hunde 12 px en la hoja.
 local ROLL_ART_TOP = 0.523     -- fracción de la altura de la textura que ocupa el dibujo
-local ROLL_ART_BOTTOM = 0.586
+local ROLL_ART_BOTTOM = 0.500
 local ROLL_SINK = 12
 
 local function addRolls(f)

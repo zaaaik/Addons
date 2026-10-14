@@ -32,7 +32,7 @@ canvas.alpha_composite(crop((0, c, c, 256 - c), E, B - Tp - 2 * E), (L, Tp + E))
 canvas.alpha_composite(crop((256 - c, c, 256, 256 - c), E, B - Tp - 2 * E), (R - E, Tp + E))
 RH = int((W + 44) * 128 / 512)            # alto del rollo (la textura es 512x128)
 OFF = int(12 + RH * (1 - 0.523) / 2)      # se hunde 12 px en la hoja
-OFF_B = int(12 + RH * (1 - 0.586) / 2)
+OFF_B = int(12 + RH * (1 - 0.500) / 2)
 canvas.alpha_composite(tex('scroll_top').resize(((W + 44) * S, RH * S)), (ox - 22 * S, oy + OFF * S - RH * S))
 canvas.alpha_composite(tex('scroll_bottom').resize(((W + 44) * S, RH * S)), (ox - 22 * S, oy + H * S - OFF_B * S))
 
