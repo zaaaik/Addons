@@ -198,7 +198,7 @@ function MES.Fonts()
 	MES.fonts.header:SetFont(titleFile, titleSize + delta, "")
 	MES.fonts.text:SetFont(textFile, textSize + delta, "")
 	MES.fonts.small:SetFont(textFile, textSize + delta - 1, "")
-	MES.fonts.button:SetFont(titleFile, 15, "")
+	MES.fonts.button:SetFont(titleFile, 14, "")
 	return MES.fonts
 end
 

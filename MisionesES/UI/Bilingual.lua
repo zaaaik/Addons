@@ -130,6 +130,9 @@ function MES.ShowBilingual(q, ctx)
 	win:ClearAllPoints()
 	win:SetPoint("CENTER", QuestFrame, "CENTER", 0, 0)
 	win:SetSize(math.floor((QuestFrame:GetWidth() or 384) * 0.76), QuestFrame:GetHeight() or 512)
+	-- Los dos botones de cinta comparten el ancho; si no caben, sus colas se solapan un poco en el centro.
+	local bw = math.min(170, math.floor((win:GetWidth() - 12) / 2 * 1.15))
+	for _, b in ipairs({ win.primary, win.secondary }) do b:SetSize(bw, math.floor(bw / 4)) end
 	QuestFrame:SetAlpha(0)
 	win:Show()
 	win:SetBlocks(blocks)

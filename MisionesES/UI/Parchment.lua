@@ -334,11 +334,11 @@ end
 -- Botón de cinta (roja = acción principal, marrón = secundaria).
 function MES.CreateRibbonButton(parent, color)
 	local b = CreateFrame("Button", nil, parent)
-	b:SetSize(160, 40)
+	b:SetSize(170, 43)  -- textura 256x64: el dibujo ocupa el 67 % de la altura, con las colas a los lados
 	b:SetNormalTexture(TEX .. "ribbon_" .. color)
 	b:SetHighlightTexture(TEX .. "ribbon_" .. color .. "_hover")
 	local fs = b:CreateFontString(nil, "OVERLAY")
-	fs:SetPoint("CENTER", 0, 2)
+	fs:SetPoint("CENTER", 0, 1)
 	fs:SetFontObject(MES.Fonts().button)
 	fs:SetTextColor(1, 0.87, 0.6)
 	fs:SetShadowOffset(1, -1)
