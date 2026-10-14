@@ -1,8 +1,8 @@
 -- Modo "lateral": pergamino con la traducción junto a la ventana original.
 local _, MES = ...
 
--- Ancho del pergamino: 16 % menos que antes, como en el diseño de referencia.
-local PANEL_WIDTH = 285
+-- Ancho del pergamino: 25 % menos que el original, como en el diseño de referencia.
+local PANEL_WIDTH = 260
 
 local side, log
 
