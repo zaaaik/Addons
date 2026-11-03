@@ -38,3 +38,7 @@ ScrollLoot/
 - Filtro por calidad mínima (`db.minQuality` ya soportado en código).
 - Fusionar entradas repetidas del mismo item.
 - Probar en Retail y Classic.
+
+## Reglas
+
+1. Siempre se sube todo a `main`. Nunca se crean branches.
