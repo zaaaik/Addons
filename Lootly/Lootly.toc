@@ -1,0 +1,22 @@
+## Interface: 120000, 110207, 50503, 20505, 11508
+## Title: Lootly
+## Notes: Muestra en pantalla lo que looteas con un aspecto flotante tipo cristal.
+## Author: zaaaik
+## Version: 0.2.0
+## SavedVariables: LootlyDB
+## IconTexture: Interface\AddOns\Lootly\Media\icon
+
+Locales.lua
+Core.lua
+Style.lua
+Themes\Glass.lua
+Themes\DarkGlass.lua
+Themes\Black.lua
+Themes\EliteDragon.lua
+Themes\EliteGoldDragon.lua
+Themes\Pill.lua
+Themes\Neon.lua
+Display.lua
+Loot.lua
+Config.lua
+Minimap.lua
