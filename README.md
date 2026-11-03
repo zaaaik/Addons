@@ -1,7 +1,5 @@
 # Lootly
 
-<p align="center"><img src="assets/lootly_logo_400.png" width="160" alt="Lootly"></p>
-
 Addon de World of Warcraft que muestra en pantalla lo que looteas (objetos y oro) con ventanas flotantes animadas, con aspecto de cristal translúcido y varios temas.
 
 ## Características
