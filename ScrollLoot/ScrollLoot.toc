@@ -1,0 +1,8 @@
+## Interface: 120000, 110207, 50503, 20505, 11508
+## Title: ScrollLoot
+## Notes: Muestra en pantalla el loot que recoges (items y oro) con animación.
+## Author: zaaaik
+## Version: 0.1.0
+## SavedVariables: ScrollLootDB
+
+ScrollLoot.lua
