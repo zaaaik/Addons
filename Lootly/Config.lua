@@ -36,6 +36,7 @@ local PAGES = {
   { label = L["Behavior"], opts = {
     { "slider", "duration", L["Duration (s)"], 1, 15, 0.5 },
     { "slider", "maxRows", L["Max rows"], 2, 12, 1 },
+    { "cycle", "lang", L["Language"], function() return { "es", "en" } end, function(v) return v == "es" and "Español" or "English" end },
     { "cycle", "minQuality", L["Minimum quality"], function() return { 0, 1, 2, 3, 4, 5 } end, qualityName },
   } },
   { label = L["Content"], opts = {
@@ -45,6 +46,8 @@ local PAGES = {
     { "check", "merge", L["Merge repeated items"] },
     { "check", "highlight", L["Highlight epic+"] },
     { "check", "sound", L["Sound on rare+"] },
+    { "check", "rollSummary", L["Roll results in chat"] },
+    { "check", "rollHide", L["Hide default roll messages"] },
   } },
   { label = L["Position"], opts = {
     { "cycle", "side", L["Side"], function() return { "LEFT", "RIGHT" } end, function(v) return v == "LEFT" and L["Left"] or L["Right"] end },

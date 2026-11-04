@@ -2,10 +2,23 @@ local ADDON, NS = ...
 local L = setmetatable({}, { __index = function(_, k) return k end })
 NS.L = L
 
-local loc = GetLocale()
-if loc == "esES" or loc == "esMX" then
+-- Idioma: por defecto español, sea cual sea el cliente. Se lee de las variables guardadas
+-- (ya cargadas antes de ejecutar los archivos); cambiarlo requiere /reload.
+local lang = (LootlyDB and LootlyDB.lang) or "es"
+if lang == "es" then
   local es = {
     ["Look"] = "Aspecto",
+    ["Language"] = "Idioma",
+    ["Reload to apply language"] = "Escribe /reload para aplicar el idioma",
+    ["Roll results in chat"] = "Resultado de tiradas en el chat",
+    ["Hide default roll messages"] = "Ocultar mensajes de tirada originales",
+    ["You won"] = "Ganaste",
+    ["won"] = "ganó",
+    ["You chose"] = "Elegiste",
+    ["Everyone passed"] = "Todos pasaron",
+    ["Need"] = "Necesidad",
+    ["Greed"] = "Codicia",
+    ["Pass"] = "Pasar",
     ["Content"] = "Contenido",
     ["Position"] = "Posición",
     ["Move position"] = "Mover posición",

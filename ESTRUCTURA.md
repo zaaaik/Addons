@@ -28,6 +28,7 @@ Lootly/
 │   └── gold_dragon_ring.tga  # Anillo dorado (Elite Gold Dragon)
 ├── Display.lua      # Filas flotantes: pool, animación, apilado, fusión
 ├── Loot.lua         # Eventos de loot/oro y parseo
+├── RollChat.lua     # Resumen de tiradas (Necesidad/Codicia/Pasar) en el chat
 ├── Config.lua       # Ventana de configuración
 └── Minimap.lua      # Botón del minimapa
 ```

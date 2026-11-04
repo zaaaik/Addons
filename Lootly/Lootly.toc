@@ -18,5 +18,6 @@ Themes\Pill.lua
 Themes\Neon.lua
 Display.lua
 Loot.lua
+RollChat.lua
 Config.lua
 Minimap.lua

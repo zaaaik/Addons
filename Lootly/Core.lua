@@ -3,6 +3,7 @@ local L = NS.L
 
 NS.defaults = {
   enabled = true,
+  lang = "es",
   locked = true,
   theme = "Glass",
   font = STANDARD_TEXT_FONT,
@@ -23,6 +24,8 @@ NS.defaults = {
   merge = true,
   highlight = true,
   sound = false,
+  rollSummary = true,
+  rollHide = true,
   minimap = { hide = false, angle = 215 },
 }
 
@@ -44,6 +47,7 @@ end
 -- Cambia una opción y actualiza todo lo visible.
 function NS:Set(key, value)
   self.db[key] = value
+  if key == "lang" then self:Print(L["Reload to apply language"]) end
   if self.Display then self.Display:Refresh() end
   if self.Config then self.Config:Sync() end
 end
@@ -78,6 +82,7 @@ f:SetScript("OnEvent", function(self, _, name)
   copyDefaults(NS.defaults, NS.db)
   NS.Display:Init()
   NS.Loot:Init()
+  NS.RollChat:Init()
   NS.Minimap:Init()
 end)
 

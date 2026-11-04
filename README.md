@@ -11,6 +11,7 @@ Addon de World of Warcraft que muestra en pantalla lo que looteas (objetos y oro
 - 7 temas: Glass, Dark Glass, Black, Elite Dragon, Elite Gold Dragon, Pill y Neon.
 - Todas las opciones son comunes a cualquier tema.
 - Ventana de configuración con vista previa en vivo.
+- Resumen de tiradas en el chat: quién ganó, su tirada y cuántos eligieron Necesidad, Codicia o Pasar.
 - Botón en el minimapa.
 
 ## Instalación
@@ -33,7 +34,7 @@ Addon de World of Warcraft que muestra en pantalla lo que looteas (objetos y oro
 
 - **Aspecto:** tema, fuente, tamaño de letra, opacidad, brillo, tamaño de icono y ancho.
 - **Comportamiento:** duración, filas máximas y calidad mínima.
-- **Contenido:** valor de venta, cantidad, oro, fusión de repetidos, resaltado y sonido.
+- **Contenido:** valor de venta, cantidad, oro, fusión de repetidos, resaltado, sonido y resumen de tiradas en el chat.
 - **Posición:** lado, dirección en que nace el loot (arriba o abajo) y mover el recuadro.
 
 ## Estado
